@@ -5,9 +5,9 @@ export default function PriceTable({ product }: { product: Product }) {
     <table className="w-full text-sm border-collapse">
       <thead>
         <tr className="text-left text-faint">
-          <th className="pb-2 pr-4 font-medium text-xs uppercase tracking-[0.1em]">Quantity</th>
+          <th className="pb-2 pr-4 font-medium text-xs uppercase tracking-[0.1em]">Количество</th>
           <th className="pb-2 font-medium text-xs uppercase tracking-[0.1em] text-right">
-            Unit price
+            Цена за шт.
           </th>
         </tr>
       </thead>
@@ -20,7 +20,7 @@ export default function PriceTable({ product }: { product: Product }) {
               <td
                 className={`py-2.5 pr-4 font-mono text-xs ${available ? "text-muted" : "text-faint"}`}
               >
-                {tier} pcs
+                {tier} шт.
               </td>
               <td className="py-2.5 text-right">
                 {available ? (

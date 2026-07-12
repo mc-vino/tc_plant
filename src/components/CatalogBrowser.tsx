@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { MagnifyingGlass, SquaresFour, Rows, CaretDown } from "@phosphor-icons/react";
 import { Product, lowestPrice } from "@/lib/catalog";
+import { varieties } from "@/lib/i18n";
 import ProductCard from "./ProductCard";
 import ProductTable from "./ProductTable";
 
@@ -10,9 +11,9 @@ type SortKey = "name" | "price-asc" | "price-desc";
 type View = "grid" | "table";
 
 const SORTS: { key: SortKey; label: string }[] = [
-  { key: "name", label: "Name (A-Z)" },
-  { key: "price-asc", label: "Price (low to high)" },
-  { key: "price-desc", label: "Price (high to low)" },
+  { key: "name", label: "По названию (A-Z)" },
+  { key: "price-asc", label: "Цена: по возрастанию" },
+  { key: "price-desc", label: "Цена: по убыванию" },
 ];
 
 export default function CatalogBrowser({
@@ -56,7 +57,7 @@ export default function CatalogBrowser({
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search 120 varieties by name or code…"
+            placeholder="Поиск по названию или артикулу…"
             className="w-full rounded-full border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors focus:border-accent"
           />
         </div>
@@ -83,10 +84,10 @@ export default function CatalogBrowser({
           </div>
 
           <div className="flex rounded-full border border-line bg-card p-0.5">
-            <ViewButton active={view === "grid"} onClick={() => setView("grid")} label="Grid view">
+            <ViewButton active={view === "grid"} onClick={() => setView("grid")} label="Плиткой">
               <SquaresFour size={18} weight={view === "grid" ? "fill" : "regular"} />
             </ViewButton>
-            <ViewButton active={view === "table"} onClick={() => setView("table")} label="Table view">
+            <ViewButton active={view === "table"} onClick={() => setView("table")} label="Таблицей">
               <Rows size={18} weight={view === "table" ? "fill" : "regular"} />
             </ViewButton>
           </div>
@@ -96,7 +97,7 @@ export default function CatalogBrowser({
       {/* Genus filters */}
       <div className="mt-4 flex flex-wrap gap-2">
         <Chip active={genus === null} onClick={() => setGenus(null)}>
-          All <span className="opacity-55">{products.length}</span>
+          Все <span className="opacity-55">{products.length}</span>
         </Chip>
         {genera.map(({ genus: g, count }) => (
           <Chip key={g} active={genus === g} onClick={() => setGenus(g)}>
@@ -106,13 +107,13 @@ export default function CatalogBrowser({
       </div>
 
       <p className="mt-5 mb-4 font-mono text-xs text-faint">
-        {filtered.length} {filtered.length === 1 ? "variety" : "varieties"}
+        {varieties(filtered.length)}
         {genus ? ` · ${genus}` : ""}
       </p>
 
       {filtered.length === 0 ? (
         <div className="rounded-card border border-dashed border-line py-20 text-center">
-          <p className="font-serif text-xl text-muted">No varieties match your search.</p>
+          <p className="font-serif text-xl text-muted">Ничего не найдено.</p>
           <button
             onClick={() => {
               setQuery("");
@@ -120,7 +121,7 @@ export default function CatalogBrowser({
             }}
             className="mt-3 text-sm text-accent hover:text-accent-strong"
           >
-            Clear filters
+            Сбросить фильтры
           </button>
         </div>
       ) : view === "grid" ? (

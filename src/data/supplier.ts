@@ -1,8 +1,8 @@
 export const supplier = {
   name: "Xanh Xanh Urban Forest Co., Ltd",
-  tagline: "Tissue-culture plant nursery",
-  location: "Hanoi, Vietnam",
-  address: "No 01, 74 Goc De, Hoang Van Thu, Hoang Mai District, Hanoi, Vietnam",
+  tagline: "Питомник растений из культуры ткани",
+  location: "Ханой, Вьетнам",
+  address: "No 01, 74 Goc De, Hoang Van Thu, Hoang Mai District, Ханой, Вьетнам",
   phone: "+84 372 096 139",
   email: "anh.lh@xanhxanhurbanforest.com",
   quotationDate: "2026-07-01",
@@ -17,31 +17,31 @@ export interface TermGroup {
 
 export const terms: TermGroup[] = [
   {
-    title: "Product & packaging",
+    title: "Товар и упаковка",
     items: [
-      { label: "Unit", value: "One TC (tissue-culture) plant" },
-      { label: "Packaging", value: "Plastic bag of 10 pieces" },
+      { label: "Единица", value: "Одно растение из культуры ткани (TC)" },
+      { label: "Упаковка", value: "Пластиковый пакет по 10 штук" },
       {
-        label: "Bottle or single-bag",
-        value: "Plant in bottle and in bag, 1 pc: +$0.30 / pc. Pre-order single bag or bottle one month ahead.",
+        label: "В бутылке или отдельном пакете",
+        value: "Растение в бутылке и в пакете, 1 шт.: +$0.30 / шт. Отдельный пакет или бутылку заказывайте за месяц.",
       },
     ],
   },
   {
-    title: "Pricing",
+    title: "Цены",
     items: [
-      { label: "Currency", value: "US Dollars (USD)" },
-      { label: "Terms", value: "EXW price, following INCOTERM 2020" },
-      { label: "Validity", value: "Quotes are valid 30 days from the quotation date" },
-      { label: "Tiers", value: "Unit price decreases across five quantity brackets, 05-09 to 100-299 pcs" },
+      { label: "Валюта", value: "Доллары США (USD)" },
+      { label: "Условия", value: "Цена EXW по INCOTERM 2020" },
+      { label: "Срок действия", value: "Прайс действителен 30 дней с даты составления" },
+      { label: "Тиры", value: "Цена за штуку снижается по пяти объёмным брекетам, от 05-09 до 100-299 шт." },
     ],
   },
   {
-    title: "Orders & payment",
+    title: "Заказ и оплата",
     items: [
-      { label: "Pre-order", value: "Ordered quantity is ready in 3 months; deposit at least 25% of the total" },
-      { label: "Deposit", value: "25% of order value holds the order when ETD is longer than 15 days" },
-      { label: "Balance", value: "Paid by wire transfer 10 days before the shipping date" },
+      { label: "Предзаказ", value: "Заказанное количество готово за 3 месяца; депозит не менее 25% от суммы" },
+      { label: "Депозит", value: "25% от суммы заказа резервируют заказ, если ETD дольше 15 дней" },
+      { label: "Остаток", value: "Оплачивается банковским переводом за 10 дней до даты отгрузки" },
     ],
   },
 ];

@@ -12,6 +12,7 @@ import {
   formatUSD,
 } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
+import { noteRu } from "@/lib/i18n";
 import PriceTable from "@/components/PriceTable";
 import ProductCard from "@/components/ProductCard";
 
@@ -26,10 +27,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { code } = await params;
   const product = getProduct(code);
-  if (!product) return { title: "Not found" };
+  if (!product) return { title: "Не найдено" };
   return {
-    title: `${product.name} (${product.code}) · TC Plant Catalogue`,
-    description: `${product.name}. Wholesale tissue-culture ${product.genus}, quantity-tier pricing in USD.`,
+    title: `${product.name} (${product.code}) · Каталог TC Plant`,
+    description: `${product.name}. Оптовое растение из культуры ткани (${product.genus}), цены по объёмным тирам в USD.`,
   };
 }
 
@@ -52,7 +53,7 @@ export default async function PlantPage({
         href="/"
         className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
       >
-        <ArrowLeft size={15} weight="bold" /> Catalogue
+        <ArrowLeft size={15} weight="bold" /> Каталог
       </Link>
 
       <div className="grid gap-8 md:grid-cols-[1fr_1fr] lg:grid-cols-[1.05fr_1fr] md:gap-12">
@@ -80,7 +81,7 @@ export default async function PlantPage({
             </span>
             {product.note && (
               <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
-                {product.note}
+                {noteRu(product.note)}
               </span>
             )}
           </div>
@@ -95,7 +96,7 @@ export default async function PlantPage({
               {high !== null && high !== low
                 ? `${formatUSD(low)} - ${formatUSD(high)}`
                 : formatUSD(low)}
-              <span className="font-sans text-sm text-faint"> / unit</span>
+              <span className="font-sans text-sm text-faint"> / шт.</span>
             </p>
           )}
 
@@ -104,12 +105,12 @@ export default async function PlantPage({
           </div>
 
           <p className="mt-5 text-sm text-muted leading-relaxed">
-            Priced per unit (one TC plant), in {supplier.currency}, {supplier.incoterm}. Sold in
-            bags of 10 pieces. See the{" "}
+            Цена за штуку (одно растение из культуры ткани), в {supplier.currency},{" "}
+            {supplier.incoterm}. Продаётся пакетами по 10 штук. Депозиты, сроки и оплата указаны в{" "}
             <Link href="/about" className="text-accent hover:text-accent-strong underline underline-offset-2">
-              supplier terms
-            </Link>{" "}
-            for deposits, lead times and payment.
+              условиях поставщика
+            </Link>
+            .
           </p>
         </div>
       </div>
@@ -117,9 +118,9 @@ export default async function PlantPage({
       {related.length > 0 && (
         <section className="mt-16 border-t border-line pt-10">
           <div className="flex items-baseline justify-between">
-            <h2 className="font-serif text-2xl">More {product.genus}</h2>
+            <h2 className="font-serif text-2xl">Ещё {product.genus}</h2>
             <Link href="/" className="text-sm text-accent hover:text-accent-strong">
-              View all
+              Все сорта
             </Link>
           </div>
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

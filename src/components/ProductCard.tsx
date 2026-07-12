@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
+import { noteRu } from "@/lib/i18n";
 
 export default function ProductCard({ product }: { product: Product }) {
   const from = lowestPrice(product);
@@ -25,7 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
         {product.note && (
           <span className="absolute top-2.5 left-2.5 rounded-full bg-paper/90 px-2.5 py-0.5 text-[10px] font-medium text-accent-strong ring-1 ring-line">
-            {product.note}
+            {noteRu(product.note)}
           </span>
         )}
       </div>
@@ -40,7 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <span className="font-mono text-[11px] text-faint">{product.code}</span>
           {from !== null && (
             <span className="text-right leading-none">
-              <span className="block text-[10px] text-faint">from</span>
+              <span className="block text-[10px] text-faint">от</span>
               <span className="font-mono text-sm font-medium text-accent-strong">
                 {formatUSD(from)}
               </span>

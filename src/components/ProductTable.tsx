@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product, TIERS, lowestPrice, formatUSD } from "@/lib/catalog";
+import { noteRu } from "@/lib/i18n";
 
 export default function ProductTable({ products }: { products: Product[] }) {
   return (
@@ -8,14 +9,14 @@ export default function ProductTable({ products }: { products: Product[] }) {
       <table className="w-full min-w-[820px] text-sm border-collapse">
         <thead>
           <tr className="text-left text-faint bg-paper">
-            <th className="py-3 pl-4 pr-3 font-medium text-xs">Variety</th>
-            <th className="py-3 px-3 font-medium text-xs">Code</th>
+            <th className="py-3 pl-4 pr-3 font-medium text-xs">Сорт</th>
+            <th className="py-3 px-3 font-medium text-xs">Артикул</th>
             {TIERS.map((t) => (
               <th key={t} className="py-3 px-3 font-medium text-xs text-right font-mono whitespace-nowrap">
                 {t}
               </th>
             ))}
-            <th className="py-3 pl-3 pr-4 font-medium text-xs text-right">From</th>
+            <th className="py-3 pl-3 pr-4 font-medium text-xs text-right">От</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +44,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                       </span>
                       <span className="text-[10px] uppercase tracking-[0.12em] text-faint">
                         {p.genus}
-                        {p.note ? ` · ${p.note}` : ""}
+                        {p.note ? ` · ${noteRu(p.note)}` : ""}
                       </span>
                     </span>
                   </Link>

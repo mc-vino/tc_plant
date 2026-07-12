@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 const serif = EB_Garamond({
   variable: "--font-serif",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600"],
   style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "TC Plant Catalogue · Xanh Xanh Urban Forest",
+  title: "Каталог TC Plant · Xanh Xanh Urban Forest",
   description:
-    "Wholesale tissue-culture plant register: Alocasia, Philodendron, Monstera, Anthurium and more. Quantity-tier pricing in USD, EXW.",
+    "Оптовый каталог растений из культуры ткани: Alocasia, Philodendron, Monstera, Anthurium и другие. Цены по объёмным тирам в USD, EXW.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="ru"
       className={`${geistSans.variable} ${geistMono.variable} ${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background">
@@ -48,10 +48,10 @@ export default function RootLayout({
             </Link>
             <nav className="flex items-center gap-6 text-sm">
               <Link href="/" className="text-muted hover:text-foreground transition-colors">
-                Catalogue
+                Каталог
               </Link>
               <Link href="/about" className="text-muted hover:text-foreground transition-colors">
-                Supplier
+                Поставщик
               </Link>
               <span className="hidden sm:inline font-mono text-xs text-faint">
                 {supplier.currency} · EXW
@@ -75,7 +75,7 @@ export default function RootLayout({
               </a>
             </div>
             <div className="text-faint font-mono text-xs sm:text-right sm:self-end">
-              Quotation {supplier.quotationDate}
+              Прайс от {supplier.quotationDate}
             </div>
           </div>
         </footer>

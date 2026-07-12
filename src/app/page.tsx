@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { products, generaWithCounts, lowestPrice, formatUSD } from "@/lib/catalog";
+import { varieties } from "@/lib/i18n";
 import { supplier } from "@/data/supplier";
 import CatalogBrowser from "@/components/CatalogBrowser";
 import Reveal from "@/components/Reveal";
@@ -22,19 +23,19 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px] px-5 sm:px-8 pt-14 pb-12 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-              {supplier.location} · Est. nursery
+              {supplier.location} · Питомник
             </p>
             <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.02] tracking-tight">
-              A living register of tissue-culture plants.
+              Живой каталог растений из культуры ткани.
             </h1>
             <p className="mt-5 max-w-xl text-muted leading-relaxed">
-              {products.length} varieties propagated by {supplier.name} in Hanoi. Wholesale
-              pricing by quantity tier, quoted in {supplier.currency}, {supplier.incoterm}.
+              {varieties(products.length)}, размноженных питомником {supplier.name} в Ханое.
+              Оптовые цены по объёмным тирам, в {supplier.currency}, {supplier.incoterm}.
             </p>
             <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
-              <Stat value={String(products.length)} label="Varieties" />
-              <Stat value={String(genera.length)} label="Genera" />
-              <Stat value={`${formatUSD(globalMin)}`} label="From, per unit" />
+              <Stat value={String(products.length)} label="Сортов" />
+              <Stat value={String(genera.length)} label="Родов" />
+              <Stat value={`${formatUSD(globalMin)}`} label="От, за штуку" />
             </dl>
           </Reveal>
 
