@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { motion } from "motion/react";
 import { MagnifyingGlass, SquaresFour, Rows, CaretDown } from "@phosphor-icons/react";
 import { Product, lowestPrice } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
@@ -84,12 +85,36 @@ export default function CatalogBrowser({
           </div>
 
           <div className="flex rounded-full border border-line bg-card p-0.5">
-            <ViewButton active={view === "grid"} onClick={() => setView("grid")} label="Плиткой">
-              <SquaresFour size={18} weight={view === "grid" ? "fill" : "regular"} />
-            </ViewButton>
-            <ViewButton active={view === "table"} onClick={() => setView("table")} label="Таблицей">
-              <Rows size={18} weight={view === "table" ? "fill" : "regular"} />
-            </ViewButton>
+            {(
+              [
+                { v: "grid" as View, label: "Плиткой", Icon: SquaresFour },
+                { v: "table" as View, label: "Таблицей", Icon: Rows },
+              ]
+            ).map(({ v, label, Icon }) => {
+              const active = view === v;
+              return (
+                <button
+                  key={v}
+                  onClick={() => setView(v)}
+                  aria-label={label}
+                  aria-pressed={active}
+                  className="press relative flex h-8 w-8 items-center justify-center rounded-full"
+                >
+                  {active && (
+                    <motion.span
+                      layoutId="viewToggle"
+                      className="absolute inset-0 rounded-full bg-accent"
+                      transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
+                    />
+                  )}
+                  <Icon
+                    size={18}
+                    weight={active ? "fill" : "regular"}
+                    className={`relative z-10 transition-colors ${active ? "text-paper" : "text-faint"}`}
+                  />
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -137,31 +162,6 @@ export default function CatalogBrowser({
   );
 }
 
-function ViewButton({
-  active,
-  onClick,
-  label,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      aria-label={label}
-      aria-pressed={active}
-      className={`flex h-8 w-8 items-center justify-center rounded-full transition-colors ${
-        active ? "bg-accent text-paper" : "text-faint hover:text-foreground"
-      }`}
-    >
-      {children}
-    </button>
-  );
-}
-
 function Chip({
   active,
   onClick,
@@ -174,7 +174,7 @@ function Chip({
   return (
     <button
       onClick={onClick}
-      className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+      className={`press rounded-full border px-3 py-1 text-xs transition-colors ${
         active
           ? "border-accent bg-accent text-paper"
           : "border-line bg-card text-muted hover:border-accent hover:text-foreground"

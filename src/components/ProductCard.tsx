@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/plant/${product.code}`}
-      className="group flex flex-col rounded-card border border-line bg-card overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_12px_30px_-18px_rgba(23,37,29,0.5)]"
+      className="card-hover group flex flex-col rounded-card border border-line bg-card overflow-hidden hover:border-accent"
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-accent-soft">
         {product.image ? (
@@ -19,7 +19,7 @@ export default function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 260px"
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+            className="card-media object-cover"
           />
         ) : (
           <div className="flex h-full items-center justify-center font-serif italic text-5xl text-accent/25">

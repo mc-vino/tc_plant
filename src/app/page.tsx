@@ -25,8 +25,9 @@ export default function Home() {
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
               {supplier.location} · Питомник
             </p>
-            <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.02] tracking-tight">
-              Живой каталог растений из культуры ткани.
+            <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.05] tracking-tight pb-1">
+              Живой каталог растений{" "}
+              <span className="italic text-accent-strong">из культуры ткани</span>.
             </h1>
             <p className="mt-5 max-w-xl text-muted leading-relaxed">
               {varieties(products.length)}, размноженных питомником {supplier.name} в Ханое.

@@ -16,6 +16,7 @@ import { noteRu } from "@/lib/i18n";
 import PriceTable from "@/components/PriceTable";
 import ProductCard from "@/components/ProductCard";
 import MarketPanel from "@/components/MarketPanel";
+import Reveal from "@/components/Reveal";
 
 export function generateStaticParams() {
   return products.map((p) => ({ code: p.code }));
@@ -52,13 +53,13 @@ export default async function PlantPage({
     <div className="mx-auto max-w-[1400px] px-5 sm:px-8 py-8">
       <Link
         href="/"
-        className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
+        className="press inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
       >
         <ArrowLeft size={15} weight="bold" /> Каталог
       </Link>
 
       <div className="grid gap-8 md:grid-cols-[1fr_1fr] lg:grid-cols-[1.05fr_1fr] md:gap-12">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-card border border-line bg-accent-soft">
+        <Reveal className="relative aspect-[4/5] overflow-hidden rounded-card border border-line bg-accent-soft">
           {product.image ? (
             <Image
               src={product.image}
@@ -73,7 +74,7 @@ export default async function PlantPage({
               {product.genus.charAt(0)}
             </div>
           )}
-        </div>
+        </Reveal>
 
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
