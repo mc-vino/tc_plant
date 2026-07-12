@@ -49,3 +49,8 @@ desktop.ini
 *.local
 .tmp/
 tmp/
+
+# Local agent settings (may contain credentials/tokens)
+.claude/settings.local.json
+.claude/.credentials*
+.specify/init-options.json
