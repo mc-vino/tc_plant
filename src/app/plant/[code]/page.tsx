@@ -15,6 +15,7 @@ import { supplier } from "@/data/supplier";
 import { noteRu } from "@/lib/i18n";
 import PriceTable from "@/components/PriceTable";
 import ProductCard from "@/components/ProductCard";
+import MarketPanel from "@/components/MarketPanel";
 
 export function generateStaticParams() {
   return products.map((p) => ({ code: p.code }));
@@ -114,6 +115,8 @@ export default async function PlantPage({
           </p>
         </div>
       </div>
+
+      <MarketPanel product={product} />
 
       {related.length > 0 && (
         <section className="mt-16 border-t border-line pt-10">

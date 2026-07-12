@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
+import { marketFor, formatRub, rarityChipClass } from "@/lib/market";
 
 export default function ProductCard({ product }: { product: Product }) {
   const from = lowestPrice(product);
+  const market = marketFor(product);
   return (
     <Link
       href={`/plant/${product.code}`}
@@ -29,6 +31,11 @@ export default function ProductCard({ product }: { product: Product }) {
             {noteRu(product.note)}
           </span>
         )}
+        <span
+          className={`absolute top-2.5 right-2.5 rounded-full px-2 py-0.5 text-[10px] font-medium ${rarityChipClass(market.rarityLevel)}`}
+        >
+          {market.rarity}
+        </span>
       </div>
       <div className="flex flex-1 flex-col p-3.5">
         <p className="text-[10px] uppercase tracking-[0.14em] text-faint">
@@ -38,15 +45,18 @@ export default function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <div className="mt-auto pt-3 flex items-end justify-between">
-          <span className="font-mono text-[11px] text-faint">{product.code}</span>
-          {from !== null && (
-            <span className="text-right leading-none">
-              <span className="block text-[10px] text-faint">от</span>
-              <span className="font-mono text-sm font-medium text-accent-strong">
-                {formatUSD(from)}
-              </span>
+          <span className="leading-tight">
+            <span className="block font-mono text-[11px] text-faint">{product.code}</span>
+            {from !== null && (
+              <span className="font-mono text-[11px] text-muted">опт от {formatUSD(from)}</span>
+            )}
+          </span>
+          <span className="text-right leading-none">
+            <span className="block text-[10px] text-faint">детка ~</span>
+            <span className="font-mono text-sm font-medium text-accent-strong">
+              {formatRub(market.babyPriceRub)}
             </span>
-          )}
+          </span>
         </div>
       </div>
     </Link>

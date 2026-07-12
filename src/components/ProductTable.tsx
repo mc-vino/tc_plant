@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, TIERS, lowestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
+import { marketFor, formatRub, rarityChipClass } from "@/lib/market";
 
 export default function ProductTable({ products }: { products: Product[] }) {
   return (
     <div className="overflow-x-auto rounded-card border border-line bg-card">
-      <table className="w-full min-w-[820px] text-sm border-collapse">
+      <table className="w-full min-w-[1000px] text-sm border-collapse">
         <thead>
           <tr className="text-left text-faint bg-paper">
             <th className="py-3 pl-4 pr-3 font-medium text-xs">Сорт</th>
@@ -16,12 +17,15 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 {t}
               </th>
             ))}
-            <th className="py-3 pl-3 pr-4 font-medium text-xs text-right">От</th>
+            <th className="py-3 px-3 font-medium text-xs text-right">Опт от</th>
+            <th className="py-3 px-3 font-medium text-xs">Редкость</th>
+            <th className="py-3 pl-3 pr-4 font-medium text-xs text-right whitespace-nowrap">Детка, ₽</th>
           </tr>
         </thead>
         <tbody>
           {products.map((p) => {
             const from = lowestPrice(p);
+            const m = marketFor(p);
             return (
               <tr
                 key={p.code}
@@ -55,8 +59,18 @@ export default function ProductTable({ products }: { products: Product[] }) {
                     {p.prices[t] !== undefined ? formatUSD(p.prices[t]!) : <span className="text-line">-</span>}
                   </td>
                 ))}
-                <td className="py-2.5 pl-3 pr-4 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
+                <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
                   {from !== null ? formatUSD(from) : "-"}
+                </td>
+                <td className="py-2.5 px-3">
+                  <span
+                    className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
+                  >
+                    {m.rarity}
+                  </span>
+                </td>
+                <td className="py-2.5 pl-3 pr-4 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
+                  {formatRub(m.babyPriceRub)}
                 </td>
               </tr>
             );
