@@ -1,13 +1,10 @@
 import { Product, lowestPrice, highestPrice } from "@/lib/catalog";
-import { REAL_BABY_PRICES } from "@/data/prices_ru";
 
 /**
  * MODEL, NOT MARKET DATA.
  *
- * There is no reliable feed of RF/RB retail prices for 120 specific TC cultivars,
- * so every value below is ESTIMATED from the supplier's wholesale prices plus a
- * small set of documented assumptions. Tune the constants here to match real
- * experience on Avito / Kufar / grower channels. All money is in RUB (₽).
+ * Rarity, grow time and depreciation are estimated from the supplier's wholesale
+ * prices plus documented assumptions. Tune the constants here. Money is in RUB (₽).
  */
 export const MARKET_CONFIG = {
   /** USD -> RUB. ~77 in July 2026 (Bank of Russia). */
@@ -16,14 +13,6 @@ export const MARKET_CONFIG = {
   /** Rarity buckets, split on the small-quantity ("scarcity") USD unit price. */
   rarityThresholds: [2, 8, 20, 50] as const, // -> 5 levels
   rarityLabels: ["Обычное", "Нечастое", "Редкое", "Очень редкое", "Коллекционное"] as const,
-
-  /**
-   * Retail "детка" (small rooted baby) vs small-qty wholesale, plus a floor per rarity.
-   * Calibrated against researched RF/RB listings (детка sizes): common Alocasia ~300-450 ₽,
-   * mid Alocasia/Philodendron ~700-1500 ₽, collectible Monstera/Anthurium ~1500-4000 ₽.
-   */
-  retailMultiplier: 1.3,
-  babyFloorRub: [400, 700, 1200, 2500, 4500] as const,
 
   /** Months for a TC plantlet to reach a propagation-capable mother, ideal conditions. */
   monthsByGenus: {
@@ -48,16 +37,9 @@ export interface MarketEstimate {
   rarityLevel: number; // 0..4
   rarity: string;
   cloneCostRub: number; // bulk TC clone cost
-  babyPriceRub: number; // established baby, now
-  babyPriceIsReal: boolean; // true if from researched marketplace data
-  babyPriceSource?: string;
   monthsToMother: number;
   depreciationPerYear: number; // 0..1
-  babyPriceAtPropagationRub: number; // baby price when the mother is ready to propagate
-  cloneToBabyCoef: number; // cloneCost / babyPrice
 }
-
-const roundTo = (n: number, step: number) => Math.round(n / step) * step;
 
 export function marketFor(p: Product): MarketEstimate {
   const c = MARKET_CONFIG;
@@ -66,35 +48,16 @@ export function marketFor(p: Product): MarketEstimate {
 
   const level = c.rarityThresholds.filter((t) => value >= t).length; // 0..4
 
-  const real = REAL_BABY_PRICES[p.code];
-  const babyPriceRub = real
-    ? real.rub
-    : Math.max(c.babyFloorRub[level], roundTo(value * c.usdToRub * c.retailMultiplier, 50));
-
   const monthsToMother = Math.round(
     (c.monthsByGenus[p.genus] ?? c.monthsDefault) * c.monthsRarityFactor[level],
   );
 
-  const depreciationPerYear = c.depreciationByRarity[level];
-  const babyPriceAtPropagationRub = roundTo(
-    babyPriceRub * Math.pow(1 - depreciationPerYear, monthsToMother / 12),
-    50,
-  );
-
-  const cloneCostRub = Math.round(clone * c.usdToRub);
-  const cloneToBabyCoef = babyPriceRub > 0 ? cloneCostRub / babyPriceRub : 0;
-
   return {
     rarityLevel: level,
     rarity: c.rarityLabels[level],
-    cloneCostRub,
-    babyPriceRub,
-    babyPriceIsReal: Boolean(real),
-    babyPriceSource: real?.source,
+    cloneCostRub: Math.round(clone * c.usdToRub),
     monthsToMother,
-    depreciationPerYear,
-    babyPriceAtPropagationRub,
-    cloneToBabyCoef,
+    depreciationPerYear: c.depreciationByRarity[level],
   };
 }
 

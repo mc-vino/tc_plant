@@ -5,21 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, TIERS, highestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
-import { marketFor, formatRub, rarityChipClass, MarketEstimate } from "@/lib/market";
+import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
 
-type SortKey =
-  | "name"
-  | "code"
-  | "t0"
-  | "t1"
-  | "t2"
-  | "t3"
-  | "t4"
-  | "clone"
-  | "rarity"
-  | "baby"
-  | "coef";
-
+type SortKey = "name" | "code" | "t0" | "t1" | "t2" | "t3" | "t4" | "clone" | "rarity";
 type Dir = "asc" | "desc";
 
 interface Row {
@@ -27,7 +15,7 @@ interface Row {
   m: MarketEstimate;
 }
 
-const NUMERIC: Set<SortKey> = new Set(["t0", "t1", "t2", "t3", "t4", "clone", "rarity", "baby", "coef"]);
+const NUMERIC: Set<SortKey> = new Set(["t0", "t1", "t2", "t3", "t4", "clone", "rarity"]);
 
 function sortValue(row: Row, key: SortKey): number | string | null {
   const { p, m } = row;
@@ -48,10 +36,6 @@ function sortValue(row: Row, key: SortKey): number | string | null {
       return highestPrice(p);
     case "rarity":
       return m.rarityLevel;
-    case "baby":
-      return m.babyPriceRub;
-    case "coef":
-      return m.cloneToBabyCoef;
   }
 }
 
@@ -67,7 +51,6 @@ export default function ProductTable({ products }: { products: Product[] }) {
     return [...rows].sort((a, b) => {
       const va = sortValue(a, sortKey);
       const vb = sortValue(b, sortKey);
-      // Missing values always sort last, regardless of direction.
       if (va === null && vb === null) return 0;
       if (va === null) return 1;
       if (vb === null) return -1;
@@ -81,7 +64,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
       setDir((d) => (d === "asc" ? "desc" : "asc"));
     } else {
       setSortKey(key);
-      setDir(NUMERIC.has(key) ? "desc" : "asc"); // prices/counts read best high-to-low first
+      setDir(NUMERIC.has(key) ? "desc" : "asc");
     }
   }
 
@@ -89,7 +72,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
 
   return (
     <div className="overflow-x-auto rounded-card border border-line bg-card">
-      <table className="w-full min-w-[1160px] text-sm border-collapse">
+      <table className="w-full min-w-[960px] text-sm border-collapse">
         <thead>
           <tr className="text-left text-faint bg-paper">
             <Th onClick={() => toggle("name")} label={`Сорт${arrow("name")}`} className="pl-4 pr-3" />
@@ -104,9 +87,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
               />
             ))}
             <Th onClick={() => toggle("clone")} label={`Клон, макс${arrow("clone")}`} align="right" />
-            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} />
-            <Th onClick={() => toggle("baby")} label={`Детка, ₽${arrow("baby")}`} align="right" />
-            <Th onClick={() => toggle("coef")} label={`Клон/детка${arrow("coef")}`} align="right" className="pr-4" />
+            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} className="pr-4" />
           </tr>
         </thead>
         <tbody>
@@ -143,19 +124,12 @@ export default function ProductTable({ products }: { products: Product[] }) {
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
                 {highestPrice(p) !== null ? formatUSD(highestPrice(p)!) : "-"}
               </td>
-              <td className="py-2.5 px-3">
+              <td className="py-2.5 px-3 pr-4">
                 <span
                   className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
                 >
                   {m.rarity}
                 </span>
-              </td>
-              <td className="py-2.5 px-3 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
-                {formatRub(m.babyPriceRub)}
-                {m.babyPriceIsReal && <span className="ml-1 text-[9px] text-accent align-top">•</span>}
-              </td>
-              <td className="py-2.5 pl-3 pr-4 text-right font-mono text-xs text-muted whitespace-nowrap">
-                {m.cloneToBabyCoef.toFixed(2)}
               </td>
             </tr>
           ))}

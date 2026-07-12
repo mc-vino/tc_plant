@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
-import { marketFor, formatRub, rarityChipClass } from "@/lib/market";
+import { marketFor, rarityChipClass } from "@/lib/market";
 
 export default function ProductCard({ product }: { product: Product }) {
   const from = lowestPrice(product);
@@ -45,18 +45,15 @@ export default function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <div className="mt-auto pt-3 flex items-end justify-between">
-          <span className="leading-tight">
-            <span className="block font-mono text-[11px] text-faint">{product.code}</span>
-            {from !== null && (
-              <span className="font-mono text-[11px] text-muted">опт от {formatUSD(from)}</span>
-            )}
-          </span>
-          <span className="text-right leading-none">
-            <span className="block text-[10px] text-faint">детка ~</span>
-            <span className="font-mono text-sm font-medium text-accent-strong">
-              {formatRub(market.babyPriceRub)}
+          <span className="font-mono text-[11px] text-faint">{product.code}</span>
+          {from !== null && (
+            <span className="text-right leading-none">
+              <span className="block text-[10px] text-faint">опт от</span>
+              <span className="font-mono text-sm font-medium text-accent-strong">
+                {formatUSD(from)}
+              </span>
             </span>
-          </span>
+          )}
         </div>
       </div>
     </Link>
