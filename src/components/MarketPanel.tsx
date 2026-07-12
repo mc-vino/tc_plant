@@ -39,8 +39,25 @@ export default function MarketPanel({ product }: { product: Product }) {
       <dl className="mt-6 grid grid-cols-2 lg:grid-cols-3 rounded-card border border-line bg-card divide-x divide-y divide-line overflow-hidden [&>div]:border-line">
         <Cell
           label="Цена детки, сейчас"
-          value={formatRub(m.babyPriceRub)}
-          hint="Укоренённая детка на маркетплейсах"
+          value={
+            <span className="flex items-baseline gap-2">
+              {formatRub(m.babyPriceRub)}
+              <span
+                className={`text-[10px] font-sans font-medium rounded-full px-1.5 py-0.5 ${
+                  m.babyPriceIsReal
+                    ? "bg-accent-soft text-accent-strong"
+                    : "bg-paper text-faint ring-1 ring-line"
+                }`}
+              >
+                {m.babyPriceIsReal ? "рынок" : "оценка"}
+              </span>
+            </span>
+          }
+          hint={
+            m.babyPriceIsReal
+              ? `Реальная розница${m.babyPriceSource ? `, ${m.babyPriceSource}` : ""}`
+              : "Оценка по модели (нет листинга)"
+          }
         />
         <Cell
           label="Рост до маточника"
@@ -70,9 +87,10 @@ export default function MarketPanel({ product }: { product: Product }) {
       </dl>
 
       <p className="mt-4 text-xs text-faint leading-relaxed max-w-3xl">
-        Оценка по модели, не биржевые данные. Значения рассчитаны от оптовых цен прайса и рыночных
-        допущений (курс {77} ₽/$, наценки, скорость роста и обесценивания по родам и редкости).
-        Параметры настраиваются в <code className="font-mono">src/lib/market.ts</code>.
+        Цена детки: реальная розница РФ / РБ, где найден листинг (метка «рынок»), иначе оценка по
+        модели. Рост, обесценивание и коэффициент рассчитаны от оптовых цен прайса и допущений
+        (курс {77} ₽/$, скорость роста и обесценивания по родам и редкости). Параметры настраиваются
+        в <code className="font-mono">src/lib/market.ts</code>.
       </p>
     </section>
   );

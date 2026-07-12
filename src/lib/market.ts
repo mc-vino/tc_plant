@@ -1,4 +1,5 @@
 import { Product, lowestPrice, highestPrice } from "@/lib/catalog";
+import { REAL_BABY_PRICES } from "@/data/prices_ru";
 
 /**
  * MODEL, NOT MARKET DATA.
@@ -16,9 +17,13 @@ export const MARKET_CONFIG = {
   rarityThresholds: [2, 8, 20, 50] as const, // -> 5 levels
   rarityLabels: ["Обычное", "Нечастое", "Редкое", "Очень редкое", "Коллекционное"] as const,
 
-  /** Retail "детка" (established baby) vs small-qty wholesale, plus a floor per rarity. */
-  retailMultiplier: 2.5,
-  babyFloorRub: [500, 900, 1800, 4000, 9000] as const,
+  /**
+   * Retail "детка" (small rooted baby) vs small-qty wholesale, plus a floor per rarity.
+   * Calibrated against researched RF/RB listings (детка sizes): common Alocasia ~300-450 ₽,
+   * mid Alocasia/Philodendron ~700-1500 ₽, collectible Monstera/Anthurium ~1500-4000 ₽.
+   */
+  retailMultiplier: 1.3,
+  babyFloorRub: [400, 700, 1200, 2500, 4500] as const,
 
   /** Months for a TC plantlet to reach a propagation-capable mother, ideal conditions. */
   monthsByGenus: {
@@ -44,6 +49,8 @@ export interface MarketEstimate {
   rarity: string;
   cloneCostRub: number; // bulk TC clone cost
   babyPriceRub: number; // established baby, now
+  babyPriceIsReal: boolean; // true if from researched marketplace data
+  babyPriceSource?: string;
   monthsToMother: number;
   depreciationPerYear: number; // 0..1
   babyPriceAtPropagationRub: number; // baby price when the mother is ready to propagate
@@ -59,10 +66,10 @@ export function marketFor(p: Product): MarketEstimate {
 
   const level = c.rarityThresholds.filter((t) => value >= t).length; // 0..4
 
-  const babyPriceRub = Math.max(
-    c.babyFloorRub[level],
-    roundTo(value * c.usdToRub * c.retailMultiplier, 50),
-  );
+  const real = REAL_BABY_PRICES[p.code];
+  const babyPriceRub = real
+    ? real.rub
+    : Math.max(c.babyFloorRub[level], roundTo(value * c.usdToRub * c.retailMultiplier, 50));
 
   const monthsToMother = Math.round(
     (c.monthsByGenus[p.genus] ?? c.monthsDefault) * c.monthsRarityFactor[level],
@@ -82,6 +89,8 @@ export function marketFor(p: Product): MarketEstimate {
     rarity: c.rarityLabels[level],
     cloneCostRub,
     babyPriceRub,
+    babyPriceIsReal: Boolean(real),
+    babyPriceSource: real?.source,
     monthsToMother,
     depreciationPerYear,
     babyPriceAtPropagationRub,
