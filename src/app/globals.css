@@ -1,36 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf9f6;
-  --foreground: #1a1c19;
-  --muted: #6b6f68;
-  --line: #e6e4dd;
+  --background: #f3f4ef;
+  --paper: #fbfbf7;
+  --foreground: #17251d;
+  --muted: #5c6459;
+  --faint: #8a9184;
+  --line: #dcded3;
   --card: #ffffff;
-  --accent: #2f5d3a;
-  --accent-soft: #eef2ec;
+  --accent: #276845;
+  --accent-strong: #1c5236;
+  --accent-soft: #e6ede5;
+  --radius: 0.75rem;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-paper: var(--paper);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-faint: var(--faint);
   --color-line: var(--line);
   --color-card: var(--card);
   --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
   --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+  --radius-card: var(--radius);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #12140f;
-    --foreground: #eaece4;
-    --muted: #9aa094;
-    --line: #262a20;
-    --card: #191c15;
-    --accent: #8fce9c;
-    --accent-soft: #1d2418;
+    --background: #0e130f;
+    --paper: #141b15;
+    --foreground: #e9ece3;
+    --muted: #9aa392;
+    --faint: #6d7568;
+    --line: #263026;
+    --card: #161d17;
+    --accent: #6cba85;
+    --accent-strong: #86cf9c;
+    --accent-soft: #1a271c;
   }
 }
 
@@ -38,4 +50,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }

@@ -1,65 +1,163 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Product } from "@/lib/catalog";
+import { MagnifyingGlass, SquaresFour, Rows, CaretDown } from "@phosphor-icons/react";
+import { Product, lowestPrice } from "@/lib/catalog";
 import ProductCard from "./ProductCard";
+import ProductTable from "./ProductTable";
 
-interface Props {
+type SortKey = "name" | "price-asc" | "price-desc";
+type View = "grid" | "table";
+
+const SORTS: { key: SortKey; label: string }[] = [
+  { key: "name", label: "Name (A-Z)" },
+  { key: "price-asc", label: "Price (low to high)" },
+  { key: "price-desc", label: "Price (high to low)" },
+];
+
+export default function CatalogBrowser({
+  products,
+  genera,
+}: {
   products: Product[];
   genera: { genus: string; count: number }[];
-}
-
-export default function CatalogBrowser({ products, genera }: Props) {
+}) {
   const [query, setQuery] = useState("");
   const [genus, setGenus] = useState<string | null>(null);
+  const [sort, setSort] = useState<SortKey>("name");
+  const [view, setView] = useState<View>("grid");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return products.filter((p) => {
+    const list = products.filter((p) => {
       if (genus && p.genus !== genus) return false;
       if (!q) return true;
-      return (
-        p.name.toLowerCase().includes(q) || p.code.toLowerCase().includes(q)
-      );
+      return p.name.toLowerCase().includes(q) || p.code.toLowerCase().includes(q);
     });
-  }, [products, query, genus]);
+    const priceOf = (p: Product) => lowestPrice(p) ?? Infinity;
+    return [...list].sort((a, b) => {
+      if (sort === "price-asc") return priceOf(a) - priceOf(b);
+      if (sort === "price-desc") return priceOf(b) - priceOf(a);
+      return a.name.localeCompare(b.name);
+    });
+  }, [products, query, genus, sort]);
 
   return (
     <div>
-      <div className="flex flex-col gap-4 mb-6">
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by name or code…"
-          className="w-full rounded-lg border border-line bg-card px-4 py-2.5 text-sm outline-none focus:border-accent"
-        />
-        <div className="flex flex-wrap gap-2">
-          <Chip active={genus === null} onClick={() => setGenus(null)}>
-            All <span className="opacity-60">{products.length}</span>
-          </Chip>
-          {genera.map(({ genus: g, count }) => (
-            <Chip key={g} active={genus === g} onClick={() => setGenus(g)}>
-              {g} <span className="opacity-60">{count}</span>
-            </Chip>
-          ))}
+      {/* Toolbar */}
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="relative lg:max-w-sm lg:flex-1">
+          <MagnifyingGlass
+            size={18}
+            weight="bold"
+            className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-faint"
+          />
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search 120 varieties by name or code…"
+            className="w-full rounded-full border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors focus:border-accent"
+          />
+        </div>
+
+        <div className="flex items-center gap-3">
+          <div className="relative">
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value as SortKey)}
+              aria-label="Sort varieties"
+              className="appearance-none rounded-full border border-line bg-card py-2.5 pl-4 pr-9 text-sm outline-none transition-colors focus:border-accent cursor-pointer"
+            >
+              {SORTS.map((s) => (
+                <option key={s.key} value={s.key}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+            <CaretDown
+              size={14}
+              weight="bold"
+              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-faint"
+            />
+          </div>
+
+          <div className="flex rounded-full border border-line bg-card p-0.5">
+            <ViewButton active={view === "grid"} onClick={() => setView("grid")} label="Grid view">
+              <SquaresFour size={18} weight={view === "grid" ? "fill" : "regular"} />
+            </ViewButton>
+            <ViewButton active={view === "table"} onClick={() => setView("table")} label="Table view">
+              <Rows size={18} weight={view === "table" ? "fill" : "regular"} />
+            </ViewButton>
+          </div>
         </div>
       </div>
 
-      <p className="text-xs text-muted mb-4">
+      {/* Genus filters */}
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Chip active={genus === null} onClick={() => setGenus(null)}>
+          All <span className="opacity-55">{products.length}</span>
+        </Chip>
+        {genera.map(({ genus: g, count }) => (
+          <Chip key={g} active={genus === g} onClick={() => setGenus(g)}>
+            {g} <span className="opacity-55">{count}</span>
+          </Chip>
+        ))}
+      </div>
+
+      <p className="mt-5 mb-4 font-mono text-xs text-faint">
         {filtered.length} {filtered.length === 1 ? "variety" : "varieties"}
+        {genus ? ` · ${genus}` : ""}
       </p>
 
       {filtered.length === 0 ? (
-        <p className="py-16 text-center text-muted">No varieties match your search.</p>
-      ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="rounded-card border border-dashed border-line py-20 text-center">
+          <p className="font-serif text-xl text-muted">No varieties match your search.</p>
+          <button
+            onClick={() => {
+              setQuery("");
+              setGenus(null);
+            }}
+            className="mt-3 text-sm text-accent hover:text-accent-strong"
+          >
+            Clear filters
+          </button>
+        </div>
+      ) : view === "grid" ? (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {filtered.map((p) => (
             <ProductCard key={p.code} product={p} />
           ))}
         </div>
+      ) : (
+        <ProductTable products={filtered} />
       )}
     </div>
+  );
+}
+
+function ViewButton({
+  active,
+  onClick,
+  label,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={label}
+      aria-pressed={active}
+      className={`flex h-8 w-8 items-center justify-center rounded-full transition-colors ${
+        active ? "bg-accent text-paper" : "text-faint hover:text-foreground"
+      }`}
+    >
+      {children}
+    </button>
   );
 }
 
@@ -77,8 +175,8 @@ function Chip({
       onClick={onClick}
       className={`rounded-full border px-3 py-1 text-xs transition-colors ${
         active
-          ? "border-accent bg-accent text-white dark:text-background"
-          : "border-line bg-card text-foreground hover:border-accent"
+          ? "border-accent bg-accent text-paper"
+          : "border-line bg-card text-muted hover:border-accent hover:text-foreground"
       }`}
     >
       {children}

@@ -58,3 +58,10 @@ export function generaWithCounts(): { genus: string; count: number }[] {
 export function getProduct(code: string): Product | undefined {
   return products.find((p) => p.code === code);
 }
+
+/** Other varieties in the same genus, excluding the given product. */
+export function relatedByGenus(product: Product, limit = 4): Product[] {
+  return products
+    .filter((p) => p.genus === product.genus && p.code !== product.code)
+    .slice(0, limit);
+}

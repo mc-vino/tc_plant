@@ -1,0 +1,143 @@
+import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import { EnvelopeSimple, Phone, MapPin } from "@phosphor-icons/react/dist/ssr";
+import { supplier, terms } from "@/data/supplier";
+import { products } from "@/lib/catalog";
+import Reveal from "@/components/Reveal";
+
+export const metadata: Metadata = {
+  title: "Supplier · Xanh Xanh Urban Forest",
+  description:
+    "About Xanh Xanh Urban Forest, a tissue-culture plant nursery in Hanoi, Vietnam, and the wholesale terms of its plant catalogue.",
+};
+
+const ABOUT_CODES = ["AL062", "AL070"];
+
+export default function AboutPage() {
+  const gallery = ABOUT_CODES.map((c) => products.find((p) => p.code === c)).filter(
+    (p): p is NonNullable<typeof p> => Boolean(p?.image),
+  );
+
+  return (
+    <div>
+      {/* Intro */}
+      <section className="border-b border-line bg-paper">
+        <div className="mx-auto max-w-[1400px] px-5 sm:px-8 pt-14 pb-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+          <Reveal>
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+              The supplier
+            </p>
+            <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.03] tracking-tight">
+              {supplier.name}
+            </h1>
+            <p className="mt-5 max-w-xl text-muted leading-relaxed">
+              A tissue-culture nursery in {supplier.location}, propagating {products.length}{" "}
+              varieties of Alocasia, Philodendron, Monstera, Anthurium and more for wholesale
+              export. Every plant is grown from culture, packed in bags of ten, and priced by
+              quantity.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="grid grid-cols-2 gap-3">
+              {gallery.map((p) => (
+                <Link
+                  key={p.code}
+                  href={`/plant/${p.code}`}
+                  className="relative aspect-[4/5] overflow-hidden rounded-card border border-line group"
+                >
+                  <Image
+                    src={p.image!}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 240px"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
+                </Link>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Terms */}
+      <section className="mx-auto max-w-[1400px] px-5 sm:px-8 py-14">
+        <h2 className="font-serif text-3xl">Wholesale terms</h2>
+        <p className="mt-2 text-muted max-w-2xl">
+          From the current quotation, dated {supplier.quotationDate}. Contact the nursery to
+          confirm availability before ordering.
+        </p>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {terms.map((group, gi) => (
+            <Reveal key={group.title} delay={gi * 0.08}>
+              <div className="h-full rounded-card border border-line bg-card p-6">
+                <h3 className="font-serif text-xl text-accent-strong">{group.title}</h3>
+                <dl className="mt-4 space-y-4">
+                  {group.items.map((item) => (
+                    <div key={item.label}>
+                      <dt className="text-xs uppercase tracking-[0.12em] text-faint">
+                        {item.label}
+                      </dt>
+                      <dd className="mt-1 text-sm text-foreground leading-relaxed">{item.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="mx-auto max-w-[1400px] px-5 sm:px-8 pb-16">
+        <div className="rounded-card border border-line bg-paper p-8 md:p-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <h2 className="font-serif text-3xl">Place an order</h2>
+            <p className="mt-2 text-muted max-w-lg">
+              Reach the nursery directly for current stock, lead times and a proforma invoice.
+            </p>
+          </div>
+          <div className="grid gap-3 text-sm">
+            <ContactRow icon={<MapPin size={18} weight="bold" />} text={supplier.address} />
+            <ContactRow
+              icon={<Phone size={18} weight="bold" />}
+              text={supplier.phone}
+              href={`tel:${supplier.phone.replace(/\s/g, "")}`}
+            />
+            <ContactRow
+              icon={<EnvelopeSimple size={18} weight="bold" />}
+              text={supplier.email}
+              href={`mailto:${supplier.email}`}
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ContactRow({
+  icon,
+  text,
+  href,
+}: {
+  icon: React.ReactNode;
+  text: string;
+  href?: string;
+}) {
+  const body = (
+    <span className="flex items-start gap-3">
+      <span className="mt-0.5 text-accent">{icon}</span>
+      <span className="text-foreground">{text}</span>
+    </span>
+  );
+  return href ? (
+    <a href={href} className="hover:text-accent transition-colors">
+      {body}
+    </a>
+  ) : (
+    body
+  );
+}

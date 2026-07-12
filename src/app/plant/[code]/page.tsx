@@ -2,8 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { products, getProduct, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
+import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import {
+  products,
+  getProduct,
+  relatedByGenus,
+  lowestPrice,
+  highestPrice,
+  formatUSD,
+} from "@/lib/catalog";
+import { supplier } from "@/data/supplier";
 import PriceTable from "@/components/PriceTable";
+import ProductCard from "@/components/ProductCard";
 
 export function generateStaticParams() {
   return products.map((p) => ({ code: p.code }));
@@ -18,8 +28,8 @@ export async function generateMetadata({
   const product = getProduct(code);
   if (!product) return { title: "Not found" };
   return {
-    title: `${product.name} (${product.code}) — TC Plant Catalogue`,
-    description: `${product.name} — wholesale tissue-culture plant, quantity-tier pricing in USD.`,
+    title: `${product.name} (${product.code}) · TC Plant Catalogue`,
+    description: `${product.name}. Wholesale tissue-culture ${product.genus}, quantity-tier pricing in USD.`,
   };
 }
 
@@ -34,79 +44,91 @@ export default async function PlantPage({
 
   const low = lowestPrice(product);
   const high = highestPrice(product);
+  const related = relatedByGenus(product);
 
   return (
-    <div className="mx-auto max-w-5xl px-5 py-10">
+    <div className="mx-auto max-w-[1400px] px-5 sm:px-8 py-8">
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-muted hover:text-accent mb-6"
+        className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
       >
-        ← Back to catalogue
+        <ArrowLeft size={15} weight="bold" /> Catalogue
       </Link>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="relative aspect-[3/4] rounded-2xl bg-accent-soft overflow-hidden border border-line">
+      <div className="grid gap-8 md:grid-cols-[1fr_1fr] lg:grid-cols-[1.05fr_1fr] md:gap-12">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-card border border-line bg-accent-soft">
           {product.image ? (
             <Image
               src={product.image}
               alt={product.name}
               fill
-              sizes="(max-width: 768px) 100vw, 480px"
+              sizes="(max-width: 768px) 100vw, 560px"
               className="object-cover"
               priority
             />
           ) : (
-            <div className="flex h-full items-center justify-center text-accent/40 text-7xl font-mono">
+            <div className="flex h-full items-center justify-center font-serif italic text-8xl text-accent/25">
               {product.genus.charAt(0)}
             </div>
           )}
         </div>
 
-        <div>
-          <div className="flex items-center gap-2 mb-2">
-            <Link
-              href={`/?`}
-              className="rounded-full bg-accent-soft text-accent px-2.5 py-0.5 text-xs"
-            >
+        <div className="flex flex-col">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-accent-soft px-3 py-1 text-xs text-accent-strong">
               {product.genus}
-            </Link>
+            </span>
             {product.note && (
-              <span className="rounded-full border border-line px-2.5 py-0.5 text-xs text-muted">
+              <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
                 {product.note}
               </span>
             )}
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+          <h1 className="mt-4 font-serif text-4xl md:text-5xl leading-[1.05] tracking-tight">
             {product.name}
           </h1>
-          <p className="mt-1 font-mono text-sm text-muted">{product.code}</p>
+          <p className="mt-2 font-mono text-sm text-faint">{product.code}</p>
 
           {low !== null && (
-            <p className="mt-4 text-lg">
-              <span className="text-muted text-sm">
-                {high !== null && high !== low ? "Price range " : "From "}
-              </span>
-              <span className="font-semibold text-accent">
-                {high !== null && high !== low
-                  ? `${formatUSD(low)} – ${formatUSD(high)}`
-                  : formatUSD(low)}
-              </span>
-              <span className="text-muted text-sm"> / unit</span>
+            <p className="mt-6 font-serif text-2xl text-accent-strong">
+              {high !== null && high !== low
+                ? `${formatUSD(low)} - ${formatUSD(high)}`
+                : formatUSD(low)}
+              <span className="font-sans text-sm text-faint"> / unit</span>
             </p>
           )}
 
-          <div className="mt-6 rounded-xl border border-line bg-card p-4">
+          <div className="mt-6 rounded-card border border-line bg-card p-5">
             <PriceTable product={product} />
           </div>
 
-          <p className="mt-4 text-xs text-muted leading-relaxed">
-            Prices are per unit (one TC plant), quoted in USD, EXW. Sold in bags
-            of 10 pieces. Contact the supplier for current availability and lead
-            times.
+          <p className="mt-5 text-sm text-muted leading-relaxed">
+            Priced per unit (one TC plant), in {supplier.currency}, {supplier.incoterm}. Sold in
+            bags of 10 pieces. See the{" "}
+            <Link href="/about" className="text-accent hover:text-accent-strong underline underline-offset-2">
+              supplier terms
+            </Link>{" "}
+            for deposits, lead times and payment.
           </p>
         </div>
       </div>
+
+      {related.length > 0 && (
+        <section className="mt-16 border-t border-line pt-10">
+          <div className="flex items-baseline justify-between">
+            <h2 className="font-serif text-2xl">More {product.genus}</h2>
+            <Link href="/" className="text-sm text-accent hover:text-accent-strong">
+              View all
+            </Link>
+          </div>
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {related.map((p) => (
+              <ProductCard key={p.code} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
