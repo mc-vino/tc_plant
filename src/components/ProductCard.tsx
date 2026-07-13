@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass } from "@/lib/market";
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -15,7 +16,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-[4/5] overflow-hidden bg-accent-soft">
         {product.image ? (
           <Image
-            src={product.image}
+            src={asset(product.image)}
             alt={product.name}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 260px"

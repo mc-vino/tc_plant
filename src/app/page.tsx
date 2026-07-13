@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { products, generaWithCounts, lowestPrice, formatUSD } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
 import CatalogBrowser from "@/components/CatalogBrowser";
 import Reveal from "@/components/Reveal";
@@ -75,7 +76,7 @@ function BentoImage({
       className={`relative overflow-hidden rounded-[24px] bg-accent-soft shadow-[var(--shadow-md)] ${className ?? ""}`}
     >
       <Image
-        src={product.image!}
+        src={asset(product.image!)}
         alt={product.name}
         fill
         sizes="(max-width: 1024px) 50vw, 320px"

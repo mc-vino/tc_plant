@@ -13,6 +13,7 @@ import {
 } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
 import { noteRu } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 import PriceTable from "@/components/PriceTable";
 import ProductCard from "@/components/ProductCard";
 import MarketPanel from "@/components/MarketPanel";
@@ -62,7 +63,7 @@ export default async function PlantPage({
         <Reveal className="relative aspect-[4/5] overflow-hidden rounded-card border border-line bg-accent-soft">
           {product.image ? (
             <Image
-              src={product.image}
+              src={asset(product.image)}
               alt={product.name}
               fill
               sizes="(max-width: 768px) 100vw, 560px"

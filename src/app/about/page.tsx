@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { supplier, terms } from "@/data/supplier";
 import { products } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -49,7 +50,7 @@ export default function AboutPage() {
                   className="relative aspect-[4/5] overflow-hidden rounded-card border border-line group"
                 >
                   <Image
-                    src={p.image!}
+                    src={asset(p.image!)}
                     alt={p.name}
                     fill
                     sizes="(max-width: 1024px) 50vw, 240px"

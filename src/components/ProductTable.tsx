@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product, TIERS, highestPrice, formatUSD } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
 
 type SortKey = "name" | "code" | "t0" | "t1" | "t2" | "t3" | "t4" | "clone" | "rarity";
@@ -97,7 +98,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 <Link href={`/plant/${p.code}`} className="flex items-center gap-3 group">
                   <span className="relative h-11 w-9 shrink-0 overflow-hidden rounded bg-accent-soft">
                     {p.image ? (
-                      <Image src={p.image} alt="" fill sizes="36px" className="object-cover" />
+                      <Image src={asset(p.image)} alt="" fill sizes="36px" className="object-cover" />
                     ) : (
                       <span className="flex h-full items-center justify-center display italic text-accent/30">
                         {p.genus.charAt(0)}
