@@ -138,7 +138,7 @@ export default function CatalogBrowser({
 
       {filtered.length === 0 ? (
         <div className="rounded-card border border-dashed border-line py-20 text-center">
-          <p className="font-serif text-xl text-muted">Ничего не найдено.</p>
+          <p className="display text-xl text-muted">Ничего не найдено.</p>
           <button
             onClick={() => {
               setQuery("");

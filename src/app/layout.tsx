@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter, Geist_Mono, Cormorant } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { supplier } from "@/data/supplier";
 
@@ -12,13 +12,6 @@ const sans = Inter({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-const serif = Cormorant({
-  variable: "--font-serif",
-  subsets: ["latin", "cyrillic"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -33,27 +26,27 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className={`${sans.variable} ${geistMono.variable} ${serif.variable} h-full antialiased`}
+      className={`${sans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background">
-        <header className="border-b border-line bg-background/85 backdrop-blur-md sticky top-0 z-30">
-          <div className="mx-auto max-w-[1400px] px-5 sm:px-8 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-paper text-sm font-serif italic">
+        <header className="glass sticky top-0 z-30 border-b border-line/60">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 h-14 flex items-center justify-between">
+            <Link href="/" className="press flex items-center gap-2.5 group">
+              <span className="flex h-7 w-7 items-center justify-center rounded-[9px] bg-accent text-white text-sm font-semibold">
                 x
               </span>
-              <span className="font-serif text-xl leading-none group-hover:text-accent transition-colors">
+              <span className="display text-[17px] leading-none group-hover:text-accent transition-colors">
                 TC&nbsp;Plant
               </span>
             </Link>
-            <nav className="flex items-center gap-6 text-sm">
+            <nav className="flex items-center gap-7 text-[13px]">
               <Link href="/" className="text-muted hover:text-foreground transition-colors">
                 Каталог
               </Link>
               <Link href="/about" className="text-muted hover:text-foreground transition-colors">
                 Поставщик
               </Link>
-              <span className="hidden sm:inline font-mono text-xs text-faint">
+              <span className="hidden sm:inline font-mono text-[11px] text-faint">
                 {supplier.currency} · EXW
               </span>
             </nav>
@@ -62,10 +55,10 @@ export default function RootLayout({
 
         <main className="flex-1">{children}</main>
 
-        <footer className="border-t border-line mt-20 bg-paper">
-          <div className="mx-auto max-w-[1400px] px-5 sm:px-8 py-10 grid gap-6 sm:grid-cols-3 text-sm">
+        <footer className="border-t border-line mt-24 bg-paper">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-12 grid gap-6 sm:grid-cols-3 text-sm">
             <div>
-              <p className="font-serif text-lg">{supplier.name}</p>
+              <p className="display text-lg">{supplier.name}</p>
               <p className="text-muted mt-1">{supplier.tagline}</p>
             </div>
             <div className="text-muted">

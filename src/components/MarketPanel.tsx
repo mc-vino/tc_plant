@@ -13,7 +13,7 @@ function Cell({
   return (
     <div className="p-4">
       <dt className="text-xs uppercase tracking-[0.1em] text-faint">{label}</dt>
-      <dd className="mt-1.5 font-serif text-xl text-foreground">{value}</dd>
+      <dd className="mt-1.5 display text-xl text-foreground">{value}</dd>
       {hint && <dd className="mt-0.5 text-[11px] text-faint leading-snug">{hint}</dd>}
     </div>
   );
@@ -25,7 +25,7 @@ export default function MarketPanel({ product }: { product: Product }) {
   return (
     <section className="mt-14 border-t border-line pt-10">
       <div className="flex items-baseline justify-between flex-wrap gap-2">
-        <h2 className="font-serif text-2xl">Оценка для рынка РФ / РБ</h2>
+        <h2 className="display text-2xl">Оценка для рынка РФ / РБ</h2>
         <span
           className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${rarityChipClass(m.rarityLevel)}`}
         >

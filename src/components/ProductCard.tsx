@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/plant/${product.code}`}
-      className="card-hover group flex flex-col rounded-card border border-line bg-card overflow-hidden hover:border-accent"
+      className="card-hover group flex flex-col rounded-card bg-card overflow-hidden ring-1 ring-line/70 shadow-[var(--shadow-sm)] hover:ring-accent/40"
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-accent-soft">
         {product.image ? (
@@ -22,7 +22,7 @@ export default function ProductCard({ product }: { product: Product }) {
             className="card-media object-cover"
           />
         ) : (
-          <div className="flex h-full items-center justify-center font-serif italic text-5xl text-accent/25">
+          <div className="flex h-full items-center justify-center display italic text-5xl text-accent/25">
             {product.genus.charAt(0)}
           </div>
         )}
@@ -41,7 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-[10px] uppercase tracking-[0.14em] text-faint">
           {product.genus}
         </p>
-        <h3 className="mt-1 font-serif text-[17px] leading-tight text-foreground">
+        <h3 className="mt-1 display text-[17px] leading-tight text-foreground">
           {product.name}
         </h3>
         <div className="mt-auto pt-3 flex items-end justify-between">

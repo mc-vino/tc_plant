@@ -99,13 +99,13 @@ export default function ProductTable({ products }: { products: Product[] }) {
                     {p.image ? (
                       <Image src={p.image} alt="" fill sizes="36px" className="object-cover" />
                     ) : (
-                      <span className="flex h-full items-center justify-center font-serif italic text-accent/30">
+                      <span className="flex h-full items-center justify-center display italic text-accent/30">
                         {p.genus.charAt(0)}
                       </span>
                     )}
                   </span>
                   <span>
-                    <span className="block font-serif text-[15px] leading-tight group-hover:text-accent transition-colors">
+                    <span className="block display text-[15px] leading-tight group-hover:text-accent transition-colors">
                       {p.name}
                     </span>
                     <span className="text-[10px] uppercase tracking-[0.12em] text-faint">

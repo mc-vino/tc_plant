@@ -1,22 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f4ef;
-  --paper: #fbfbf7;
-  --foreground: #17251d;
-  --muted: #5c6459;
-  --faint: #8a9184;
-  --line: #dcded3;
-  --card: #ffffff;
-  --accent: #276845;
-  --accent-strong: #1c5236;
-  --accent-soft: #e6ede5;
-  --radius: 0.875rem;
+  /* Cool neutral base (Apple-like), single botanical-green accent. OKLCH. */
+  --background: oklch(0.966 0.002 264);
+  --paper: oklch(0.992 0.001 264);
+  --card: oklch(1 0 0);
+  --foreground: oklch(0.22 0.004 270);
+  --muted: oklch(0.52 0.006 270);
+  --faint: oklch(0.63 0.005 270);
+  --line: oklch(0.9 0.003 270);
+  --accent: oklch(0.56 0.135 151);
+  --accent-strong: oklch(0.46 0.125 151);
+  --accent-soft: oklch(0.955 0.028 151);
+
+  --radius: 1.375rem;
+  --radius-sm: 0.75rem;
 
   /* Emil Kowalski easing curves: stronger than the built-in CSS easings. */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Soft, tinted elevation (Apple-ish depth, never pure black). */
+  --shadow-sm: 0 1px 2px oklch(0.2 0.02 270 / 0.05);
+  --shadow-md: 0 10px 34px -14px oklch(0.2 0.02 270 / 0.18);
+  --shadow-lg: 0 30px 70px -24px oklch(0.2 0.02 270 / 0.26);
 }
 
 @theme inline {
@@ -32,22 +40,25 @@
   --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-serif);
   --radius-card: var(--radius);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0e130f;
-    --paper: #141b15;
-    --foreground: #e9ece3;
-    --muted: #9aa392;
-    --faint: #6d7568;
-    --line: #263026;
-    --card: #161d17;
-    --accent: #6cba85;
-    --accent-strong: #86cf9c;
-    --accent-soft: #1a271c;
+    --background: oklch(0.155 0.003 270);
+    --paper: oklch(0.19 0.003 270);
+    --card: oklch(0.213 0.004 270);
+    --foreground: oklch(0.965 0.002 264);
+    --muted: oklch(0.7 0.006 270);
+    --faint: oklch(0.55 0.005 270);
+    --line: oklch(0.31 0.004 270);
+    --accent: oklch(0.74 0.15 151);
+    --accent-strong: oklch(0.82 0.14 151);
+    --accent-soft: oklch(0.27 0.045 151);
+
+    --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.4);
+    --shadow-md: 0 10px 34px -14px oklch(0 0 0 / 0.55);
+    --shadow-lg: 0 30px 70px -24px oklch(0 0 0 / 0.65);
   }
 }
 
@@ -55,16 +66,28 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.font-serif {
-  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+/* Display headings: tight, semibold sans (SF-Pro-Display feel). */
+.display {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+/* Translucent material for the sticky nav (purposeful glass, not decoration). */
+.glass {
+  background: color-mix(in oklch, var(--background) 72%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -73,11 +96,11 @@ body {
 }
 
 .reveal {
-  animation: reveal-up 0.6s var(--ease-out) both;
+  animation: reveal-up 0.7s var(--ease-out) both;
   animation-delay: var(--reveal-delay, 0ms);
 }
 
-/* Tactile press feedback: subtle scale-down while held (Emil: 0.95-0.98). */
+/* Tactile press feedback (Emil: scale 0.95-0.98). */
 .press {
   transition: transform 160ms var(--ease-out);
 }
@@ -85,24 +108,24 @@ body {
   transform: scale(0.97);
 }
 
-/* Card lift + inner image zoom, gated to fine-pointer hover to avoid tap false-positives. */
+/* Card lift + inner image zoom, gated to fine-pointer hover. */
 .card-hover {
   transition:
-    transform 260ms var(--ease-out),
-    box-shadow 260ms var(--ease-out),
-    border-color 260ms var(--ease-out);
+    transform 300ms var(--ease-out),
+    box-shadow 300ms var(--ease-out),
+    border-color 300ms var(--ease-out);
   will-change: transform;
 }
 .card-hover .card-media {
-  transition: transform 500ms var(--ease-out);
+  transition: transform 600ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px -24px rgba(23, 37, 29, 0.55);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
   }
   .card-hover:hover .card-media {
-    transform: scale(1.05);
+    transform: scale(1.06);
   }
 }
 

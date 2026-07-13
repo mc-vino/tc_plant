@@ -5,7 +5,7 @@ import { supplier } from "@/data/supplier";
 import CatalogBrowser from "@/components/CatalogBrowser";
 import Reveal from "@/components/Reveal";
 
-const HERO_CODES = ["AL050", "AL062", "AL061"];
+const HERO_CODES = ["AL050", "AL062", "AL061", "AL070"];
 
 export default function Home() {
   const genera = generaWithCounts();
@@ -19,64 +19,69 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="border-b border-line bg-paper">
-        <div className="mx-auto max-w-[1400px] px-5 sm:px-8 pt-14 pb-12 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <section className="relative overflow-hidden">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-16 pb-16 sm:pt-24 sm:pb-24 grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
-            <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-              {supplier.location} · Питомник
+            <p className="text-[13px] font-medium text-accent">
+              {supplier.location}
             </p>
-            <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.05] tracking-tight pb-1">
+            <h1 className="mt-3 display text-[clamp(2.75rem,6vw,5rem)] leading-[0.98]">
               Живой каталог растений{" "}
-              <span className="italic text-accent-strong">из культуры ткани</span>.
+              <span className="text-accent">из культуры ткани</span>
             </h1>
-            <p className="mt-5 max-w-xl text-muted leading-relaxed">
+            <p className="mt-6 max-w-lg text-[17px] text-muted leading-relaxed text-pretty">
               {varieties(products.length)}, размноженных питомником {supplier.name} в Ханое.
               Оптовые цены по объёмным тирам, в {supplier.currency}, {supplier.incoterm}.
             </p>
-            <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
+            <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-5">
               <Stat value={String(products.length)} label="Сортов" />
               <Stat value={String(genera.length)} label="Родов" />
-              <Stat value={`${formatUSD(globalMin)}`} label="От, за штуку" />
+              <Stat value={formatUSD(globalMin)} label="От, за штуку" />
             </dl>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="grid grid-cols-2 gap-3">
+          {/* Bento image cluster */}
+          <Reveal delay={0.08}>
+            <div className="grid grid-cols-2 grid-rows-[auto_auto] gap-3 sm:gap-4">
               {heroImages[0] && (
-                <div className="relative row-span-2 aspect-[3/4] overflow-hidden rounded-card border border-line">
-                  <Image
-                    src={heroImages[0].image!}
-                    alt={heroImages[0].name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 320px"
-                    priority
-                    className="object-cover"
-                  />
-                </div>
+                <BentoImage product={heroImages[0]} className="row-span-2 aspect-[3/4]" priority />
               )}
-              {heroImages.slice(1, 3).map((p) => (
-                <div
-                  key={p.code}
-                  className="relative aspect-square overflow-hidden rounded-card border border-line"
-                >
-                  <Image
-                    src={p.image!}
-                    alt={p.name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 220px"
-                    className="object-cover"
-                  />
-                </div>
-              ))}
+              {heroImages[1] && <BentoImage product={heroImages[1]} className="aspect-square" />}
+              {heroImages[2] && <BentoImage product={heroImages[2]} className="aspect-square" />}
             </div>
           </Reveal>
         </div>
       </section>
 
       {/* Catalogue */}
-      <section className="mx-auto max-w-[1400px] px-5 sm:px-8 py-10">
+      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-4 pb-8 scroll-mt-20" id="catalogue">
         <CatalogBrowser products={products} genera={genera} />
       </section>
+    </div>
+  );
+}
+
+function BentoImage({
+  product,
+  className,
+  priority,
+}: {
+  product: { image: string | null; name: string };
+  className?: string;
+  priority?: boolean;
+}) {
+  return (
+    <div
+      className={`relative overflow-hidden rounded-[24px] bg-accent-soft shadow-[var(--shadow-md)] ${className ?? ""}`}
+    >
+      <Image
+        src={product.image!}
+        alt={product.name}
+        fill
+        sizes="(max-width: 1024px) 50vw, 320px"
+        priority={priority}
+        className="object-cover"
+      />
     </div>
   );
 }
@@ -85,8 +90,8 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
       <dt className="sr-only">{label}</dt>
-      <dd className="font-serif text-3xl leading-none text-accent-strong">{value}</dd>
-      <dd className="mt-1 text-xs uppercase tracking-[0.12em] text-faint">{label}</dd>
+      <dd className="display text-[2rem] leading-none text-foreground">{value}</dd>
+      <dd className="mt-1.5 text-[13px] text-faint">{label}</dd>
     </div>
   );
 }

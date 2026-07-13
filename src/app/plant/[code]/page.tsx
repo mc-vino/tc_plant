@@ -70,7 +70,7 @@ export default async function PlantPage({
               priority
             />
           ) : (
-            <div className="flex h-full items-center justify-center font-serif italic text-8xl text-accent/25">
+            <div className="flex h-full items-center justify-center display italic text-8xl text-accent/25">
               {product.genus.charAt(0)}
             </div>
           )}
@@ -88,13 +88,13 @@ export default async function PlantPage({
             )}
           </div>
 
-          <h1 className="mt-4 font-serif text-4xl md:text-5xl leading-[1.05] tracking-tight">
+          <h1 className="mt-4 display text-4xl md:text-5xl leading-[1.05] tracking-tight">
             {product.name}
           </h1>
           <p className="mt-2 font-mono text-sm text-faint">{product.code}</p>
 
           {low !== null && (
-            <p className="mt-6 font-serif text-2xl text-accent-strong">
+            <p className="mt-6 display text-2xl text-accent-strong">
               {high !== null && high !== low
                 ? `${formatUSD(low)} - ${formatUSD(high)}`
                 : formatUSD(low)}
@@ -122,7 +122,7 @@ export default async function PlantPage({
       {related.length > 0 && (
         <section className="mt-16 border-t border-line pt-10">
           <div className="flex items-baseline justify-between">
-            <h2 className="font-serif text-2xl">Ещё {product.genus}</h2>
+            <h2 className="display text-2xl">Ещё {product.genus}</h2>
             <Link href="/" className="text-sm text-accent hover:text-accent-strong">
               Все сорта
             </Link>

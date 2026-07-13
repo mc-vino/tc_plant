@@ -29,7 +29,7 @@ export default function AboutPage() {
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
               Поставщик
             </p>
-            <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.03] tracking-tight">
+            <h1 className="mt-4 display text-5xl md:text-6xl leading-[1.03] tracking-tight">
               {supplier.name}
             </h1>
             <p className="mt-5 max-w-xl text-muted leading-relaxed">
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
       {/* Terms */}
       <section className="mx-auto max-w-[1400px] px-5 sm:px-8 py-14">
-        <h2 className="font-serif text-3xl">Условия оптовых поставок</h2>
+        <h2 className="display text-3xl">Условия оптовых поставок</h2>
         <p className="mt-2 text-muted max-w-2xl">
           Из действующего прайса от {supplier.quotationDate}. Перед заказом уточните наличие у
           питомника.
@@ -74,7 +74,7 @@ export default function AboutPage() {
           {terms.map((group, gi) => (
             <Reveal key={group.title} delay={gi * 0.08}>
               <div className="h-full rounded-card border border-line bg-card p-6">
-                <h3 className="font-serif text-xl text-accent-strong">{group.title}</h3>
+                <h3 className="display text-xl text-accent-strong">{group.title}</h3>
                 <dl className="mt-4 space-y-4">
                   {group.items.map((item) => (
                     <div key={item.label}>
@@ -95,7 +95,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-[1400px] px-5 sm:px-8 pb-16">
         <div className="rounded-card border border-line bg-paper p-8 md:p-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
           <div>
-            <h2 className="font-serif text-3xl">Оформить заказ</h2>
+            <h2 className="display text-3xl">Оформить заказ</h2>
             <p className="mt-2 text-muted max-w-lg">
               Свяжитесь с питомником напрямую по наличию, срокам и для получения проформы-инвойса.
             </p>
