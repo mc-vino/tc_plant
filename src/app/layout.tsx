@@ -3,6 +3,9 @@ import Link from "next/link";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { supplier } from "@/data/supplier";
+import ThemeToggle from "@/components/ThemeToggle";
+
+const themeInit = `try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}`;
 
 const sans = Inter({
   variable: "--font-geist-sans",
@@ -29,6 +32,7 @@ export default function RootLayout({
       className={`${sans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background">
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <header className="glass sticky top-0 z-30 border-b border-line/60">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="press flex items-center gap-2.5 group">
@@ -49,6 +53,7 @@ export default function RootLayout({
               <span className="hidden sm:inline font-mono text-[11px] text-faint">
                 {supplier.currency} · EXW
               </span>
+              <ThemeToggle />
             </nav>
           </div>
         </header>
