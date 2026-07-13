@@ -12,9 +12,8 @@ import {
   formatUSD,
 } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
-import { noteRu } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
-import PriceTable from "@/components/PriceTable";
+import VariantTable from "@/components/VariantTable";
 import ProductCard from "@/components/ProductCard";
 import MarketPanel from "@/components/MarketPanel";
 import Reveal from "@/components/Reveal";
@@ -82,11 +81,9 @@ export default async function PlantPage({
             <span className="rounded-full bg-accent-soft px-3 py-1 text-xs text-accent-strong">
               {product.genus}
             </span>
-            {product.note && (
-              <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
-                {noteRu(product.note)}
-              </span>
-            )}
+            <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
+              {product.variants.length} вариантов
+            </span>
           </div>
 
           <h1 className="mt-4 display text-4xl md:text-5xl leading-[1.05] tracking-tight">
@@ -104,12 +101,12 @@ export default async function PlantPage({
           )}
 
           <div className="mt-6 rounded-card border border-line bg-card p-5">
-            <PriceTable product={product} />
+            <VariantTable product={product} />
           </div>
 
           <p className="mt-5 text-sm text-muted leading-relaxed">
-            Цена за штуку (одно растение из культуры ткани), в {supplier.currency},{" "}
-            {supplier.incoterm}. Продаётся пакетами по 10 штук. Депозиты, сроки и оплата указаны в{" "}
+            Цена за штуку по количеству; варианты (размер, форма) в таблице выше. Валюта:{" "}
+            {supplier.currency}, {supplier.incoterm}. Депозиты, сроки и оплата указаны в{" "}
             <Link href="/about" className="text-accent transition-colors hover:text-accent-strong underline underline-offset-2">
               условиях поставщика
             </Link>

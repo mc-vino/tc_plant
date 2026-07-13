@@ -2,6 +2,7 @@
 const NOTE_RU: Record<string, string> = {
   "New plant": "Новинка",
   "New price": "Новая цена",
+  "New type": "Новый тип",
   "Protected in the US": "Защищён в США",
   "Protected in the US and EU": "Защищён в США и ЕС",
 };

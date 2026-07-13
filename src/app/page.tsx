@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-lg text-[17px] text-muted leading-relaxed text-pretty">
               {varieties(products.length)}, размноженных питомником {supplier.name} в Ханое.
-              Оптовые цены по объёмным тирам, в {supplier.currency}, {supplier.incoterm}.
+              Цена за штуку по количеству, в {supplier.currency}, {supplier.incoterm}.
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-5">
               <Stat value={String(products.length)} label="Сортов" />

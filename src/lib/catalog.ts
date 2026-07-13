@@ -1,22 +1,29 @@
 import catalogData from "@/data/catalog.json";
 
-export const TIERS = ["05-09", "10-19", "20-49", "50-99", "100-299"] as const;
+export const TIERS = ["1-4", "5-9", "10-19"] as const;
 export type Tier = (typeof TIERS)[number];
 
-export interface Product {
+export interface Variant {
   code: string;
-  name: string;
-  genus: string;
+  description: string;
   note: string | null;
   prices: Partial<Record<Tier, number>>;
+}
+
+export interface Product {
+  code: string; // base code, e.g. MT001
+  name: string;
+  genus: string;
   image: string | null;
+  variants: Variant[];
 }
 
 export interface CatalogMeta {
   supplier: string;
   currency: string;
   incoterm: string;
-  quotation_date: string;
+  quotationDate: string;
+  priceType: string;
   tiers: string[];
   count: number;
 }
@@ -26,15 +33,19 @@ const data = catalogData as unknown as { meta: CatalogMeta; products: Product[] 
 export const meta: CatalogMeta = data.meta;
 export const products: Product[] = data.products;
 
-/** Lowest available unit price across all quantity tiers. */
+function allPrices(p: Product): number[] {
+  return p.variants.flatMap((v) => Object.values(v.prices));
+}
+
+/** Lowest unit price across every variant and quantity tier. */
 export function lowestPrice(p: Product): number | null {
-  const vals = Object.values(p.prices);
+  const vals = allPrices(p);
   return vals.length ? Math.min(...vals) : null;
 }
 
-/** Highest available unit price (smallest-quantity tier). */
+/** Highest unit price across every variant and quantity tier. */
 export function highestPrice(p: Product): number | null {
-  const vals = Object.values(p.prices);
+  const vals = allPrices(p);
   return vals.length ? Math.max(...vals) : null;
 }
 

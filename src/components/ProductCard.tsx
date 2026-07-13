@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
-import { noteRu } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass } from "@/lib/market";
 
@@ -27,11 +26,6 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.genus.charAt(0)}
           </div>
         )}
-        {product.note && (
-          <span className="absolute top-2.5 left-2.5 rounded-full bg-paper/90 px-2.5 py-0.5 text-[10px] font-medium text-accent-strong ring-1 ring-line">
-            {noteRu(product.note)}
-          </span>
-        )}
         <span
           className={`absolute top-2.5 right-2.5 rounded-full px-2 py-0.5 text-[10px] font-medium ${rarityChipClass(market.rarityLevel)}`}
         >
@@ -39,17 +33,16 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
       </div>
       <div className="flex flex-1 flex-col p-3.5">
-        <p className="text-[10px] uppercase tracking-[0.14em] text-faint">
-          {product.genus}
-        </p>
-        <h3 className="mt-1 display text-[17px] leading-tight text-foreground">
-          {product.name}
-        </h3>
+        <p className="text-[10px] uppercase tracking-[0.14em] text-faint">{product.genus}</p>
+        <h3 className="mt-1 display text-[17px] leading-tight text-foreground">{product.name}</h3>
         <div className="mt-auto pt-3 flex items-end justify-between">
-          <span className="font-mono text-[11px] text-faint">{product.code}</span>
+          <span className="leading-tight">
+            <span className="block font-mono text-[11px] text-faint">{product.code}</span>
+            <span className="text-[11px] text-faint">{product.variants.length} вар.</span>
+          </span>
           {from !== null && (
             <span className="text-right leading-none">
-              <span className="block text-[10px] text-faint">опт от</span>
+              <span className="block text-[10px] text-faint">от</span>
               <span className="font-mono text-sm font-medium text-accent-strong">
                 {formatUSD(from)}
               </span>

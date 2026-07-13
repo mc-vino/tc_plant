@@ -5,7 +5,7 @@ export const supplier = {
   address: "No 01, 74 Goc De, Hoang Van Thu, Hoang Mai District, Ханой, Вьетнам",
   phone: "+84 372 096 139",
   email: "anh.lh@xanhxanhurbanforest.com",
-  quotationDate: "2026-07-01",
+  quotationDate: "2026-06-20",
   currency: "USD",
   incoterm: "EXW (INCOTERM 2020)",
 };
