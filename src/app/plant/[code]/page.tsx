@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { ArrowLeft } from "lucide-react";
 import {
   products,
   getProduct,
@@ -55,7 +55,7 @@ export default async function PlantPage({
         href="/"
         className="press inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
       >
-        <ArrowLeft size={15} weight="bold" /> Каталог
+        <ArrowLeft size={15} /> Каталог
       </Link>
 
       <div className="grid gap-8 md:grid-cols-[1fr_1fr] lg:grid-cols-[1.05fr_1fr] md:gap-12">
@@ -109,7 +109,7 @@ export default async function PlantPage({
           <p className="mt-5 text-sm text-muted leading-relaxed">
             Цена за штуку (одно растение из культуры ткани), в {supplier.currency},{" "}
             {supplier.incoterm}. Продаётся пакетами по 10 штук. Депозиты, сроки и оплата указаны в{" "}
-            <Link href="/about" className="text-accent hover:text-accent-strong underline underline-offset-2">
+            <Link href="/about" className="text-accent transition-colors hover:text-accent-strong underline underline-offset-2">
               условиях поставщика
             </Link>
             .
@@ -123,7 +123,7 @@ export default async function PlantPage({
         <section className="mt-16 border-t border-line pt-10">
           <div className="flex items-baseline justify-between">
             <h2 className="display text-2xl">Ещё {product.genus}</h2>
-            <Link href="/" className="text-sm text-accent hover:text-accent-strong">
+            <Link href="/" className="text-sm text-accent transition-colors hover:text-accent-strong">
               Все сорта
             </Link>
           </div>

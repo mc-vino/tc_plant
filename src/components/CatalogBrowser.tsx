@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { motion } from "motion/react";
-import { MagnifyingGlass, SquaresFour, Rows, CaretDown } from "@phosphor-icons/react";
+import { Search, LayoutGrid, List, ChevronDown } from "lucide-react";
 import { Product, lowestPrice } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
 import ProductCard from "./ProductCard";
@@ -49,9 +49,8 @@ export default function CatalogBrowser({
       {/* Toolbar */}
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="relative lg:max-w-sm lg:flex-1">
-          <MagnifyingGlass
-            size={18}
-            weight="bold"
+          <Search
+            size={17}
             className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-faint"
           />
           <input
@@ -59,7 +58,7 @@ export default function CatalogBrowser({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Поиск по названию или артикулу…"
-            className="w-full rounded-full border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors focus:border-accent"
+            className="w-full rounded-full border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors hover:border-accent/50 focus:border-accent"
           />
         </div>
 
@@ -69,7 +68,7 @@ export default function CatalogBrowser({
               value={sort}
               onChange={(e) => setSort(e.target.value as SortKey)}
               aria-label="Sort varieties"
-              className="appearance-none rounded-full border border-line bg-card py-2.5 pl-4 pr-9 text-sm outline-none transition-colors focus:border-accent cursor-pointer"
+              className="appearance-none rounded-full border border-line bg-card py-2.5 pl-4 pr-9 text-sm outline-none transition-colors hover:border-accent/50 focus:border-accent cursor-pointer"
             >
               {SORTS.map((s) => (
                 <option key={s.key} value={s.key}>
@@ -77,9 +76,8 @@ export default function CatalogBrowser({
                 </option>
               ))}
             </select>
-            <CaretDown
-              size={14}
-              weight="bold"
+            <ChevronDown
+              size={15}
               className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-faint"
             />
           </div>
@@ -87,8 +85,8 @@ export default function CatalogBrowser({
           <div className="flex rounded-full border border-line bg-card p-0.5">
             {(
               [
-                { v: "grid" as View, label: "Плиткой", Icon: SquaresFour },
-                { v: "table" as View, label: "Таблицей", Icon: Rows },
+                { v: "grid" as View, label: "Плиткой", Icon: LayoutGrid },
+                { v: "table" as View, label: "Таблицей", Icon: List },
               ]
             ).map(({ v, label, Icon }) => {
               const active = view === v;
@@ -98,7 +96,9 @@ export default function CatalogBrowser({
                   onClick={() => setView(v)}
                   aria-label={label}
                   aria-pressed={active}
-                  className="press relative flex h-8 w-8 items-center justify-center rounded-full"
+                  className={`press relative flex h-8 w-8 items-center justify-center rounded-full transition-colors ${
+                    active ? "" : "text-faint hover:text-foreground"
+                  }`}
                 >
                   {active && (
                     <motion.span
@@ -107,11 +107,7 @@ export default function CatalogBrowser({
                       transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
                     />
                   )}
-                  <Icon
-                    size={18}
-                    weight={active ? "fill" : "regular"}
-                    className={`relative z-10 transition-colors ${active ? "text-paper" : "text-faint"}`}
-                  />
+                  <Icon size={17} className={`relative z-10 ${active ? "text-white" : ""}`} />
                 </button>
               );
             })}
@@ -144,7 +140,7 @@ export default function CatalogBrowser({
               setQuery("");
               setGenus(null);
             }}
-            className="mt-3 text-sm text-accent hover:text-accent-strong"
+            className="press mt-3 text-sm text-accent transition-colors hover:text-accent-strong"
           >
             Сбросить фильтры
           </button>

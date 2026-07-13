@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { EnvelopeSimple, Phone, MapPin } from "@phosphor-icons/react/dist/ssr";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { supplier, terms } from "@/data/supplier";
 import { products } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
@@ -101,14 +101,14 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid gap-3 text-sm">
-            <ContactRow icon={<MapPin size={18} weight="bold" />} text={supplier.address} />
+            <ContactRow icon={<MapPin size={18} />} text={supplier.address} />
             <ContactRow
-              icon={<Phone size={18} weight="bold" />}
+              icon={<Phone size={18} />}
               text={supplier.phone}
               href={`tel:${supplier.phone.replace(/\s/g, "")}`}
             />
             <ContactRow
-              icon={<EnvelopeSimple size={18} weight="bold" />}
+              icon={<Mail size={18} />}
               text={supplier.email}
               href={`mailto:${supplier.email}`}
             />
