@@ -3,20 +3,21 @@
   "supplier": "Xanh Xanh Urban Forest Co., Ltd",
   "currency": "USD",
   "incoterm": "EXW (INCOTERM 2020)",
-  "quotationDate": "2026-06",
+  "quotationDate": "2026-06-20",
   "priceType": "retail",
   "tiers": [
    "1-4",
    "5-9",
    "10-19"
   ],
-  "count": 95
+  "count": 94
  },
  "products": [
   {
    "code": "AL042",
    "name": "Alocasia Azlanii Gold",
    "genus": "Alocasia",
+   "image": "/plants/AL042.jpeg",
    "variants": [
     {
      "code": "AL042T01",
@@ -48,13 +49,13 @@
       "10-19": 52.9
      }
     }
-   ],
-   "image": "/plants/AL042.jpeg"
+   ]
   },
   {
    "code": "AL050",
    "name": "Alocasia Balloon Heart Pink Variegated",
    "genus": "Alocasia",
+   "image": "/plants/AL050.jpeg",
    "variants": [
     {
      "code": "AL050T01",
@@ -86,13 +87,13 @@
       "10-19": 30.2
      }
     }
-   ],
-   "image": "/plants/AL050.jpeg"
+   ]
   },
   {
    "code": "AL018",
    "name": "Alocasia Bambino",
    "genus": "Alocasia",
+   "image": "/plants/AL018.jpeg",
    "variants": [
     {
      "code": "AL018T10",
@@ -124,13 +125,13 @@
       "10-19": 1.8
      }
     }
-   ],
-   "image": "/plants/AL018.jpeg"
+   ]
   },
   {
    "code": "AL019",
    "name": "Alocasia Bambino Variegated Aurea",
    "genus": "Alocasia",
+   "image": null,
    "variants": [
     {
      "code": "AL019T01",
@@ -162,13 +163,13 @@
       "10-19": 8.4
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "AL062",
    "name": "Alocasia Bisma Albo",
    "genus": "Alocasia",
+   "image": "/plants/AL062.jpeg",
    "variants": [
     {
      "code": "AL062T01",
@@ -200,13 +201,13 @@
       "10-19": 124.4
      }
     }
-   ],
-   "image": "/plants/AL062.jpeg"
+   ]
   },
   {
    "code": "AL070",
    "name": "Alocasia Black Saturn Stardust",
    "genus": "Alocasia",
+   "image": "/plants/AL070.jpeg",
    "variants": [
     {
      "code": "AL070T01",
@@ -218,13 +219,13 @@
       "10-19": 23.0
      }
     }
-   ],
-   "image": "/plants/AL070.jpeg"
+   ]
   },
   {
    "code": "AL051",
    "name": "Alocasia Black Velvet Gold",
    "genus": "Alocasia",
+   "image": null,
    "variants": [
     {
      "code": "AL051T01",
@@ -256,13 +257,13 @@
       "10-19": 49.4
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "AL041",
    "name": "Alocasia Black Velvet Pink",
    "genus": "Alocasia",
+   "image": "/plants/AL041.jpeg",
    "variants": [
     {
      "code": "AL041T01",
@@ -294,13 +295,13 @@
       "10-19": 12.6
      }
     }
-   ],
-   "image": "/plants/AL041.jpeg"
+   ]
   },
   {
    "code": "AL061",
    "name": "Alocasia Chantrieri Pink",
    "genus": "Alocasia",
+   "image": "/plants/AL061.jpeg",
    "variants": [
     {
      "code": "AL061T01",
@@ -332,13 +333,13 @@
       "10-19": 121.0
      }
     }
-   ],
-   "image": "/plants/AL061.jpeg"
+   ]
   },
   {
    "code": "AL039",
    "name": "Alocasia Cupera Pink Mint",
    "genus": "Alocasia",
+   "image": "/plants/AL039.jpeg",
    "variants": [
     {
      "code": "AL039T01",
@@ -370,13 +371,13 @@
       "10-19": 47.4
      }
     }
-   ],
-   "image": "/plants/AL039.jpeg"
+   ]
   },
   {
    "code": "AL063",
    "name": "Alocasia Cupera Spider",
    "genus": "Alocasia",
+   "image": "/plants/AL063.jpeg",
    "variants": [
     {
      "code": "AL063T01",
@@ -408,13 +409,13 @@
       "10-19": 33.2
      }
     }
-   ],
-   "image": "/plants/AL063.jpeg"
+   ]
   },
   {
    "code": "AL001",
-   "name": "Alocasia Cuprea / Red secret",
+   "name": "Alocasia Cuprea / Red Secret",
    "genus": "Alocasia",
+   "image": "/plants/AL001.jpeg",
    "variants": [
     {
      "code": "AL001M01",
@@ -426,13 +427,13 @@
       "10-19": 1.8
      }
     }
-   ],
-   "image": "/plants/AL001.jpeg"
+   ]
   },
   {
    "code": "AL064",
    "name": "Alocasia Dragon Scale Mint",
    "genus": "Alocasia",
+   "image": "/plants/AL064.jpeg",
    "variants": [
     {
      "code": "AL064T01",
@@ -444,13 +445,13 @@
       "10-19": 11.9
      }
     }
-   ],
-   "image": "/plants/AL064.jpeg"
+   ]
   },
   {
    "code": "AL031",
    "name": "Alocasia Dragon Scale White Variegated",
    "genus": "Alocasia",
+   "image": "/plants/AL031.jpeg",
    "variants": [
     {
      "code": "AL031T01",
@@ -482,13 +483,13 @@
       "10-19": 19.0
      }
     }
-   ],
-   "image": "/plants/AL031.jpeg"
+   ]
   },
   {
    "code": "AL016",
    "name": "Alocasia Frydex Variegated",
    "genus": "Alocasia",
+   "image": "/plants/AL016.jpeg",
    "variants": [
     {
      "code": "AL016T10",
@@ -520,13 +521,13 @@
       "10-19": 4.2
      }
     }
-   ],
-   "image": "/plants/AL016.jpeg"
+   ]
   },
   {
    "code": "AL013",
    "name": "Alocasia Gageana Aurea",
    "genus": "Alocasia",
+   "image": "/plants/AL013.jpeg",
    "variants": [
     {
      "code": "AL013T10",
@@ -558,13 +559,13 @@
       "10-19": 3.9
      }
     }
-   ],
-   "image": "/plants/AL013.jpeg"
+   ]
   },
   {
    "code": "AL067",
    "name": "Alocasia Jacklyn Mystic",
    "genus": "Alocasia",
+   "image": "/plants/AL067.jpeg",
    "variants": [
     {
      "code": "AL067T01",
@@ -596,13 +597,13 @@
       "10-19": 119.5
      }
     }
-   ],
-   "image": "/plants/AL067.jpeg"
+   ]
   },
   {
    "code": "AL009",
    "name": "Alocasia Longiloba",
    "genus": "Alocasia",
+   "image": "/plants/AL009.jpeg",
    "variants": [
     {
      "code": "AL009M01",
@@ -614,13 +615,13 @@
       "10-19": 1.8
      }
     }
-   ],
-   "image": "/plants/AL009.jpeg"
+   ]
   },
   {
    "code": "AL008",
    "name": "Alocasia Longiloba Variegated",
    "genus": "Alocasia",
+   "image": "/plants/AL008.jpeg",
    "variants": [
     {
      "code": "AL008T01",
@@ -652,13 +653,13 @@
       "10-19": 4.9
      }
     }
-   ],
-   "image": "/plants/AL008.jpeg"
+   ]
   },
   {
    "code": "AL056",
    "name": "Alocasia Maharani Albo",
    "genus": "Alocasia",
+   "image": "/plants/AL056.jpeg",
    "variants": [
     {
      "code": "AL056T01",
@@ -690,13 +691,13 @@
       "10-19": 75.3
      }
     }
-   ],
-   "image": "/plants/AL056.jpeg"
+   ]
   },
   {
    "code": "AL055",
    "name": "Alocasia Maharani Yellow",
    "genus": "Alocasia",
+   "image": "/plants/AL055.jpeg",
    "variants": [
     {
      "code": "AL055T01",
@@ -728,13 +729,13 @@
       "10-19": 75.4
      }
     }
-   ],
-   "image": "/plants/AL055.jpeg"
+   ]
   },
   {
    "code": "AL058",
    "name": "Alocasia Melo Aurea",
    "genus": "Alocasia",
+   "image": "/plants/AL058.jpeg",
    "variants": [
     {
      "code": "AL058T01",
@@ -766,13 +767,13 @@
       "10-19": 263.2
      }
     }
-   ],
-   "image": "/plants/AL058.jpeg"
+   ]
   },
   {
    "code": "AL034",
    "name": "Alocasia Ninja Tricolor",
    "genus": "Alocasia",
+   "image": "/plants/AL034.jpeg",
    "variants": [
     {
      "code": "AL034T01",
@@ -804,13 +805,13 @@
       "10-19": 5.4
      }
     }
-   ],
-   "image": "/plants/AL034.jpeg"
+   ]
   },
   {
    "code": "AL071",
    "name": "Alocasia Nobilis Pink",
    "genus": "Alocasia",
+   "image": "/plants/AL071.jpeg",
    "variants": [
     {
      "code": "AL071T01",
@@ -822,13 +823,13 @@
       "10-19": 22.7
      }
     }
-   ],
-   "image": "/plants/AL071.jpeg"
+   ]
   },
   {
    "code": "AL017",
    "name": "Alocasia Odora Batik",
    "genus": "Alocasia",
+   "image": "/plants/AL017.jpeg",
    "variants": [
     {
      "code": "AL017T10",
@@ -860,13 +861,13 @@
       "10-19": 4.2
      }
     }
-   ],
-   "image": "/plants/AL017.jpeg"
+   ]
   },
   {
    "code": "AL022",
    "name": "Alocasia Polly Aurea",
    "genus": "Alocasia",
+   "image": null,
    "variants": [
     {
      "code": "AL022T01",
@@ -898,13 +899,13 @@
       "10-19": 31.6
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "AL011",
    "name": "Alocasia Polly Pink Mint",
    "genus": "Alocasia",
+   "image": "/plants/AL011.jpeg",
    "variants": [
     {
      "code": "AL011T10",
@@ -936,13 +937,13 @@
       "10-19": 4.7
      }
     }
-   ],
-   "image": "/plants/AL011.jpeg"
+   ]
   },
   {
    "code": "AL054",
    "name": "Alocasia Portora Gold",
    "genus": "Alocasia",
+   "image": "/plants/AL054.jpeg",
    "variants": [
     {
      "code": "AL054T01",
@@ -974,13 +975,13 @@
       "10-19": 75.3
      }
     }
-   ],
-   "image": "/plants/AL054.jpeg"
+   ]
   },
   {
    "code": "AL033",
    "name": "Alocasia Sanderiana Bull Variegated Yellow",
    "genus": "Alocasia",
+   "image": "/plants/AL033.jpeg",
    "variants": [
     {
      "code": "AL033T01",
@@ -1012,13 +1013,13 @@
       "10-19": 30.6
      }
     }
-   ],
-   "image": "/plants/AL033.jpeg"
+   ]
   },
   {
    "code": "AL069",
    "name": "Alocasia Sanderiana Psedou Yellow",
    "genus": "Alocasia",
+   "image": "/plants/AL069.jpeg",
    "variants": [
     {
      "code": "AL069T01",
@@ -1050,13 +1051,13 @@
       "10-19": 30.6
      }
     }
-   ],
-   "image": "/plants/AL069.jpeg"
+   ]
   },
   {
    "code": "AL053",
-   "name": "Alocasia Scalprum Aurea Alocasia Scalprum Variegated Albo",
+   "name": "Alocasia Scalprum Aurea",
    "genus": "Alocasia",
+   "image": "/plants/AL053.jpeg",
    "variants": [
     {
      "code": "AL053T01",
@@ -1068,13 +1069,13 @@
       "10-19": 15.1
      }
     }
-   ],
-   "image": "/plants/AL053.jpeg"
+   ]
   },
   {
    "code": "AL048",
    "name": "Alocasia Scalprum Mint",
    "genus": "Alocasia",
+   "image": "/plants/AL048.jpeg",
    "variants": [
     {
      "code": "AL048T01",
@@ -1106,13 +1107,31 @@
       "10-19": 4.5
      }
     }
-   ],
-   "image": "/plants/AL048.jpeg"
+   ]
+  },
+  {
+   "code": "AL029",
+   "name": "Alocasia Scalprum Variegated Albo 'HUTAAL29'",
+   "genus": "Alocasia",
+   "image": "/plants/AL029.jpeg",
+   "variants": [
+    {
+     "code": "AL029T01",
+     "description": "Tissue bag 1 plant",
+     "note": "New price",
+     "prices": {
+      "1-4": 47.0,
+      "5-9": 30.6,
+      "10-19": 28.2
+     }
+    }
+   ]
   },
   {
    "code": "AL010",
    "name": "Alocasia Sedenii",
    "genus": "Alocasia",
+   "image": "/plants/AL010.jpeg",
    "variants": [
     {
      "code": "AL010M01",
@@ -1124,13 +1143,13 @@
       "10-19": 1.8
      }
     }
-   ],
-   "image": "/plants/AL010.jpeg"
+   ]
   },
   {
    "code": "AL049",
    "name": "Alocasia Sinuata Albo",
    "genus": "Alocasia",
+   "image": "/plants/AL049.jpeg",
    "variants": [
     {
      "code": "AL049T01",
@@ -1162,13 +1181,13 @@
       "10-19": 17.5
      }
     }
-   ],
-   "image": "/plants/AL049.jpeg"
+   ]
   },
   {
    "code": "AL052",
    "name": "Alocasia Venom",
    "genus": "Alocasia",
+   "image": "/plants/AL052.jpeg",
    "variants": [
     {
      "code": "AL052T01",
@@ -1200,13 +1219,13 @@
       "10-19": 11.4
      }
     }
-   ],
-   "image": "/plants/AL052.jpeg"
+   ]
   },
   {
    "code": "AL026",
    "name": "Alocasia White Lava",
    "genus": "Alocasia",
+   "image": "/plants/AL026.jpeg",
    "variants": [
     {
      "code": "AL026T10",
@@ -1238,13 +1257,13 @@
       "10-19": 9.8
      }
     }
-   ],
-   "image": "/plants/AL026.jpeg"
+   ]
   },
   {
    "code": "AL040",
    "name": "Alocasia Yucatan Yellow",
    "genus": "Alocasia",
+   "image": "/plants/AL040.jpeg",
    "variants": [
     {
      "code": "AL040T01",
@@ -1276,31 +1295,13 @@
       "10-19": 14.6
      }
     }
-   ],
-   "image": "/plants/AL040.jpeg"
-  },
-  {
-   "code": "AL029",
-   "name": "'HUTAAL29' Anthurium",
-   "genus": "Anthurium",
-   "variants": [
-    {
-     "code": "AL029T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 47.0,
-      "5-9": 30.6,
-      "10-19": 28.2
-     }
-    }
-   ],
-   "image": "/plants/AL029.jpeg"
+   ]
   },
   {
    "code": "AT005",
    "name": "Anthurium Clari Hybrid X",
    "genus": "Anthurium",
+   "image": "/plants/AT005.jpeg",
    "variants": [
     {
      "code": "AT005T10",
@@ -1332,13 +1333,13 @@
       "10-19": 2.8
      }
     }
-   ],
-   "image": "/plants/AT005.jpeg"
+   ]
   },
   {
    "code": "AT023",
    "name": "Anthurium Crystall Hybrid",
    "genus": "Anthurium",
+   "image": "/plants/AT023.jpeg",
    "variants": [
     {
      "code": "AT023M01",
@@ -1350,13 +1351,13 @@
       "10-19": 2.5
      }
     }
-   ],
-   "image": "/plants/AT023.jpeg"
+   ]
   },
   {
    "code": "AT008",
    "name": "Anthurium Dark Queen",
    "genus": "Anthurium",
+   "image": "/plants/AT008.jpeg",
    "variants": [
     {
      "code": "AT008T10",
@@ -1388,13 +1389,13 @@
       "10-19": 5.6
      }
     }
-   ],
-   "image": "/plants/AT008.jpeg"
+   ]
   },
   {
    "code": "AT002",
    "name": "Anthurium Forgetii",
    "genus": "Anthurium",
+   "image": "/plants/AT002.jpeg",
    "variants": [
     {
      "code": "AT002T10",
@@ -1426,13 +1427,13 @@
       "10-19": 3.5
      }
     }
-   ],
-   "image": "/plants/AT002.jpeg"
+   ]
   },
   {
    "code": "AT012",
-   "name": "Anthurium Hookeri Green Anthurium Hybrid Anthurium Corong x",
+   "name": "Anthurium Hookeri Green",
    "genus": "Anthurium",
+   "image": "/plants/AT012.jpeg",
    "variants": [
     {
      "code": "AT012T10",
@@ -1464,13 +1465,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/AT012.jpeg"
+   ]
   },
   {
    "code": "AT011",
    "name": "Anthurium Hookeri Variegated",
    "genus": "Anthurium",
+   "image": "/plants/AT011.jpeg",
    "variants": [
     {
      "code": "AT011T10",
@@ -1502,13 +1503,13 @@
       "10-19": 3.5
      }
     }
-   ],
-   "image": "/plants/AT011.jpeg"
+   ]
   },
   {
    "code": "AT003",
    "name": "Anthurium Hybrid 2",
    "genus": "Anthurium",
+   "image": null,
    "variants": [
     {
      "code": "AT003T10",
@@ -1540,165 +1541,13 @@
       "10-19": 3.5
      }
     }
-   ],
-   "image": null
-  },
-  {
-   "code": "AT024",
-   "name": "Anthurium Hybrid Papillanium x Magnificum",
-   "genus": "Anthurium",
-   "variants": [
-    {
-     "code": "AT024T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 39.9,
-      "5-9": 25.9,
-      "10-19": 23.9
-     }
-    },
-    {
-     "code": "AT024S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 59.7,
-      "5-9": 38.8,
-      "10-19": 35.8
-     }
-    },
-    {
-     "code": "AT024M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 79.6,
-      "5-9": 51.7,
-      "10-19": 47.7
-     }
-    }
-   ],
-   "image": null
-  },
-  {
-   "code": "AT016",
-   "name": "Anthurium Luxurian x Forgetii Dark Form Other HOMALOMENA RED STEM VARIEGATED",
-   "genus": "Anthurium",
-   "variants": [
-    {
-     "code": "AT016T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    },
-    {
-     "code": "AT016S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    },
-    {
-     "code": "AT016M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.9,
-      "5-9": 5.1,
-      "10-19": 4.7
-     }
-    }
-   ],
-   "image": "/plants/AT016.jpeg"
-  },
-  {
-   "code": "AT009",
-   "name": "Anthurium Magnificum",
-   "genus": "Anthurium",
-   "variants": [
-    {
-     "code": "AT009T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.3,
-      "5-9": 0.9,
-      "10-19": 0.8
-     }
-    },
-    {
-     "code": "AT009S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT009M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.1,
-      "5-9": 2.7,
-      "10-19": 2.5
-     }
-    }
-   ],
-   "image": "/plants/AT009.jpeg"
-  },
-  {
-   "code": "AT001",
-   "name": "Anthurium Vittarifolium Variegated",
-   "genus": "Anthurium",
-   "variants": [
-    {
-     "code": "AT001T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 5.5,
-      "5-9": 3.6,
-      "10-19": 3.3
-     }
-    },
-    {
-     "code": "AT001S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.9,
-      "5-9": 5.1,
-      "10-19": 4.7
-     }
-    },
-    {
-     "code": "AT001M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 15.8,
-      "5-9": 10.3,
-      "10-19": 9.5
-     }
-    }
-   ],
-   "image": "/plants/AT001.jpeg"
+   ]
   },
   {
    "code": "AT015",
-   "name": "Villanaorum Anthurium Hybrid Anthurium Corong x",
+   "name": "Anthurium Hybrid Anthurium Corong X Villanaorum",
    "genus": "Anthurium",
+   "image": "/plants/AT015.jpeg",
    "variants": [
     {
      "code": "AT015T10",
@@ -1730,13 +1579,165 @@
       "10-19": 3.2
      }
     }
-   ],
-   "image": "/plants/AT015.jpeg"
+   ]
+  },
+  {
+   "code": "AT024",
+   "name": "Anthurium Hybrid Papillanium X Magnificum",
+   "genus": "Anthurium",
+   "image": null,
+   "variants": [
+    {
+     "code": "AT024T01",
+     "description": "Tissue bag 1 plant",
+     "note": null,
+     "prices": {
+      "1-4": 39.9,
+      "5-9": 25.9,
+      "10-19": 23.9
+     }
+    },
+    {
+     "code": "AT024S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 59.7,
+      "5-9": 38.8,
+      "10-19": 35.8
+     }
+    },
+    {
+     "code": "AT024M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 79.6,
+      "5-9": 51.7,
+      "10-19": 47.7
+     }
+    }
+   ]
+  },
+  {
+   "code": "AT016",
+   "name": "Anthurium Luxurian X Forgetii Dark Form",
+   "genus": "Anthurium",
+   "image": "/plants/AT016.jpeg",
+   "variants": [
+    {
+     "code": "AT016T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 3.5,
+      "5-9": 2.3,
+      "10-19": 2.1
+     }
+    },
+    {
+     "code": "AT016S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 5.9,
+      "5-9": 3.8,
+      "10-19": 3.5
+     }
+    },
+    {
+     "code": "AT016M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 7.9,
+      "5-9": 5.1,
+      "10-19": 4.7
+     }
+    }
+   ]
+  },
+  {
+   "code": "AT009",
+   "name": "Anthurium Magnificum",
+   "genus": "Anthurium",
+   "image": "/plants/AT009.jpeg",
+   "variants": [
+    {
+     "code": "AT009T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 1.3,
+      "5-9": 0.9,
+      "10-19": 0.8
+     }
+    },
+    {
+     "code": "AT009S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 2.0,
+      "5-9": 1.3,
+      "10-19": 1.2
+     }
+    },
+    {
+     "code": "AT009M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 4.1,
+      "5-9": 2.7,
+      "10-19": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "code": "AT001",
+   "name": "Anthurium Vittarifolium Variegated",
+   "genus": "Anthurium",
+   "image": "/plants/AT001.jpeg",
+   "variants": [
+    {
+     "code": "AT001T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 5.5,
+      "5-9": 3.6,
+      "10-19": 3.3
+     }
+    },
+    {
+     "code": "AT001S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 7.9,
+      "5-9": 5.1,
+      "10-19": 4.7
+     }
+    },
+    {
+     "code": "AT001M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 15.8,
+      "5-9": 10.3,
+      "10-19": 9.5
+     }
+    }
+   ]
   },
   {
    "code": "EP008",
    "name": "Epipremnum Gigantenum Variegated",
    "genus": "Epipremnum",
+   "image": "/plants/EP008.jpeg",
    "variants": [
     {
      "code": "EP008T10",
@@ -1768,13 +1769,13 @@
       "10-19": 5.4
      }
     }
-   ],
-   "image": "/plants/EP008.jpeg"
+   ]
   },
   {
    "code": "HM013",
    "name": "Homalomela Sp Variegated",
    "genus": "Homalomena",
+   "image": null,
    "variants": [
     {
      "code": "HM013T10",
@@ -1806,13 +1807,13 @@
       "10-19": 7.0
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "HM005",
    "name": "Homalomena Green Stem Variegated",
    "genus": "Homalomena",
+   "image": "/plants/HM005.jpeg",
    "variants": [
     {
      "code": "HM005S01",
@@ -1834,13 +1835,13 @@
       "10-19": 9.0
      }
     }
-   ],
-   "image": "/plants/HM005.jpeg"
+   ]
   },
   {
    "code": "HM006",
-   "name": "‘HUTAHM06’ HOMALOMENA RED STEM VARIEGATED",
+   "name": "Homalomena Red Stem Variegated 'HUTAHM06'",
    "genus": "Homalomena",
+   "image": "/plants/HM006.jpeg",
    "variants": [
     {
      "code": "HM006T10",
@@ -1872,13 +1873,13 @@
       "10-19": 9.0
      }
     }
-   ],
-   "image": "/plants/HM006.jpeg"
+   ]
   },
   {
    "code": "MT076",
-   "name": "Monstera Blue Mint Striata Philodendron",
+   "name": "Monstera Blue Mint Striata",
    "genus": "Monstera",
+   "image": "/plants/MT076.jpeg",
    "variants": [
     {
      "code": "MT076T01",
@@ -1900,13 +1901,13 @@
       "10-19": 98.5
      }
     }
-   ],
-   "image": "/plants/MT076.jpeg"
+   ]
   },
   {
    "code": "MT030",
    "name": "Monstera Burle Marx Flame",
    "genus": "Monstera",
+   "image": "/plants/MT030.jpeg",
    "variants": [
     {
      "code": "MT030T10",
@@ -1958,13 +1959,13 @@
       "10-19": 4.1
      }
     }
-   ],
-   "image": "/plants/MT030.jpeg"
+   ]
   },
   {
    "code": "MT055",
    "name": "Monstera Deliciosa Compacta",
    "genus": "Monstera",
+   "image": null,
    "variants": [
     {
      "code": "MT055K01",
@@ -1976,13 +1977,13 @@
       "10-19": 8.8
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "MT011",
-   "name": "Monstera Deliciosa Sphinx Var explosive",
+   "name": "Monstera Deliciosa Sphinx Var Explosive",
    "genus": "Monstera",
+   "image": "/plants/MT011.jpeg",
    "variants": [
     {
      "code": "MT011T10",
@@ -2006,7 +2007,7 @@
     },
     {
      "code": "MT011K01",
-     "description": "Top cut size 16-22cm. Var explosive",
+     "description": "",
      "note": "New price",
      "prices": {
       "1-4": 66.0,
@@ -2014,429 +2015,13 @@
       "10-19": 39.6
      }
     }
-   ],
-   "image": "/plants/MT011.jpeg"
+   ]
   },
   {
-   "code": "MT001",
-   "name": "Monstera Deliciosa White Monster",
+   "code": "MT041",
+   "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Classic",
    "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT001T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.0,
-      "5-9": 2.6,
-      "10-19": 2.4
-     }
-    },
-    {
-     "code": "MT001S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    },
-    {
-     "code": "MT001M01",
-     "description": "Size pot 2,8 inch. In moss size leaf 10-14cm",
-     "note": null,
-     "prices": {
-      "1-4": 12.0,
-      "5-9": 7.8,
-      "10-19": 7.2
-     }
-    },
-    {
-     "code": "MT001L01",
-     "description": "Size pot 2,8 inch. In moss size leaf 15-21cm",
-     "note": null,
-     "prices": {
-      "1-4": 24.0,
-      "5-9": 15.6,
-      "10-19": 14.4
-     }
-    }
-   ],
-   "image": "/plants/MT001.jpeg"
-  },
-  {
-   "code": "MT004",
-   "name": "Monstera Deliciosa Yellow Marilyn",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT004T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 11.7,
-      "5-9": 7.6,
-      "10-19": 7.0
-     }
-    },
-    {
-     "code": "MT004S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 17.6,
-      "5-9": 11.4,
-      "10-19": 10.5
-     }
-    },
-    {
-     "code": "MT004M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 23.4,
-      "5-9": 15.2,
-      "10-19": 14.0
-     }
-    },
-    {
-     "code": "MT004L01",
-     "description": "Size pot 3,5 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 35.1,
-      "5-9": 22.8,
-      "10-19": 21.1
-     }
-    }
-   ],
-   "image": "/plants/MT004.jpeg"
-  },
-  {
-   "code": "MT040",
-   "name": "Monstera Electro Light",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT040T01",
-     "description": "Tissue bag 1 plant Size pot 1.7 inch. In moss. Check var key by",
-     "note": null,
-     "prices": {
-      "1-4": 22.9,
-      "5-9": 14.9,
-      "10-19": 13.7
-     }
-    },
-    {
-     "code": "MT040S01",
-     "description": "key Size pot 2,8 inch. In moss. Check var key by",
-     "note": null,
-     "prices": {
-      "1-4": 45.7,
-      "5-9": 29.7,
-      "10-19": 27.4
-     }
-    },
-    {
-     "code": "MT040M01",
-     "description": "key. Size leaf 10-12cm",
-     "note": null,
-     "prices": {
-      "1-4": 68.6,
-      "5-9": 44.6,
-      "10-19": 41.1
-     }
-    }
-   ],
-   "image": "/plants/MT040.jpeg"
-  },
-  {
-   "code": "MT071",
-   "name": "Monstera Green Snow",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT071T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 8.4,
-      "5-9": 5.5,
-      "10-19": 5.0
-     }
-    },
-    {
-     "code": "MT071S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 12.6,
-      "5-9": 8.2,
-      "10-19": 7.6
-     }
-    }
-   ],
-   "image": "/plants/MT071.jpeg"
-  },
-  {
-   "code": "MT060",
-   "name": "Monstera Lemon Lime",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT060T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 35.7,
-      "5-9": 23.2,
-      "10-19": 21.4
-     }
-    },
-    {
-     "code": "MT060S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 53.5,
-      "5-9": 34.8,
-      "10-19": 32.1
-     }
-    }
-   ],
-   "image": "/plants/MT060.jpeg"
-  },
-  {
-   "code": "MT067",
-   "name": "Monstera Light Lime MONSTERA DELICIOSA VIETCIOSA",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT067T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 54.2,
-      "5-9": 35.2,
-      "10-19": 32.5
-     }
-    },
-    {
-     "code": "MT067S11",
-     "description": "Size pot 2.8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 108.4,
-      "5-9": 70.5,
-      "10-19": 65.0
-     }
-    }
-   ],
-   "image": "/plants/MT067.jpeg"
-  },
-  {
-   "code": "MT075",
-   "name": "Monstera Mint Siam",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT075T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 33.5,
-      "5-9": 21.8,
-      "10-19": 20.1
-     }
-    },
-    {
-     "code": "MT075S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New type",
-     "prices": {
-      "1-4": 50.3,
-      "5-9": 32.7,
-      "10-19": 30.2
-     }
-    }
-   ],
-   "image": null
-  },
-  {
-   "code": "MT007",
-   "name": "Monstera Sierrana",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT007T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.6,
-      "5-9": 1.0,
-      "10-19": 0.9
-     }
-    },
-    {
-     "code": "MT007S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.4,
-      "5-9": 1.6,
-      "10-19": 1.4
-     }
-    },
-    {
-     "code": "MT007K01",
-     "description": "Top cutting 15-17cm",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    }
-   ],
-   "image": "/plants/MT007.jpeg"
-  },
-  {
-   "code": "MT005",
-   "name": "Monstera Thai Constellation",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT005T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "MT005S01",
-     "description": "Size pot 1,7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.0,
-      "5-9": 2.0,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "MT005M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.0,
-      "5-9": 2.6,
-      "10-19": 2.4
-     }
-    },
-    {
-     "code": "MT005Y01",
-     "description": "Top cutting 18-25cm",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    }
-   ],
-   "image": "/plants/MT005.jpeg"
-  },
-  {
-   "code": "MT038",
-   "name": "Monstera Thai Constellation Creme Brulee",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT038K01",
-     "description": "i d Cutting size leaf 16-18cm",
-     "note": null,
-     "prices": {
-      "1-4": 110.0,
-      "5-9": 71.5,
-      "10-19": 66.0
-     }
-    }
-   ],
-   "image": null
-  },
-  {
-   "code": "MT042",
-   "name": "Monstera Thai Constellation High Variegated",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT042T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.5,
-      "5-9": 1.7,
-      "10-19": 1.5
-     }
-    },
-    {
-     "code": "MT042S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.8,
-      "5-9": 2.5,
-      "10-19": 2.3
-     }
-    },
-    {
-     "code": "MT042M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 10.6,
-      "5-9": 6.9,
-      "10-19": 6.4
-     }
-    },
-    {
-     "code": "MT042Y01",
-     "description": "Top cutting 16-22 cm",
-     "note": null,
-     "prices": {
-      "1-4": 15.0,
-      "5-9": 9.8,
-      "10-19": 9.0
-     }
-    }
-   ],
-   "image": "/plants/MT042.jpeg"
-  },
-  {
-   "code": "MT047",
-   "name": "Monstera Thai Constellation Tricolor Miracle",
-   "genus": "Monstera",
-   "variants": [
-    {
-     "code": "MT047T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 99.0,
-      "5-9": 64.4,
-      "10-19": 59.4
-     }
-    }
-   ],
-   "image": "/plants/MT047.jpeg"
-  },
-  {
-   "code": "MT066",
-   "name": "‘HUTAMT41’ CLASSIC MONSTERA DELICIOSA VIETCIOSA",
-   "genus": "Monstera",
+   "image": "/plants/MT041.jpeg",
    "variants": [
     {
      "code": "MT066M01",
@@ -2470,7 +2055,7 @@
     },
     {
      "code": "MT066Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm ) Top cutting 3-4 leaf ( size leaf 41cm+ ) -",
+     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
      "note": "New type",
      "prices": {
       "1-4": 78.4,
@@ -2480,22 +2065,14 @@
     },
     {
      "code": "MT066Z01",
-     "description": "Check size",
+     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
      "note": "New type",
      "prices": {
       "1-4": 94.1,
       "5-9": 61.2,
       "10-19": 56.4
      }
-    }
-   ],
-   "image": null
-  },
-  {
-   "code": "MT041",
-   "name": "‘HUTAMT41’ CLASSIC MONSTERA DELICIOSA VIETCIOSA",
-   "genus": "Monstera",
-   "variants": [
+    },
     {
      "code": "MT041T01",
      "description": "Tissue bag 1 plant",
@@ -2538,7 +2115,7 @@
     },
     {
      "code": "MT041Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm ) Top cutting 3-4 leaf ( size leaf 41cm+ ) -",
+     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
      "note": "New type",
      "prices": {
       "1-4": 94.1,
@@ -2548,7 +2125,7 @@
     },
     {
      "code": "MT041Z01",
-     "description": "Check size",
+     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
      "note": "New type",
      "prices": {
       "1-4": 112.9,
@@ -2556,13 +2133,13 @@
       "10-19": 67.7
      }
     }
-   ],
-   "image": "/plants/MT041.jpeg"
+   ]
   },
   {
    "code": "MT065",
-   "name": "‘HUTAMT41’ PREMIUM MONSTERA DELICIOSA VIETCIOSA",
+   "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Premium",
    "genus": "Monstera",
+   "image": "/plants/MT065.jpeg",
    "variants": [
     {
      "code": "MT065T01",
@@ -2606,7 +2183,7 @@
     },
     {
      "code": "MT065Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm ) Top cutting 3-4 leaf ( size leaf 41cm+ ) -",
+     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
      "note": "New type",
      "prices": {
       "1-4": 108.3,
@@ -2616,7 +2193,7 @@
     },
     {
      "code": "MT065Z01",
-     "description": "Check size",
+     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
      "note": "New type",
      "prices": {
       "1-4": 129.2,
@@ -2624,13 +2201,429 @@
       "10-19": 77.5
      }
     }
-   ],
-   "image": "/plants/MT065.jpeg"
+   ]
+  },
+  {
+   "code": "MT001",
+   "name": "Monstera Deliciosa White Monster",
+   "genus": "Monstera",
+   "image": "/plants/MT001.jpeg",
+   "variants": [
+    {
+     "code": "MT001T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 4.0,
+      "5-9": 2.6,
+      "10-19": 2.4
+     }
+    },
+    {
+     "code": "MT001S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 6.0,
+      "5-9": 3.9,
+      "10-19": 3.6
+     }
+    },
+    {
+     "code": "MT001M01",
+     "description": "Size pot 2,8 inch. In moss size leaf 10-14cm",
+     "note": null,
+     "prices": {
+      "1-4": 12.0,
+      "5-9": 7.8,
+      "10-19": 7.2
+     }
+    },
+    {
+     "code": "MT001L01",
+     "description": "Size pot 2,8 inch. In moss size leaf 15-21cm",
+     "note": null,
+     "prices": {
+      "1-4": 24.0,
+      "5-9": 15.6,
+      "10-19": 14.4
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT004",
+   "name": "Monstera Deliciosa Yellow Marilyn",
+   "genus": "Monstera",
+   "image": "/plants/MT004.jpeg",
+   "variants": [
+    {
+     "code": "MT004T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 11.7,
+      "5-9": 7.6,
+      "10-19": 7.0
+     }
+    },
+    {
+     "code": "MT004S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 17.6,
+      "5-9": 11.4,
+      "10-19": 10.5
+     }
+    },
+    {
+     "code": "MT004M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 23.4,
+      "5-9": 15.2,
+      "10-19": 14.0
+     }
+    },
+    {
+     "code": "MT004L01",
+     "description": "Size pot 3,5 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 35.1,
+      "5-9": 22.8,
+      "10-19": 21.1
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT040",
+   "name": "Monstera Electro Light",
+   "genus": "Monstera",
+   "image": "/plants/MT040.jpeg",
+   "variants": [
+    {
+     "code": "MT040T01",
+     "description": "Tissue bag 1 plant",
+     "note": null,
+     "prices": {
+      "1-4": 22.9,
+      "5-9": 14.9,
+      "10-19": 13.7
+     }
+    },
+    {
+     "code": "MT040S01",
+     "description": "Size pot 1.7 inch. In moss. Check var key by key",
+     "note": null,
+     "prices": {
+      "1-4": 45.7,
+      "5-9": 29.7,
+      "10-19": 27.4
+     }
+    },
+    {
+     "code": "MT040M01",
+     "description": "Size pot 2,8 inch. In moss. Check var key by key. Size leaf 10-12cm",
+     "note": null,
+     "prices": {
+      "1-4": 68.6,
+      "5-9": 44.6,
+      "10-19": 41.1
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT071",
+   "name": "Monstera Green Snow",
+   "genus": "Monstera",
+   "image": "/plants/MT071.jpeg",
+   "variants": [
+    {
+     "code": "MT071T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 8.4,
+      "5-9": 5.5,
+      "10-19": 5.0
+     }
+    },
+    {
+     "code": "MT071S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": "New price",
+     "prices": {
+      "1-4": 12.6,
+      "5-9": 8.2,
+      "10-19": 7.6
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT060",
+   "name": "Monstera Lemon Lime",
+   "genus": "Monstera",
+   "image": "/plants/MT060.jpeg",
+   "variants": [
+    {
+     "code": "MT060T01",
+     "description": "Tissue bag 1 plant",
+     "note": "New price",
+     "prices": {
+      "1-4": 35.7,
+      "5-9": 23.2,
+      "10-19": 21.4
+     }
+    },
+    {
+     "code": "MT060S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": "New price",
+     "prices": {
+      "1-4": 53.5,
+      "5-9": 34.8,
+      "10-19": 32.1
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT067",
+   "name": "Monstera Light Lime",
+   "genus": "Monstera",
+   "image": "/plants/MT067.jpeg",
+   "variants": [
+    {
+     "code": "MT067T01",
+     "description": "Tissue bag 1 plant",
+     "note": "New price",
+     "prices": {
+      "1-4": 54.2,
+      "5-9": 35.2,
+      "10-19": 32.5
+     }
+    },
+    {
+     "code": "MT067S11",
+     "description": "Size pot 2.8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 108.4,
+      "5-9": 70.5,
+      "10-19": 65.0
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT075",
+   "name": "Monstera Mint Siam",
+   "genus": "Monstera",
+   "image": null,
+   "variants": [
+    {
+     "code": "MT075T01",
+     "description": "Tissue bag 1 plant",
+     "note": "New type",
+     "prices": {
+      "1-4": 33.5,
+      "5-9": 21.8,
+      "10-19": 20.1
+     }
+    },
+    {
+     "code": "MT075S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": "New type",
+     "prices": {
+      "1-4": 50.3,
+      "5-9": 32.7,
+      "10-19": 30.2
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT007",
+   "name": "Monstera Sierrana",
+   "genus": "Monstera",
+   "image": "/plants/MT007.jpeg",
+   "variants": [
+    {
+     "code": "MT007T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 1.6,
+      "5-9": 1.0,
+      "10-19": 0.9
+     }
+    },
+    {
+     "code": "MT007S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 2.4,
+      "5-9": 1.6,
+      "10-19": 1.4
+     }
+    },
+    {
+     "code": "MT007K01",
+     "description": "Top cutting 15-17cm",
+     "note": null,
+     "prices": {
+      "1-4": 6.0,
+      "5-9": 3.9,
+      "10-19": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT005",
+   "name": "Monstera Thai Constellation",
+   "genus": "Monstera",
+   "image": "/plants/MT005.jpeg",
+   "variants": [
+    {
+     "code": "MT005T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 2.0,
+      "5-9": 1.3,
+      "10-19": 1.2
+     }
+    },
+    {
+     "code": "MT005S01",
+     "description": "Size pot 1,7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 3.0,
+      "5-9": 2.0,
+      "10-19": 1.8
+     }
+    },
+    {
+     "code": "MT005M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 4.0,
+      "5-9": 2.6,
+      "10-19": 2.4
+     }
+    },
+    {
+     "code": "MT005Y01",
+     "description": "Top cutting 18-25cm",
+     "note": null,
+     "prices": {
+      "1-4": 5.9,
+      "5-9": 3.8,
+      "10-19": 3.5
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT038",
+   "name": "Monstera Thai Constellation Creme Brulee",
+   "genus": "Monstera",
+   "image": null,
+   "variants": [
+    {
+     "code": "MT038K01",
+     "description": "Cutting size leaf 16-18cm",
+     "note": null,
+     "prices": {
+      "1-4": 110.0,
+      "5-9": 71.5,
+      "10-19": 66.0
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT042",
+   "name": "Monstera Thai Constellation High Variegated",
+   "genus": "Monstera",
+   "image": "/plants/MT042.jpeg",
+   "variants": [
+    {
+     "code": "MT042T10",
+     "description": "Tissue bag 10 plant",
+     "note": null,
+     "prices": {
+      "1-4": 2.5,
+      "5-9": 1.7,
+      "10-19": 1.5
+     }
+    },
+    {
+     "code": "MT042S01",
+     "description": "Size pot 1.7 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 3.8,
+      "5-9": 2.5,
+      "10-19": 2.3
+     }
+    },
+    {
+     "code": "MT042M01",
+     "description": "Size pot 2,8 inch. In moss",
+     "note": null,
+     "prices": {
+      "1-4": 10.6,
+      "5-9": 6.9,
+      "10-19": 6.4
+     }
+    },
+    {
+     "code": "MT042Y01",
+     "description": "Top cutting 16-22 cm",
+     "note": null,
+     "prices": {
+      "1-4": 15.0,
+      "5-9": 9.8,
+      "10-19": 9.0
+     }
+    }
+   ]
+  },
+  {
+   "code": "MT047",
+   "name": "Monstera Thai Constellation Tricolor Miracle",
+   "genus": "Monstera",
+   "image": "/plants/MT047.jpeg",
+   "variants": [
+    {
+     "code": "MT047T01",
+     "description": "Tissue bag 1 plant",
+     "note": "New price",
+     "prices": {
+      "1-4": 99.0,
+      "5-9": 64.4,
+      "10-19": 59.4
+     }
+    }
+   ]
   },
   {
    "code": "PD061",
-   "name": "Philodendron Billietiae Variegated Yellow Alocasia",
+   "name": "Philodendron Billietiae Variegated Yellow",
    "genus": "Philodendron",
+   "image": "/plants/PD061.jpeg",
    "variants": [
     {
      "code": "PD061T01",
@@ -2652,13 +2645,13 @@
       "10-19": 19.6
      }
     }
-   ],
-   "image": "/plants/PD061.jpeg"
+   ]
   },
   {
    "code": "PD047",
    "name": "Philodendron Birkin",
    "genus": "Philodendron",
+   "image": "/plants/PD047.jpeg",
    "variants": [
     {
      "code": "PD047T10",
@@ -2690,13 +2683,13 @@
       "10-19": 1.6
      }
     }
-   ],
-   "image": "/plants/PD047.jpeg"
+   ]
   },
   {
    "code": "PD039",
    "name": "Philodendron Calkins Gold",
    "genus": "Philodendron",
+   "image": "/plants/PD039.jpeg",
    "variants": [
     {
      "code": "PD039T10",
@@ -2728,13 +2721,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD039.jpeg"
+   ]
   },
   {
    "code": "PD087",
    "name": "Philodendron Caramel Fire Tiger",
    "genus": "Philodendron",
+   "image": "/plants/PD087.jpeg",
    "variants": [
     {
      "code": "PD087T01",
@@ -2746,13 +2739,13 @@
       "10-19": 12.3
      }
     }
-   ],
-   "image": "/plants/PD087.jpeg"
+   ]
   },
   {
    "code": "PD004",
    "name": "Philodendron Florida Beauty Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD004.jpeg",
    "variants": [
     {
      "code": "PD004T10",
@@ -2774,13 +2767,13 @@
       "10-19": 4.2
      }
     }
-   ],
-   "image": "/plants/PD004.jpeg"
+   ]
   },
   {
    "code": "PD064",
    "name": "Philodendron Green Congo Hybrid",
    "genus": "Philodendron",
+   "image": "/plants/PD064.jpeg",
    "variants": [
     {
      "code": "PD064T10",
@@ -2812,13 +2805,13 @@
       "10-19": 4.2
      }
     }
-   ],
-   "image": "/plants/PD064.jpeg"
+   ]
   },
   {
    "code": "PD037",
    "name": "Philodendron Joepii",
    "genus": "Philodendron",
+   "image": "/plants/PD037.jpeg",
    "variants": [
     {
      "code": "PD037T10",
@@ -2850,13 +2843,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD037.jpeg"
+   ]
   },
   {
    "code": "PD042",
    "name": "Philodendron Jose Bouno Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD042.jpeg",
    "variants": [
     {
      "code": "PD042T10",
@@ -2888,13 +2881,13 @@
       "10-19": 8.9
      }
     }
-   ],
-   "image": "/plants/PD042.jpeg"
+   ]
   },
   {
    "code": "PD008",
    "name": "Philodendron Painted Lady Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD008.jpeg",
    "variants": [
     {
      "code": "PD008T10",
@@ -2926,13 +2919,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD008.jpeg"
+   ]
   },
   {
    "code": "PD086",
-   "name": "Philodendron Philodendron xanadu variegated",
+   "name": "Philodendron Philodendron Xanadu Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD086.jpeg",
    "variants": [
     {
      "code": "PD086T01",
@@ -2944,13 +2937,13 @@
       "10-19": 57.1
      }
     }
-   ],
-   "image": "/plants/PD086.jpeg"
+   ]
   },
   {
    "code": "PD006",
    "name": "Philodendron Pink Princess",
    "genus": "Philodendron",
+   "image": "/plants/PD006.jpeg",
    "variants": [
     {
      "code": "PD006T10",
@@ -2982,13 +2975,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD006.jpeg"
+   ]
   },
   {
    "code": "PD081",
    "name": "Philodendron Pink Princess High Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD081.jpeg",
    "variants": [
     {
      "code": "PD081T10",
@@ -3020,13 +3013,13 @@
       "10-19": 7.0
      }
     }
-   ],
-   "image": "/plants/PD081.jpeg"
+   ]
   },
   {
    "code": "PD066",
-   "name": "Philodendron Pink princess tricolor",
+   "name": "Philodendron Pink Princess Tricolor",
    "genus": "Philodendron",
+   "image": "/plants/PD066.jpeg",
    "variants": [
     {
      "code": "PD066T01",
@@ -3048,13 +3041,13 @@
       "10-19": 36.9
      }
     }
-   ],
-   "image": "/plants/PD066.jpeg"
+   ]
   },
   {
    "code": "PD045",
-   "name": "Philodendron Red Congo Variegated PHILODENDRON WHITE WIZARD",
+   "name": "Philodendron Red Congo Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD045.jpeg",
    "variants": [
     {
      "code": "PD045T10",
@@ -3086,13 +3079,13 @@
       "10-19": 24.0
      }
     }
-   ],
-   "image": "/plants/PD045.jpeg"
+   ]
   },
   {
    "code": "PD005",
    "name": "Philodendron Ring Of Fire Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD005.jpeg",
    "variants": [
     {
      "code": "PD005T10",
@@ -3124,13 +3117,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD005.jpeg"
+   ]
   },
   {
    "code": "PD056",
    "name": "Philodendron Selloum Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD056.jpeg",
    "variants": [
     {
      "code": "PD056T10",
@@ -3162,13 +3155,13 @@
       "10-19": 19.7
      }
     }
-   ],
-   "image": "/plants/PD056.jpeg"
+   ]
   },
   {
    "code": "PD019",
    "name": "Philodendron Snowdrift Variegated",
    "genus": "Philodendron",
+   "image": "/plants/PD019.jpeg",
    "variants": [
     {
      "code": "PD019T10",
@@ -3200,13 +3193,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/PD019.jpeg"
+   ]
   },
   {
    "code": "PD007",
    "name": "Philodendron White Knight",
    "genus": "Philodendron",
+   "image": null,
    "variants": [
     {
      "code": "PD007T10",
@@ -3238,13 +3231,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "PD026",
    "name": "Philodendron White Princess",
    "genus": "Philodendron",
+   "image": null,
    "variants": [
     {
      "code": "PD026T10",
@@ -3276,13 +3269,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "PD003",
    "name": "Philodendron White Wizard",
    "genus": "Philodendron",
+   "image": null,
    "variants": [
     {
      "code": "PD003T10",
@@ -3314,13 +3307,13 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": null
+   ]
   },
   {
    "code": "PD075",
-   "name": "TRICOLOR ‘HUTAPD75’ PHILODENDRON WHITE WIZARD",
+   "name": "Philodendron White Wizard Tricolor 'HUTAPD75'",
    "genus": "Philodendron",
+   "image": "/plants/PD075.jpeg",
    "variants": [
     {
      "code": "PD075T10",
@@ -3362,13 +3355,13 @@
       "10-19": 18.0
      }
     }
-   ],
-   "image": "/plants/PD075.jpeg"
+   ]
   },
   {
    "code": "SP002",
    "name": "Spathiphyllum Sensation Variegated",
    "genus": "Spathiphyllum",
+   "image": "/plants/SP002.jpeg",
    "variants": [
     {
      "code": "SP002S01",
@@ -3390,8 +3383,7 @@
       "10-19": 2.1
      }
     }
-   ],
-   "image": "/plants/SP002.jpeg"
+   ]
   }
  ]
 }
