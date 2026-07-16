@@ -70,6 +70,21 @@ export function getProduct(code: string): Product | undefined {
   return products.find((p) => p.code === code);
 }
 
+export interface VariantRef {
+  product: Product;
+  variant: Variant;
+}
+
+const variantIndex = new Map<string, VariantRef>();
+for (const product of products) {
+  for (const variant of product.variants) variantIndex.set(variant.code, { product, variant });
+}
+
+/** Look up a variant (and its product) by variant code, e.g. "MT001S01". */
+export function getVariant(code: string): VariantRef | undefined {
+  return variantIndex.get(code);
+}
+
 /** Other varieties in the same genus, excluding the given product. */
 export function relatedByGenus(product: Product, limit = 4): Product[] {
   return products

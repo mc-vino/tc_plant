@@ -4,6 +4,9 @@ import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { supplier } from "@/data/supplier";
 import ThemeToggle from "@/components/ThemeToggle";
+import { CartProvider } from "@/lib/cart";
+import CartButton from "@/components/CartButton";
+import CartDrawer from "@/components/CartDrawer";
 
 const themeInit = `try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}`;
 
@@ -33,6 +36,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background">
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+        <CartProvider>
         <header className="glass sticky top-0 z-30 border-b border-line/60">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="press flex items-center gap-2.5 group">
@@ -54,6 +58,7 @@ export default function RootLayout({
                 {supplier.currency} · EXW
               </span>
               <ThemeToggle />
+              <CartButton />
             </nav>
           </div>
         </header>
@@ -77,6 +82,9 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+        <CartDrawer />
+        </CartProvider>
       </body>
     </html>
   );
