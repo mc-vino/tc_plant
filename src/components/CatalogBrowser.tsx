@@ -1,9 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { Search, LayoutGrid, List, ChevronDown } from "lucide-react";
-import { Product, lowestPrice } from "@/lib/catalog";
+import {
+  Product,
+  CatalogInfo,
+  lowestPrice,
+  generaWithCounts,
+  DEFAULT_CATALOG,
+} from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
 import ProductCard from "./ProductCard";
 import ProductTable from "./ProductTable";
@@ -17,21 +23,50 @@ const SORTS: { key: SortKey; label: string }[] = [
   { key: "price-desc", label: "Цена: по убыванию" },
 ];
 
+const CATALOG_KEY = "tc_catalog";
+
 export default function CatalogBrowser({
   products,
-  genera,
+  catalogs,
 }: {
   products: Product[];
-  genera: { genus: string; count: number }[];
+  catalogs: CatalogInfo[];
 }) {
+  const [catalog, setCatalog] = useState<string>(DEFAULT_CATALOG);
   const [query, setQuery] = useState("");
   const [genus, setGenus] = useState<string | null>(null);
   const [sort, setSort] = useState<SortKey>("name");
   const [view, setView] = useState<View>("grid");
 
+  // Restore the last-used price list after mount.
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(CATALOG_KEY);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      if (saved && catalogs.some((c) => c.id === saved)) setCatalog(saved);
+    } catch {
+      /* ignore */
+    }
+  }, [catalogs]);
+
+  function switchCatalog(id: string) {
+    setCatalog(id);
+    setGenus(null);
+    setQuery("");
+    try {
+      localStorage.setItem(CATALOG_KEY, id);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  const active = catalogs.find((c) => c.id === catalog) ?? catalogs[0];
+  const genera = useMemo(() => generaWithCounts(catalog), [catalog]);
+  const inCatalog = useMemo(() => products.filter((p) => p.catalog === catalog), [products, catalog]);
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const list = products.filter((p) => {
+    const list = inCatalog.filter((p) => {
       if (genus && p.genus !== genus) return false;
       if (!q) return true;
       return p.name.toLowerCase().includes(q) || p.code.toLowerCase().includes(q);
@@ -42,10 +77,44 @@ export default function CatalogBrowser({
       if (sort === "price-desc") return priceOf(b) - priceOf(a);
       return a.name.localeCompare(b.name);
     });
-  }, [products, query, genus, sort]);
+  }, [inCatalog, query, genus, sort]);
 
   return (
     <div>
+      {/* Price-list switcher */}
+      <div className="mb-6">
+        <div className="inline-flex rounded-full border border-line bg-card p-1">
+          {catalogs.map((c) => {
+            const on = c.id === catalog;
+            return (
+              <button
+                key={c.id}
+                onClick={() => switchCatalog(c.id)}
+                aria-pressed={on}
+                className={`press relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  on ? "text-white" : "text-muted hover:text-foreground"
+                }`}
+              >
+                {on && (
+                  <motion.span
+                    layoutId="catalogToggle"
+                    className="absolute inset-0 rounded-full bg-accent"
+                    transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
+                  />
+                )}
+                <span className="relative z-10 whitespace-nowrap">
+                  {c.label}
+                  <span className={`ml-1.5 ${on ? "opacity-70" : "opacity-55"}`}>{c.count}</span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
+        {active?.description && (
+          <p className="mt-3 max-w-2xl text-sm text-muted leading-relaxed">{active.description}</p>
+        )}
+      </div>
+
       {/* Toolbar */}
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="relative lg:max-w-sm lg:flex-1">
@@ -89,25 +158,25 @@ export default function CatalogBrowser({
                 { v: "table" as View, label: "Таблицей", Icon: List },
               ]
             ).map(({ v, label, Icon }) => {
-              const active = view === v;
+              const on = view === v;
               return (
                 <button
                   key={v}
                   onClick={() => setView(v)}
                   aria-label={label}
-                  aria-pressed={active}
+                  aria-pressed={on}
                   className={`press relative flex h-8 w-8 items-center justify-center rounded-full transition-colors ${
-                    active ? "" : "text-faint hover:text-foreground"
+                    on ? "" : "text-faint hover:text-foreground"
                   }`}
                 >
-                  {active && (
+                  {on && (
                     <motion.span
                       layoutId="viewToggle"
                       className="absolute inset-0 rounded-full bg-accent"
                       transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
                     />
                   )}
-                  <Icon size={17} className={`relative z-10 ${active ? "text-white" : ""}`} />
+                  <Icon size={17} className={`relative z-10 ${on ? "text-white" : ""}`} />
                 </button>
               );
             })}
@@ -118,7 +187,7 @@ export default function CatalogBrowser({
       {/* Genus filters */}
       <div className="mt-4 flex flex-wrap gap-2">
         <Chip active={genus === null} onClick={() => setGenus(null)}>
-          Все <span className="opacity-55">{products.length}</span>
+          Все <span className="opacity-55">{inCatalog.length}</span>
         </Chip>
         {genera.map(({ genus: g, count }) => (
           <Chip key={g} active={genus === g} onClick={() => setGenus(g)}>

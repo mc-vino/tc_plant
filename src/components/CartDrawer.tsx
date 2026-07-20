@@ -6,7 +6,7 @@ import Link from "next/link";
 import { X, Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart";
 import { getVariant, formatUSD } from "@/lib/catalog";
-import { unitPriceForQty, tierForQty, nextTier } from "@/lib/pricing";
+import { unitPriceForQty, tierLabelForQty, nextBreak } from "@/lib/pricing";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
 
@@ -17,7 +17,7 @@ interface Line {
   description: string;
   productCode: string;
   image: string | null;
-  prices: import("@/lib/catalog").Variant["prices"];
+  breaks: import("@/lib/catalog").Variant["breaks"];
   unit: number | null;
   total: number;
 }
@@ -37,7 +37,7 @@ export default function CartDrawer() {
       .map((l) => {
         const ref = getVariant(l.code);
         if (!ref) return null;
-        const unit = unitPriceForQty(ref.variant.prices, l.qty);
+        const unit = unitPriceForQty(ref.variant.breaks, l.qty);
         return {
           code: l.code,
           qty: l.qty,
@@ -45,7 +45,7 @@ export default function CartDrawer() {
           description: ref.variant.description,
           productCode: ref.product.code,
           image: ref.product.image,
-          prices: ref.variant.prices,
+          breaks: ref.variant.breaks,
           unit,
           total: unit !== null ? unit * l.qty : 0,
         };
@@ -109,7 +109,7 @@ export default function CartDrawer() {
           <>
             <div className="flex-1 overflow-y-auto px-5 py-4 divide-y divide-line">
               {lines.map((l) => {
-                const nt = nextTier(l.prices, l.qty);
+                const nt = nextBreak(l.breaks, l.qty);
                 return (
                   <div key={l.code} className="flex gap-3 py-4 first:pt-0">
                     <Link
@@ -147,7 +147,7 @@ export default function CartDrawer() {
                             {formatUSD(l.total)}
                           </span>
                           <span className="block text-[10px] text-faint">
-                            {l.unit !== null ? `${formatUSD(l.unit)}/шт · тир ${tierForQty(l.qty)}` : "нет цены"}
+                            {l.unit !== null ? `${formatUSD(l.unit)}/шт · тир ${tierLabelForQty(l.breaks, l.qty)}` : "нет цены"}
                           </span>
                         </div>
                       </div>
@@ -187,8 +187,8 @@ export default function CartDrawer() {
                 Очистить корзину
               </button>
               <p className="text-[10px] text-faint leading-snug">
-                Цена за штуку зависит от количества (тиры 1-4 / 5-9 / 10-19) и пересчитывается
-                автоматически. Итог отправляется поставщику письмом.
+                Цена за штуку зависит от количества и пересчитывается автоматически. Итог
+                отправляется поставщику письмом.
               </p>
             </footer>
           </>

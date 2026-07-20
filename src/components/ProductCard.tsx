@@ -7,6 +7,13 @@ import { marketFor, rarityChipClass } from "@/lib/market";
 export default function ProductCard({ product }: { product: Product }) {
   const from = lowestPrice(product);
   const market = marketFor(product);
+  const moq = product.variants.length === 1 ? product.variants[0].moq : null;
+  const meta =
+    product.variants.length > 1
+      ? `${product.variants.length} вар.`
+      : moq
+        ? `MOQ ${moq}`
+        : null;
   return (
     <Link
       href={`/plant/${product.code}`}
@@ -38,7 +45,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="mt-auto pt-3 flex items-end justify-between">
           <span className="leading-tight">
             <span className="block font-mono text-[11px] text-faint">{product.code}</span>
-            <span className="text-[11px] text-faint">{product.variants.length} вар.</span>
+            {meta && <span className="text-[11px] text-faint">{meta}</span>}
           </span>
           {from !== null && (
             <span className="text-right leading-none">

@@ -13,6 +13,7 @@ import {
 } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
 import { asset } from "@/lib/asset";
+import { plural } from "@/lib/i18n";
 import VariantTable from "@/components/VariantTable";
 import ProductCard from "@/components/ProductCard";
 import MarketPanel from "@/components/MarketPanel";
@@ -82,7 +83,11 @@ export default async function PlantPage({
               {product.genus}
             </span>
             <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
-              {product.variants.length} вариантов
+              {product.variants.length > 1
+                ? `${product.variants.length} ${plural(product.variants.length, ["вариант", "варианта", "вариантов"])}`
+                : product.variants[0]?.moq
+                  ? `MOQ ${product.variants[0].moq}`
+                  : "1 вариант"}
             </span>
           </div>
 

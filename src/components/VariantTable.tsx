@@ -1,13 +1,14 @@
 "use client";
 
 import { Plus, Minus } from "lucide-react";
-import { Product, TIERS, formatUSD } from "@/lib/catalog";
+import { Product, formatUSD, breakColumns } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
 import { useCart } from "@/lib/cart";
 
 export default function VariantTable({ product }: { product: Product }) {
   const { items, add, setQty, setOpen } = useCart();
   const qtyOf = (code: string) => items.find((l) => l.code === code)?.qty ?? 0;
+  const columns = breakColumns(product);
 
   return (
     <div className="overflow-x-auto">
@@ -15,12 +16,12 @@ export default function VariantTable({ product }: { product: Product }) {
         <thead>
           <tr className="text-left text-faint">
             <th className="pb-2 pr-4 font-medium text-xs uppercase tracking-[0.1em]">Вариант</th>
-            {TIERS.map((t) => (
+            {columns.map((c) => (
               <th
-                key={t}
+                key={c.label}
                 className="pb-2 px-2 font-medium text-xs uppercase tracking-[0.08em] text-right font-mono whitespace-nowrap"
               >
-                {t} шт.
+                {c.label} шт.
               </th>
             ))}
             <th className="pb-2 pl-2" />
@@ -29,19 +30,21 @@ export default function VariantTable({ product }: { product: Product }) {
         <tbody>
           {product.variants.map((v) => {
             const qty = qtyOf(v.code);
+            const priceByLabel = new Map(v.breaks.map((b) => [b.label, b.price]));
             return (
               <tr key={v.code} className="border-t border-line align-top">
                 <td className="py-3 pr-4">
                   <span className="block text-foreground leading-snug">{v.description || v.code}</span>
                   <span className="font-mono text-[10px] text-faint">
                     {v.code}
+                    {v.moq ? ` · MOQ ${v.moq}` : ""}
                     {v.note ? ` · ${noteRu(v.note)}` : ""}
                   </span>
                 </td>
-                {TIERS.map((t) => (
-                  <td key={t} className="py-3 px-2 text-right font-mono text-xs whitespace-nowrap">
-                    {v.prices[t] !== undefined ? (
-                      <span className="text-foreground">{formatUSD(v.prices[t]!)}</span>
+                {columns.map((c) => (
+                  <td key={c.label} className="py-3 px-2 text-right font-mono text-xs whitespace-nowrap">
+                    {priceByLabel.has(c.label) ? (
+                      <span className="text-foreground">{formatUSD(priceByLabel.get(c.label)!)}</span>
                     ) : (
                       <span className="text-line">-</span>
                     )}

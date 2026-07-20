@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { products, generaWithCounts, lowestPrice, formatUSD } from "@/lib/catalog";
+import { products, catalogs, lowestPrice, formatUSD } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 const HERO_CODES = ["AL050", "AL062", "AL061", "AL070"];
 
 export default function Home() {
-  const genera = generaWithCounts();
+  const generaCount = new Set(products.map((p) => p.genus)).size;
   const globalMin = Math.min(
     ...products.map((p) => lowestPrice(p) ?? Infinity).filter((n) => Number.isFinite(n)),
   );
@@ -36,7 +36,7 @@ export default function Home() {
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-5">
               <Stat value={String(products.length)} label="Сортов" />
-              <Stat value={String(genera.length)} label="Родов" />
+              <Stat value={String(generaCount)} label="Родов" />
               <Stat value={formatUSD(globalMin)} label="От, за штуку" />
             </dl>
           </Reveal>
@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* Catalogue */}
       <section className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-4 pb-8 scroll-mt-20" id="catalogue">
-        <CatalogBrowser products={products} genera={genera} />
+        <CatalogBrowser products={products} catalogs={catalogs} />
       </section>
     </div>
   );

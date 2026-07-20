@@ -1,0 +1,1854 @@
+{
+  "meta": {
+    "id": "variegated",
+    "label": "Вариегатные",
+    "description": "Вариегатные и коллекционные растения из культуры ткани. Розничная цена за штуку и оптовая цена от количества.",
+    "supplier": "",
+    "currency": "USD",
+    "incoterm": "EXW",
+    "priceType": "retail",
+    "count": 184
+  },
+  "products": [
+    {
+      "code": "VG001",
+      "name": "Alocasia Yucatan Princess Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 30.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG002",
+      "name": "Alocasia Yucatan Princess Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 19.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 14.0
+    },
+    {
+      "code": "VG003",
+      "name": "Alocasia Gageana Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 1.8,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.5
+    },
+    {
+      "code": "VG004",
+      "name": "Alocasia Zebrina Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 20.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 16.0
+    },
+    {
+      "code": "VG005",
+      "name": "Alocasia Lauterbachiana Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 2.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.0
+    },
+    {
+      "code": "VG006",
+      "name": "Alocasia Lauterbachiana Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 3,
+      "retail": 53.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 48.0
+    },
+    {
+      "code": "VG007",
+      "name": "Alocasia Lauterbachiana Mint",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 2.5,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.2
+    },
+    {
+      "code": "VG008",
+      "name": "Alocasia Macrorrhizos Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 4.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 3.5
+    },
+    {
+      "code": "VG009",
+      "name": "Alocasia Macrorrhizos Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 3.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.5
+    },
+    {
+      "code": "VG010",
+      "name": "Alocasia Azlanii Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 50.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 45.0
+    },
+    {
+      "code": "VG011",
+      "name": "Alocasia Azlanii Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 38.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 33.0
+    },
+    {
+      "code": "VG012",
+      "name": "Alocasia Stingray Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 28.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG013",
+      "name": "Alocasia Sarian Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 25.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG014",
+      "name": "Alocasia Jacklyn Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 22.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 18.5
+    },
+    {
+      "code": "VG015",
+      "name": "Alocasia Bambino Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 3.5,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG016",
+      "name": "Alocasia Bambino Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 5.0,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG017",
+      "name": "Alocasia Bambino Tricolor",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 60.0,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG018",
+      "name": "Alocasia Bambino Lava Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 58.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 48.0
+    },
+    {
+      "code": "VG019",
+      "name": "Alocasia Green Bambino Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 9.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 7.0
+    },
+    {
+      "code": "VG020",
+      "name": "Alocasia Polly Pink Snowflake Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 9.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 7.0
+    },
+    {
+      "code": "VG021",
+      "name": "Alocasia Polly Gost",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 20,
+      "retail": 3.5,
+      "wholesaleQty": 50,
+      "wholesalePrice": 3.0
+    },
+    {
+      "code": "VG022",
+      "name": "Alocasia Polly Slash Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 20,
+      "retail": 2.5,
+      "wholesaleQty": 50,
+      "wholesalePrice": 2.0
+    },
+    {
+      "code": "VG023",
+      "name": "Alocasia Polly Lava Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 50.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 40.0
+    },
+    {
+      "code": "VG024",
+      "name": "Alocasia Dragon Scale Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 11.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 9.0
+    },
+    {
+      "code": "VG025",
+      "name": "Alocasia Baginda Dragon Scale Albo Galaxy",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 5.5,
+      "wholesaleQty": 50,
+      "wholesalePrice": 4.7
+    },
+    {
+      "code": "VG026",
+      "name": "Alocasia Dragon Scale Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 8.5,
+      "wholesaleQty": 50,
+      "wholesalePrice": 7.0
+    },
+    {
+      "code": "VG027",
+      "name": "Alocasia Dragon Scale mint Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 1.5,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.0
+    },
+    {
+      "code": "VG028",
+      "name": "Alocasia Silver Dragon Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 6.5,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG029",
+      "name": "Alocasia Silver Dragon Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 100.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 90.0
+    },
+    {
+      "code": "VG030",
+      "name": "Alocasia Baginda Dragon Scale Var. tricolor Mixed Albo and Aurea",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 12.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG031",
+      "name": "Alocasia Frydek Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 50,
+      "retail": 1.2,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.0
+    },
+    {
+      "code": "VG032",
+      "name": "Alocasia Frydek Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 25.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 22.0
+    },
+    {
+      "code": "VG033",
+      "name": "Alocasia Odora Okinawa Sliver Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 13.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG034",
+      "name": "Alocasia Odora Okinawa Sliver Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 20.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 17.0
+    },
+    {
+      "code": "VG035",
+      "name": "Alocasia Blcak Velvet Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 12.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 9.0
+    },
+    {
+      "code": "VG036",
+      "name": "Alocasia Blcak Velvet Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 14.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 11.0
+    },
+    {
+      "code": "VG037",
+      "name": "Alocasia Sinuata Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 17.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 14.0
+    },
+    {
+      "code": "VG038",
+      "name": "Alocasia Sinuata Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 35.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 30.0
+    },
+    {
+      "code": "VG039",
+      "name": "Alocasia Nobilis Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 13.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG040",
+      "name": "Alocasia Nobilis Full Pink",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 20.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 17.0
+    },
+    {
+      "code": "VG041",
+      "name": "Alocasia Nobilis Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 50.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 45.0
+    },
+    {
+      "code": "VG042",
+      "name": "Alocasia Watsoniana Glossy Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 35.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 30.0
+    },
+    {
+      "code": "VG043",
+      "name": "Alocasia Watsoniana Doff Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 25.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG044",
+      "name": "Alocasia Regal Shields Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 45.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 40.0
+    },
+    {
+      "code": "VG045",
+      "name": "Alocasia Regal Shields Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 40.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 35.0
+    },
+    {
+      "code": "VG046",
+      "name": "Alocasia Chantrieri Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 95.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 85.0
+    },
+    {
+      "code": "VG047",
+      "name": "Alocasia Simpo Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 16.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 12.0
+    },
+    {
+      "code": "VG048",
+      "name": "Alocasia Simpo Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 24.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG049",
+      "name": "Alocasia Cuprea Super pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 75.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG050",
+      "name": "Alocasia Cuprea Aurea Variegated latte",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 80.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 70.0
+    },
+    {
+      "code": "VG051",
+      "name": "Alocasia Cuprea pink/mint mix Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 36.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 31.0
+    },
+    {
+      "code": "VG052",
+      "name": "Alocasia Odora Batik Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 1.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.65
+    },
+    {
+      "code": "VG053",
+      "name": "Alocasia Nebula Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 75.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG054",
+      "name": "Alocasia Nebula Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 245.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 230.0
+    },
+    {
+      "code": "VG055",
+      "name": "Alocasia Pink Dragon Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 30.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG056",
+      "name": "Alocasia Pink Dragon Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 30.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG057",
+      "name": "Alocasia Pink Dragon Mint Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 30.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG058",
+      "name": "Alocasia Melo AlboVariegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 23.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG059",
+      "name": "Alocasia Melo Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 35.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 30.0
+    },
+    {
+      "code": "VG060",
+      "name": "Alocasia Psuedo Sanderiana Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 45.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 40.0
+    },
+    {
+      "code": "VG061",
+      "name": "Alocasia Psuedo Sanderiana Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 30.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG062",
+      "name": "Alocasia Sedenii Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 55.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 50.0
+    },
+    {
+      "code": "VG063",
+      "name": "Alocasia Ninja Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 32.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 27.0
+    },
+    {
+      "code": "VG064",
+      "name": "Alocasia Ninja Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 30.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG065",
+      "name": "Alocasia Ninja Lava Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 43.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 38.0
+    },
+    {
+      "code": "VG066",
+      "name": "Alocasia Ninja Mint Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 2,
+      "retail": 15.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 12.0
+    },
+    {
+      "code": "VG067",
+      "name": "Alocasia Nairobi Nights Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 25.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG068",
+      "name": "Alocasia Heart Balloon Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 23.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG069",
+      "name": "Alocasia Wentii Pink Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 60.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG070",
+      "name": "Alocasia Wentii Golden Variegated Latte",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 10,
+      "retail": 5.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 3.0
+    },
+    {
+      "code": "VG071",
+      "name": "Alocasia Scalprum Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 100.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 90.0
+    },
+    {
+      "code": "VG072",
+      "name": "Alocasia Scalprum Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 8.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 7.5
+    },
+    {
+      "code": "VG073",
+      "name": "Alocasia Heterohpylla Dragon's Breath Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 65.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG074",
+      "name": "Alocasia Heterohpylla Metallic Blue Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 310.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 290.0
+    },
+    {
+      "code": "VG075",
+      "name": "Alocasia Heterohpylla Metallic Blue Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 65.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG076",
+      "name": "Alocasia Brancifolia Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 155.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 145.0
+    },
+    {
+      "code": "VG077",
+      "name": "Alocasia Longiloba Narrow Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 310.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 290.0
+    },
+    {
+      "code": "VG078",
+      "name": "Alocasia Platinum Albo Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 60.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG079",
+      "name": "Alocasia Maharani AlboVariegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 30.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 27.0
+    },
+    {
+      "code": "VG080",
+      "name": "Alocasia Maharani Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 75.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 70.0
+    },
+    {
+      "code": "VG081",
+      "name": "Alocasia Suhirmaniana Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 85.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 80.0
+    },
+    {
+      "code": "VG082",
+      "name": "Alocasia Shock Treatment Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 5,
+      "retail": 70.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG083",
+      "name": "Alocasia Longiloba Suhimaniana Aurea Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": null,
+      "retail": 100.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 90.0
+    },
+    {
+      "code": "VG084",
+      "name": "Alocasia Venom",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 2.6,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.4
+    },
+    {
+      "code": "VG085",
+      "name": "Alocasia Loco",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 0.85,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.65
+    },
+    {
+      "code": "VG086",
+      "name": "Alocasia Plumbea Flying Squid",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 20,
+      "retail": 1.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.51
+    },
+    {
+      "code": "VG087",
+      "name": "Alocasia Xanthosoma Mickey Mouse Variegated",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 50,
+      "retail": 0.9,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.7
+    },
+    {
+      "code": "VG088",
+      "name": "Alocasia Black Satun Pink Vein",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 2.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.0
+    },
+    {
+      "code": "VG089",
+      "name": "Alocasia Emerald Tide",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 5.6,
+      "wholesaleQty": 100,
+      "wholesalePrice": 5.1
+    },
+    {
+      "code": "VG090",
+      "name": "Alocasia Teletubbies",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 1.4,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.2
+    },
+    {
+      "code": "VG091",
+      "name": "Alocasia Macrorrhizos 'New Guinea Gold'",
+      "genus": "Alocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 2.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.0
+    },
+    {
+      "code": "VG092",
+      "name": "Philodendron Caramel Marble Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 6.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 5.5
+    },
+    {
+      "code": "VG093",
+      "name": "Philodendron Strawberrl Marble Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 40.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 35.0
+    },
+    {
+      "code": "VG094",
+      "name": "Philodendron Melanochrysum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 9.5,
+      "wholesaleQty": 100,
+      "wholesalePrice": 7.5
+    },
+    {
+      "code": "VG095",
+      "name": "Philodendron Micans Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 20.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 17.0
+    },
+    {
+      "code": "VG096",
+      "name": "Philodendron Burle Marx Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 1.9,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.7
+    },
+    {
+      "code": "VG097",
+      "name": "Philodendron Burle Marx Albo Lava",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 4.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 3.5
+    },
+    {
+      "code": "VG098",
+      "name": "Philodendron Imperial Red Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 2,
+      "retail": 65.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 60.0
+    },
+    {
+      "code": "VG099",
+      "name": "Philodendron Black Cardinal Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 17.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 15.0
+    },
+    {
+      "code": "VG100",
+      "name": "Philodendron Red Congo Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 8.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 6.0
+    },
+    {
+      "code": "VG101",
+      "name": "Philodendron Green Congo Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 1.5,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.2
+    },
+    {
+      "code": "VG102",
+      "name": "Philodendron Giganteum Bilzzard",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 1.9,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.6
+    },
+    {
+      "code": "VG103",
+      "name": "Philodendron Gloriosum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 17.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 15.0
+    },
+    {
+      "code": "VG104",
+      "name": "Philodendron Billietiae Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 20.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 18.0
+    },
+    {
+      "code": "VG105",
+      "name": "Philodendron Orange Princess Marble",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 9.5,
+      "wholesaleQty": 30,
+      "wholesalePrice": 7.5
+    },
+    {
+      "code": "VG106",
+      "name": "Philodendron EI Choco Red Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 60.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG107",
+      "name": "Philodendron Mamei Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 220.0,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG108",
+      "name": "Philodendron Birkin Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 19.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 16.0
+    },
+    {
+      "code": "VG109",
+      "name": "Philodendron Selloum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 10,
+      "retail": 5.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 4.5
+    },
+    {
+      "code": "VG110",
+      "name": "Philodendron Florida Beauty Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 3.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.7
+    },
+    {
+      "code": "VG111",
+      "name": "Philodendron Jose Buono Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 1.1,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.8
+    },
+    {
+      "code": "VG112",
+      "name": "Philodendron Pinnatifidum Olympiad Albo Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": null,
+      "retail": 105.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 100.0
+    },
+    {
+      "code": "VG113",
+      "name": "Philodendron Super Atom Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 38.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 33.0
+    },
+    {
+      "code": "VG114",
+      "name": "Philodendron Radiatum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": null,
+      "retail": 65.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG115",
+      "name": "Philodendron Goeldii Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 2,
+      "retail": 20.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG116",
+      "name": "Philodendron Tortum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 17.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 14.0
+    },
+    {
+      "code": "VG117",
+      "name": "Philodendron Jungle Fever Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 27.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 22.0
+    },
+    {
+      "code": "VG118",
+      "name": "Philodendron Polypodioides",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 8.5,
+      "wholesaleQty": 20,
+      "wholesalePrice": 8.0
+    },
+    {
+      "code": "VG119",
+      "name": "Philodendron Spiritus Sancti",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 0.9,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.75
+    },
+    {
+      "code": "VG120",
+      "name": "Philodendron White Princess Aurea Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": null,
+      "retail": 50.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 45.0
+    },
+    {
+      "code": "VG121",
+      "name": "Philodendron White Knight Aurea Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": null,
+      "retail": 60.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG122",
+      "name": "Philodendron White Wizard Aurea Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": null,
+      "retail": 70.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG123",
+      "name": "Philodendron Sunspot",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 6.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 5.5
+    },
+    {
+      "code": "VG124",
+      "name": "Philodendron Polypodioides",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 7.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 6.5
+    },
+    {
+      "code": "VG125",
+      "name": "Philodendron Whipple Way",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 20,
+      "retail": 4.3,
+      "wholesaleQty": 50,
+      "wholesalePrice": 3.8
+    },
+    {
+      "code": "VG126",
+      "name": "Philodendron Orange Marmalade",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 1.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.0
+    },
+    {
+      "code": "VG127",
+      "name": "Philodendron Sodiroi Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 30,
+      "retail": 5.5,
+      "wholesaleQty": 100,
+      "wholesalePrice": 4.5
+    },
+    {
+      "code": "VG128",
+      "name": "Philodendron Mango Milkshake Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 10,
+      "retail": 3.5,
+      "wholesaleQty": 20,
+      "wholesalePrice": 3.0
+    },
+    {
+      "code": "VG129",
+      "name": "Philodendron Domesticum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 12.5,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG130",
+      "name": "Philodendron Hastatum Variegated",
+      "genus": "Philodendron",
+      "image": null,
+      "moq": 5,
+      "retail": 22.0,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG131",
+      "name": "Monstera White Monster",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 30,
+      "retail": 2.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.5
+    },
+    {
+      "code": "VG132",
+      "name": "Monstera Deliciosa Aurea Variegated",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 6.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 5.5
+    },
+    {
+      "code": "VG133",
+      "name": "Monstera Thai Constellation High Variegated",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 30,
+      "retail": 3.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.8
+    },
+    {
+      "code": "VG134",
+      "name": "Monstera Thai Constellation",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 30,
+      "retail": 1.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.0
+    },
+    {
+      "code": "VG135",
+      "name": "Monstera Green Snow",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 9.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 7.0
+    },
+    {
+      "code": "VG136",
+      "name": "Monstera Deliciosa Albo Variegated",
+      "genus": "Monstera",
+      "image": null,
+      "moq": null,
+      "retail": 50.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 45.0
+    },
+    {
+      "code": "VG137",
+      "name": "Monstera Borsigiana Albo Variegated",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 15.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG139",
+      "name": "Monstera Borsigiana Aurea Variegated",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 10.0,
+      "wholesaleQty": null,
+      "wholesalePrice": null
+    },
+    {
+      "code": "VG140",
+      "name": "Monstera Lemon Lime",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 35.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 30.0
+    },
+    {
+      "code": "VG141",
+      "name": "Monstera Mint",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 7.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 5.0
+    },
+    {
+      "code": "VG142",
+      "name": "Monstera Legacy",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 10.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 8.0
+    },
+    {
+      "code": "VG143",
+      "name": "Monstera Lemon Lime（Full Moon）",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 10,
+      "retail": 6.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 5.0
+    },
+    {
+      "code": "VG144",
+      "name": "Monstera Electro Light",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 35.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 30.0
+    },
+    {
+      "code": "VG145",
+      "name": "Monstera Electro Light Half Moon",
+      "genus": "Monstera",
+      "image": null,
+      "moq": null,
+      "retail": 180.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 160.0
+    },
+    {
+      "code": "VG146",
+      "name": "Monstera Bulbasaur（Green）",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 30,
+      "retail": 3.3,
+      "wholesaleQty": 100,
+      "wholesalePrice": 3.0
+    },
+    {
+      "code": "VG147",
+      "name": "Monstera Bulbasaur Var.",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 8.5,
+      "wholesaleQty": 20,
+      "wholesalePrice": 6.5
+    },
+    {
+      "code": "VG148",
+      "name": "Monstera Lemon Pom Pom",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 45.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 40.0
+    },
+    {
+      "code": "VG149",
+      "name": "Monstera Burle Marx Flame",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 30,
+      "retail": 1.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.8
+    },
+    {
+      "code": "VG150",
+      "name": "Monstera Deliciosa Lava",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 55.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 50.0
+    },
+    {
+      "code": "VG151",
+      "name": "Monstera Deliciosa Miracle Tricolor",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 2,
+      "retail": 70.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG152",
+      "name": "Monstera Creme Brulee",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 8.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 6.0
+    },
+    {
+      "code": "VG153",
+      "name": "Monstera Star Shadow",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 5,
+      "retail": 25.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG154",
+      "name": "Monstera Devil",
+      "genus": "Monstera",
+      "image": null,
+      "moq": null,
+      "retail": 75.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG155",
+      "name": "Monstera Ocean",
+      "genus": "Monstera",
+      "image": null,
+      "moq": 2,
+      "retail": 150.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 135.0
+    },
+    {
+      "code": "VG156",
+      "name": "Epipremnum Giganteum Variegated",
+      "genus": "Epipremnum",
+      "image": null,
+      "moq": 30,
+      "retail": 0.85,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.55
+    },
+    {
+      "code": "VG157",
+      "name": "Ficus Lyrata Variegated",
+      "genus": "Ficus",
+      "image": null,
+      "moq": 20,
+      "retail": 1.65,
+      "wholesaleQty": 50,
+      "wholesalePrice": 1.45
+    },
+    {
+      "code": "VG158",
+      "name": "Rhaphidophora Tetrasperma Albo Variegated",
+      "genus": "Rhaphidophora",
+      "image": null,
+      "moq": 5,
+      "retail": 30.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 25.0
+    },
+    {
+      "code": "VG159",
+      "name": "Rhaphidophora Tetrasperma Mint Variegated",
+      "genus": "Rhaphidophora",
+      "image": null,
+      "moq": 2,
+      "retail": 25.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 20.0
+    },
+    {
+      "code": "VG160",
+      "name": "Musa Florida Ablo Variegated",
+      "genus": "Musa",
+      "image": null,
+      "moq": 10,
+      "retail": 12.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG161",
+      "name": "Musa Nono",
+      "genus": "Musa",
+      "image": null,
+      "moq": 10,
+      "retail": 6.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 5.0
+    },
+    {
+      "code": "VG162",
+      "name": "Spathiphyllum Sensation Variegated",
+      "genus": "Spathiphyllum",
+      "image": null,
+      "moq": 30,
+      "retail": 0.8,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.5
+    },
+    {
+      "code": "VG163",
+      "name": "Anthurium Vittarifolium Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 30,
+      "retail": 4.8,
+      "wholesaleQty": 100,
+      "wholesalePrice": 4.3
+    },
+    {
+      "code": "VG164",
+      "name": "Anthurium Hookeri Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 30,
+      "retail": 2.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 1.5
+    },
+    {
+      "code": "VG165",
+      "name": "Anthurium Superbum Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 30,
+      "retail": 2.3,
+      "wholesaleQty": 50,
+      "wholesalePrice": 1.8
+    },
+    {
+      "code": "VG166",
+      "name": "Anthurium Clarinervium Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 5,
+      "retail": 45.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 40.0
+    },
+    {
+      "code": "VG167",
+      "name": "Anthurium Forgetii Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": null,
+      "retail": 120.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 110.0
+    },
+    {
+      "code": "VG168",
+      "name": "Anthurium Ace of Spades Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 2,
+      "retail": 105.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 95.0
+    },
+    {
+      "code": "VG169",
+      "name": "Anthurium Magnificum Hybird Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": null,
+      "retail": 60.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 55.0
+    },
+    {
+      "code": "VG170",
+      "name": "Anthurium Dark Phoenix Mint Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 20,
+      "retail": 5.0,
+      "wholesaleQty": 50,
+      "wholesalePrice": 4.5
+    },
+    {
+      "code": "VG171",
+      "name": "Anthurium SKG Red Crystallinum X Tezula Red Crystallinum",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 10,
+      "retail": 12.0,
+      "wholesaleQty": 30,
+      "wholesalePrice": 10.0
+    },
+    {
+      "code": "VG172",
+      "name": "Anthurium Magnificum*Forgetii Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": null,
+      "retail": 70.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG173",
+      "name": "Anthurium Magnificum*Crystallinum Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": null,
+      "retail": 70.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 65.0
+    },
+    {
+      "code": "VG174",
+      "name": "Anthurium Sliver Blush Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 2,
+      "retail": 120.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 110.0
+    },
+    {
+      "code": "VG175",
+      "name": "Anthurium Warocqueanum Variegated",
+      "genus": "Anthurium",
+      "image": null,
+      "moq": 2,
+      "retail": 115.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 100.0
+    },
+    {
+      "code": "VG176",
+      "name": "Begonia Carnival Variegated",
+      "genus": "Begonia",
+      "image": null,
+      "moq": null,
+      "retail": 115.0,
+      "wholesaleQty": 5,
+      "wholesalePrice": 100.0
+    },
+    {
+      "code": "VG177",
+      "name": "Homalomena Rubwscend Aurea Variegated",
+      "genus": "Homalomena",
+      "image": null,
+      "moq": 5,
+      "retail": 15.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 13.0
+    },
+    {
+      "code": "VG178",
+      "name": "Homalomena Rubwscend Albo Variegated",
+      "genus": "Homalomena",
+      "image": null,
+      "moq": 5,
+      "retail": 10.0,
+      "wholesaleQty": 20,
+      "wholesalePrice": 8.0
+    },
+    {
+      "code": "VG179",
+      "name": "Homalomena Cheese Variegated",
+      "genus": "Homalomena",
+      "image": null,
+      "moq": 30,
+      "retail": 3.0,
+      "wholesaleQty": 100,
+      "wholesalePrice": 2.5
+    },
+    {
+      "code": "VG180",
+      "name": "Homalomena Mint Variegated",
+      "genus": "Homalomena",
+      "image": null,
+      "moq": 30,
+      "retail": 3.95,
+      "wholesaleQty": 100,
+      "wholesalePrice": 3.45
+    },
+    {
+      "code": "VG181",
+      "name": "Homalomena Camouflage",
+      "genus": "Homalomena",
+      "image": null,
+      "moq": 50,
+      "retail": 0.65,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.45
+    },
+    {
+      "code": "VG182",
+      "name": "Xanthosoma Lindenii Variegated",
+      "genus": "Xanthosoma",
+      "image": null,
+      "moq": 5,
+      "retail": 40.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 35.0
+    },
+    {
+      "code": "VG183",
+      "name": "Schismatoglottis Wsllichii Variegated",
+      "genus": "Schismatoglottis",
+      "image": null,
+      "moq": null,
+      "retail": 41.0,
+      "wholesaleQty": 10,
+      "wholesalePrice": 36.0
+    },
+    {
+      "code": "VG184",
+      "name": "Colocasia Milky Way",
+      "genus": "Colocasia",
+      "image": null,
+      "moq": 30,
+      "retail": 1.2,
+      "wholesaleQty": 100,
+      "wholesalePrice": 0.8
+    },
+    {
+      "code": "VG185",
+      "name": "Colocasia Bastet Queen",
+      "genus": "Colocasia",
+      "image": null,
+      "moq": 20,
+      "retail": 2.6,
+      "wholesaleQty": 50,
+      "wholesalePrice": 2.3
+    }
+  ]
+}
