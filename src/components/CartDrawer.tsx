@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { X, Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart";
-import { getVariant, formatUSD } from "@/lib/catalog";
+import { getVariant, formatUSD, catalogs } from "@/lib/catalog";
 import { unitPriceForQty, tierLabelForQty, nextBreak } from "@/lib/pricing";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
@@ -23,7 +23,8 @@ interface Line {
 }
 
 export default function CartDrawer() {
-  const { items, open, setOpen, setQty, remove, clear, count } = useCart();
+  const { items, open, setOpen, setQty, remove, clear, count, activeCatalog } = useCart();
+  const catalogLabel = catalogs.find((c) => c.id === activeCatalog)?.label ?? "";
 
   useEffect(() => {
     if (!open) return;
@@ -63,8 +64,9 @@ export default function CartDrawer() {
             `${l.name} (${l.description}): ${l.qty} шт. x ${l.unit !== null ? formatUSD(l.unit) : "-"} = ${formatUSD(l.total)} [${l.code}]`,
         )
         .join("\n") + `\n\nИтого: ${formatUSD(grandTotal)}`;
-    return `mailto:${supplier.email}?subject=${encodeURIComponent("Заявка TC Plant")}&body=${encodeURIComponent(body)}`;
-  }, [lines, grandTotal]);
+    const subject = catalogLabel ? `Заявка TC Plant · ${catalogLabel}` : "Заявка TC Plant";
+    return `mailto:${supplier.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }, [lines, grandTotal, catalogLabel]);
 
   return (
     <div className={`fixed inset-0 z-50 ${open ? "" : "pointer-events-none"}`} aria-hidden={!open}>
@@ -79,10 +81,15 @@ export default function CartDrawer() {
         aria-label="Корзина"
       >
         <header className="flex items-center justify-between border-b border-line px-5 h-14 shrink-0">
-          <div className="flex items-center gap-2">
-            <ShoppingCart size={18} className="text-accent" />
+          <div className="flex items-center gap-2 min-w-0">
+            <ShoppingCart size={18} className="text-accent shrink-0" />
             <span className="display text-lg">Корзина</span>
-            {count > 0 && <span className="text-sm text-faint">{count} шт.</span>}
+            {catalogLabel && (
+              <span className="truncate rounded-full bg-accent-soft px-2 py-0.5 text-[11px] text-accent-strong">
+                {catalogLabel}
+              </span>
+            )}
+            {count > 0 && <span className="shrink-0 text-sm text-faint">{count} шт.</span>}
           </div>
           <button
             onClick={() => setOpen(false)}

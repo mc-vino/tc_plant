@@ -1,14 +1,21 @@
 "use client";
 
+import { useEffect } from "react";
 import { Plus, Minus } from "lucide-react";
 import { Product, formatUSD, breakColumns } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
 import { useCart } from "@/lib/cart";
 
 export default function VariantTable({ product }: { product: Product }) {
-  const { items, add, setQty, setOpen } = useCart();
+  const { itemsFor, add, setQty, setOpen, setActiveCatalog } = useCart();
+  const items = itemsFor(product.catalog);
   const qtyOf = (code: string) => items.find((l) => l.code === code)?.qty ?? 0;
   const columns = breakColumns(product);
+
+  // Viewing a product makes its price list the active cart in the header.
+  useEffect(() => {
+    setActiveCatalog(product.catalog);
+  }, [product.catalog, setActiveCatalog]);
 
   return (
     <div className="overflow-x-auto">

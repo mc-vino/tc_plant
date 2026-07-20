@@ -1,15 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { Search, LayoutGrid, List, ChevronDown } from "lucide-react";
-import {
-  Product,
-  CatalogInfo,
-  lowestPrice,
-  generaWithCounts,
-  DEFAULT_CATALOG,
-} from "@/lib/catalog";
+import { Product, CatalogInfo, lowestPrice, generaWithCounts } from "@/lib/catalog";
+import { useCart } from "@/lib/cart";
 import { varieties } from "@/lib/i18n";
 import ProductCard from "./ProductCard";
 import ProductTable from "./ProductTable";
@@ -23,8 +18,6 @@ const SORTS: { key: SortKey; label: string }[] = [
   { key: "price-desc", label: "Цена: по убыванию" },
 ];
 
-const CATALOG_KEY = "tc_catalog";
-
 export default function CatalogBrowser({
   products,
   catalogs,
@@ -32,32 +25,16 @@ export default function CatalogBrowser({
   products: Product[];
   catalogs: CatalogInfo[];
 }) {
-  const [catalog, setCatalog] = useState<string>(DEFAULT_CATALOG);
+  const { activeCatalog: catalog, setActiveCatalog, countFor } = useCart();
   const [query, setQuery] = useState("");
   const [genus, setGenus] = useState<string | null>(null);
   const [sort, setSort] = useState<SortKey>("name");
   const [view, setView] = useState<View>("grid");
 
-  // Restore the last-used price list after mount.
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(CATALOG_KEY);
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      if (saved && catalogs.some((c) => c.id === saved)) setCatalog(saved);
-    } catch {
-      /* ignore */
-    }
-  }, [catalogs]);
-
   function switchCatalog(id: string) {
-    setCatalog(id);
+    setActiveCatalog(id);
     setGenus(null);
     setQuery("");
-    try {
-      localStorage.setItem(CATALOG_KEY, id);
-    } catch {
-      /* ignore */
-    }
   }
 
   const active = catalogs.find((c) => c.id === catalog) ?? catalogs[0];
@@ -86,6 +63,7 @@ export default function CatalogBrowser({
         <div className="inline-flex rounded-full border border-line bg-card p-1">
           {catalogs.map((c) => {
             const on = c.id === catalog;
+            const inCart = countFor(c.id);
             return (
               <button
                 key={c.id}
@@ -106,6 +84,16 @@ export default function CatalogBrowser({
                   {c.label}
                   <span className={`ml-1.5 ${on ? "opacity-70" : "opacity-55"}`}>{c.count}</span>
                 </span>
+                {inCart > 0 && (
+                  <span
+                    className={`absolute -top-1 -right-1 z-20 flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-semibold ${
+                      on ? "bg-white text-accent-strong" : "bg-accent text-white"
+                    }`}
+                    aria-label={`${inCart} в корзине`}
+                  >
+                    {inCart > 99 ? "99+" : inCart}
+                  </span>
+                )}
               </button>
             );
           })}
