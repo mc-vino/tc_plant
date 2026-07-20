@@ -6,8 +6,9 @@ import Link from "next/link";
 import { Product, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
+import AddToCartButton from "./AddToCartButton";
 
-type SortKey = "name" | "code" | "variants" | "low" | "high" | "rarity";
+type SortKey = "name" | "variants" | "low" | "high" | "rarity";
 type Dir = "asc" | "desc";
 
 interface Row {
@@ -23,8 +24,6 @@ function sortValue(row: Row, key: SortKey): number | string | null {
   switch (key) {
     case "name":
       return row.p.name;
-    case "code":
-      return row.p.code;
     case "variants":
       return row.p.variants.length;
     case "low":
@@ -75,11 +74,11 @@ export default function ProductTable({ products }: { products: Product[] }) {
         <thead>
           <tr className="text-left text-faint bg-paper">
             <Th onClick={() => toggle("name")} label={`Сорт${arrow("name")}`} className="pl-4 pr-3" />
-            <Th onClick={() => toggle("code")} label={`Артикул${arrow("code")}`} />
-            <Th onClick={() => toggle("variants")} label={`Вариантов${arrow("variants")}`} align="right" />
-            <Th onClick={() => toggle("low")} label={`От${arrow("low")}`} align="right" />
+            <Th onClick={() => toggle("low")} label={`Цена от${arrow("low")}`} align="right" />
             <Th onClick={() => toggle("high")} label={`До${arrow("high")}`} align="right" />
-            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} className="pr-4" />
+            <Th onClick={() => toggle("variants")} label={`Вариантов${arrow("variants")}`} align="right" />
+            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} />
+            <th className="py-3 px-3 pr-4" />
           </tr>
         </thead>
         <tbody>
@@ -104,20 +103,22 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   </span>
                 </Link>
               </td>
-              <td className="py-2.5 px-3 font-mono text-[11px] text-muted">{p.code}</td>
-              <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">{p.variants.length}</td>
               <td className="py-2.5 px-3 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
                 {low !== null ? formatUSD(low) : "-"}
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
                 {high !== null ? formatUSD(high) : "-"}
               </td>
-              <td className="py-2.5 px-3 pr-4">
+              <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">{p.variants.length}</td>
+              <td className="py-2.5 px-3">
                 <span
                   className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
                 >
                   {m.rarity}
                 </span>
+              </td>
+              <td className="py-2.5 px-3 pr-4 text-right">
+                <AddToCartButton product={p} variant="full" />
               </td>
             </tr>
           ))}

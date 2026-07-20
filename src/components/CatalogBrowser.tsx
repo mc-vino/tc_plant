@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { Search, LayoutGrid, List, ChevronDown } from "lucide-react";
 import { Product, CatalogInfo, lowestPrice, generaWithCounts } from "@/lib/catalog";
@@ -18,6 +18,18 @@ const SORTS: { key: SortKey; label: string }[] = [
   { key: "price-desc", label: "Цена: по убыванию" },
 ];
 
+const STORE_KEY = "tc_browse_v1";
+// Runs before paint on the client; falls back to a no-op-ish effect during SSR.
+const useIsoLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
+interface Persisted {
+  view: View;
+  sort: SortKey;
+  genus: string | null;
+  query: string;
+  scroll: number;
+}
+
 export default function CatalogBrowser({
   products,
   catalogs,
@@ -31,11 +43,70 @@ export default function CatalogBrowser({
   const [sort, setSort] = useState<SortKey>("name");
   const [view, setView] = useState<View>("grid");
 
+  const readyRef = useRef(false);
+  // Scroll+view to restore when returning from a product page.
+  const targetRef = useRef<{ scroll: number; view: View } | null>(null);
+
   function switchCatalog(id: string) {
     setActiveCatalog(id);
     setGenus(null);
     setQuery("");
   }
+
+  // Restore the last browse state (view, sort, filters) before the first paint.
+  useIsoLayoutEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(STORE_KEY);
+      if (raw) {
+        const s = JSON.parse(raw) as Partial<Persisted>;
+        if (s.view === "grid" || s.view === "table") setView(s.view);
+        if (s.sort === "name" || s.sort === "price-asc" || s.sort === "price-desc") setSort(s.sort);
+        if (typeof s.query === "string") setQuery(s.query);
+        if (s.genus === null || typeof s.genus === "string") setGenus(s.genus ?? null);
+        if (typeof s.scroll === "number") {
+          targetRef.current = { scroll: s.scroll, view: s.view === "table" ? "table" : "grid" };
+        }
+      }
+    } catch {
+      /* ignore */
+    }
+    readyRef.current = true;
+  }, []);
+
+  // Persist browse state whenever it changes (once restore has run).
+  useEffect(() => {
+    if (!readyRef.current) return;
+    try {
+      const payload: Persisted = { view, sort, genus, query, scroll: window.scrollY };
+      sessionStorage.setItem(STORE_KEY, JSON.stringify(payload));
+    } catch {
+      /* ignore */
+    }
+  }, [view, sort, genus, query]);
+
+  // Keep the saved scroll position fresh while browsing.
+  useEffect(() => {
+    let raf = 0;
+    const onScroll = () => {
+      if (!readyRef.current) return;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        try {
+          const raw = sessionStorage.getItem(STORE_KEY);
+          const s = raw ? (JSON.parse(raw) as Persisted) : ({} as Persisted);
+          s.scroll = window.scrollY;
+          sessionStorage.setItem(STORE_KEY, JSON.stringify(s));
+        } catch {
+          /* ignore */
+        }
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
 
   const active = catalogs.find((c) => c.id === catalog) ?? catalogs[0];
   const genera = useMemo(() => generaWithCounts(catalog), [catalog]);
@@ -55,6 +126,15 @@ export default function CatalogBrowser({
       return a.name.localeCompare(b.name);
     });
   }, [inCatalog, query, genus, sort]);
+
+  // Once the restored view is on screen with its content, jump back to where we were.
+  useIsoLayoutEffect(() => {
+    const t = targetRef.current;
+    if (!t || view !== t.view) return;
+    window.scrollTo(0, t.scroll);
+    requestAnimationFrame(() => window.scrollTo(0, t.scroll));
+    targetRef.current = null;
+  }, [view, filtered.length]);
 
   return (
     <div>

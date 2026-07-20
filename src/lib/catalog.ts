@@ -233,6 +233,21 @@ export function relatedByGenus(product: Product, limit = 4): Product[] {
     .slice(0, limit);
 }
 
+/** The variant with the lowest available unit price (matches the "от" figure). */
+export function cheapestVariant(p: Product): Variant | null {
+  let best: Variant | null = null;
+  let bestPrice = Infinity;
+  for (const v of p.variants) {
+    if (!v.breaks.length) continue;
+    const m = Math.min(...v.breaks.map((b) => b.price));
+    if (m < bestPrice) {
+      bestPrice = m;
+      best = v;
+    }
+  }
+  return best;
+}
+
 /** Ordered union of break labels across a product's variants (for table columns). */
 export function breakColumns(product: Product): PriceBreak[] {
   const seen = new Map<string, PriceBreak>();
