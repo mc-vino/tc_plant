@@ -42,15 +42,23 @@ function catalogOf(code: string): string {
   return getVariant(code)?.product.catalog ?? DEFAULT_CATALOG;
 }
 
+/** Minimum order quantity for a variant (price-list MOQ, else 1). */
+function minQtyOf(code: string): number {
+  return getVariant(code)?.variant.moq ?? 1;
+}
+
 function sanitize(raw: unknown): Carts {
   const out: Carts = {};
   if (!raw || typeof raw !== "object") return out;
   for (const [cat, lines] of Object.entries(raw as Record<string, unknown>)) {
     if (!KNOWN.has(cat) || !Array.isArray(lines)) continue;
-    out[cat] = lines.filter(
-      (l): l is CartLine =>
-        Boolean(l) && typeof (l as CartLine).code === "string" && (l as CartLine).qty > 0,
-    );
+    out[cat] = lines
+      .filter(
+        (l): l is CartLine =>
+          Boolean(l) && typeof (l as CartLine).code === "string" && (l as CartLine).qty > 0,
+      )
+      // Enforce MOQ on anything restored/migrated so quantities stay valid.
+      .map((l) => ({ code: l.code, qty: Math.max(l.qty, minQtyOf(l.code)) }));
   }
   return out;
 }
@@ -112,12 +120,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const add = useCallback(
     (code: string, qty = 1) => {
       const cat = catalogOf(code);
+      const moq = minQtyOf(code);
       setCarts((prev) => {
         const list = prev[cat] ?? [];
         const found = list.find((l) => l.code === code);
         const next = found
           ? list.map((l) => (l.code === code ? { ...l, qty: l.qty + qty } : l))
-          : [...list, { code, qty }];
+          : [...list, { code, qty: Math.max(qty, moq) }]; // new line starts at MOQ
         return { ...prev, [cat]: next };
       });
       setActiveCatalog(cat);
@@ -127,10 +136,12 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const setQty = useCallback((code: string, qty: number) => {
     const cat = catalogOf(code);
+    const moq = minQtyOf(code);
     setCarts((prev) => {
       const list = prev[cat] ?? [];
+      // Below MOQ is not a valid order, so stepping under it removes the line.
       const next =
-        qty <= 0
+        qty < moq
           ? list.filter((l) => l.code !== code)
           : list.map((l) => (l.code === code ? { ...l, qty } : l));
       return { ...prev, [cat]: next };

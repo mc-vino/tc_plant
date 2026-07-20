@@ -18,6 +18,7 @@ interface Line {
   productCode: string;
   image: string | null;
   breaks: import("@/lib/catalog").Variant["breaks"];
+  moq: number | null;
   unit: number | null;
   total: number;
 }
@@ -47,6 +48,7 @@ export default function CartDrawer() {
           productCode: ref.product.code,
           image: ref.product.image,
           breaks: ref.variant.breaks,
+          moq: ref.variant.moq,
           unit,
           total: unit !== null ? unit * l.qty : 0,
         };
@@ -162,6 +164,9 @@ export default function CartDrawer() {
                         <p className="mt-1.5 text-[10px] text-accent">
                           от {nt.at} шт: {formatUSD(nt.price)}/шт
                         </p>
+                      )}
+                      {l.moq && l.moq > 1 && (
+                        <p className="mt-0.5 text-[10px] text-faint">мин. заказ {l.moq} шт.</p>
                       )}
                     </div>
                     <button
