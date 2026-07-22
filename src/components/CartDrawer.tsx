@@ -9,6 +9,7 @@ import { getVariant, formatUSD, catalogs } from "@/lib/catalog";
 import { unitPriceForQty, tierLabelForQty, nextBreak } from "@/lib/pricing";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
+import CartExport from "./CartExport";
 
 interface Line {
   code: string;
@@ -192,6 +193,15 @@ export default function CartDrawer() {
               >
                 Оформить заявку
               </a>
+              <CartExport
+                lines={lines.map((l) => ({
+                  name: l.name,
+                  code: l.code,
+                  qty: l.qty,
+                  unit: l.unit,
+                  total: l.total,
+                }))}
+              />
               <button
                 onClick={clear}
                 className="press w-full text-center text-xs text-faint transition-colors hover:text-foreground"
