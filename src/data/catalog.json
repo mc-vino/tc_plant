@@ -1,3389 +1,3397 @@
 {
- "meta": {
-  "supplier": "Xanh Xanh Urban Forest Co., Ltd",
-  "currency": "USD",
-  "incoterm": "EXW (INCOTERM 2020)",
-  "quotationDate": "2026-06-20",
-  "priceType": "retail",
-  "tiers": [
-   "1-4",
-   "5-9",
-   "10-19"
-  ],
-  "count": 94
- },
- "products": [
-  {
-   "code": "AL042",
-   "name": "Alocasia Azlanii Gold",
-   "genus": "Alocasia",
-   "image": "/plants/AL042.jpeg",
-   "variants": [
-    {
-     "code": "AL042T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 44.1,
-      "5-9": 28.7,
-      "10-19": 26.4
-     }
-    },
-    {
-     "code": "AL042S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 66.1,
-      "5-9": 43.0,
-      "10-19": 39.7
-     }
-    },
-    {
-     "code": "AL042M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 88.2,
-      "5-9": 57.3,
-      "10-19": 52.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL050",
-   "name": "Alocasia Balloon Heart Pink Variegated",
-   "genus": "Alocasia",
-   "image": "/plants/AL050.jpeg",
-   "variants": [
-    {
-     "code": "AL050T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 25.2,
-      "5-9": 16.4,
-      "10-19": 15.1
-     }
-    },
-    {
-     "code": "AL050S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 37.8,
-      "5-9": 24.6,
-      "10-19": 22.7
-     }
-    },
-    {
-     "code": "AL050M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 50.4,
-      "5-9": 32.8,
-      "10-19": 30.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL018",
-   "name": "Alocasia Bambino",
-   "genus": "Alocasia",
-   "image": "/plants/AL018.jpeg",
-   "variants": [
-    {
-     "code": "AL018T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.0,
-      "5-9": 0.7,
-      "10-19": 0.6
-     }
-    },
-    {
-     "code": "AL018S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.1,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "AL018M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL019",
-   "name": "Alocasia Bambino Variegated Aurea",
-   "genus": "Alocasia",
-   "image": null,
-   "variants": [
-    {
-     "code": "AL019T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 6.6,
-      "5-9": 4.3,
-      "10-19": 3.9
-     }
-    },
-    {
-     "code": "AL019S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.4,
-      "5-9": 6.1,
-      "10-19": 5.6
-     }
-    },
-    {
-     "code": "AL019M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 14.1,
-      "5-9": 9.1,
-      "10-19": 8.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL062",
-   "name": "Alocasia Bisma Albo",
-   "genus": "Alocasia",
-   "image": "/plants/AL062.jpeg",
-   "variants": [
-    {
-     "code": "AL062T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 115.4,
-      "5-9": 75.0,
-      "10-19": 69.3
-     }
-    },
-    {
-     "code": "AL062S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 155.8,
-      "5-9": 101.3,
-      "10-19": 93.5
-     }
-    },
-    {
-     "code": "AL062M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 207.3,
-      "5-9": 134.7,
-      "10-19": 124.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL070",
-   "name": "Alocasia Black Saturn Stardust",
-   "genus": "Alocasia",
-   "image": "/plants/AL070.jpeg",
-   "variants": [
-    {
-     "code": "AL070T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 38.4,
-      "5-9": 24.9,
-      "10-19": 23.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL051",
-   "name": "Alocasia Black Velvet Gold",
-   "genus": "Alocasia",
-   "image": null,
-   "variants": [
-    {
-     "code": "AL051T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 54.8,
-      "5-9": 35.7,
-      "10-19": 32.9
-     }
-    },
-    {
-     "code": "AL051S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 68.6,
-      "5-9": 44.6,
-      "10-19": 41.1
-     }
-    },
-    {
-     "code": "AL051M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 82.3,
-      "5-9": 53.5,
-      "10-19": 49.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL041",
-   "name": "Alocasia Black Velvet Pink",
-   "genus": "Alocasia",
-   "image": "/plants/AL041.jpeg",
-   "variants": [
-    {
-     "code": "AL041T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 10.5,
-      "5-9": 6.8,
-      "10-19": 6.3
-     }
-    },
-    {
-     "code": "AL041S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 15.8,
-      "5-9": 10.2,
-      "10-19": 9.5
-     }
-    },
-    {
-     "code": "AL041M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 21.0,
-      "5-9": 13.7,
-      "10-19": 12.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL061",
-   "name": "Alocasia Chantrieri Pink",
-   "genus": "Alocasia",
-   "image": "/plants/AL061.jpeg",
-   "variants": [
-    {
-     "code": "AL061T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 100.8,
-      "5-9": 65.5,
-      "10-19": 60.5
-     }
-    },
-    {
-     "code": "AL061S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 151.2,
-      "5-9": 98.3,
-      "10-19": 90.7
-     }
-    },
-    {
-     "code": "AL061M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 201.6,
-      "5-9": 131.0,
-      "10-19": 121.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL039",
-   "name": "Alocasia Cupera Pink Mint",
-   "genus": "Alocasia",
-   "image": "/plants/AL039.jpeg",
-   "variants": [
-    {
-     "code": "AL039T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 52.7,
-      "5-9": 34.2,
-      "10-19": 31.6
-     }
-    },
-    {
-     "code": "AL039S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 65.8,
-      "5-9": 42.8,
-      "10-19": 39.5
-     }
-    },
-    {
-     "code": "AL039M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 79.0,
-      "5-9": 51.3,
-      "10-19": 47.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL063",
-   "name": "Alocasia Cupera Spider",
-   "genus": "Alocasia",
-   "image": "/plants/AL063.jpeg",
-   "variants": [
-    {
-     "code": "AL063T01",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 30.8,
-      "5-9": 20.0,
-      "10-19": 18.5
-     }
-    },
-    {
-     "code": "AL063S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 41.5,
-      "5-9": 27.0,
-      "10-19": 24.9
-     }
-    },
-    {
-     "code": "AL063M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 55.4,
-      "5-9": 36.0,
-      "10-19": 33.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL001",
-   "name": "Alocasia Cuprea / Red Secret",
-   "genus": "Alocasia",
-   "image": "/plants/AL001.jpeg",
-   "variants": [
-    {
-     "code": "AL001M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL064",
-   "name": "Alocasia Dragon Scale Mint",
-   "genus": "Alocasia",
-   "image": "/plants/AL064.jpeg",
-   "variants": [
-    {
-     "code": "AL064T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 19.9,
-      "5-9": 12.9,
-      "10-19": 11.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL031",
-   "name": "Alocasia Dragon Scale White Variegated",
-   "genus": "Alocasia",
-   "image": "/plants/AL031.jpeg",
-   "variants": [
-    {
-     "code": "AL031T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 15.9,
-      "5-9": 10.3,
-      "10-19": 9.5
-     }
-    },
-    {
-     "code": "AL031S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 23.8,
-      "5-9": 15.5,
-      "10-19": 14.3
-     }
-    },
-    {
-     "code": "AL031M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 31.7,
-      "5-9": 20.6,
-      "10-19": 19.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL016",
-   "name": "Alocasia Frydex Variegated",
-   "genus": "Alocasia",
-   "image": "/plants/AL016.jpeg",
-   "variants": [
-    {
-     "code": "AL016T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.3,
-      "5-9": 2.1,
-      "10-19": 2.0
-     }
-    },
-    {
-     "code": "AL016S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.0,
-      "5-9": 3.2,
-      "10-19": 3.0
-     }
-    },
-    {
-     "code": "AL016M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.5,
-      "10-19": 4.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL013",
-   "name": "Alocasia Gageana Aurea",
-   "genus": "Alocasia",
-   "image": "/plants/AL013.jpeg",
-   "variants": [
-    {
-     "code": "AL013T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.0,
-      "5-9": 2.0,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "AL013S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.7,
-      "5-9": 3.0,
-      "10-19": 2.8
-     }
-    },
-    {
-     "code": "AL013M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 6.6,
-      "5-9": 4.3,
-      "10-19": 3.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL067",
-   "name": "Alocasia Jacklyn Mystic",
-   "genus": "Alocasia",
-   "image": "/plants/AL067.jpeg",
-   "variants": [
-    {
-     "code": "AL067T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 110.6,
-      "5-9": 71.9,
-      "10-19": 66.4
-     }
-    },
-    {
-     "code": "AL067S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 149.3,
-      "5-9": 97.1,
-      "10-19": 89.6
-     }
-    },
-    {
-     "code": "AL067M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 199.1,
-      "5-9": 129.4,
-      "10-19": 119.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL009",
-   "name": "Alocasia Longiloba",
-   "genus": "Alocasia",
-   "image": "/plants/AL009.jpeg",
-   "variants": [
-    {
-     "code": "AL009M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL008",
-   "name": "Alocasia Longiloba Variegated",
-   "genus": "Alocasia",
-   "image": "/plants/AL008.jpeg",
-   "variants": [
-    {
-     "code": "AL008T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.1,
-      "5-9": 2.7,
-      "10-19": 2.5
-     }
-    },
-    {
-     "code": "AL008S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    },
-    {
-     "code": "AL008M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 8.2,
-      "5-9": 5.3,
-      "10-19": 4.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL056",
-   "name": "Alocasia Maharani Albo",
-   "genus": "Alocasia",
-   "image": "/plants/AL056.jpeg",
-   "variants": [
-    {
-     "code": "AL056T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 62.7,
-      "5-9": 40.8,
-      "10-19": 37.6
-     }
-    },
-    {
-     "code": "AL056S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 94.1,
-      "5-9": 61.2,
-      "10-19": 56.4
-     }
-    },
-    {
-     "code": "AL056M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 125.4,
-      "5-9": 81.5,
-      "10-19": 75.3
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL055",
-   "name": "Alocasia Maharani Yellow",
-   "genus": "Alocasia",
-   "image": "/plants/AL055.jpeg",
-   "variants": [
-    {
-     "code": "AL055T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 62.8,
-      "5-9": 40.8,
-      "10-19": 37.7
-     }
-    },
-    {
-     "code": "AL055S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 94.3,
-      "5-9": 61.3,
-      "10-19": 56.6
-     }
-    },
-    {
-     "code": "AL055M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 125.7,
-      "5-9": 81.7,
-      "10-19": 75.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL058",
-   "name": "Alocasia Melo Aurea",
-   "genus": "Alocasia",
-   "image": "/plants/AL058.jpeg",
-   "variants": [
-    {
-     "code": "AL058T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 145.4,
-      "5-9": 94.5,
-      "10-19": 87.3
-     }
-    },
-    {
-     "code": "AL058S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 329.0,
-      "5-9": 213.8,
-      "10-19": 197.4
-     }
-    },
-    {
-     "code": "AL058M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 438.6,
-      "5-9": 285.1,
-      "10-19": 263.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL034",
-   "name": "Alocasia Ninja Tricolor",
-   "genus": "Alocasia",
-   "image": "/plants/AL034.jpeg",
-   "variants": [
-    {
-     "code": "AL034T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.5,
-      "5-9": 3.0,
-      "10-19": 2.7
-     }
-    },
-    {
-     "code": "AL034S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 6.8,
-      "5-9": 4.4,
-      "10-19": 4.1
-     }
-    },
-    {
-     "code": "AL034M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.1,
-      "5-9": 5.9,
-      "10-19": 5.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL071",
-   "name": "Alocasia Nobilis Pink",
-   "genus": "Alocasia",
-   "image": "/plants/AL071.jpeg",
-   "variants": [
-    {
-     "code": "AL071T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 37.8,
-      "5-9": 24.6,
-      "10-19": 22.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL017",
-   "name": "Alocasia Odora Batik",
-   "genus": "Alocasia",
-   "image": "/plants/AL017.jpeg",
-   "variants": [
-    {
-     "code": "AL017T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.2,
-      "5-9": 2.1,
-      "10-19": 1.9
-     }
-    },
-    {
-     "code": "AL017S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.0,
-      "5-9": 3.2,
-      "10-19": 3.0
-     }
-    },
-    {
-     "code": "AL017M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.5,
-      "10-19": 4.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL022",
-   "name": "Alocasia Polly Aurea",
-   "genus": "Alocasia",
-   "image": null,
-   "variants": [
-    {
-     "code": "AL022T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 35.1,
-      "5-9": 22.8,
-      "10-19": 21.1
-     }
-    },
-    {
-     "code": "AL022S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 43.9,
-      "5-9": 28.5,
-      "10-19": 26.3
-     }
-    },
-    {
-     "code": "AL022M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 52.6,
-      "5-9": 34.2,
-      "10-19": 31.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL011",
-   "name": "Alocasia Polly Pink Mint",
-   "genus": "Alocasia",
-   "image": "/plants/AL011.jpeg",
-   "variants": [
-    {
-     "code": "AL011T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.8,
-      "5-9": 2.5,
-      "10-19": 2.3
-     }
-    },
-    {
-     "code": "AL011S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    },
-    {
-     "code": "AL011M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.9,
-      "5-9": 5.1,
-      "10-19": 4.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL054",
-   "name": "Alocasia Portora Gold",
-   "genus": "Alocasia",
-   "image": "/plants/AL054.jpeg",
-   "variants": [
-    {
-     "code": "AL054T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 69.7,
-      "5-9": 45.3,
-      "10-19": 41.8
-     }
-    },
-    {
-     "code": "AL054S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 80.1,
-      "5-9": 52.1,
-      "10-19": 48.1
-     }
-    },
-    {
-     "code": "AL054M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 125.5,
-      "5-9": 81.6,
-      "10-19": 75.3
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL033",
-   "name": "Alocasia Sanderiana Bull Variegated Yellow",
-   "genus": "Alocasia",
-   "image": "/plants/AL033.jpeg",
-   "variants": [
-    {
-     "code": "AL033T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 34.0,
-      "5-9": 22.1,
-      "10-19": 20.4
-     }
-    },
-    {
-     "code": "AL033S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 42.4,
-      "5-9": 27.6,
-      "10-19": 25.5
-     }
-    },
-    {
-     "code": "AL033M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 51.1,
-      "5-9": 33.2,
-      "10-19": 30.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL069",
-   "name": "Alocasia Sanderiana Psedou Yellow",
-   "genus": "Alocasia",
-   "image": "/plants/AL069.jpeg",
-   "variants": [
-    {
-     "code": "AL069T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 34.0,
-      "5-9": 22.1,
-      "10-19": 20.4
-     }
-    },
-    {
-     "code": "AL069S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 42.4,
-      "5-9": 27.6,
-      "10-19": 25.5
-     }
-    },
-    {
-     "code": "AL069M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 51.1,
-      "5-9": 33.2,
-      "10-19": 30.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL053",
-   "name": "Alocasia Scalprum Aurea",
-   "genus": "Alocasia",
-   "image": "/plants/AL053.jpeg",
-   "variants": [
-    {
-     "code": "AL053T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 25.2,
-      "5-9": 16.4,
-      "10-19": 15.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL048",
-   "name": "Alocasia Scalprum Mint",
-   "genus": "Alocasia",
-   "image": "/plants/AL048.jpeg",
-   "variants": [
-    {
-     "code": "AL048T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.7,
-      "5-9": 2.4,
-      "10-19": 2.2
-     }
-    },
-    {
-     "code": "AL048S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.6,
-      "5-9": 3.6,
-      "10-19": 3.4
-     }
-    },
-    {
-     "code": "AL048M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.5,
-      "5-9": 4.9,
-      "10-19": 4.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL029",
-   "name": "Alocasia Scalprum Variegated Albo 'HUTAAL29'",
-   "genus": "Alocasia",
-   "image": "/plants/AL029.jpeg",
-   "variants": [
-    {
-     "code": "AL029T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 47.0,
-      "5-9": 30.6,
-      "10-19": 28.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL010",
-   "name": "Alocasia Sedenii",
-   "genus": "Alocasia",
-   "image": "/plants/AL010.jpeg",
-   "variants": [
-    {
-     "code": "AL010M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL049",
-   "name": "Alocasia Sinuata Albo",
-   "genus": "Alocasia",
-   "image": "/plants/AL049.jpeg",
-   "variants": [
-    {
-     "code": "AL049T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 16.0,
-      "5-9": 10.4,
-      "10-19": 9.6
-     }
-    },
-    {
-     "code": "AL049S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 24.4,
-      "5-9": 15.8,
-      "10-19": 14.6
-     }
-    },
-    {
-     "code": "AL049M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 29.2,
-      "5-9": 19.0,
-      "10-19": 17.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL052",
-   "name": "Alocasia Venom",
-   "genus": "Alocasia",
-   "image": "/plants/AL052.jpeg",
-   "variants": [
-    {
-     "code": "AL052T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 9.5,
-      "5-9": 6.1,
-      "10-19": 5.7
-     }
-    },
-    {
-     "code": "AL052S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 14.2,
-      "5-9": 9.2,
-      "10-19": 8.5
-     }
-    },
-    {
-     "code": "AL052M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 18.9,
-      "5-9": 12.3,
-      "10-19": 11.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL026",
-   "name": "Alocasia White Lava",
-   "genus": "Alocasia",
-   "image": "/plants/AL026.jpeg",
-   "variants": [
-    {
-     "code": "AL026T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 7.6,
-      "5-9": 4.9,
-      "10-19": 4.6
-     }
-    },
-    {
-     "code": "AL026S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 11.7,
-      "5-9": 7.6,
-      "10-19": 7.0
-     }
-    },
-    {
-     "code": "AL026M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 16.4,
-      "5-9": 10.7,
-      "10-19": 9.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AL040",
-   "name": "Alocasia Yucatan Yellow",
-   "genus": "Alocasia",
-   "image": "/plants/AL040.jpeg",
-   "variants": [
-    {
-     "code": "AL040T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 16.3,
-      "5-9": 10.6,
-      "10-19": 9.8
-     }
-    },
-    {
-     "code": "AL040S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 20.3,
-      "5-9": 13.2,
-      "10-19": 12.2
-     }
-    },
-    {
-     "code": "AL040M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 24.4,
-      "5-9": 15.9,
-      "10-19": 14.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT005",
-   "name": "Anthurium Clari Hybrid X",
-   "genus": "Anthurium",
-   "image": "/plants/AT005.jpeg",
-   "variants": [
-    {
-     "code": "AT005T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.6,
-      "5-9": 1.1,
-      "10-19": 1.0
-     }
-    },
-    {
-     "code": "AT005S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.3,
-      "5-9": 1.5,
-      "10-19": 1.4
-     }
-    },
-    {
-     "code": "AT005M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.7,
-      "5-9": 3.0,
-      "10-19": 2.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT023",
-   "name": "Anthurium Crystall Hybrid",
-   "genus": "Anthurium",
-   "image": "/plants/AT023.jpeg",
-   "variants": [
-    {
-     "code": "AT023M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.1,
-      "5-9": 2.7,
-      "10-19": 2.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT008",
-   "name": "Anthurium Dark Queen",
-   "genus": "Anthurium",
-   "image": "/plants/AT008.jpeg",
-   "variants": [
-    {
-     "code": "AT008T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.3,
-      "5-9": 2.1,
-      "10-19": 2.0
-     }
-    },
-    {
-     "code": "AT008S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.7,
-      "5-9": 3.0,
-      "10-19": 2.8
-     }
-    },
-    {
-     "code": "AT008M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.4,
-      "5-9": 6.1,
-      "10-19": 5.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT002",
-   "name": "Anthurium Forgetii",
-   "genus": "Anthurium",
-   "image": "/plants/AT002.jpeg",
-   "variants": [
-    {
-     "code": "AT002T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT002S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "AT002M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT012",
-   "name": "Anthurium Hookeri Green",
-   "genus": "Anthurium",
-   "image": "/plants/AT012.jpeg",
-   "variants": [
-    {
-     "code": "AT012T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.8,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "AT012S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "AT012M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT011",
-   "name": "Anthurium Hookeri Variegated",
-   "genus": "Anthurium",
-   "image": "/plants/AT011.jpeg",
-   "variants": [
-    {
-     "code": "AT011T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT011S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "AT011M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT003",
-   "name": "Anthurium Hybrid 2",
-   "genus": "Anthurium",
-   "image": null,
-   "variants": [
-    {
-     "code": "AT003T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT003S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "AT003M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT015",
-   "name": "Anthurium Hybrid Anthurium Corong X Villanaorum",
-   "genus": "Anthurium",
-   "image": "/plants/AT015.jpeg",
-   "variants": [
-    {
-     "code": "AT015T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT015S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    },
-    {
-     "code": "AT015M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.3,
-      "5-9": 3.4,
-      "10-19": 3.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT024",
-   "name": "Anthurium Hybrid Papillanium X Magnificum",
-   "genus": "Anthurium",
-   "image": null,
-   "variants": [
-    {
-     "code": "AT024T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 39.9,
-      "5-9": 25.9,
-      "10-19": 23.9
-     }
-    },
-    {
-     "code": "AT024S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 59.7,
-      "5-9": 38.8,
-      "10-19": 35.8
-     }
-    },
-    {
-     "code": "AT024M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 79.6,
-      "5-9": 51.7,
-      "10-19": 47.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT016",
-   "name": "Anthurium Luxurian X Forgetii Dark Form",
-   "genus": "Anthurium",
-   "image": "/plants/AT016.jpeg",
-   "variants": [
-    {
-     "code": "AT016T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    },
-    {
-     "code": "AT016S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    },
-    {
-     "code": "AT016M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.9,
-      "5-9": 5.1,
-      "10-19": 4.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT009",
-   "name": "Anthurium Magnificum",
-   "genus": "Anthurium",
-   "image": "/plants/AT009.jpeg",
-   "variants": [
-    {
-     "code": "AT009T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.3,
-      "5-9": 0.9,
-      "10-19": 0.8
-     }
-    },
-    {
-     "code": "AT009S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "AT009M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.1,
-      "5-9": 2.7,
-      "10-19": 2.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "AT001",
-   "name": "Anthurium Vittarifolium Variegated",
-   "genus": "Anthurium",
-   "image": "/plants/AT001.jpeg",
-   "variants": [
-    {
-     "code": "AT001T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 5.5,
-      "5-9": 3.6,
-      "10-19": 3.3
-     }
-    },
-    {
-     "code": "AT001S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.9,
-      "5-9": 5.1,
-      "10-19": 4.7
-     }
-    },
-    {
-     "code": "AT001M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 15.8,
-      "5-9": 10.3,
-      "10-19": 9.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "EP008",
-   "name": "Epipremnum Gigantenum Variegated",
-   "genus": "Epipremnum",
-   "image": "/plants/EP008.jpeg",
-   "variants": [
-    {
-     "code": "EP008T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.0,
-      "5-9": 2.0,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "EP008S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    },
-    {
-     "code": "EP008M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.0,
-      "5-9": 5.9,
-      "10-19": 5.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "HM013",
-   "name": "Homalomela Sp Variegated",
-   "genus": "Homalomena",
-   "image": null,
-   "variants": [
-    {
-     "code": "HM013T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.2,
-      "5-9": 2.7,
-      "10-19": 2.5
-     }
-    },
-    {
-     "code": "HM013S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.6,
-      "10-19": 4.2
-     }
-    },
-    {
-     "code": "HM013M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 11.7,
-      "5-9": 7.6,
-      "10-19": 7.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "HM005",
-   "name": "Homalomena Green Stem Variegated",
-   "genus": "Homalomena",
-   "image": "/plants/HM005.jpeg",
-   "variants": [
-    {
-     "code": "HM005S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.0,
-      "5-9": 5.9,
-      "10-19": 5.4
-     }
-    },
-    {
-     "code": "HM005M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 15.0,
-      "5-9": 9.8,
-      "10-19": 9.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "HM006",
-   "name": "Homalomena Red Stem Variegated 'HUTAHM06'",
-   "genus": "Homalomena",
-   "image": "/plants/HM006.jpeg",
-   "variants": [
-    {
-     "code": "HM006T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    },
-    {
-     "code": "HM006M01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 9.0,
-      "5-9": 5.9,
-      "10-19": 5.4
-     }
-    },
-    {
-     "code": "HM006M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 15.0,
-      "5-9": 9.8,
-      "10-19": 9.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT076",
-   "name": "Monstera Blue Mint Striata",
-   "genus": "Monstera",
-   "image": "/plants/MT076.jpeg",
-   "variants": [
-    {
-     "code": "MT076T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 82.1,
-      "5-9": 53.4,
-      "10-19": 49.2
-     }
-    },
-    {
-     "code": "MT076S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New type",
-     "prices": {
-      "1-4": 164.2,
-      "5-9": 106.7,
-      "10-19": 98.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT030",
-   "name": "Monstera Burle Marx Flame",
-   "genus": "Monstera",
-   "image": "/plants/MT030.jpeg",
-   "variants": [
-    {
-     "code": "MT030T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.9,
-      "5-9": 1.2,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "MT030S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.9,
-      "5-9": 1.9,
-      "10-19": 1.7
-     }
-    },
-    {
-     "code": "MT030M01",
-     "description": "Size pot 2,8 inch. In moss (Nilon pot 4-5 leaf)",
-     "note": null,
-     "prices": {
-      "1-4": 3.8,
-      "5-9": 2.5,
-      "10-19": 2.3
-     }
-    },
-    {
-     "code": "MT030L01",
-     "description": "Size pot 6 inch. In moss (Có lá xẻ 1 đường)",
-     "note": "New price",
-     "prices": {
-      "1-4": 5.7,
-      "5-9": 3.7,
-      "10-19": 3.4
-     }
-    },
-    {
-     "code": "MT030K01",
-     "description": "Top Cutting 2-3 leaf mature form",
-     "note": null,
-     "prices": {
-      "1-4": 6.8,
-      "5-9": 4.4,
-      "10-19": 4.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT055",
-   "name": "Monstera Deliciosa Compacta",
-   "genus": "Monstera",
-   "image": null,
-   "variants": [
-    {
-     "code": "MT055K01",
-     "description": "Top cutting size leaf 16-18cm",
-     "note": null,
-     "prices": {
-      "1-4": 14.6,
-      "5-9": 9.5,
-      "10-19": 8.8
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT011",
-   "name": "Monstera Deliciosa Sphinx Var Explosive",
-   "genus": "Monstera",
-   "image": "/plants/MT011.jpeg",
-   "variants": [
-    {
-     "code": "MT011T10",
-     "description": "Tissue bag 10 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 17.0,
-      "5-9": 11.1,
-      "10-19": 10.2
-     }
-    },
-    {
-     "code": "MT011K01",
-     "description": "Top cut size 16-22cm. Var full mint",
-     "note": "New price",
-     "prices": {
-      "1-4": 56.0,
-      "5-9": 36.4,
-      "10-19": 33.6
-     }
-    },
-    {
-     "code": "MT011K01",
-     "description": "",
-     "note": "New price",
-     "prices": {
-      "1-4": 66.0,
-      "5-9": 42.9,
-      "10-19": 39.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT041",
-   "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Classic",
-   "genus": "Monstera",
-   "image": "/plants/MT041.jpeg",
-   "variants": [
-    {
-     "code": "MT066M01",
-     "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
-     "note": "New price",
-     "prices": {
-      "1-4": 56.0,
-      "5-9": 36.4,
-      "10-19": 33.6
-     }
-    },
-    {
-     "code": "MT066L01",
-     "description": "Full pot ( 4-5 leaf, size 22-30cm )",
-     "note": null,
-     "prices": {
-      "1-4": 78.4,
-      "5-9": 51.0,
-      "10-19": 47.0
-     }
-    },
-    {
-     "code": "MT066X01",
-     "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
-     "note": "New price",
-     "prices": {
-      "1-4": 62.7,
-      "5-9": 40.8,
-      "10-19": 37.6
-     }
-    },
-    {
-     "code": "MT066Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
-     "note": "New type",
-     "prices": {
-      "1-4": 78.4,
-      "5-9": 51.0,
-      "10-19": 47.0
-     }
-    },
-    {
-     "code": "MT066Z01",
-     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
-     "note": "New type",
-     "prices": {
-      "1-4": 94.1,
-      "5-9": 61.2,
-      "10-19": 56.4
-     }
-    },
-    {
-     "code": "MT041T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 18.9,
-      "5-9": 12.3,
-      "10-19": 11.3
-     }
-    },
-    {
-     "code": "MT041M01",
-     "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
-     "note": null,
-     "prices": {
-      "1-4": 72.2,
-      "5-9": 46.9,
-      "10-19": 43.3
-     }
-    },
-    {
-     "code": "MT041L01",
-     "description": "Full pot ( 4-5 leaf, size 22-30cm )",
-     "note": null,
-     "prices": {
-      "1-4": 109.8,
-      "5-9": 71.4,
-      "10-19": 65.9
-     }
-    },
-    {
-     "code": "MT041X01",
-     "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
-     "note": null,
-     "prices": {
-      "1-4": 75.3,
-      "5-9": 48.9,
-      "10-19": 45.2
-     }
-    },
-    {
-     "code": "MT041Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
-     "note": "New type",
-     "prices": {
-      "1-4": 94.1,
-      "5-9": 61.1,
-      "10-19": 56.4
-     }
-    },
-    {
-     "code": "MT041Z01",
-     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
-     "note": "New type",
-     "prices": {
-      "1-4": 112.9,
-      "5-9": 73.4,
-      "10-19": 67.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT065",
-   "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Premium",
-   "genus": "Monstera",
-   "image": "/plants/MT065.jpeg",
-   "variants": [
-    {
-     "code": "MT065T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 23.0,
-      "5-9": 15.0,
-      "10-19": 13.8
-     }
-    },
-    {
-     "code": "MT065M01",
-     "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
-     "note": null,
-     "prices": {
-      "1-4": 83.5,
-      "5-9": 54.3,
-      "10-19": 50.1
-     }
-    },
-    {
-     "code": "MT065L01",
-     "description": "Full pot ( 4-5 leaf, size 22-30cm )",
-     "note": null,
-     "prices": {
-      "1-4": 100.3,
-      "5-9": 65.2,
-      "10-19": 60.2
-     }
-    },
-    {
-     "code": "MT065X01",
-     "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
-     "note": "New price",
-     "prices": {
-      "1-4": 91.7,
-      "5-9": 59.6,
-      "10-19": 55.0
-     }
-    },
-    {
-     "code": "MT065Y01",
-     "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
-     "note": "New type",
-     "prices": {
-      "1-4": 108.3,
-      "5-9": 70.4,
-      "10-19": 65.0
-     }
-    },
-    {
-     "code": "MT065Z01",
-     "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
-     "note": "New type",
-     "prices": {
-      "1-4": 129.2,
-      "5-9": 84.0,
-      "10-19": 77.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT001",
-   "name": "Monstera Deliciosa White Monster",
-   "genus": "Monstera",
-   "image": "/plants/MT001.jpeg",
-   "variants": [
-    {
-     "code": "MT001T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.0,
-      "5-9": 2.6,
-      "10-19": 2.4
-     }
-    },
-    {
-     "code": "MT001S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    },
-    {
-     "code": "MT001M01",
-     "description": "Size pot 2,8 inch. In moss size leaf 10-14cm",
-     "note": null,
-     "prices": {
-      "1-4": 12.0,
-      "5-9": 7.8,
-      "10-19": 7.2
-     }
-    },
-    {
-     "code": "MT001L01",
-     "description": "Size pot 2,8 inch. In moss size leaf 15-21cm",
-     "note": null,
-     "prices": {
-      "1-4": 24.0,
-      "5-9": 15.6,
-      "10-19": 14.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT004",
-   "name": "Monstera Deliciosa Yellow Marilyn",
-   "genus": "Monstera",
-   "image": "/plants/MT004.jpeg",
-   "variants": [
-    {
-     "code": "MT004T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 11.7,
-      "5-9": 7.6,
-      "10-19": 7.0
-     }
-    },
-    {
-     "code": "MT004S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 17.6,
-      "5-9": 11.4,
-      "10-19": 10.5
-     }
-    },
-    {
-     "code": "MT004M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 23.4,
-      "5-9": 15.2,
-      "10-19": 14.0
-     }
-    },
-    {
-     "code": "MT004L01",
-     "description": "Size pot 3,5 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 35.1,
-      "5-9": 22.8,
-      "10-19": 21.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT040",
-   "name": "Monstera Electro Light",
-   "genus": "Monstera",
-   "image": "/plants/MT040.jpeg",
-   "variants": [
-    {
-     "code": "MT040T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 22.9,
-      "5-9": 14.9,
-      "10-19": 13.7
-     }
-    },
-    {
-     "code": "MT040S01",
-     "description": "Size pot 1.7 inch. In moss. Check var key by key",
-     "note": null,
-     "prices": {
-      "1-4": 45.7,
-      "5-9": 29.7,
-      "10-19": 27.4
-     }
-    },
-    {
-     "code": "MT040M01",
-     "description": "Size pot 2,8 inch. In moss. Check var key by key. Size leaf 10-12cm",
-     "note": null,
-     "prices": {
-      "1-4": 68.6,
-      "5-9": 44.6,
-      "10-19": 41.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT071",
-   "name": "Monstera Green Snow",
-   "genus": "Monstera",
-   "image": "/plants/MT071.jpeg",
-   "variants": [
-    {
-     "code": "MT071T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 8.4,
-      "5-9": 5.5,
-      "10-19": 5.0
-     }
-    },
-    {
-     "code": "MT071S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 12.6,
-      "5-9": 8.2,
-      "10-19": 7.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT060",
-   "name": "Monstera Lemon Lime",
-   "genus": "Monstera",
-   "image": "/plants/MT060.jpeg",
-   "variants": [
-    {
-     "code": "MT060T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 35.7,
-      "5-9": 23.2,
-      "10-19": 21.4
-     }
-    },
-    {
-     "code": "MT060S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 53.5,
-      "5-9": 34.8,
-      "10-19": 32.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT067",
-   "name": "Monstera Light Lime",
-   "genus": "Monstera",
-   "image": "/plants/MT067.jpeg",
-   "variants": [
-    {
-     "code": "MT067T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 54.2,
-      "5-9": 35.2,
-      "10-19": 32.5
-     }
-    },
-    {
-     "code": "MT067S11",
-     "description": "Size pot 2.8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 108.4,
-      "5-9": 70.5,
-      "10-19": 65.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT075",
-   "name": "Monstera Mint Siam",
-   "genus": "Monstera",
-   "image": null,
-   "variants": [
-    {
-     "code": "MT075T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 33.5,
-      "5-9": 21.8,
-      "10-19": 20.1
-     }
-    },
-    {
-     "code": "MT075S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": "New type",
-     "prices": {
-      "1-4": 50.3,
-      "5-9": 32.7,
-      "10-19": 30.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT007",
-   "name": "Monstera Sierrana",
-   "genus": "Monstera",
-   "image": "/plants/MT007.jpeg",
-   "variants": [
-    {
-     "code": "MT007T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.6,
-      "5-9": 1.0,
-      "10-19": 0.9
-     }
-    },
-    {
-     "code": "MT007S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.4,
-      "5-9": 1.6,
-      "10-19": 1.4
-     }
-    },
-    {
-     "code": "MT007K01",
-     "description": "Top cutting 15-17cm",
-     "note": null,
-     "prices": {
-      "1-4": 6.0,
-      "5-9": 3.9,
-      "10-19": 3.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT005",
-   "name": "Monstera Thai Constellation",
-   "genus": "Monstera",
-   "image": "/plants/MT005.jpeg",
-   "variants": [
-    {
-     "code": "MT005T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.0,
-      "5-9": 1.3,
-      "10-19": 1.2
-     }
-    },
-    {
-     "code": "MT005S01",
-     "description": "Size pot 1,7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.0,
-      "5-9": 2.0,
-      "10-19": 1.8
-     }
-    },
-    {
-     "code": "MT005M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.0,
-      "5-9": 2.6,
-      "10-19": 2.4
-     }
-    },
-    {
-     "code": "MT005Y01",
-     "description": "Top cutting 18-25cm",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT038",
-   "name": "Monstera Thai Constellation Creme Brulee",
-   "genus": "Monstera",
-   "image": null,
-   "variants": [
-    {
-     "code": "MT038K01",
-     "description": "Cutting size leaf 16-18cm",
-     "note": null,
-     "prices": {
-      "1-4": 110.0,
-      "5-9": 71.5,
-      "10-19": 66.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT042",
-   "name": "Monstera Thai Constellation High Variegated",
-   "genus": "Monstera",
-   "image": "/plants/MT042.jpeg",
-   "variants": [
-    {
-     "code": "MT042T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 2.5,
-      "5-9": 1.7,
-      "10-19": 1.5
-     }
-    },
-    {
-     "code": "MT042S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.8,
-      "5-9": 2.5,
-      "10-19": 2.3
-     }
-    },
-    {
-     "code": "MT042M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 10.6,
-      "5-9": 6.9,
-      "10-19": 6.4
-     }
-    },
-    {
-     "code": "MT042Y01",
-     "description": "Top cutting 16-22 cm",
-     "note": null,
-     "prices": {
-      "1-4": 15.0,
-      "5-9": 9.8,
-      "10-19": 9.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "MT047",
-   "name": "Monstera Thai Constellation Tricolor Miracle",
-   "genus": "Monstera",
-   "image": "/plants/MT047.jpeg",
-   "variants": [
-    {
-     "code": "MT047T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New price",
-     "prices": {
-      "1-4": 99.0,
-      "5-9": 64.4,
-      "10-19": 59.4
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD061",
-   "name": "Philodendron Billietiae Variegated Yellow",
-   "genus": "Philodendron",
-   "image": "/plants/PD061.jpeg",
-   "variants": [
-    {
-     "code": "PD061T01",
-     "description": "Tissue bag 1 plant",
-     "note": null,
-     "prices": {
-      "1-4": 21.8,
-      "5-9": 14.2,
-      "10-19": 13.1
-     }
-    },
-    {
-     "code": "PD061S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 32.7,
-      "5-9": 21.3,
-      "10-19": 19.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD047",
-   "name": "Philodendron Birkin",
-   "genus": "Philodendron",
-   "image": "/plants/PD047.jpeg",
-   "variants": [
-    {
-     "code": "PD047T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 0.8,
-      "5-9": 0.5,
-      "10-19": 0.5
-     }
-    },
-    {
-     "code": "PD047S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.3,
-      "5-9": 0.8,
-      "10-19": 0.8
-     }
-    },
-    {
-     "code": "PD047M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 2.6,
-      "5-9": 1.7,
-      "10-19": 1.6
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD039",
-   "name": "Philodendron Calkins Gold",
-   "genus": "Philodendron",
-   "image": "/plants/PD039.jpeg",
-   "variants": [
-    {
-     "code": "PD039T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD039S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD039M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD087",
-   "name": "Philodendron Caramel Fire Tiger",
-   "genus": "Philodendron",
-   "image": "/plants/PD087.jpeg",
-   "variants": [
-    {
-     "code": "PD087T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 20.4,
-      "5-9": 13.3,
-      "10-19": 12.3
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD004",
-   "name": "Philodendron Florida Beauty Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD004.jpeg",
-   "variants": [
-    {
-     "code": "PD004T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.9,
-      "5-9": 3.2,
-      "10-19": 3.0
-     }
-    },
-    {
-     "code": "PD004S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.5,
-      "10-19": 4.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD064",
-   "name": "Philodendron Green Congo Hybrid",
-   "genus": "Philodendron",
-   "image": "/plants/PD064.jpeg",
-   "variants": [
-    {
-     "code": "PD064T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.2,
-      "5-9": 2.1,
-      "10-19": 1.9
-     }
-    },
-    {
-     "code": "PD064S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 4.9,
-      "5-9": 3.2,
-      "10-19": 3.0
-     }
-    },
-    {
-     "code": "PD064M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.6,
-      "10-19": 4.2
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD037",
-   "name": "Philodendron Joepii",
-   "genus": "Philodendron",
-   "image": "/plants/PD037.jpeg",
-   "variants": [
-    {
-     "code": "PD037T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD037S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD037M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD042",
-   "name": "Philodendron Jose Bouno Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD042.jpeg",
-   "variants": [
-    {
-     "code": "PD042T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 4.9,
-      "5-9": 3.2,
-      "10-19": 3.0
-     }
-    },
-    {
-     "code": "PD042S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.5,
-      "10-19": 4.2
-     }
-    },
-    {
-     "code": "PD042M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 14.8,
-      "5-9": 9.6,
-      "10-19": 8.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD008",
-   "name": "Philodendron Painted Lady Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD008.jpeg",
-   "variants": [
-    {
-     "code": "PD008T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD008S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD008M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD086",
-   "name": "Philodendron Philodendron Xanadu Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD086.jpeg",
-   "variants": [
-    {
-     "code": "PD086T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 95.2,
-      "5-9": 61.9,
-      "10-19": 57.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD006",
-   "name": "Philodendron Pink Princess",
-   "genus": "Philodendron",
-   "image": "/plants/PD006.jpeg",
-   "variants": [
-    {
-     "code": "PD006T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD006S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD006M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD081",
-   "name": "Philodendron Pink Princess High Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD081.jpeg",
-   "variants": [
-    {
-     "code": "PD081T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 3.8,
-      "5-9": 2.5,
-      "10-19": 2.3
-     }
-    },
-    {
-     "code": "PD081S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 5.9,
-      "5-9": 3.8,
-      "10-19": 3.5
-     }
-    },
-    {
-     "code": "PD081M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 11.7,
-      "5-9": 7.6,
-      "10-19": 7.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD066",
-   "name": "Philodendron Pink Princess Tricolor",
-   "genus": "Philodendron",
-   "image": "/plants/PD066.jpeg",
-   "variants": [
-    {
-     "code": "PD066T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 16.8,
-      "5-9": 10.9,
-      "10-19": 10.1
-     }
-    },
-    {
-     "code": "PD066T01",
-     "description": "Tissue bag 1 plant",
-     "note": "New type",
-     "prices": {
-      "1-4": 61.6,
-      "5-9": 40.0,
-      "10-19": 36.9
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD045",
-   "name": "Philodendron Red Congo Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD045.jpeg",
-   "variants": [
-    {
-     "code": "PD045T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 20.0,
-      "5-9": 13.0,
-      "10-19": 12.0
-     }
-    },
-    {
-     "code": "PD045S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 30.0,
-      "5-9": 19.5,
-      "10-19": 18.0
-     }
-    },
-    {
-     "code": "PD045M01",
-     "description": "Size pot 2.8 inch. In moss",
-     "note": "New price",
-     "prices": {
-      "1-4": 40.0,
-      "5-9": 26.0,
-      "10-19": 24.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD005",
-   "name": "Philodendron Ring Of Fire Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD005.jpeg",
-   "variants": [
-    {
-     "code": "PD005T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD005S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD005M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD056",
-   "name": "Philodendron Selloum Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD056.jpeg",
-   "variants": [
-    {
-     "code": "PD056T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 15.2,
-      "5-9": 9.9,
-      "10-19": 9.1
-     }
-    },
-    {
-     "code": "PD056S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 23.4,
-      "5-9": 15.2,
-      "10-19": 14.1
-     }
-    },
-    {
-     "code": "PD056M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 32.8,
-      "5-9": 21.3,
-      "10-19": 19.7
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD019",
-   "name": "Philodendron Snowdrift Variegated",
-   "genus": "Philodendron",
-   "image": "/plants/PD019.jpeg",
-   "variants": [
-    {
-     "code": "PD019T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD019S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD019M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD007",
-   "name": "Philodendron White Knight",
-   "genus": "Philodendron",
-   "image": null,
-   "variants": [
-    {
-     "code": "PD007T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD007S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD007M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD026",
-   "name": "Philodendron White Princess",
-   "genus": "Philodendron",
-   "image": null,
-   "variants": [
-    {
-     "code": "PD026T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD026S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD026M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD003",
-   "name": "Philodendron White Wizard",
-   "genus": "Philodendron",
-   "image": null,
-   "variants": [
-    {
-     "code": "PD003T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 1.2,
-      "5-9": 0.7,
-      "10-19": 0.7
-     }
-    },
-    {
-     "code": "PD003S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "PD003M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  },
-  {
-   "code": "PD075",
-   "name": "Philodendron White Wizard Tricolor 'HUTAPD75'",
-   "genus": "Philodendron",
-   "image": "/plants/PD075.jpeg",
-   "variants": [
-    {
-     "code": "PD075T10",
-     "description": "Tissue bag 10 plant",
-     "note": null,
-     "prices": {
-      "1-4": 7.0,
-      "5-9": 4.6,
-      "10-19": 4.2
-     }
-    },
-    {
-     "code": "PD075S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 10.5,
-      "5-9": 6.8,
-      "10-19": 6.3
-     }
-    },
-    {
-     "code": "PD075K01",
-     "description": "Top cutting 3-4 leaf ( size leaf 15-18cm )",
-     "note": "New price",
-     "prices": {
-      "1-4": 20.0,
-      "5-9": 13.0,
-      "10-19": 12.0
-     }
-    },
-    {
-     "code": "PD075M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 30.0,
-      "5-9": 19.5,
-      "10-19": 18.0
-     }
-    }
-   ]
-  },
-  {
-   "code": "SP002",
-   "name": "Spathiphyllum Sensation Variegated",
-   "genus": "Spathiphyllum",
-   "image": "/plants/SP002.jpeg",
-   "variants": [
-    {
-     "code": "SP002S01",
-     "description": "Size pot 1.7 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 1.8,
-      "5-9": 1.1,
-      "10-19": 1.1
-     }
-    },
-    {
-     "code": "SP002M01",
-     "description": "Size pot 2,8 inch. In moss",
-     "note": null,
-     "prices": {
-      "1-4": 3.5,
-      "5-9": 2.3,
-      "10-19": 2.1
-     }
-    }
-   ]
-  }
- ]
+  "meta": {
+    "supplier": "Xanh Xanh Urban Forest Co., Ltd",
+    "currency": "USD",
+    "incoterm": "EXW (INCOTERM 2020)",
+    "quotationDate": "2026-08-01",
+    "priceType": "retail",
+    "tiers": [
+      "1-4",
+      "5-9",
+      "10-19"
+    ],
+    "count": 95
+  },
+  "products": [
+    {
+      "code": "AL042",
+      "name": "Alocasia Azlanii Gold",
+      "genus": "Alocasia",
+      "image": "/plants/AL042.jpeg",
+      "variants": [
+        {
+          "code": "AL042T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 44.1,
+            "5-9": 28.7,
+            "10-19": 26.4
+          }
+        },
+        {
+          "code": "AL042S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 66.1,
+            "5-9": 43.0,
+            "10-19": 39.7
+          }
+        },
+        {
+          "code": "AL042M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 88.2,
+            "5-9": 57.3,
+            "10-19": 52.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL050",
+      "name": "Alocasia Balloon Heart Pink Variegated",
+      "genus": "Alocasia",
+      "image": "/plants/AL050.jpeg",
+      "variants": [
+        {
+          "code": "AL050T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 25.2,
+            "5-9": 16.4,
+            "10-19": 15.1
+          }
+        },
+        {
+          "code": "AL050S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 37.8,
+            "5-9": 24.6,
+            "10-19": 22.7
+          }
+        },
+        {
+          "code": "AL050M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 50.4,
+            "5-9": 32.8,
+            "10-19": 30.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL018",
+      "name": "Alocasia Bambino",
+      "genus": "Alocasia",
+      "image": "/plants/AL018.jpeg",
+      "variants": [
+        {
+          "code": "AL018T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.0,
+            "5-9": 0.7,
+            "10-19": 0.6
+          }
+        },
+        {
+          "code": "AL018S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.1,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "AL018M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL019",
+      "name": "Alocasia Bambino Variegated Aurea",
+      "genus": "Alocasia",
+      "image": null,
+      "variants": [
+        {
+          "code": "AL019T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 6.6,
+            "5-9": 4.3,
+            "10-19": 3.9
+          }
+        },
+        {
+          "code": "AL019S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.4,
+            "5-9": 6.1,
+            "10-19": 5.6
+          }
+        },
+        {
+          "code": "AL019M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 14.1,
+            "5-9": 9.1,
+            "10-19": 8.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL062",
+      "name": "Alocasia Bisma Albo",
+      "genus": "Alocasia",
+      "image": "/plants/AL062.jpeg",
+      "variants": [
+        {
+          "code": "AL062T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 71.2,
+            "5-9": 46.3,
+            "10-19": 42.7
+          }
+        },
+        {
+          "code": "AL062S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 106.8,
+            "5-9": 69.4,
+            "10-19": 64.1
+          }
+        },
+        {
+          "code": "AL062M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 142.4,
+            "5-9": 92.6,
+            "10-19": 85.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL070",
+      "name": "Alocasia Black Saturn Stardust",
+      "genus": "Alocasia",
+      "image": "/plants/AL070.jpeg",
+      "variants": [
+        {
+          "code": "AL070T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 30.9,
+            "5-9": 20.1,
+            "10-19": 18.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL051",
+      "name": "Alocasia Black Velvet Gold",
+      "genus": "Alocasia",
+      "image": null,
+      "variants": [
+        {
+          "code": "AL051T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 45.7,
+            "5-9": 29.7,
+            "10-19": 27.4
+          }
+        },
+        {
+          "code": "AL051S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 68.5,
+            "5-9": 44.5,
+            "10-19": 41.1
+          }
+        },
+        {
+          "code": "AL051M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 82.3,
+            "5-9": 53.5,
+            "10-19": 49.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL041",
+      "name": "Alocasia Black Velvet Pink",
+      "genus": "Alocasia",
+      "image": "/plants/AL041.jpeg",
+      "variants": [
+        {
+          "code": "AL041T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 10.5,
+            "5-9": 6.8,
+            "10-19": 6.3
+          }
+        },
+        {
+          "code": "AL041S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 15.8,
+            "5-9": 10.2,
+            "10-19": 9.5
+          }
+        },
+        {
+          "code": "AL041M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 21.0,
+            "5-9": 13.7,
+            "10-19": 12.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL061",
+      "name": "Alocasia Chantrieri Pink",
+      "genus": "Alocasia",
+      "image": "/plants/AL061.jpeg",
+      "variants": [
+        {
+          "code": "AL061T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 100.8,
+            "5-9": 65.5,
+            "10-19": 60.5
+          }
+        },
+        {
+          "code": "AL061S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 151.2,
+            "5-9": 98.3,
+            "10-19": 90.7
+          }
+        },
+        {
+          "code": "AL061M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 201.6,
+            "5-9": 131.0,
+            "10-19": 121.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL039",
+      "name": "Alocasia Cupera Pink Mint",
+      "genus": "Alocasia",
+      "image": "/plants/AL039.jpeg",
+      "variants": [
+        {
+          "code": "AL039T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 52.7,
+            "5-9": 34.2,
+            "10-19": 31.6
+          }
+        },
+        {
+          "code": "AL039S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 65.8,
+            "5-9": 42.8,
+            "10-19": 39.5
+          }
+        },
+        {
+          "code": "AL039M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 79.0,
+            "5-9": 51.3,
+            "10-19": 47.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL063",
+      "name": "Alocasia Cupera Spider",
+      "genus": "Alocasia",
+      "image": "/plants/AL063.jpeg",
+      "variants": [
+        {
+          "code": "AL063T01",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 30.8,
+            "5-9": 20.0,
+            "10-19": 18.5
+          }
+        },
+        {
+          "code": "AL063S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 41.5,
+            "5-9": 27.0,
+            "10-19": 24.9
+          }
+        },
+        {
+          "code": "AL063M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 55.4,
+            "5-9": 36.0,
+            "10-19": 33.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL001",
+      "name": "Alocasia Cuprea / Red Secret",
+      "genus": "Alocasia",
+      "image": "/plants/AL001.jpeg",
+      "variants": [
+        {
+          "code": "AL001M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL064",
+      "name": "Alocasia Dragon Scale Mint",
+      "genus": "Alocasia",
+      "image": "/plants/AL064.jpeg",
+      "variants": [
+        {
+          "code": "AL064T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 8.4,
+            "5-9": 5.4,
+            "10-19": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL031",
+      "name": "Alocasia Dragon Scale White Variegated",
+      "genus": "Alocasia",
+      "image": "/plants/AL031.jpeg",
+      "variants": [
+        {
+          "code": "AL031T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 13.3,
+            "5-9": 8.6,
+            "10-19": 8.0
+          }
+        },
+        {
+          "code": "AL031S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 23.8,
+            "5-9": 15.5,
+            "10-19": 14.3
+          }
+        },
+        {
+          "code": "AL031M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 31.7,
+            "5-9": 20.6,
+            "10-19": 19.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL016",
+      "name": "Alocasia Frydex Variegated",
+      "genus": "Alocasia",
+      "image": "/plants/AL016.jpeg",
+      "variants": [
+        {
+          "code": "AL016T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.3,
+            "5-9": 2.1,
+            "10-19": 2.0
+          }
+        },
+        {
+          "code": "AL016S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.0,
+            "5-9": 3.2,
+            "10-19": 3.0
+          }
+        },
+        {
+          "code": "AL016M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.5,
+            "10-19": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL013",
+      "name": "Alocasia Gageana Aurea",
+      "genus": "Alocasia",
+      "image": "/plants/AL013.jpeg",
+      "variants": [
+        {
+          "code": "AL013T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.0,
+            "5-9": 2.0,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "AL013S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.7,
+            "5-9": 3.0,
+            "10-19": 2.8
+          }
+        },
+        {
+          "code": "AL013M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 6.6,
+            "5-9": 4.3,
+            "10-19": 3.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL067",
+      "name": "Alocasia Jacklyn Mystic",
+      "genus": "Alocasia",
+      "image": "/plants/AL067.jpeg",
+      "variants": [
+        {
+          "code": "AL067T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 71.2,
+            "5-9": 46.3,
+            "10-19": 42.7
+          }
+        },
+        {
+          "code": "AL067S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 106.8,
+            "5-9": 69.4,
+            "10-19": 64.1
+          }
+        },
+        {
+          "code": "AL067M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 142.4,
+            "5-9": 92.6,
+            "10-19": 85.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL009",
+      "name": "Alocasia Longiloba",
+      "genus": "Alocasia",
+      "image": "/plants/AL009.jpeg",
+      "variants": [
+        {
+          "code": "AL009M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL008",
+      "name": "Alocasia Longiloba Variegated",
+      "genus": "Alocasia",
+      "image": "/plants/AL008.jpeg",
+      "variants": [
+        {
+          "code": "AL008T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.1,
+            "5-9": 2.7,
+            "10-19": 2.5
+          }
+        },
+        {
+          "code": "AL008S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        },
+        {
+          "code": "AL008M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 8.2,
+            "5-9": 5.3,
+            "10-19": 4.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL056",
+      "name": "Alocasia Maharani Albo",
+      "genus": "Alocasia",
+      "image": "/plants/AL056.jpeg",
+      "variants": [
+        {
+          "code": "AL056T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 62.7,
+            "5-9": 40.8,
+            "10-19": 37.6
+          }
+        },
+        {
+          "code": "AL056S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 94.1,
+            "5-9": 61.2,
+            "10-19": 56.4
+          }
+        },
+        {
+          "code": "AL056M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 125.4,
+            "5-9": 81.5,
+            "10-19": 75.3
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL055",
+      "name": "Alocasia Maharani Yellow",
+      "genus": "Alocasia",
+      "image": "/plants/AL055.jpeg",
+      "variants": [
+        {
+          "code": "AL055T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 62.8,
+            "5-9": 40.8,
+            "10-19": 37.7
+          }
+        },
+        {
+          "code": "AL055S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 94.3,
+            "5-9": 61.3,
+            "10-19": 56.6
+          }
+        },
+        {
+          "code": "AL055M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 125.7,
+            "5-9": 81.7,
+            "10-19": 75.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL058",
+      "name": "Alocasia Melo Aurea",
+      "genus": "Alocasia",
+      "image": "/plants/AL058.jpeg",
+      "variants": [
+        {
+          "code": "AL058T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 94.5,
+            "5-9": 61.4,
+            "10-19": 56.7
+          }
+        },
+        {
+          "code": "AL058S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 141.8,
+            "5-9": 92.1,
+            "10-19": 85.1
+          }
+        },
+        {
+          "code": "AL058M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 189.0,
+            "5-9": 122.9,
+            "10-19": 113.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL034",
+      "name": "Alocasia Ninja Tricolor",
+      "genus": "Alocasia",
+      "image": "/plants/AL034.jpeg",
+      "variants": [
+        {
+          "code": "AL034T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.2,
+            "5-9": 2.7,
+            "10-19": 2.5
+          }
+        },
+        {
+          "code": "AL034S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 6.8,
+            "5-9": 4.4,
+            "10-19": 4.1
+          }
+        },
+        {
+          "code": "AL034M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.1,
+            "5-9": 5.9,
+            "10-19": 5.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL071",
+      "name": "Alocasia Nobilis Pink",
+      "genus": "Alocasia",
+      "image": "/plants/AL071.jpeg",
+      "variants": [
+        {
+          "code": "AL071T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 37.8,
+            "5-9": 24.6,
+            "10-19": 22.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL017",
+      "name": "Alocasia Odora Batik",
+      "genus": "Alocasia",
+      "image": "/plants/AL017.jpeg",
+      "variants": [
+        {
+          "code": "AL017T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.2,
+            "5-9": 2.1,
+            "10-19": 1.9
+          }
+        },
+        {
+          "code": "AL017S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.0,
+            "5-9": 3.2,
+            "10-19": 3.0
+          }
+        },
+        {
+          "code": "AL017M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.5,
+            "10-19": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL022",
+      "name": "Alocasia Polly Aurea",
+      "genus": "Alocasia",
+      "image": null,
+      "variants": [
+        {
+          "code": "AL022T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 35.1,
+            "5-9": 22.8,
+            "10-19": 21.1
+          }
+        },
+        {
+          "code": "AL022S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 43.9,
+            "5-9": 28.5,
+            "10-19": 26.3
+          }
+        },
+        {
+          "code": "AL022M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 52.6,
+            "5-9": 34.2,
+            "10-19": 31.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL011",
+      "name": "Alocasia Polly Pink Mint",
+      "genus": "Alocasia",
+      "image": "/plants/AL011.jpeg",
+      "variants": [
+        {
+          "code": "AL011T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.8,
+            "5-9": 2.5,
+            "10-19": 2.3
+          }
+        },
+        {
+          "code": "AL011S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        },
+        {
+          "code": "AL011M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.9,
+            "5-9": 5.1,
+            "10-19": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL054",
+      "name": "Alocasia Portora Gold",
+      "genus": "Alocasia",
+      "image": "/plants/AL054.jpeg",
+      "variants": [
+        {
+          "code": "AL054T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 12.5,
+            "5-9": 8.2,
+            "10-19": 7.5
+          }
+        },
+        {
+          "code": "AL054S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 18.8,
+            "5-9": 12.2,
+            "10-19": 11.3
+          }
+        },
+        {
+          "code": "AL054M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 25.1,
+            "5-9": 16.3,
+            "10-19": 15.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL033",
+      "name": "Alocasia Sanderiana Bull Variegated Yellow",
+      "genus": "Alocasia",
+      "image": "/plants/AL033.jpeg",
+      "variants": [
+        {
+          "code": "AL033T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 32.7,
+            "5-9": 21.3,
+            "10-19": 19.6
+          }
+        },
+        {
+          "code": "AL033S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 42.4,
+            "5-9": 27.6,
+            "10-19": 25.5
+          }
+        },
+        {
+          "code": "AL033M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 51.1,
+            "5-9": 33.2,
+            "10-19": 30.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL069",
+      "name": "Alocasia Sanderiana Psedou Yellow",
+      "genus": "Alocasia",
+      "image": "/plants/AL069.jpeg",
+      "variants": [
+        {
+          "code": "AL069T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 32.7,
+            "5-9": 21.3,
+            "10-19": 19.6
+          }
+        },
+        {
+          "code": "AL069S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 42.4,
+            "5-9": 27.6,
+            "10-19": 25.5
+          }
+        },
+        {
+          "code": "AL069M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 51.1,
+            "5-9": 33.2,
+            "10-19": 30.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL053",
+      "name": "Alocasia Scalprum Aurea",
+      "genus": "Alocasia",
+      "image": "/plants/AL053.jpeg",
+      "variants": [
+        {
+          "code": "AL053T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 25.2,
+            "5-9": 16.4,
+            "10-19": 15.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL048",
+      "name": "Alocasia Scalprum Mint",
+      "genus": "Alocasia",
+      "image": "/plants/AL048.jpeg",
+      "variants": [
+        {
+          "code": "AL048T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.7,
+            "5-9": 2.4,
+            "10-19": 2.2
+          }
+        },
+        {
+          "code": "AL048S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.6,
+            "5-9": 3.6,
+            "10-19": 3.4
+          }
+        },
+        {
+          "code": "AL048M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.5,
+            "5-9": 4.9,
+            "10-19": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL029",
+      "name": "Alocasia Scalprum Variegated Albo 'HUTAAL29'",
+      "genus": "Alocasia",
+      "image": "/plants/AL029.jpeg",
+      "variants": [
+        {
+          "code": "AL029T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 28.0,
+            "5-9": 18.2,
+            "10-19": 16.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL010",
+      "name": "Alocasia Sedenii",
+      "genus": "Alocasia",
+      "image": "/plants/AL010.jpeg",
+      "variants": [
+        {
+          "code": "AL010M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL049",
+      "name": "Alocasia Sinuata Albo",
+      "genus": "Alocasia",
+      "image": "/plants/AL049.jpeg",
+      "variants": [
+        {
+          "code": "AL049T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 14.0,
+            "5-9": 9.1,
+            "10-19": 8.4
+          }
+        },
+        {
+          "code": "AL049S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 24.4,
+            "5-9": 15.8,
+            "10-19": 14.6
+          }
+        },
+        {
+          "code": "AL049M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 29.2,
+            "5-9": 19.0,
+            "10-19": 17.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL052",
+      "name": "Alocasia Venom",
+      "genus": "Alocasia",
+      "image": "/plants/AL052.jpeg",
+      "variants": [
+        {
+          "code": "AL052T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 4.0,
+            "5-9": 2.6,
+            "10-19": 2.4
+          }
+        },
+        {
+          "code": "AL052S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 6.0,
+            "5-9": 3.9,
+            "10-19": 3.6
+          }
+        },
+        {
+          "code": "AL052M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 8.0,
+            "5-9": 5.2,
+            "10-19": 4.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL026",
+      "name": "Alocasia White Lava",
+      "genus": "Alocasia",
+      "image": "/plants/AL026.jpeg",
+      "variants": [
+        {
+          "code": "AL026T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 7.6,
+            "5-9": 4.9,
+            "10-19": 4.6
+          }
+        },
+        {
+          "code": "AL026S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 11.7,
+            "5-9": 7.6,
+            "10-19": 7.0
+          }
+        },
+        {
+          "code": "AL026M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 16.4,
+            "5-9": 10.7,
+            "10-19": 9.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AL040",
+      "name": "Alocasia Yucatan Yellow",
+      "genus": "Alocasia",
+      "image": "/plants/AL040.jpeg",
+      "variants": [
+        {
+          "code": "AL040T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 14.4,
+            "5-9": 9.4,
+            "10-19": 8.7
+          }
+        },
+        {
+          "code": "AL040S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 20.3,
+            "5-9": 13.2,
+            "10-19": 12.2
+          }
+        },
+        {
+          "code": "AL040M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 24.4,
+            "5-9": 15.9,
+            "10-19": 14.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT005",
+      "name": "Anthurium Clari Hybrid X",
+      "genus": "Anthurium",
+      "image": "/plants/AT005.jpeg",
+      "variants": [
+        {
+          "code": "AT005T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.6,
+            "5-9": 1.1,
+            "10-19": 1.0
+          }
+        },
+        {
+          "code": "AT005S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.3,
+            "5-9": 1.5,
+            "10-19": 1.4
+          }
+        },
+        {
+          "code": "AT005M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.7,
+            "5-9": 3.0,
+            "10-19": 2.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT023",
+      "name": "Anthurium Crystall Hybrid",
+      "genus": "Anthurium",
+      "image": "/plants/AT023.jpeg",
+      "variants": [
+        {
+          "code": "AT023M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.1,
+            "5-9": 2.7,
+            "10-19": 2.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT008",
+      "name": "Anthurium Dark Queen",
+      "genus": "Anthurium",
+      "image": "/plants/AT008.jpeg",
+      "variants": [
+        {
+          "code": "AT008T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.3,
+            "5-9": 2.1,
+            "10-19": 2.0
+          }
+        },
+        {
+          "code": "AT008S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.7,
+            "5-9": 3.0,
+            "10-19": 2.8
+          }
+        },
+        {
+          "code": "AT008M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.4,
+            "5-9": 6.1,
+            "10-19": 5.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT002",
+      "name": "Anthurium Forgetii",
+      "genus": "Anthurium",
+      "image": "/plants/AT002.jpeg",
+      "variants": [
+        {
+          "code": "AT002T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "AT002S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "AT002M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT012",
+      "name": "Anthurium Hookeri Green",
+      "genus": "Anthurium",
+      "image": "/plants/AT012.jpeg",
+      "variants": [
+        {
+          "code": "AT012T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.8,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "AT012S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "AT012M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT011",
+      "name": "Anthurium Hookeri Variegated",
+      "genus": "Anthurium",
+      "image": "/plants/AT011.jpeg",
+      "variants": [
+        {
+          "code": "AT011T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "AT011S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "AT011M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT003",
+      "name": "Anthurium Hybrid 2",
+      "genus": "Anthurium",
+      "image": null,
+      "variants": [
+        {
+          "code": "AT003T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "AT003S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "AT003M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT015",
+      "name": "Anthurium Hybrid Anthurium Corong X Villanaorum",
+      "genus": "Anthurium",
+      "image": "/plants/AT015.jpeg",
+      "variants": [
+        {
+          "code": "AT015T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "AT015S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        },
+        {
+          "code": "AT015M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.3,
+            "5-9": 3.4,
+            "10-19": 3.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT025",
+      "name": "Anthurium Hybrid Papillanium X Magnificum",
+      "genus": "Anthurium",
+      "image": null,
+      "variants": [
+        {
+          "code": "AT025T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 39.9,
+            "5-9": 25.9,
+            "10-19": 23.9
+          }
+        },
+        {
+          "code": "AT025S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 59.7,
+            "5-9": 38.8,
+            "10-19": 35.8
+          }
+        },
+        {
+          "code": "AT025M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 79.6,
+            "5-9": 51.7,
+            "10-19": 47.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT016",
+      "name": "Anthurium Luxurian X Forgetii Dark Form",
+      "genus": "Anthurium",
+      "image": "/plants/AT016.jpeg",
+      "variants": [
+        {
+          "code": "AT016T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        },
+        {
+          "code": "AT016S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        },
+        {
+          "code": "AT016M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.9,
+            "5-9": 5.1,
+            "10-19": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT009",
+      "name": "Anthurium Magnificum",
+      "genus": "Anthurium",
+      "image": "/plants/AT009.jpeg",
+      "variants": [
+        {
+          "code": "AT009T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.3,
+            "5-9": 0.9,
+            "10-19": 0.8
+          }
+        },
+        {
+          "code": "AT009S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "AT009M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.1,
+            "5-9": 2.7,
+            "10-19": 2.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "AT001",
+      "name": "Anthurium Vittarifolium Variegated",
+      "genus": "Anthurium",
+      "image": "/plants/AT001.jpeg",
+      "variants": [
+        {
+          "code": "AT001T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 5.5,
+            "5-9": 3.6,
+            "10-19": 3.3
+          }
+        },
+        {
+          "code": "AT001S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.9,
+            "5-9": 5.1,
+            "10-19": 4.7
+          }
+        },
+        {
+          "code": "AT001M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 15.8,
+            "5-9": 10.3,
+            "10-19": 9.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "EP008",
+      "name": "Epipremnum Gigantenum Variegated",
+      "genus": "Epipremnum",
+      "image": "/plants/EP008.jpeg",
+      "variants": [
+        {
+          "code": "EP008T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.0,
+            "5-9": 2.0,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "EP008S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 6.0,
+            "5-9": 3.9,
+            "10-19": 3.6
+          }
+        },
+        {
+          "code": "EP008M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.0,
+            "5-9": 5.9,
+            "10-19": 5.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "HM013",
+      "name": "Homalomela Sp Variegated",
+      "genus": "Homalomena",
+      "image": null,
+      "variants": [
+        {
+          "code": "HM013T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.2,
+            "5-9": 2.7,
+            "10-19": 2.5
+          }
+        },
+        {
+          "code": "HM013S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.6,
+            "10-19": 4.2
+          }
+        },
+        {
+          "code": "HM013M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 11.7,
+            "5-9": 7.6,
+            "10-19": 7.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "HM005",
+      "name": "Homalomena Green Stem Variegated",
+      "genus": "Homalomena",
+      "image": "/plants/HM005.jpeg",
+      "variants": [
+        {
+          "code": "HM005S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.0,
+            "5-9": 5.9,
+            "10-19": 5.4
+          }
+        },
+        {
+          "code": "HM005M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 15.0,
+            "5-9": 9.8,
+            "10-19": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "HM006",
+      "name": "Homalomena Red Stem Variegated 'HUTAHM06'",
+      "genus": "Homalomena",
+      "image": "/plants/HM006.jpeg",
+      "variants": [
+        {
+          "code": "HM006T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 6.0,
+            "5-9": 3.9,
+            "10-19": 3.6
+          }
+        },
+        {
+          "code": "HM006M01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 9.0,
+            "5-9": 5.9,
+            "10-19": 5.4
+          }
+        },
+        {
+          "code": "HM006M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 15.0,
+            "5-9": 9.8,
+            "10-19": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT076",
+      "name": "Monstera Blue Mint Striata",
+      "genus": "Monstera",
+      "image": "/plants/MT076.jpeg",
+      "variants": [
+        {
+          "code": "MT076T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 82.1,
+            "5-9": 53.4,
+            "10-19": 49.2
+          }
+        },
+        {
+          "code": "MT076S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New type",
+          "prices": {
+            "1-4": 164.2,
+            "5-9": 106.7,
+            "10-19": 98.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT030",
+      "name": "Monstera Burle Marx Flame",
+      "genus": "Monstera",
+      "image": "/plants/MT030.jpeg",
+      "variants": [
+        {
+          "code": "MT030T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.9,
+            "5-9": 1.2,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "MT030S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.9,
+            "5-9": 1.9,
+            "10-19": 1.7
+          }
+        },
+        {
+          "code": "MT030M01",
+          "description": "Size pot 2,8 inch. In moss (Nilon pot 4-5 leaf)",
+          "note": null,
+          "prices": {
+            "1-4": 3.8,
+            "5-9": 2.5,
+            "10-19": 2.3
+          }
+        },
+        {
+          "code": "MT030L01",
+          "description": "Size pot 6 inch. In moss (Có lá xẻ 1 đường)",
+          "note": "New price",
+          "prices": {
+            "1-4": 5.7,
+            "5-9": 3.7,
+            "10-19": 3.4
+          }
+        },
+        {
+          "code": "MT030K01",
+          "description": "Top Cutting 2-3 leaf mature form",
+          "note": null,
+          "prices": {
+            "1-4": 6.8,
+            "5-9": 4.4,
+            "10-19": 4.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT011",
+      "name": "Monstera Deliciosa Sphinx Var Explosive",
+      "genus": "Monstera",
+      "image": "/plants/MT011.jpeg",
+      "variants": [
+        {
+          "code": "MT011T10",
+          "description": "Tissue bag 10 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 17.0,
+            "5-9": 11.1,
+            "10-19": 10.2
+          }
+        },
+        {
+          "code": "MT011K01",
+          "description": "Top cut size 16-22cm. Var full mint",
+          "note": "New price",
+          "prices": {
+            "1-4": 34.0,
+            "5-9": 22.1,
+            "10-19": 20.4
+          }
+        },
+        {
+          "code": "MT011K01",
+          "description": "",
+          "note": "New price",
+          "prices": {
+            "1-4": 66.0,
+            "5-9": 42.9,
+            "10-19": 39.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT041",
+      "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Classic",
+      "genus": "Monstera",
+      "image": "/plants/MT041.jpeg",
+      "variants": [
+        {
+          "code": "MT066M01",
+          "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
+          "note": "New price",
+          "prices": {
+            "1-4": 56.0,
+            "5-9": 36.4,
+            "10-19": 33.6
+          }
+        },
+        {
+          "code": "MT066L01",
+          "description": "Full pot ( 4-5 leaf, size 22-30cm )",
+          "note": null,
+          "prices": {
+            "1-4": 78.4,
+            "5-9": 51.0,
+            "10-19": 47.0
+          }
+        },
+        {
+          "code": "MT066X01",
+          "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
+          "note": "New price",
+          "prices": {
+            "1-4": 62.7,
+            "5-9": 40.8,
+            "10-19": 37.6
+          }
+        },
+        {
+          "code": "MT066Y01",
+          "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
+          "note": "New type",
+          "prices": {
+            "1-4": 78.4,
+            "5-9": 51.0,
+            "10-19": 47.0
+          }
+        },
+        {
+          "code": "MT066Z01",
+          "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
+          "note": "New type",
+          "prices": {
+            "1-4": 94.1,
+            "5-9": 61.2,
+            "10-19": 56.4
+          }
+        },
+        {
+          "code": "MT041T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 18.9,
+            "5-9": 12.3,
+            "10-19": 11.3
+          }
+        },
+        {
+          "code": "MT041M01",
+          "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
+          "note": null,
+          "prices": {
+            "1-4": 72.2,
+            "5-9": 46.9,
+            "10-19": 43.3
+          }
+        },
+        {
+          "code": "MT041L01",
+          "description": "Full pot ( 4-5 leaf, size 22-30cm )",
+          "note": null,
+          "prices": {
+            "1-4": 100.3,
+            "5-9": 65.2,
+            "10-19": 60.2
+          }
+        },
+        {
+          "code": "MT041X01",
+          "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
+          "note": null,
+          "prices": {
+            "1-4": 75.3,
+            "5-9": 48.9,
+            "10-19": 45.2
+          }
+        },
+        {
+          "code": "MT041Y01",
+          "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
+          "note": "New type",
+          "prices": {
+            "1-4": 94.1,
+            "5-9": 61.1,
+            "10-19": 56.4
+          }
+        },
+        {
+          "code": "MT041Z01",
+          "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
+          "note": "New type",
+          "prices": {
+            "1-4": 112.9,
+            "5-9": 73.4,
+            "10-19": 67.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT065",
+      "name": "Monstera Deliciosa Vietciosa 'HUTAMT41' Premium",
+      "genus": "Monstera",
+      "image": "/plants/MT065.jpeg",
+      "variants": [
+        {
+          "code": "MT065T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 23.0,
+            "5-9": 15.0,
+            "10-19": 13.8
+          }
+        },
+        {
+          "code": "MT065M01",
+          "description": "Size pot 2,8 inch. In moss. Size leaf 15-21cm",
+          "note": null,
+          "prices": {
+            "1-4": 83.5,
+            "5-9": 54.3,
+            "10-19": 50.1
+          }
+        },
+        {
+          "code": "MT065L01",
+          "description": "Full pot ( 4-5 leaf, size 22-30cm )",
+          "note": null,
+          "prices": {
+            "1-4": 109.8,
+            "5-9": 71.4,
+            "10-19": 65.9
+          }
+        },
+        {
+          "code": "MT065X01",
+          "description": "Top cutting 3-4 leaf ( size leaf 20-30cm )",
+          "note": "New price",
+          "prices": {
+            "1-4": 91.7,
+            "5-9": 59.6,
+            "10-19": 55.0
+          }
+        },
+        {
+          "code": "MT065Y01",
+          "description": "Top cutting 3-4 leaf ( size leaf 31-40cm )",
+          "note": "New type",
+          "prices": {
+            "1-4": 108.3,
+            "5-9": 70.4,
+            "10-19": 65.0
+          }
+        },
+        {
+          "code": "MT065Z01",
+          "description": "Top cutting 3-4 leaf ( size leaf 41cm+ ) - Check size",
+          "note": "New type",
+          "prices": {
+            "1-4": 129.2,
+            "5-9": 84.0,
+            "10-19": 77.5
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT001",
+      "name": "Monstera Deliciosa White Monster",
+      "genus": "Monstera",
+      "image": "/plants/MT001.jpeg",
+      "variants": [
+        {
+          "code": "MT001T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.0,
+            "5-9": 2.6,
+            "10-19": 2.4
+          }
+        },
+        {
+          "code": "MT001S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 6.0,
+            "5-9": 3.9,
+            "10-19": 3.6
+          }
+        },
+        {
+          "code": "MT001M01",
+          "description": "Size pot 2,8 inch. In moss size leaf 10-14cm",
+          "note": null,
+          "prices": {
+            "1-4": 12.0,
+            "5-9": 7.8,
+            "10-19": 7.2
+          }
+        },
+        {
+          "code": "MT001L01",
+          "description": "Size pot 2,8 inch. In moss size leaf 15-21cm",
+          "note": null,
+          "prices": {
+            "1-4": 24.0,
+            "5-9": 15.6,
+            "10-19": 14.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT004",
+      "name": "Monstera Deliciosa Yellow Marilyn",
+      "genus": "Monstera",
+      "image": "/plants/MT004.jpeg",
+      "variants": [
+        {
+          "code": "MT004T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 11.7,
+            "5-9": 7.6,
+            "10-19": 7.0
+          }
+        },
+        {
+          "code": "MT004S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 17.6,
+            "5-9": 11.4,
+            "10-19": 10.5
+          }
+        },
+        {
+          "code": "MT004M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 23.4,
+            "5-9": 15.2,
+            "10-19": 14.0
+          }
+        },
+        {
+          "code": "MT004L01",
+          "description": "Size pot 3,5 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 35.1,
+            "5-9": 22.8,
+            "10-19": 21.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT040",
+      "name": "Monstera Electro Light",
+      "genus": "Monstera",
+      "image": "/plants/MT040.jpeg",
+      "variants": [
+        {
+          "code": "MT040T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 22.9,
+            "5-9": 14.9,
+            "10-19": 13.7
+          }
+        },
+        {
+          "code": "MT040S01",
+          "description": "Size pot 1.7 inch. In moss. Check var key by key",
+          "note": null,
+          "prices": {
+            "1-4": 34.3,
+            "5-9": 22.3,
+            "10-19": 20.6
+          }
+        },
+        {
+          "code": "MT040M01",
+          "description": "Size pot 2,8 inch. In moss. Check var key by key. Size leaf 10-12cm",
+          "note": null,
+          "prices": {
+            "1-4": 45.7,
+            "5-9": 29.7,
+            "10-19": 27.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT071",
+      "name": "Monstera Green Snow",
+      "genus": "Monstera",
+      "image": "/plants/MT071.jpeg",
+      "variants": [
+        {
+          "code": "MT071T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 8.4,
+            "5-9": 5.5,
+            "10-19": 5.0
+          }
+        },
+        {
+          "code": "MT071S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 12.6,
+            "5-9": 8.2,
+            "10-19": 7.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT060",
+      "name": "Monstera Lemon Lime",
+      "genus": "Monstera",
+      "image": "/plants/MT060.jpeg",
+      "variants": [
+        {
+          "code": "MT060T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 14.6,
+            "5-9": 9.5,
+            "10-19": 8.7
+          }
+        },
+        {
+          "code": "MT060S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 21.9,
+            "5-9": 14.2,
+            "10-19": 13.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT067",
+      "name": "Monstera Light Lime",
+      "genus": "Monstera",
+      "image": "/plants/MT067.jpeg",
+      "variants": [
+        {
+          "code": "MT067T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 54.2,
+            "5-9": 35.2,
+            "10-19": 32.5
+          }
+        },
+        {
+          "code": "MT067S11",
+          "description": "Size pot 2.8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 108.4,
+            "5-9": 70.5,
+            "10-19": 65.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT039",
+      "name": "Monstera Mint Siam",
+      "genus": "Monstera",
+      "image": null,
+      "variants": [
+        {
+          "code": "MT039T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 33.5,
+            "5-9": 21.8,
+            "10-19": 20.1
+          }
+        },
+        {
+          "code": "MT039S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": "New type",
+          "prices": {
+            "1-4": 50.3,
+            "5-9": 32.7,
+            "10-19": 30.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT007",
+      "name": "Monstera Sierrana",
+      "genus": "Monstera",
+      "image": "/plants/MT007.jpeg",
+      "variants": [
+        {
+          "code": "MT007T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.6,
+            "5-9": 1.0,
+            "10-19": 0.9
+          }
+        },
+        {
+          "code": "MT007S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.4,
+            "5-9": 1.6,
+            "10-19": 1.4
+          }
+        },
+        {
+          "code": "MT007K01",
+          "description": "Top cutting 15-17cm",
+          "note": null,
+          "prices": {
+            "1-4": 6.0,
+            "5-9": 3.9,
+            "10-19": 3.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT005",
+      "name": "Monstera Thai Constellation",
+      "genus": "Monstera",
+      "image": "/plants/MT005.jpeg",
+      "variants": [
+        {
+          "code": "MT005T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.0,
+            "5-9": 1.3,
+            "10-19": 1.2
+          }
+        },
+        {
+          "code": "MT005S01",
+          "description": "Size pot 1,7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.0,
+            "5-9": 2.0,
+            "10-19": 1.8
+          }
+        },
+        {
+          "code": "MT005M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.0,
+            "5-9": 2.6,
+            "10-19": 2.4
+          }
+        },
+        {
+          "code": "MT005Y01",
+          "description": "Top cutting 18-25cm",
+          "note": null,
+          "prices": {
+            "1-4": 5.7,
+            "5-9": 3.7,
+            "10-19": 3.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT038",
+      "name": "Monstera Thai Constellation Creme Brulee",
+      "genus": "Monstera",
+      "image": null,
+      "variants": [
+        {
+          "code": "MT038K01",
+          "description": "Cutting size leaf 16-18cm",
+          "note": null,
+          "prices": {
+            "1-4": 110.0,
+            "5-9": 71.5,
+            "10-19": 66.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT042",
+      "name": "Monstera Thai Constellation High Variegated",
+      "genus": "Monstera",
+      "image": "/plants/MT042.jpeg",
+      "variants": [
+        {
+          "code": "MT042T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 2.5,
+            "5-9": 1.7,
+            "10-19": 1.5
+          }
+        },
+        {
+          "code": "MT042S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.8,
+            "5-9": 2.5,
+            "10-19": 2.3
+          }
+        },
+        {
+          "code": "MT042M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 10.6,
+            "5-9": 6.9,
+            "10-19": 6.4
+          }
+        },
+        {
+          "code": "MT042Y01",
+          "description": "Top cutting 16-22 cm",
+          "note": null,
+          "prices": {
+            "1-4": 15.0,
+            "5-9": 9.8,
+            "10-19": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT047",
+      "name": "Monstera Thai Constellation Tricolor Miracle",
+      "genus": "Monstera",
+      "image": "/plants/MT047.jpeg",
+      "variants": [
+        {
+          "code": "MT047T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New price",
+          "prices": {
+            "1-4": 99.0,
+            "5-9": 64.4,
+            "10-19": 59.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD061",
+      "name": "Philodendron Billietiae Variegated Yellow",
+      "genus": "Philodendron",
+      "image": "/plants/PD061.jpeg",
+      "variants": [
+        {
+          "code": "PD061T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 21.8,
+            "5-9": 14.2,
+            "10-19": 13.1
+          }
+        },
+        {
+          "code": "PD061S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 32.7,
+            "5-9": 21.3,
+            "10-19": 19.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD047",
+      "name": "Philodendron Birkin",
+      "genus": "Philodendron",
+      "image": "/plants/PD047.jpeg",
+      "variants": [
+        {
+          "code": "PD047T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 0.8,
+            "5-9": 0.5,
+            "10-19": 0.5
+          }
+        },
+        {
+          "code": "PD047S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.3,
+            "5-9": 0.8,
+            "10-19": 0.8
+          }
+        },
+        {
+          "code": "PD047M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 2.6,
+            "5-9": 1.7,
+            "10-19": 1.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD039",
+      "name": "Philodendron Calkins Gold",
+      "genus": "Philodendron",
+      "image": "/plants/PD039.jpeg",
+      "variants": [
+        {
+          "code": "PD039T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD039S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD039M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD087",
+      "name": "Philodendron Caramel Fire Tiger",
+      "genus": "Philodendron",
+      "image": "/plants/PD087.jpeg",
+      "variants": [
+        {
+          "code": "PD087T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 20.4,
+            "5-9": 13.3,
+            "10-19": 12.3
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD004",
+      "name": "Philodendron Florida Beauty Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD004.jpeg",
+      "variants": [
+        {
+          "code": "PD004T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.9,
+            "5-9": 3.2,
+            "10-19": 3.0
+          }
+        },
+        {
+          "code": "PD004S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.5,
+            "10-19": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD064",
+      "name": "Philodendron Green Congo Hybrid",
+      "genus": "Philodendron",
+      "image": "/plants/PD064.jpeg",
+      "variants": [
+        {
+          "code": "PD064T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.2,
+            "5-9": 2.1,
+            "10-19": 1.9
+          }
+        },
+        {
+          "code": "PD064S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 4.9,
+            "5-9": 3.2,
+            "10-19": 3.0
+          }
+        },
+        {
+          "code": "PD064M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.6,
+            "10-19": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD037",
+      "name": "Philodendron Joepii",
+      "genus": "Philodendron",
+      "image": "/plants/PD037.jpeg",
+      "variants": [
+        {
+          "code": "PD037T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD037S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD037M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD042",
+      "name": "Philodendron Jose Bouno Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD042.jpeg",
+      "variants": [
+        {
+          "code": "PD042T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 4.9,
+            "5-9": 3.2,
+            "10-19": 3.0
+          }
+        },
+        {
+          "code": "PD042S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.5,
+            "10-19": 4.2
+          }
+        },
+        {
+          "code": "PD042M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 14.8,
+            "5-9": 9.6,
+            "10-19": 8.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD008",
+      "name": "Philodendron Painted Lady Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD008.jpeg",
+      "variants": [
+        {
+          "code": "PD008T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD008S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD008M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD086",
+      "name": "Philodendron Philodendron Xanadu Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD086.jpeg",
+      "variants": [
+        {
+          "code": "PD086T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 95.2,
+            "5-9": 61.9,
+            "10-19": 57.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD006",
+      "name": "Philodendron Pink Princess",
+      "genus": "Philodendron",
+      "image": "/plants/PD006.jpeg",
+      "variants": [
+        {
+          "code": "PD006T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD006S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD006M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD081",
+      "name": "Philodendron Pink Princess High Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD081.jpeg",
+      "variants": [
+        {
+          "code": "PD081T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 3.8,
+            "5-9": 2.5,
+            "10-19": 2.3
+          }
+        },
+        {
+          "code": "PD081S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 5.9,
+            "5-9": 3.8,
+            "10-19": 3.5
+          }
+        },
+        {
+          "code": "PD081M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 11.7,
+            "5-9": 7.6,
+            "10-19": 7.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD066",
+      "name": "Philodendron Pink Princess Tricolor",
+      "genus": "Philodendron",
+      "image": "/plants/PD066.jpeg",
+      "variants": [
+        {
+          "code": "PD066T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 16.8,
+            "5-9": 10.9,
+            "10-19": 10.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD045",
+      "name": "Philodendron Red Congo Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD045.jpeg",
+      "variants": [
+        {
+          "code": "PD045T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 20.0,
+            "5-9": 13.0,
+            "10-19": 12.0
+          }
+        },
+        {
+          "code": "PD045S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 30.0,
+            "5-9": 19.5,
+            "10-19": 18.0
+          }
+        },
+        {
+          "code": "PD045M01",
+          "description": "Size pot 2.8 inch. In moss",
+          "note": "New price",
+          "prices": {
+            "1-4": 40.0,
+            "5-9": 26.0,
+            "10-19": 24.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD005",
+      "name": "Philodendron Ring Of Fire Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD005.jpeg",
+      "variants": [
+        {
+          "code": "PD005T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD005S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD005M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD056",
+      "name": "Philodendron Selloum Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD056.jpeg",
+      "variants": [
+        {
+          "code": "PD056T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 15.2,
+            "5-9": 9.9,
+            "10-19": 9.1
+          }
+        },
+        {
+          "code": "PD056S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 23.4,
+            "5-9": 15.2,
+            "10-19": 14.1
+          }
+        },
+        {
+          "code": "PD056M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 32.8,
+            "5-9": 21.3,
+            "10-19": 19.7
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD019",
+      "name": "Philodendron Snowdrift Variegated",
+      "genus": "Philodendron",
+      "image": "/plants/PD019.jpeg",
+      "variants": [
+        {
+          "code": "PD019T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD019S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD019M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD007",
+      "name": "Philodendron White Knight",
+      "genus": "Philodendron",
+      "image": null,
+      "variants": [
+        {
+          "code": "PD007T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD007S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD007M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD026",
+      "name": "Philodendron White Princess",
+      "genus": "Philodendron",
+      "image": null,
+      "variants": [
+        {
+          "code": "PD026T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD026S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD026M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD003",
+      "name": "Philodendron White Wizard",
+      "genus": "Philodendron",
+      "image": null,
+      "variants": [
+        {
+          "code": "PD003T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 1.2,
+            "5-9": 0.7,
+            "10-19": 0.7
+          }
+        },
+        {
+          "code": "PD003S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "PD003M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD075",
+      "name": "Philodendron White Wizard Tricolor 'HUTAPD75'",
+      "genus": "Philodendron",
+      "image": "/plants/PD075.jpeg",
+      "variants": [
+        {
+          "code": "PD075T10",
+          "description": "Tissue bag 10 plant",
+          "note": null,
+          "prices": {
+            "1-4": 7.0,
+            "5-9": 4.6,
+            "10-19": 4.2
+          }
+        },
+        {
+          "code": "PD075S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 10.5,
+            "5-9": 6.8,
+            "10-19": 6.3
+          }
+        },
+        {
+          "code": "PD075K01",
+          "description": "Top cutting 3-4 leaf ( size leaf 15-18cm )",
+          "note": "New price",
+          "prices": {
+            "1-4": 20.0,
+            "5-9": 13.0,
+            "10-19": 12.0
+          }
+        },
+        {
+          "code": "PD075M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 30.0,
+            "5-9": 19.5,
+            "10-19": 18.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "SP002",
+      "name": "Spathiphyllum Sensation Variegated",
+      "genus": "Spathiphyllum",
+      "image": "/plants/SP002.jpeg",
+      "variants": [
+        {
+          "code": "SP002S01",
+          "description": "Size pot 1.7 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 1.8,
+            "5-9": 1.1,
+            "10-19": 1.1
+          }
+        },
+        {
+          "code": "SP002M01",
+          "description": "Size pot 2,8 inch. In moss",
+          "note": null,
+          "prices": {
+            "1-4": 3.5,
+            "5-9": 2.3,
+            "10-19": 2.1
+          }
+        }
+      ]
+    },
+    {
+      "code": "MT054",
+      "name": "Monstera Deliciosa Thai Constellation Legacy",
+      "genus": "Monstera",
+      "image": null,
+      "variants": [
+        {
+          "code": "MT054T01",
+          "description": "Tissue bag 1 plant",
+          "note": null,
+          "prices": {
+            "1-4": 10.0,
+            "5-9": 6.5,
+            "10-19": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "PD069",
+      "name": "Philodendron White Knight tricolor",
+      "genus": "Philodendron",
+      "image": null,
+      "variants": [
+        {
+          "code": "PD069T01",
+          "description": "Tissue bag 1 plant",
+          "note": "New type",
+          "prices": {
+            "1-4": 26.2,
+            "5-9": 17.1,
+            "10-19": 15.7
+          }
+        }
+      ]
+    }
+  ]
 }
