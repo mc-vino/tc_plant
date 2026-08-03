@@ -156,6 +156,55 @@ body {
   }
 }
 
+/* How tall a product photo may get before its width is capped to match. */
+.photo-fit {
+  --photo-max-h: 34vh;
+}
+@media (min-width: 768px) {
+  .photo-fit {
+    --photo-max-h: 56vh;
+  }
+}
+
+/* Product photo: feather the outer edge so the picture melts into the surface
+   instead of sitting on it as a cut-out rectangle. Works for both the white
+   studio shots and the ones with a real background, and in either theme. */
+.photo-soft {
+  --feather: 5%;
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--feather),
+      #000 calc(100% - var(--feather)),
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 var(--feather),
+      #000 calc(100% - var(--feather)),
+      transparent 100%
+    );
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--feather),
+      #000 calc(100% - var(--feather)),
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 var(--feather),
+      #000 calc(100% - var(--feather)),
+      transparent 100%
+    );
+  mask-composite: intersect;
+}
+
 /* Dialog: sheet slides up on touch layouts, scales in on desktop. */
 @keyframes fadeIn {
   from {

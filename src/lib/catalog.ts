@@ -22,6 +22,9 @@ export interface Product {
   name: string;
   genus: string;
   image: string | null;
+  /** Intrinsic photo size, so it can be laid out at its own aspect ratio. */
+  imageW?: number;
+  imageH?: number;
   variants: Variant[];
 }
 
@@ -49,6 +52,8 @@ interface RawRetailProduct {
   name: string;
   genus: string;
   image: string | null;
+  imageW?: number;
+  imageH?: number;
   variants: RawRetailVariant[];
 }
 interface RawRetailMeta {
@@ -96,6 +101,8 @@ function normalizeRetail(p: RawRetailProduct): Product {
     name: p.name,
     genus: p.genus,
     image: p.image,
+    imageW: p.imageW,
+    imageH: p.imageH,
     variants: p.variants.map((v) => ({
       code: v.code,
       description: v.description,

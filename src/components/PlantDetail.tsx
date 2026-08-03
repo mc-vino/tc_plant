@@ -35,16 +35,24 @@ export default function PlantDetail({
     <>
       <div className={hasImage ? "grid gap-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10" : ""}>
         {hasImage && (
-          // No frame or mat: object-contain scales the photo down to fit and it
-          // sits straight on the surface behind it. The box is capped on phones
-          // so the name and price stay above the fold.
-          <div className="relative h-[34vh] w-full md:h-auto md:aspect-[4/5]">
+          // Laid out at the photo's own aspect ratio, so there is no empty
+          // letterbox around it. Softly rounded and feathered at the edge so it
+          // melts into the surface instead of reading as a pasted rectangle.
+          <div
+            className="photo-fit relative mx-auto w-full"
+            style={{
+              aspectRatio: `${product.imageW ?? 4} / ${product.imageH ?? 5}`,
+              // Cap by height, letting the width follow the ratio, so the box is
+              // exactly the photo and never taller than the viewport allows.
+              maxWidth: `calc(var(--photo-max-h) * ${product.imageW ?? 4} / ${product.imageH ?? 5})`,
+            }}
+          >
             <Image
               src={asset(product.image!)}
               alt={product.name}
               fill
-              sizes="(max-width: 768px) 100vw, 460px"
-              className="object-contain"
+              sizes="(max-width: 768px) 88vw, 460px"
+              className="photo-soft rounded-[18px] object-contain"
             />
           </div>
         )}
