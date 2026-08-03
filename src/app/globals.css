@@ -156,7 +156,49 @@ body {
   }
 }
 
+/* Dialog: sheet slides up on touch layouts, scales in on desktop. */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.plant-dialog {
+  animation: sheet-up 380ms var(--ease-drawer) both;
+}
+@media (min-width: 640px) {
+  .plant-dialog {
+    animation: dialog-in 260ms var(--ease-out) both;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .plant-dialog {
+    animation: none;
+  }
   .reveal {
     animation: none;
   }

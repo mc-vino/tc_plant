@@ -70,7 +70,11 @@ export default function CartDrawer() {
   }, [lines, grandTotal, catalogLabel]);
 
   return (
-    <div className={`fixed inset-0 z-50 ${open ? "" : "pointer-events-none"}`} aria-hidden={!open}>
+    // overflow-hidden keeps the off-screen panel from widening the page.
+    <div
+      className={`fixed inset-0 z-50 overflow-hidden ${open ? "" : "pointer-events-none"}`}
+      aria-hidden={!open}
+    >
       <div
         onClick={() => setOpen(false)}
         className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${open ? "opacity-100" : "opacity-0"}`}

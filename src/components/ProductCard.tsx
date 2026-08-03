@@ -1,11 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { ImageIcon } from "lucide-react";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass } from "@/lib/market";
+import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
+import { googleImagesUrl } from "@/lib/googleImages";
 import AddToCartButton from "./AddToCartButton";
 
 export default function ProductCard({ product }: { product: Product }) {
+  const { open } = usePlantModal();
   const from = lowestPrice(product);
   const market = marketFor(product);
   const moq = product.variants.length === 1 ? product.variants[0].moq : null;
@@ -15,10 +21,18 @@ export default function ProductCard({ product }: { product: Product }) {
       : moq
         ? `MOQ ${moq}`
         : null;
+
   return (
     <div className="relative">
       <Link
         href={`/plant/${product.code}`}
+        onClick={(e) => {
+          // Plain click opens the dialog; modifier/middle clicks and the
+          // context menu keep the native "open in new tab" behaviour.
+          if (!isPlainLeftClick(e)) return;
+          e.preventDefault();
+          open(product.code);
+        }}
         className="card-hover group flex flex-col rounded-card bg-card overflow-hidden ring-1 ring-line/70 shadow-[var(--shadow-sm)] hover:ring-accent/40"
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-accent-soft">
@@ -44,7 +58,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="flex flex-1 flex-col p-3.5">
           <p className="text-[10px] uppercase tracking-[0.14em] text-faint">{product.genus}</p>
           <h3 className="mt-1 display text-[17px] leading-tight text-foreground">{product.name}</h3>
-          <div className="mt-auto pt-3">
+          <div className="mt-auto pt-3 pr-[4.75rem]">
             {from !== null && (
               <span className="flex items-baseline gap-1 leading-none">
                 <span className="text-[10px] text-faint">от</span>
@@ -60,11 +74,21 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
       </Link>
-      {/* Overlay button: sibling of the link so it stays out of the anchor. */}
-      <AddToCartButton
-        product={product}
-        className="absolute bottom-3 right-3"
-      />
+
+      {/* Overlay actions: siblings of the link so they stay out of the anchor. */}
+      <div className="absolute bottom-3 right-3 flex items-center gap-2">
+        <a
+          href={googleImagesUrl(product.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Найти фото ${product.name} в Google Картинках`}
+          title="Фото в Google Картинках"
+          className="press flex h-9 w-9 items-center justify-center rounded-full bg-card text-muted shadow-[var(--shadow-md)] ring-1 ring-line transition-colors hover:text-accent hover:ring-accent/50"
+        >
+          <ImageIcon size={16} />
+        </a>
+        <AddToCartButton product={product} />
+      </div>
     </div>
   );
 }

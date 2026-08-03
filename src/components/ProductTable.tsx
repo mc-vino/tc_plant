@@ -3,9 +3,12 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ImageIcon } from "lucide-react";
 import { Product, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
+import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
+import { googleImagesUrl } from "@/lib/googleImages";
 import AddToCartButton from "./AddToCartButton";
 
 type SortKey = "name" | "variants" | "low" | "high" | "rarity";
@@ -36,6 +39,7 @@ function sortValue(row: Row, key: SortKey): number | string | null {
 }
 
 export default function ProductTable({ products }: { products: Product[] }) {
+  const { open } = usePlantModal();
   const [sortKey, setSortKey] = useState<SortKey | null>(null);
   const [dir, setDir] = useState<Dir>("asc");
 
@@ -85,7 +89,15 @@ export default function ProductTable({ products }: { products: Product[] }) {
           {sorted.map(({ p, m, low, high }) => (
             <tr key={p.code} className="border-t border-line hover:bg-accent-soft/50 transition-colors">
               <td className="py-2.5 pl-4 pr-3">
-                <Link href={`/plant/${p.code}`} className="flex items-center gap-3 group">
+                <Link
+                  href={`/plant/${p.code}`}
+                  onClick={(e) => {
+                    if (!isPlainLeftClick(e)) return;
+                    e.preventDefault();
+                    open(p.code);
+                  }}
+                  className="flex items-center gap-3 group"
+                >
                   <span className="relative h-11 w-9 shrink-0 overflow-hidden rounded bg-accent-soft">
                     {p.image ? (
                       <Image src={asset(p.image)} alt="" fill sizes="36px" className="object-cover" />
@@ -117,8 +129,20 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   {m.rarity}
                 </span>
               </td>
-              <td className="py-2.5 px-3 pr-4 text-right">
-                <AddToCartButton product={p} variant="full" />
+              <td className="py-2.5 px-3 pr-4">
+                <div className="flex items-center justify-end gap-2">
+                  <a
+                    href={googleImagesUrl(p.name)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Найти фото ${p.name} в Google Картинках`}
+                    title="Фото в Google Картинках"
+                    className="press flex h-8 w-8 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+                  >
+                    <ImageIcon size={15} />
+                  </a>
+                  <AddToCartButton product={p} variant="full" />
+                </div>
               </td>
             </tr>
           ))}
