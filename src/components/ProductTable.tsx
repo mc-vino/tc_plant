@@ -71,8 +71,85 @@ export default function ProductTable({ products }: { products: Product[] }) {
 
   const arrow = (key: SortKey) => (sortKey === key ? (dir === "asc" ? " ↑" : " ↓") : "");
 
+  const MOBILE_SORTS: { key: SortKey; label: string }[] = [
+    { key: "name", label: "Сорт" },
+    { key: "low", label: "Цена от" },
+    { key: "high", label: "До" },
+    { key: "rarity", label: "Редкость" },
+  ];
+
   return (
-    <div className="overflow-x-auto rounded-card border border-line bg-card">
+    <>
+      {/* Phones: compact rows, so the price is visible without sideways scrolling. */}
+      <div className="md:hidden">
+        <div className="mb-3 flex flex-wrap items-center gap-1.5">
+          <span className="text-[11px] text-faint">Сортировка:</span>
+          {MOBILE_SORTS.map((s) => (
+            <button
+              key={s.key}
+              onClick={() => toggle(s.key)}
+              aria-pressed={sortKey === s.key}
+              className={`press rounded-full border px-2.5 py-1 text-[11px] transition-colors ${
+                sortKey === s.key
+                  ? "border-accent bg-accent text-white"
+                  : "border-line bg-card text-muted hover:border-accent hover:text-foreground"
+              }`}
+            >
+              {s.label}
+              {arrow(s.key)}
+            </button>
+          ))}
+        </div>
+
+        <ul className="divide-y divide-line overflow-hidden rounded-card border border-line bg-card">
+          {sorted.map(({ p, low, high }) => (
+            <li key={p.code} className="flex items-center gap-2.5 px-3 py-2.5">
+              <div className="flex shrink-0 items-center gap-1.5">
+                <PhotoButton name={p.name} size="sm" elevated={false} />
+                <AddToCartButton product={p} size="sm" elevated={false} />
+              </div>
+              <Link
+                href={`/plant/${p.code}`}
+                onClick={(e) => {
+                  if (!isPlainLeftClick(e)) return;
+                  e.preventDefault();
+                  open(p.code);
+                }}
+                className="flex min-w-0 flex-1 items-center gap-2.5"
+              >
+                <span className="relative h-10 w-8 shrink-0 overflow-hidden rounded bg-accent-soft">
+                  {p.image ? (
+                    <Image src={asset(p.image)} alt="" fill sizes="32px" className="object-cover" />
+                  ) : (
+                    <span className="flex h-full items-center justify-center display italic text-accent/30">
+                      {p.genus.charAt(0)}
+                    </span>
+                  )}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block display text-[13.5px] leading-tight">{p.name}</span>
+                  <span className="text-[9px] uppercase tracking-[0.12em] text-faint">
+                    {p.genus}
+                  </span>
+                </span>
+                <span className="shrink-0 text-right leading-tight">
+                  <span className="block font-mono text-[13px] font-medium text-accent-strong">
+                    {low !== null ? formatUSD(low) : "-"}
+                  </span>
+                  {high !== null && high !== low && (
+                    <span className="block font-mono text-[10px] text-faint">
+                      до {formatUSD(high)}
+                    </span>
+                  )}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Tablet and up: the full table. */}
+      <div className="hidden overflow-x-auto rounded-card border border-line bg-card md:block">
       <table className="w-full min-w-[720px] text-sm border-collapse">
         <thead>
           <tr className="text-left text-faint bg-paper">
@@ -138,7 +215,8 @@ export default function ProductTable({ products }: { products: Product[] }) {
           ))}
         </tbody>
       </table>
-    </div>
+      </div>
+    </>
   );
 }
 

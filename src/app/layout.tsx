@@ -50,8 +50,9 @@ export default function RootLayout({
                 TC&nbsp;Plant
               </span>
             </Link>
-            <nav className="flex items-center gap-4 sm:gap-7 text-[13px]">
-              <Link href="/" className="text-muted hover:text-foreground transition-colors">
+            <nav className="flex items-center gap-3 sm:gap-7 text-[13px]">
+              {/* The logo already leads home, so this link can go on tiny screens. */}
+              <Link href="/" className="hidden min-[380px]:inline text-muted hover:text-foreground transition-colors">
                 Каталог
               </Link>
               <Link href="/about" className="text-muted hover:text-foreground transition-colors">
