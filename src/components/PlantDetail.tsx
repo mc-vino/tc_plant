@@ -35,14 +35,15 @@ export default function PlantDetail({
     <>
       <div className={hasImage ? "grid gap-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10" : ""}>
         {hasImage && (
-          // Shorter crop on phones so the name and price stay above the fold.
-          <div className="relative aspect-[3/2] max-h-[38vh] overflow-hidden rounded-card border border-line bg-accent-soft md:aspect-[4/5] md:max-h-none">
+          // object-contain scales the photo down to fit instead of cropping it;
+          // the box is capped on phones so name and price stay above the fold.
+          <div className="relative h-[34vh] w-full overflow-hidden rounded-card border border-line bg-paper md:h-auto md:aspect-[4/5]">
             <Image
               src={asset(product.image!)}
               alt={product.name}
               fill
               sizes="(max-width: 768px) 100vw, 460px"
-              className="object-cover"
+              className="object-contain p-2"
             />
           </div>
         )}
@@ -57,16 +58,14 @@ export default function PlantDetail({
             <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
               {variantBadge}
             </span>
-            {!hasImage && (
-              <a
-                href={googleImagesUrl(product.name)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="press inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
-              >
-                <ImageIcon size={13} /> Найти фото
-              </a>
-            )}
+            <a
+              href={googleImagesUrl(product.name)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="press inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
+            >
+              <ImageIcon size={13} /> Найти фото
+            </a>
           </div>
 
           <h1

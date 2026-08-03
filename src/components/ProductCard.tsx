@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ImageIcon } from "lucide-react";
 import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass } from "@/lib/market";
 import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
-import { googleImagesUrl } from "@/lib/googleImages";
 import AddToCartButton from "./AddToCartButton";
+import PhotoButton from "./PhotoButton";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { open } = usePlantModal();
@@ -23,7 +22,10 @@ export default function ProductCard({ product }: { product: Product }) {
         : null;
 
   return (
-    <div className="relative">
+    // h-full + flex column: the card fills the grid row, so the action row
+    // always sits on the card's bottom edge instead of drifting with the
+    // length of the name.
+    <div className="card-hover group flex h-full flex-col overflow-hidden rounded-card bg-card ring-1 ring-line/70 shadow-[var(--shadow-sm)] hover:ring-accent/40">
       <Link
         href={`/plant/${product.code}`}
         onClick={(e) => {
@@ -33,7 +35,7 @@ export default function ProductCard({ product }: { product: Product }) {
           e.preventDefault();
           open(product.code);
         }}
-        className="card-hover group flex flex-col rounded-card bg-card overflow-hidden ring-1 ring-line/70 shadow-[var(--shadow-sm)] hover:ring-accent/40"
+        className="flex flex-1 flex-col"
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-accent-soft">
           {product.image ? (
@@ -55,39 +57,31 @@ export default function ProductCard({ product }: { product: Product }) {
             {market.rarity}
           </span>
         </div>
-        <div className="flex flex-1 flex-col p-3.5">
+        <div className="flex flex-1 flex-col px-3.5 pt-3.5">
           <p className="text-[10px] uppercase tracking-[0.14em] text-faint">{product.genus}</p>
           <h3 className="mt-1 display text-[17px] leading-tight text-foreground">{product.name}</h3>
-          <div className="mt-auto pt-3 pr-[4.75rem]">
-            {from !== null && (
-              <span className="flex items-baseline gap-1 leading-none">
-                <span className="text-[10px] text-faint">от</span>
-                <span className="font-mono text-base font-medium text-accent-strong">
-                  {formatUSD(from)}
-                </span>
+          {from !== null && (
+            <span className="mt-auto flex items-baseline gap-1 pt-3 leading-none">
+              <span className="text-[10px] text-faint">от</span>
+              <span className="font-mono text-base font-medium text-accent-strong">
+                {formatUSD(from)}
               </span>
-            )}
-            <span className="mt-1 block font-mono text-[11px] text-faint">
-              {product.code}
-              {meta ? ` · ${meta}` : ""}
             </span>
-          </div>
+          )}
         </div>
       </Link>
 
-      {/* Overlay actions: siblings of the link so they stay out of the anchor. */}
-      <div className="absolute bottom-3 right-3 flex items-center gap-2">
-        <a
-          href={googleImagesUrl(product.name)}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`Найти фото ${product.name} в Google Картинках`}
-          title="Фото в Google Картинках"
-          className="press flex h-9 w-9 items-center justify-center rounded-full bg-card text-muted shadow-[var(--shadow-md)] ring-1 ring-line transition-colors hover:text-accent hover:ring-accent/50"
-        >
-          <ImageIcon size={16} />
-        </a>
-        <AddToCartButton product={product} />
+      {/* Actions live outside the link (valid markup) and in normal flow, so
+          they never cover the card's tap area. */}
+      <div className="flex items-center justify-between gap-2 px-3.5 pb-3 pt-2">
+        <span className="min-w-0 truncate font-mono text-[11px] text-faint">
+          {product.code}
+          {meta ? ` · ${meta}` : ""}
+        </span>
+        <div className="flex shrink-0 items-center gap-1.5">
+          <PhotoButton name={product.name} size="sm" elevated={false} />
+          <AddToCartButton product={product} size="sm" elevated={false} />
+        </div>
       </div>
     </div>
   );

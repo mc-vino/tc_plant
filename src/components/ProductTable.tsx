@@ -3,13 +3,12 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ImageIcon } from "lucide-react";
 import { Product, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
 import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
-import { googleImagesUrl } from "@/lib/googleImages";
 import AddToCartButton from "./AddToCartButton";
+import PhotoButton from "./PhotoButton";
 
 type SortKey = "name" | "variants" | "low" | "high" | "rarity";
 type Dir = "asc" | "desc";
@@ -77,18 +76,24 @@ export default function ProductTable({ products }: { products: Product[] }) {
       <table className="w-full min-w-[720px] text-sm border-collapse">
         <thead>
           <tr className="text-left text-faint bg-paper">
-            <Th onClick={() => toggle("name")} label={`Сорт${arrow("name")}`} className="pl-4 pr-3" />
+            <th className="w-px py-3 pl-4 pr-2" />
+            <Th onClick={() => toggle("name")} label={`Сорт${arrow("name")}`} className="pr-3" />
             <Th onClick={() => toggle("low")} label={`Цена от${arrow("low")}`} align="right" />
             <Th onClick={() => toggle("high")} label={`До${arrow("high")}`} align="right" />
             <Th onClick={() => toggle("variants")} label={`Вариантов${arrow("variants")}`} align="right" />
-            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} />
-            <th className="py-3 px-3 pr-4" />
+            <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} className="pr-4" />
           </tr>
         </thead>
         <tbody>
           {sorted.map(({ p, m, low, high }) => (
             <tr key={p.code} className="border-t border-line hover:bg-accent-soft/50 transition-colors">
-              <td className="py-2.5 pl-4 pr-3">
+              <td className="py-2.5 pl-4 pr-2 align-middle">
+                <div className="flex items-center gap-1.5">
+                  <PhotoButton name={p.name} size="sm" elevated={false} />
+                  <AddToCartButton product={p} size="sm" elevated={false} />
+                </div>
+              </td>
+              <td className="py-2.5 pr-3">
                 <Link
                   href={`/plant/${p.code}`}
                   onClick={(e) => {
@@ -122,27 +127,12 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 {high !== null ? formatUSD(high) : "-"}
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">{p.variants.length}</td>
-              <td className="py-2.5 px-3">
+              <td className="py-2.5 px-3 pr-4">
                 <span
                   className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
                 >
                   {m.rarity}
                 </span>
-              </td>
-              <td className="py-2.5 px-3 pr-4">
-                <div className="flex items-center justify-end gap-2">
-                  <a
-                    href={googleImagesUrl(p.name)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Найти фото ${p.name} в Google Картинках`}
-                    title="Фото в Google Картинках"
-                    className="press flex h-8 w-8 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-accent hover:text-accent"
-                  >
-                    <ImageIcon size={15} />
-                  </a>
-                  <AddToCartButton product={p} variant="full" />
-                </div>
               </td>
             </tr>
           ))}

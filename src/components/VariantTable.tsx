@@ -2,14 +2,61 @@
 
 import { useEffect } from "react";
 import { Plus, Minus } from "lucide-react";
-import { Product, formatUSD, breakColumns } from "@/lib/catalog";
+import { Product, Variant, formatUSD, breakColumns } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
 import { useCart } from "@/lib/cart";
 
+/** Add / stepper control for one specific variant. */
+function VariantCart({ code, catalog }: { code: string; catalog: string }) {
+  const { itemsFor, add, setQty } = useCart();
+  const qty = itemsFor(catalog).find((l) => l.code === code)?.qty ?? 0;
+
+  if (qty === 0) {
+    return (
+      <button
+        onClick={() => add(code)}
+        className="press inline-flex h-8 items-center gap-1 rounded-full bg-accent px-3 text-xs font-medium text-white transition-colors hover:bg-accent-strong"
+      >
+        <Plus size={14} /> В корзину
+      </button>
+    );
+  }
+
+  return (
+    <span className="inline-flex items-center rounded-full border border-accent/40">
+      <button
+        onClick={() => setQty(code, qty - 1)}
+        aria-label="Меньше"
+        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
+      >
+        <Minus size={14} />
+      </button>
+      <span className="min-w-6 text-center font-mono text-sm text-accent-strong tabular-nums">
+        {qty}
+      </span>
+      <button
+        onClick={() => setQty(code, qty + 1)}
+        aria-label="Больше"
+        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
+      >
+        <Plus size={14} />
+      </button>
+    </span>
+  );
+}
+
+function VariantMeta({ v }: { v: Variant }) {
+  return (
+    <span className="font-mono text-[10px] text-faint">
+      {v.code}
+      {v.moq ? ` · MOQ ${v.moq}` : ""}
+      {v.note ? ` · ${noteRu(v.note)}` : ""}
+    </span>
+  );
+}
+
 export default function VariantTable({ product }: { product: Product }) {
-  const { itemsFor, add, setQty, setOpen, setActiveCatalog } = useCart();
-  const items = itemsFor(product.catalog);
-  const qtyOf = (code: string) => items.find((l) => l.code === code)?.qty ?? 0;
+  const { setActiveCatalog } = useCart();
   const columns = breakColumns(product);
 
   // Viewing a product makes its price list the active cart in the header.
@@ -18,8 +65,35 @@ export default function VariantTable({ product }: { product: Product }) {
   }, [product.catalog, setActiveCatalog]);
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full min-w-[560px] text-sm border-collapse">
+    <>
+      {/* Narrow screens: stacked blocks, so prices wrap instead of scrolling sideways. */}
+      <div className="divide-y divide-line sm:hidden">
+        {product.variants.map((v) => (
+          <div key={v.code} className="py-3 first:pt-0 last:pb-0">
+            <span className="block text-sm text-foreground leading-snug">
+              {v.description || v.code}
+            </span>
+            <VariantMeta v={v} />
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+              {v.breaks.map((b) => (
+                <span
+                  key={b.label}
+                  className="inline-flex items-baseline gap-1 rounded-full bg-paper px-2 py-1 ring-1 ring-line"
+                >
+                  <span className="text-[10px] text-faint">{b.label} шт.</span>
+                  <span className="font-mono text-xs text-foreground">{formatUSD(b.price)}</span>
+                </span>
+              ))}
+            </div>
+            <div className="mt-2.5">
+              <VariantCart code={v.code} catalog={product.catalog} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Wide screens: full table, sized to fit its container (no min-width). */}
+      <table className="hidden w-full text-sm border-collapse sm:table">
         <thead>
           <tr className="text-left text-faint">
             <th className="pb-2 pr-4 font-medium text-xs uppercase tracking-[0.1em]">Вариант</th>
@@ -36,20 +110,20 @@ export default function VariantTable({ product }: { product: Product }) {
         </thead>
         <tbody>
           {product.variants.map((v) => {
-            const qty = qtyOf(v.code);
             const priceByLabel = new Map(v.breaks.map((b) => [b.label, b.price]));
             return (
               <tr key={v.code} className="border-t border-line align-top">
                 <td className="py-3 pr-4">
-                  <span className="block text-foreground leading-snug">{v.description || v.code}</span>
-                  <span className="font-mono text-[10px] text-faint">
-                    {v.code}
-                    {v.moq ? ` · MOQ ${v.moq}` : ""}
-                    {v.note ? ` · ${noteRu(v.note)}` : ""}
+                  <span className="block text-foreground leading-snug">
+                    {v.description || v.code}
                   </span>
+                  <VariantMeta v={v} />
                 </td>
                 {columns.map((c) => (
-                  <td key={c.label} className="py-3 px-2 text-right font-mono text-xs whitespace-nowrap">
+                  <td
+                    key={c.label}
+                    className="py-3 px-2 text-right font-mono text-xs whitespace-nowrap"
+                  >
                     {priceByLabel.has(c.label) ? (
                       <span className="text-foreground">{formatUSD(priceByLabel.get(c.label)!)}</span>
                     ) : (
@@ -58,41 +132,13 @@ export default function VariantTable({ product }: { product: Product }) {
                   </td>
                 ))}
                 <td className="py-3 pl-2 text-right">
-                  {qty === 0 ? (
-                    <button
-                      onClick={() => {
-                        add(v.code);
-                        setOpen(true);
-                      }}
-                      className="press inline-flex h-8 items-center gap-1 rounded-full bg-accent px-3 text-xs font-medium text-white transition-colors hover:bg-accent-strong"
-                    >
-                      <Plus size={14} /> В корзину
-                    </button>
-                  ) : (
-                    <span className="inline-flex items-center rounded-full border border-line">
-                      <button
-                        onClick={() => setQty(v.code, qty - 1)}
-                        aria-label="Меньше"
-                        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-foreground"
-                      >
-                        <Minus size={14} />
-                      </button>
-                      <span className="w-7 text-center font-mono text-sm">{qty}</span>
-                      <button
-                        onClick={() => setQty(v.code, qty + 1)}
-                        aria-label="Больше"
-                        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-foreground"
-                      >
-                        <Plus size={14} />
-                      </button>
-                    </span>
-                  )}
+                  <VariantCart code={v.code} catalog={product.catalog} />
                 </td>
               </tr>
             );
           })}
         </tbody>
       </table>
-    </div>
+    </>
   );
 }
