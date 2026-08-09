@@ -90,17 +90,17 @@ export default function CartDrawer() {
         className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${open ? "opacity-100" : "opacity-0"}`}
       />
       <aside
-        className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col bg-background shadow-[var(--shadow-lg)] transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col border-l border-line bg-background transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
         style={{ transitionTimingFunction: "var(--ease-drawer)" }}
         role="dialog"
         aria-label="Корзина"
       >
         <header className="flex items-center justify-between border-b border-line px-5 h-14 shrink-0">
           <div className="flex items-center gap-2 min-w-0">
-            <ShoppingCart size={18} className="text-accent shrink-0" />
+            <ShoppingCart size={18} className="shrink-0 text-foreground" />
             <span className="display text-lg">Корзина</span>
             {catalogLabel && (
-              <span className="truncate rounded-full bg-accent-soft px-2 py-0.5 text-[11px] text-accent-strong">
+              <span className="truncate rounded-[4px] bg-paper px-2 py-0.5 text-[11px] text-muted">
                 {catalogLabel}
               </span>
             )}
@@ -137,7 +137,7 @@ export default function CartDrawer() {
                     <Link
                       href={`/plant/${l.productCode}`}
                       onClick={() => setOpen(false)}
-                      className="relative h-16 w-14 shrink-0 overflow-hidden rounded-[10px] bg-accent-soft"
+                      className="relative h-16 w-14 shrink-0 overflow-hidden rounded-[4px] bg-accent-soft"
                     >
                       {l.image ? (
                         <Image src={asset(l.image)} alt="" fill sizes="56px" className="object-cover" />
@@ -165,7 +165,7 @@ export default function CartDrawer() {
                           </button>
                         </div>
                         <div className="text-right leading-tight">
-                          <span className="block font-mono text-sm font-medium text-accent-strong">
+                          <span className="block font-mono text-sm text-headline">
                             {money(l.total)}
                           </span>
                           <span className="block text-[10px] text-faint">
@@ -194,11 +194,11 @@ export default function CartDrawer() {
             <footer className="border-t border-line px-5 py-4 shrink-0 space-y-3">
               <div className="flex items-baseline justify-between">
                 <span className="text-sm text-muted">Итого</span>
-                <span className="display text-2xl text-accent-strong">{money(grandTotal)}</span>
+                <span className="serif text-2xl">{money(grandTotal)}</span>
               </div>
               <a
                 href={mailto}
-                className="press flex h-11 items-center justify-center rounded-full bg-accent text-white text-sm font-medium transition-colors hover:bg-accent-strong"
+                className="press flex h-11 items-center justify-center rounded-full border border-headline bg-line text-sm text-headline transition-colors hover:bg-paper"
               >
                 Оформить заявку
               </a>

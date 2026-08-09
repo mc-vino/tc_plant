@@ -18,13 +18,10 @@ const ICON: Record<Size, number> = { sm: 14, md: 16 };
 export default function AddToCartButton({
   product,
   size = "md",
-  elevated = true,
   className = "",
 }: {
   product: Product;
   size?: Size;
-  /** Drop the shadow when the button sits in a bordered row rather than on an image. */
-  elevated?: boolean;
   className?: string;
 }) {
   const { itemsFor, add, setQty } = useCart();
@@ -36,13 +33,12 @@ export default function AddToCartButton({
     e.preventDefault();
     e.stopPropagation();
   };
-  const shadow = elevated ? "shadow-[var(--shadow-md)]" : "";
 
   if (qty > 0) {
     return (
       <div
         onClick={stop}
-        className={`flex items-center rounded-full bg-card ring-1 ring-accent/40 ${shadow} ${STEP[size]} ${className}`}
+        className={`flex items-center rounded-full border border-foreground/40 bg-card ${STEP[size]} ${className}`}
       >
         <button
           onClick={(e) => {
@@ -50,11 +46,11 @@ export default function AddToCartButton({
             setQty(v.code, qty - 1);
           }}
           aria-label="Убрать одну штуку"
-          className={`press flex ${BOX[size]} items-center justify-center rounded-full text-muted transition-colors hover:text-accent`}
+          className={`press flex ${BOX[size]} items-center justify-center rounded-full text-foreground transition-colors hover:text-accent`}
         >
           <Minus size={ICON[size]} />
         </button>
-        <span className="min-w-5 text-center font-mono text-xs font-medium text-accent-strong tabular-nums">
+        <span className="min-w-5 text-center font-mono text-xs text-headline tabular-nums">
           {qty}
         </span>
         <button
@@ -63,7 +59,7 @@ export default function AddToCartButton({
             setQty(v.code, qty + 1);
           }}
           aria-label="Добавить одну штуку"
-          className={`press flex ${BOX[size]} items-center justify-center rounded-full text-muted transition-colors hover:text-accent`}
+          className={`press flex ${BOX[size]} items-center justify-center rounded-full text-foreground transition-colors hover:text-accent`}
         >
           <Plus size={ICON[size]} />
         </button>
@@ -79,7 +75,7 @@ export default function AddToCartButton({
       }}
       aria-label="Добавить в корзину"
       title="Добавить в корзину"
-      className={`press flex ${BOX[size]} items-center justify-center rounded-full bg-accent text-white transition-colors hover:bg-accent-strong ${shadow} ${className}`}
+      className={`press flex ${BOX[size]} items-center justify-center rounded-full bg-foreground text-background transition-colors hover:bg-accent ${className}`}
     >
       <ShoppingCart size={ICON[size]} />
     </button>

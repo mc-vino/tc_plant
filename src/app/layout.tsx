@@ -3,14 +3,11 @@ import Link from "next/link";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { supplier } from "@/data/supplier";
-import ThemeToggle from "@/components/ThemeToggle";
 import { CartProvider } from "@/lib/cart";
 import { PlantModalProvider } from "@/lib/plantModal";
 import CartButton from "@/components/CartButton";
 import CartDrawer from "@/components/CartDrawer";
 import PlantDialog from "@/components/PlantDialog";
-
-const themeInit = `try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}`;
 
 const sans = Inter({
   variable: "--font-geist-sans",
@@ -37,31 +34,35 @@ export default function RootLayout({
       className={`${sans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background">
-        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <CartProvider>
         <PlantModalProvider>
         <header className="glass sticky top-0 z-30 border-b border-line/60">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="press flex items-center gap-2.5 group">
-              <span className="flex h-7 w-7 items-center justify-center rounded-[9px] bg-accent text-white text-sm font-semibold">
+              <span className="flex h-7 w-7 items-center justify-center rounded-[4px] bg-foreground text-background text-sm font-normal">
                 x
               </span>
-              <span className="display text-[17px] leading-none group-hover:text-accent transition-colors">
+              <span className="display text-[17px] leading-none transition-colors group-hover:text-accent">
                 TC&nbsp;Plant
               </span>
             </Link>
             <nav className="flex items-center gap-3 sm:gap-7 text-[13px]">
               {/* The logo already leads home, so this link can go on tiny screens. */}
-              <Link href="/" className="hidden min-[380px]:inline text-muted hover:text-foreground transition-colors">
+              <Link
+                href="/"
+                className="hidden rounded-full px-3 py-1.5 text-foreground transition-colors hover:bg-accent/10 min-[380px]:inline"
+              >
                 Каталог
               </Link>
-              <Link href="/about" className="text-muted hover:text-foreground transition-colors">
+              <Link
+                href="/about"
+                className="rounded-full px-3 py-1.5 text-foreground transition-colors hover:bg-accent/10"
+              >
                 Поставщик
               </Link>
-              <span className="hidden sm:inline font-mono text-[11px] text-faint">
+              <span className="hidden font-mono text-[11px] text-muted sm:inline">
                 {supplier.currency} · EXW
               </span>
-              <ThemeToggle />
               <CartButton />
             </nav>
           </div>
@@ -69,19 +70,20 @@ export default function RootLayout({
 
         <main className="flex-1">{children}</main>
 
-        <footer className="border-t border-line mt-24 bg-paper">
-          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-12 grid gap-6 sm:grid-cols-3 text-sm">
+        {/* Absolute Black terminal anchor at the foot of the page. */}
+        <footer className="mt-24 bg-[#000000] text-[#faf8f5]">
+          <div className="mx-auto grid max-w-[1440px] gap-6 px-5 py-12 text-sm sm:grid-cols-3 sm:px-8">
             <div>
-              <p className="display text-lg">{supplier.name}</p>
-              <p className="text-muted mt-1">{supplier.tagline}</p>
+              <p className="serif text-xl text-[#faf8f5]">{supplier.name}</p>
+              <p className="mt-1 text-[#d1cfc7]">{supplier.tagline}</p>
             </div>
-            <div className="text-muted">
+            <div className="text-[#d1cfc7]">
               <p>{supplier.location}</p>
-              <a href={`mailto:${supplier.email}`} className="hover:text-accent transition-colors">
+              <a href={`mailto:${supplier.email}`} className="transition-colors hover:text-[#faf8f5]">
                 {supplier.email}
               </a>
             </div>
-            <div className="text-faint font-mono text-xs sm:text-right sm:self-end">
+            <div className="font-mono text-xs text-[#7c7464] sm:self-end sm:text-right">
               Прайс от {supplier.quotationDate}
             </div>
           </div>

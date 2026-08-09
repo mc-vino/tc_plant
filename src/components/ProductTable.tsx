@@ -89,9 +89,9 @@ export default function ProductTable({ products }: { products: Product[] }) {
               key={s.key}
               onClick={() => toggle(s.key)}
               aria-pressed={sortKey === s.key}
-              className={`press rounded-full border px-2.5 py-1 text-[11px] transition-colors ${
+              className={`press rounded-[4px] border px-2.5 py-1 text-[11px] transition-colors ${
                 sortKey === s.key
-                  ? "border-accent bg-accent text-white"
+                  ? "border-foreground bg-foreground text-background"
                   : "border-line bg-card text-muted hover:border-accent hover:text-foreground"
               }`}
             >
@@ -105,8 +105,8 @@ export default function ProductTable({ products }: { products: Product[] }) {
           {sorted.map(({ p, low, high }) => (
             <li key={p.code} className="flex items-center gap-2.5 px-3 py-2.5">
               <div className="flex shrink-0 items-center gap-1.5">
-                <PhotoButton name={p.name} size="sm" elevated={false} />
-                <AddToCartButton product={p} size="sm" elevated={false} />
+                <PhotoButton name={p.name} size="sm" />
+                <AddToCartButton product={p} size="sm" />
               </div>
               <Link
                 href={`/plant/${p.code}`}
@@ -133,7 +133,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   </span>
                 </span>
                 <span className="shrink-0 text-right leading-tight">
-                  <span className="block font-mono text-[13px] font-medium text-accent-strong">
+                  <span className="block font-mono text-[13px] text-headline">
                     {low !== null ? formatMoney(low, p.currency) : "-"}
                   </span>
                   {high !== null && high !== low && (
@@ -163,11 +163,11 @@ export default function ProductTable({ products }: { products: Product[] }) {
         </thead>
         <tbody>
           {sorted.map(({ p, m, low, high }) => (
-            <tr key={p.code} className="border-t border-line hover:bg-accent-soft/50 transition-colors">
+            <tr key={p.code} className="border-t border-line transition-colors hover:bg-paper">
               <td className="py-2.5 pl-4 pr-2 align-middle">
                 <div className="flex items-center gap-1.5">
-                  <PhotoButton name={p.name} size="sm" elevated={false} />
-                  <AddToCartButton product={p} size="sm" elevated={false} />
+                  <PhotoButton name={p.name} size="sm" />
+                  <AddToCartButton product={p} size="sm" />
                 </div>
               </td>
               <td className="py-2.5 pr-3">
@@ -197,7 +197,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   </span>
                 </Link>
               </td>
-              <td className="py-2.5 px-3 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
+              <td className="py-2.5 px-3 text-right font-mono text-sm text-headline whitespace-nowrap">
                 {low !== null ? formatMoney(low, p.currency) : "-"}
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">

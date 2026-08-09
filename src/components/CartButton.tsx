@@ -13,7 +13,7 @@ export default function CartButton() {
     >
       <ShoppingCart size={18} />
       {count > 0 && (
-        <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold text-white">
+        <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-foreground px-1 text-[10px] font-medium text-background">
           {count > 99 ? "99+" : count}
         </span>
       )}

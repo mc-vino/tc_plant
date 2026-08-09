@@ -254,7 +254,7 @@ export default function PlantDialog() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="plant-dialog-title"
-        className="plant-dialog relative flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-[22px] bg-background shadow-[var(--shadow-lg)] will-change-transform sm:max-h-[88vh] sm:max-w-4xl sm:rounded-[22px]"
+        className="plant-dialog relative flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-[12px] border border-line bg-background will-change-transform sm:max-h-[88vh] sm:max-w-4xl sm:rounded-[12px]"
       >
         {/* Grab handle: hints that the sheet can be pulled down. */}
         <div className="flex justify-center pt-2 sm:hidden" aria-hidden>

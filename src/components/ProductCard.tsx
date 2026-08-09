@@ -25,7 +25,7 @@ export default function ProductCard({ product }: { product: Product }) {
     // h-full + flex column: the card fills the grid row, so the action row
     // always sits on the card's bottom edge instead of drifting with the
     // length of the name.
-    <div className="card-hover group flex h-full flex-col overflow-hidden rounded-card bg-card ring-1 ring-line/70 shadow-[var(--shadow-sm)] hover:ring-accent/40">
+    <div className="card-hover group flex h-full flex-col overflow-hidden rounded-card border border-line bg-card hover:border-foreground/30">
       <Link
         href={`/plant/${product.code}`}
         onClick={(e) => {
@@ -59,11 +59,11 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
         <div className="flex flex-1 flex-col px-3.5 pt-3.5">
           <p className="text-[10px] uppercase tracking-[0.14em] text-faint">{product.genus}</p>
-          <h3 className="mt-1 display text-[17px] leading-tight text-foreground">{product.name}</h3>
+          <h3 className="mt-1 display text-[17px] leading-tight text-headline">{product.name}</h3>
           {from !== null && (
             <span className="mt-auto flex items-baseline gap-1 pt-3 leading-none">
               <span className="text-[10px] text-faint">от</span>
-              <span className="font-mono text-base font-medium text-accent-strong">
+              <span className="font-mono text-base text-headline">
                 {formatMoney(from, product.currency)}
               </span>
             </span>
@@ -79,8 +79,8 @@ export default function ProductCard({ product }: { product: Product }) {
           {meta ? ` · ${meta}` : ""}
         </span>
         <div className="flex shrink-0 items-center gap-1.5">
-          <PhotoButton name={product.name} size="sm" elevated={false} />
-          <AddToCartButton product={product} size="sm" elevated={false} />
+          <PhotoButton name={product.name} size="sm" />
+          <AddToCartButton product={product} size="sm" />
         </div>
       </div>
     </div>

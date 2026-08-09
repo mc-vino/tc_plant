@@ -15,7 +15,7 @@ function VariantCart({ code, catalog }: { code: string; catalog: string }) {
     return (
       <button
         onClick={() => add(code)}
-        className="press inline-flex h-8 items-center gap-1 rounded-full bg-accent px-3 text-xs font-medium text-white transition-colors hover:bg-accent-strong"
+        className="press inline-flex h-8 items-center gap-1 rounded-full border border-headline bg-line px-3 text-xs text-headline transition-colors hover:bg-paper"
       >
         <Plus size={14} /> В корзину
       </button>
@@ -23,21 +23,21 @@ function VariantCart({ code, catalog }: { code: string; catalog: string }) {
   }
 
   return (
-    <span className="inline-flex items-center rounded-full border border-accent/40">
+    <span className="inline-flex items-center rounded-full border border-foreground/40">
       <button
         onClick={() => setQty(code, qty - 1)}
         aria-label="Меньше"
-        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
+        className="press flex h-8 w-8 items-center justify-center text-foreground transition-colors hover:text-accent"
       >
         <Minus size={14} />
       </button>
-      <span className="min-w-6 text-center font-mono text-sm text-accent-strong tabular-nums">
+      <span className="min-w-6 text-center font-mono text-sm text-headline tabular-nums">
         {qty}
       </span>
       <button
         onClick={() => setQty(code, qty + 1)}
         aria-label="Больше"
-        className="press flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
+        className="press flex h-8 w-8 items-center justify-center text-foreground transition-colors hover:text-accent"
       >
         <Plus size={14} />
       </button>
@@ -78,7 +78,7 @@ export default function VariantTable({ product }: { product: Product }) {
               {v.breaks.map((b) => (
                 <span
                   key={b.label}
-                  className="inline-flex items-baseline gap-1 rounded-full bg-paper px-2 py-1 ring-1 ring-line"
+                  className="inline-flex items-baseline gap-1 rounded-[4px] border border-line bg-paper px-2 py-1"
                 >
                   <span className="text-[10px] text-faint">{b.label} шт.</span>
                   <span className="font-mono text-xs text-foreground">{formatMoney(b.price, product.currency)}</span>

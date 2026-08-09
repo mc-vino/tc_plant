@@ -10,12 +10,10 @@ const ICON: Record<Size, number> = { sm: 14, md: 16 };
 export default function PhotoButton({
   name,
   size = "md",
-  elevated = true,
   className = "",
 }: {
   name: string;
   size?: Size;
-  elevated?: boolean;
   className?: string;
 }) {
   return (
@@ -26,9 +24,7 @@ export default function PhotoButton({
       onClick={(e) => e.stopPropagation()}
       aria-label={`Найти фото ${name} в Google Картинках`}
       title="Фото в Google Картинках"
-      className={`press flex ${BOX[size]} items-center justify-center rounded-full bg-card text-muted ring-1 ring-line transition-colors hover:text-accent hover:ring-accent/50 ${
-        elevated ? "shadow-[var(--shadow-md)]" : ""
-      } ${className}`}
+      className={`press flex ${BOX[size]} items-center justify-center rounded-full border border-line bg-card text-foreground transition-colors hover:border-foreground/40 hover:bg-paper ${className}`}
     >
       <ImageIcon size={ICON[size]} />
     </a>

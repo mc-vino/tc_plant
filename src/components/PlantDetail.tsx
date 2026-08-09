@@ -57,7 +57,7 @@ export default function PlantDetail({
                 alt={product.name}
                 fill
                 sizes="(max-width: 768px) 88vw, 460px"
-                className="photo-soft rounded-[18px] object-contain"
+                className="photo-soft rounded-[12px] object-contain"
               />
             </div>
             {product.currency === "RUB" && (
@@ -72,24 +72,24 @@ export default function PlantDetail({
             stretching the column past the viewport. */}
         <div className="flex min-w-0 flex-col">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-accent-soft px-3 py-1 text-xs text-accent-strong">
+            <span className="rounded-[4px] bg-paper px-3 py-1 text-xs text-muted">
               {product.genus}
             </span>
-            <span className="rounded-full border border-line px-3 py-1 text-xs text-muted">
+            <span className="rounded-[4px] border border-line px-3 py-1 text-xs text-muted">
               {variantBadge}
             </span>
           </div>
 
           <h1
             id={headingId}
-            className="mt-4 display text-3xl md:text-4xl leading-[1.06] tracking-tight"
+            className="serif mt-4 text-3xl leading-[1.06] md:text-4xl"
           >
             {product.name}
           </h1>
           <p className="mt-2 font-mono text-sm text-faint">{product.article ?? product.code}</p>
 
           {low !== null && (
-            <p className="mt-5 display text-2xl text-accent-strong">
+            <p className="mt-5 font-mono text-2xl text-headline">
               {high !== null && high !== low
                 ? `${formatMoney(low, product.currency)} - ${formatMoney(high, product.currency)}`
                 : formatMoney(low, product.currency)}
@@ -101,7 +101,7 @@ export default function PlantDetail({
             href={googleImagesUrl(product.name)}
             target="_blank"
             rel="noopener noreferrer"
-            className="press mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
+            className="press mt-3 inline-flex w-fit items-center gap-1.5 rounded-[4px] border border-line px-3 py-1.5 text-xs text-muted transition-colors hover:border-accent hover:text-accent"
           >
             <ImageIcon size={13} /> Найти фото
           </a>

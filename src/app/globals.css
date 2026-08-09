@@ -1,36 +1,41 @@
 @import "tailwindcss";
 
+/*
+ * Palette and type follow the supplied Perplexity style reference: warm sepia
+ * on parchment, white cards, no elevation shadows. Light only.
+ */
 :root {
-  /* Cool neutral base (Apple-like), single botanical-green accent. OKLCH. */
-  --background: oklch(0.966 0.002 264);
-  --paper: oklch(0.992 0.001 264);
-  --card: oklch(1 0 0);
-  --foreground: oklch(0.22 0.004 270);
-  --muted: oklch(0.52 0.006 270);
-  --faint: oklch(0.63 0.005 270);
-  --line: oklch(0.9 0.003 270);
-  --accent: oklch(0.56 0.135 151);
-  --accent-strong: oklch(0.46 0.125 151);
-  --accent-soft: oklch(0.955 0.028 151);
+  --background: #faf8f5; /* Parchment: page canvas */
+  --paper: #f2efe8; /* half-step between Parchment and Fog, for quiet fills */
+  --card: #ffffff; /* Pure White: content surfaces */
+  --foreground: #271a00; /* Aged Sepia: primary text */
+  --headline: #121516; /* Slate Edge: maximum contrast without harshness */
+  --muted: #7c7464; /* Moss Shadow: secondary text */
+  --faint: #9d9585; /* tertiary text, still legible on Parchment */
+  --line: #d1cfc7; /* Fog: borders, dividers, button fills */
+  --accent: #0f3639; /* Teal: the only cool colour, used sparingly */
+  --accent-strong: #0a2628;
+  --accent-soft: #eceae3; /* warm neutral tint for chips and placeholders */
 
-  --radius: 1.375rem;
-  --radius-sm: 0.75rem;
+  --radius: 12px; /* cards */
+  --radius-sm: 4px; /* inputs, badges */
 
   /* Emil Kowalski easing curves: stronger than the built-in CSS easings. */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 
-  /* Soft, tinted elevation (Apple-ish depth, never pure black). */
-  --shadow-sm: 0 1px 2px oklch(0.2 0.02 270 / 0.05);
-  --shadow-md: 0 10px 34px -14px oklch(0.2 0.02 270 / 0.18);
-  --shadow-lg: 0 30px 70px -24px oklch(0.2 0.02 270 / 0.26);
+  /* Depth comes from colour layering, never from elevation shadows. */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-paper: var(--paper);
   --color-foreground: var(--foreground);
+  --color-headline: var(--headline);
   --color-muted: var(--muted);
   --color-faint: var(--faint);
   --color-line: var(--line);
@@ -40,54 +45,16 @@
   --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: Georgia, "Times New Roman", Times, serif;
   --radius-card: var(--radius);
-}
-
-/* Dark tokens: OS preference by default, overridable by an explicit data-theme. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --background: oklch(0.155 0.003 270);
-    --paper: oklch(0.19 0.003 270);
-    --card: oklch(0.213 0.004 270);
-    --foreground: oklch(0.965 0.002 264);
-    --muted: oklch(0.7 0.006 270);
-    --faint: oklch(0.55 0.005 270);
-    --line: oklch(0.31 0.004 270);
-    --accent: oklch(0.74 0.15 151);
-    --accent-strong: oklch(0.82 0.14 151);
-    --accent-soft: oklch(0.27 0.045 151);
-
-    --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.4);
-    --shadow-md: 0 10px 34px -14px oklch(0 0 0 / 0.55);
-    --shadow-lg: 0 30px 70px -24px oklch(0 0 0 / 0.65);
-  }
-}
-
-:root[data-theme="dark"] {
-  --background: oklch(0.155 0.003 270);
-  --paper: oklch(0.19 0.003 270);
-  --card: oklch(0.213 0.004 270);
-  --foreground: oklch(0.965 0.002 264);
-  --muted: oklch(0.7 0.006 270);
-  --faint: oklch(0.55 0.005 270);
-  --line: oklch(0.31 0.004 270);
-  --accent: oklch(0.74 0.15 151);
-  --accent-strong: oklch(0.82 0.14 151);
-  --accent-soft: oklch(0.27 0.045 151);
-
-  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.4);
-  --shadow-md: 0 10px 34px -14px oklch(0 0 0 / 0.55);
-  --shadow-lg: 0 30px 70px -24px oklch(0 0 0 / 0.65);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.028em; /* part of the typeface identity, not optional */
   -webkit-font-smoothing: antialiased;
-  transition:
-    background-color 300ms var(--ease-out),
-    color 300ms var(--ease-out);
 }
 
 :where(a, button, input, select, [tabindex]):focus-visible {
@@ -96,17 +63,36 @@ body {
   border-radius: 4px;
 }
 
-/* Display headings: tight, semibold sans (SF-Pro-Display feel). */
+/* Interface headings: sans at regular weight, tight tracking. */
 .display {
   font-family: var(--font-sans), system-ui, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+/* Page title: display scale at whisper weight, set tight. */
+.display-hero {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.028em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+/* Declarations: serif from 24px up, never below. */
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.12;
+  color: var(--headline);
   text-wrap: balance;
 }
 
 /* Translucent material for the sticky nav (purposeful glass, not decoration). */
 .glass {
-  background: color-mix(in oklch, var(--background) 72%, transparent);
+  background: color-mix(in srgb, var(--background) 78%, transparent);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
@@ -139,7 +125,6 @@ body {
 .card-hover {
   transition:
     transform 300ms var(--ease-out),
-    box-shadow 300ms var(--ease-out),
     border-color 300ms var(--ease-out);
   will-change: transform;
 }
@@ -149,7 +134,6 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .card-hover:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-lg);
   }
   .card-hover:hover .card-media {
     transform: scale(1.06);

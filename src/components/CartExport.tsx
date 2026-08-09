@@ -156,9 +156,9 @@ export default function CartExport({ lines, currency }: { lines: ExportLine[]; c
               key={f.key}
               onClick={() => toggle(f.key)}
               aria-pressed={on}
-              className={`press rounded-full border px-2.5 py-1 text-[11px] transition-colors ${
+              className={`press rounded-[4px] border px-2.5 py-1 text-[11px] transition-colors ${
                 on
-                  ? "border-accent bg-accent text-white"
+                  ? "border-foreground bg-foreground text-background"
                   : "border-line bg-card text-muted hover:border-accent hover:text-foreground"
               }`}
             >

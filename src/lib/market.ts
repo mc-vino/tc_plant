@@ -76,14 +76,14 @@ export function formatRub(n: number): string {
 export function rarityChipClass(level: number): string {
   switch (level) {
     case 4:
-      return "bg-accent text-paper";
+      return "bg-accent text-background";
     case 3:
-      return "bg-accent-soft text-accent-strong ring-1 ring-accent/40";
+      return "bg-paper text-foreground border border-foreground/30";
     case 2:
-      return "bg-accent-soft text-accent-strong";
+      return "bg-paper text-foreground";
     case 1:
-      return "bg-paper text-muted ring-1 ring-line";
+      return "bg-paper text-muted border border-line";
     default:
-      return "bg-paper text-faint ring-1 ring-line";
+      return "bg-paper text-faint border border-line";
   }
 }

@@ -140,7 +140,7 @@ export default function CatalogBrowser({
     <div>
       {/* Price-list switcher */}
       <div className="mb-6">
-        <div className="inline-flex rounded-full border border-line bg-card p-1">
+        <div className="flex w-fit max-w-full flex-wrap gap-1 rounded-[20px] border border-line bg-card p-1 sm:rounded-full">
           {catalogs.map((c) => {
             const on = c.id === catalog;
             const inCart = countFor(c.id);
@@ -156,7 +156,7 @@ export default function CatalogBrowser({
                 {on && (
                   <motion.span
                     layoutId="catalogToggle"
-                    className="absolute inset-0 rounded-full bg-accent"
+                    className="absolute inset-0 rounded-full bg-foreground"
                     transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
                   />
                 )}
@@ -167,7 +167,7 @@ export default function CatalogBrowser({
                 {inCart > 0 && (
                   <span
                     className={`absolute -top-1 -right-1 z-20 flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-semibold ${
-                      on ? "bg-white text-accent-strong" : "bg-accent text-white"
+                      on ? "bg-background text-foreground" : "bg-foreground text-background"
                     }`}
                     aria-label={`${inCart} в корзине`}
                   >
@@ -195,7 +195,7 @@ export default function CatalogBrowser({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Поиск по названию или артикулу…"
-            className="w-full rounded-full border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors hover:border-accent/50 focus:border-accent"
+            className="w-full rounded-[4px] border border-line bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition-colors hover:border-foreground/40 focus:border-accent"
           />
         </div>
 
@@ -205,7 +205,7 @@ export default function CatalogBrowser({
               value={sort}
               onChange={(e) => setSort(e.target.value as SortKey)}
               aria-label="Sort varieties"
-              className="appearance-none rounded-full border border-line bg-card py-2.5 pl-4 pr-9 text-sm outline-none transition-colors hover:border-accent/50 focus:border-accent cursor-pointer"
+              className="cursor-pointer appearance-none rounded-[4px] border border-line bg-card py-2.5 pl-4 pr-9 text-sm outline-none transition-colors hover:border-foreground/40 focus:border-accent"
             >
               {SORTS.map((s) => (
                 <option key={s.key} value={s.key}>
@@ -240,7 +240,7 @@ export default function CatalogBrowser({
                   {on && (
                     <motion.span
                       layoutId="viewToggle"
-                      className="absolute inset-0 rounded-full bg-accent"
+                      className="absolute inset-0 rounded-full bg-foreground"
                       transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
                     />
                   )}
@@ -307,10 +307,10 @@ function Chip({
   return (
     <button
       onClick={onClick}
-      className={`press rounded-full border px-3 py-1 text-xs transition-colors ${
+      className={`press rounded-[4px] border px-3 py-1 text-xs transition-colors ${
         active
-          ? "border-accent bg-accent text-paper"
-          : "border-line bg-card text-muted hover:border-accent hover:text-foreground"
+          ? "border-foreground bg-foreground text-background"
+          : "border-line bg-card text-muted hover:border-foreground hover:text-foreground"
       }`}
     >
       {children}

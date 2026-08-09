@@ -26,14 +26,13 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-16 pb-16 sm:pt-24 sm:pb-24 grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
-            <p className="text-[13px] font-medium text-accent">
+            <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
               {supplier.location}
             </p>
-            <h1 className="mt-3 display text-[clamp(2.75rem,6vw,5rem)] leading-[0.98]">
-              Живой каталог растений{" "}
-              <span className="text-accent">из культуры ткани</span>
+            <h1 className="display-hero mt-4 text-[clamp(2.75rem,6vw,6rem)]">
+              Живой каталог растений из культуры ткани
             </h1>
-            <p className="mt-6 max-w-lg text-[17px] text-muted leading-relaxed text-pretty">
+            <p className="mt-6 max-w-lg text-[16px] leading-[1.5] text-muted text-pretty">
               {varieties(products.length)} в {catalogs.length} прайсах. Основной и вариегатный от
               питомника {supplier.name} в Ханое, в {supplier.currency}, {supplier.incoterm}. Прайс
               клонов в рублях. Цена за штуку зависит от количества.
@@ -77,7 +76,7 @@ function BentoImage({
 }) {
   return (
     <div
-      className={`relative overflow-hidden rounded-[24px] bg-accent-soft shadow-[var(--shadow-md)] ${className ?? ""}`}
+      className={`relative overflow-hidden rounded-[12px] bg-accent-soft ${className ?? ""}`}
     >
       <Image
         src={asset(product.image!)}
@@ -95,8 +94,8 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
       <dt className="sr-only">{label}</dt>
-      <dd className="display text-[2rem] leading-none text-foreground">{value}</dd>
-      <dd className="mt-1.5 text-[13px] text-faint">{label}</dd>
+      <dd className="serif text-[2rem] leading-none">{value}</dd>
+      <dd className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.06em] text-muted">{label}</dd>
     </div>
   );
 }
