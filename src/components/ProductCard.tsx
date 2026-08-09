@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Product, lowestPrice, formatUSD } from "@/lib/catalog";
+import { Product, lowestPrice, formatMoney } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass } from "@/lib/market";
 import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
@@ -64,7 +64,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="mt-auto flex items-baseline gap-1 pt-3 leading-none">
               <span className="text-[10px] text-faint">от</span>
               <span className="font-mono text-base font-medium text-accent-strong">
-                {formatUSD(from)}
+                {formatMoney(from, product.currency)}
               </span>
             </span>
           )}
@@ -75,7 +75,7 @@ export default function ProductCard({ product }: { product: Product }) {
           they never cover the card's tap area. */}
       <div className="flex items-center justify-between gap-2 px-3.5 pb-3 pt-2">
         <span className="min-w-0 truncate font-mono text-[11px] text-faint">
-          {product.code}
+          {product.article ?? product.code}
           {meta ? ` · ${meta}` : ""}
         </span>
         <div className="flex shrink-0 items-center gap-1.5">

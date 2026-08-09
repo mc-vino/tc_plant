@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { Plus, Minus } from "lucide-react";
-import { Product, Variant, formatUSD, breakColumns } from "@/lib/catalog";
+import { Product, Variant, formatMoney, breakColumns } from "@/lib/catalog";
 import { noteRu } from "@/lib/i18n";
 import { useCart } from "@/lib/cart";
 
@@ -48,7 +48,7 @@ function VariantCart({ code, catalog }: { code: string; catalog: string }) {
 function VariantMeta({ v }: { v: Variant }) {
   return (
     <span className="font-mono text-[10px] text-faint">
-      {v.code}
+      {v.article ?? v.code}
       {v.moq ? ` · MOQ ${v.moq}` : ""}
       {v.note ? ` · ${noteRu(v.note)}` : ""}
     </span>
@@ -81,7 +81,7 @@ export default function VariantTable({ product }: { product: Product }) {
                   className="inline-flex items-baseline gap-1 rounded-full bg-paper px-2 py-1 ring-1 ring-line"
                 >
                   <span className="text-[10px] text-faint">{b.label} шт.</span>
-                  <span className="font-mono text-xs text-foreground">{formatUSD(b.price)}</span>
+                  <span className="font-mono text-xs text-foreground">{formatMoney(b.price, product.currency)}</span>
                 </span>
               ))}
             </div>
@@ -125,7 +125,7 @@ export default function VariantTable({ product }: { product: Product }) {
                     className="py-3 px-2 text-right font-mono text-xs whitespace-nowrap"
                   >
                     {priceByLabel.has(c.label) ? (
-                      <span className="text-foreground">{formatUSD(priceByLabel.get(c.label)!)}</span>
+                      <span className="text-foreground">{formatMoney(priceByLabel.get(c.label)!, product.currency)}</span>
                     ) : (
                       <span className="text-line">-</span>
                     )}

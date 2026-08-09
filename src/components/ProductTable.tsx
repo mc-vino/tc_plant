@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Product, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
+import { Product, lowestPrice, highestPrice, formatMoney } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import { marketFor, rarityChipClass, MarketEstimate } from "@/lib/market";
 import { usePlantModal, isPlainLeftClick } from "@/lib/plantModal";
@@ -134,11 +134,11 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 </span>
                 <span className="shrink-0 text-right leading-tight">
                   <span className="block font-mono text-[13px] font-medium text-accent-strong">
-                    {low !== null ? formatUSD(low) : "-"}
+                    {low !== null ? formatMoney(low, p.currency) : "-"}
                   </span>
                   {high !== null && high !== low && (
                     <span className="block font-mono text-[10px] text-faint">
-                      до {formatUSD(high)}
+                      до {formatMoney(high, p.currency)}
                     </span>
                   )}
                 </span>
@@ -198,10 +198,10 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 </Link>
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-sm font-medium text-accent-strong whitespace-nowrap">
-                {low !== null ? formatUSD(low) : "-"}
+                {low !== null ? formatMoney(low, p.currency) : "-"}
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
-                {high !== null ? formatUSD(high) : "-"}
+                {high !== null ? formatMoney(high, p.currency) : "-"}
               </td>
               <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">{p.variants.length}</td>
               <td className="py-2.5 px-3 pr-4">

@@ -1,5 +1,6 @@
 import retailData from "@/data/catalog.json";
 import variegatedData from "@/data/variegated.json";
+import clonesData from "@/data/clones.json";
 
 /** A quantity break: unit price that applies once the ordered quantity reaches minQty. */
 export interface PriceBreak {
@@ -10,6 +11,8 @@ export interface PriceBreak {
 
 export interface Variant {
   code: string;
+  /** Supplier article exactly as printed, when it differs from the internal code. */
+  article?: string;
   description: string;
   note: string | null;
   moq: number | null;
@@ -17,8 +20,11 @@ export interface Variant {
 }
 
 export interface Product {
-  code: string; // globally unique across catalogs
+  code: string; // globally unique across catalogs, safe in a URL
   catalog: string; // catalog id this product belongs to
+  /** Supplier article exactly as printed, when it differs from the internal code. */
+  article?: string;
+  currency: string;
   name: string;
   genus: string;
   image: string | null;
@@ -85,12 +91,40 @@ interface RawVarMeta {
   count: number;
 }
 
+interface RawCloneVariant {
+  code: string;
+  article: string;
+  description: string;
+  note: string | null;
+  price: number;
+}
+interface RawCloneProduct {
+  code: string;
+  article: string;
+  name: string;
+  genus: string;
+  image: string | null;
+  variants: RawCloneVariant[];
+}
+interface RawCloneMeta {
+  id: string;
+  label: string;
+  description: string;
+  currency: string;
+  priceType: string;
+  quotationDate: string;
+  /** Roubles per dollar the supplier used, so estimates can work in USD. */
+  usdRate: number;
+  count: number;
+}
+
 // ---- Normalisation ---------------------------------------------------------
 
 const RETAIL_TIER_MIN: Record<string, number> = { "1-4": 1, "5-9": 5, "10-19": 10 };
 
 const retailRaw = retailData as unknown as { meta: RawRetailMeta; products: RawRetailProduct[] };
 const varRaw = variegatedData as unknown as { meta: RawVarMeta; products: RawVarProduct[] };
+const cloneRaw = clonesData as unknown as { meta: RawCloneMeta; products: RawCloneProduct[] };
 
 const RETAIL_ID = "retail";
 
@@ -98,6 +132,7 @@ function normalizeRetail(p: RawRetailProduct): Product {
   return {
     code: p.code,
     catalog: RETAIL_ID,
+    currency: retailRaw.meta.currency,
     name: p.name,
     genus: p.genus,
     image: p.image,
@@ -124,6 +159,7 @@ function normalizeVariegated(p: RawVarProduct): Product {
   return {
     code: p.code,
     catalog: varRaw.meta.id,
+    currency: varRaw.meta.currency,
     name: p.name,
     genus: p.genus,
     image: p.image,
@@ -139,10 +175,31 @@ function normalizeVariegated(p: RawVarProduct): Product {
   };
 }
 
+function normalizeClone(p: RawCloneProduct): Product {
+  return {
+    code: p.code,
+    catalog: cloneRaw.meta.id,
+    article: p.article,
+    currency: cloneRaw.meta.currency,
+    name: p.name,
+    genus: p.genus,
+    image: p.image,
+    variants: p.variants.map((v) => ({
+      code: v.code,
+      article: v.article,
+      description: v.description,
+      note: v.note,
+      moq: null,
+      breaks: [{ minQty: 1, price: v.price, label: "1+" }],
+    })),
+  };
+}
+
 const retailProducts = retailRaw.products.map(normalizeRetail);
 const variegatedProducts = varRaw.products.map(normalizeVariegated);
+const cloneProducts = cloneRaw.products.map(normalizeClone);
 
-export const products: Product[] = [...retailProducts, ...variegatedProducts];
+export const products: Product[] = [...retailProducts, ...variegatedProducts, ...cloneProducts];
 
 export const catalogs: CatalogInfo[] = [
   {
@@ -164,7 +221,20 @@ export const catalogs: CatalogInfo[] = [
     incoterm: varRaw.meta.incoterm,
     count: variegatedProducts.length,
   },
+  {
+    id: cloneRaw.meta.id,
+    label: cloneRaw.meta.label,
+    description: cloneRaw.meta.description,
+    priceType: cloneRaw.meta.priceType,
+    currency: cloneRaw.meta.currency,
+    incoterm: "",
+    count: cloneProducts.length,
+    quotationDate: cloneRaw.meta.quotationDate,
+  },
 ];
+
+/** Roubles per dollar quoted by the clones supplier, for USD-based estimates. */
+export const CLONES_USD_RATE = cloneRaw.meta.usdRate;
 
 export const DEFAULT_CATALOG = RETAIL_ID;
 
@@ -200,6 +270,19 @@ export function formatUSD(n: number): string {
     currency: "USD",
     minimumFractionDigits: 2,
   }).format(n);
+}
+
+/** Format a price in the currency of the list it came from. */
+export function formatMoney(n: number, currency: string): string {
+  if (currency === "RUB") {
+    return new Intl.NumberFormat("ru-RU", {
+      style: "currency",
+      currency: "RUB",
+      minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(n);
+  }
+  return formatUSD(n);
 }
 
 /** Genera in a catalog, sorted by product count (descending), then name. */

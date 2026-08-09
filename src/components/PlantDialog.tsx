@@ -262,7 +262,9 @@ export default function PlantDialog() {
         </div>
 
         <header className="flex h-12 shrink-0 items-center justify-between gap-3 border-b border-line px-4 sm:h-14 sm:px-5">
-          <span className="min-w-0 truncate font-mono text-xs text-faint">{product.code}</span>
+          <span className="min-w-0 truncate font-mono text-xs text-faint">
+            {product.article ?? product.code}
+          </span>
           <div className="flex shrink-0 items-center gap-1">
             <Link
               href={`/plant/${product.code}`}

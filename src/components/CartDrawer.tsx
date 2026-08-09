@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { X, Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart";
-import { getVariant, formatUSD, catalogs } from "@/lib/catalog";
+import { getVariant, formatMoney, catalogs } from "@/lib/catalog";
 import { unitPriceForQty, tierLabelForQty, nextBreak } from "@/lib/pricing";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
@@ -25,7 +25,11 @@ interface Line {
 
 export default function CartDrawer() {
   const { items, open, setOpen, setQty, remove, clear, count, activeCatalog } = useCart();
-  const catalogLabel = catalogs.find((c) => c.id === activeCatalog)?.label ?? "";
+  const { catalogLabel, currency } = useMemo(() => {
+    const info = catalogs.find((c) => c.id === activeCatalog);
+    return { catalogLabel: info?.label ?? "", currency: info?.currency ?? "USD" };
+  }, [activeCatalog]);
+  const money = (n: number) => formatMoney(n, currency);
 
   useEffect(() => {
     if (!open) return;
@@ -58,16 +62,19 @@ export default function CartDrawer() {
   const grandTotal = lines.reduce((s, l) => s + l.total, 0);
 
   const mailto = useMemo(() => {
+    // formatMoney directly, so the memo depends on the currency rather than on
+    // a helper that is rebuilt every render.
+    const fmt = (n: number) => formatMoney(n, currency);
     const body =
       lines
         .map(
           (l) =>
-            `${l.name} (${l.description}): ${l.qty} шт. x ${l.unit !== null ? formatUSD(l.unit) : "-"} = ${formatUSD(l.total)} [${l.code}]`,
+            `${l.name} (${l.description}): ${l.qty} шт. x ${l.unit !== null ? fmt(l.unit) : "-"} = ${fmt(l.total)} [${l.code}]`,
         )
-        .join("\n") + `\n\nИтого: ${formatUSD(grandTotal)}`;
+        .join("\n") + `\n\nИтого: ${fmt(grandTotal)}`;
     const subject = catalogLabel ? `Заявка TC Plant · ${catalogLabel}` : "Заявка TC Plant";
     return `mailto:${supplier.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  }, [lines, grandTotal, catalogLabel]);
+  }, [lines, grandTotal, catalogLabel, currency]);
 
   return (
     // overflow-hidden keeps the off-screen panel from widening the page.
@@ -156,16 +163,16 @@ export default function CartDrawer() {
                         </div>
                         <div className="text-right leading-tight">
                           <span className="block font-mono text-sm font-medium text-accent-strong">
-                            {formatUSD(l.total)}
+                            {money(l.total)}
                           </span>
                           <span className="block text-[10px] text-faint">
-                            {l.unit !== null ? `${formatUSD(l.unit)}/шт · тир ${tierLabelForQty(l.breaks, l.qty)}` : "нет цены"}
+                            {l.unit !== null ? `${money(l.unit)}/шт · тир ${tierLabelForQty(l.breaks, l.qty)}` : "нет цены"}
                           </span>
                         </div>
                       </div>
                       {nt && (
                         <p className="mt-1.5 text-[10px] text-accent">
-                          от {nt.at} шт: {formatUSD(nt.price)}/шт
+                          от {nt.at} шт: {money(nt.price)}/шт
                         </p>
                       )}
                     </div>
@@ -184,7 +191,7 @@ export default function CartDrawer() {
             <footer className="border-t border-line px-5 py-4 shrink-0 space-y-3">
               <div className="flex items-baseline justify-between">
                 <span className="text-sm text-muted">Итого</span>
-                <span className="display text-2xl text-accent-strong">{formatUSD(grandTotal)}</span>
+                <span className="display text-2xl text-accent-strong">{money(grandTotal)}</span>
               </div>
               <a
                 href={mailto}
@@ -193,6 +200,7 @@ export default function CartDrawer() {
                 Оформить заявку
               </a>
               <CartExport
+                currency={currency}
                 lines={lines.map((l) => ({
                   name: l.name,
                   code: l.code,

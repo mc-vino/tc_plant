@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { products, catalogs, lowestPrice, formatUSD } from "@/lib/catalog";
+import { products, catalogs, lowestPrice, formatMoney, DEFAULT_CATALOG } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
@@ -10,8 +10,11 @@ const HERO_CODES = ["AL050", "AL062", "AL061", "AL070"];
 
 export default function Home() {
   const generaCount = new Set(products.map((p) => p.genus)).size;
+  // Only the default list: the others are quoted in another currency.
+  const defaultList = products.filter((p) => p.catalog === DEFAULT_CATALOG);
+  const defaultCurrency = catalogs.find((c) => c.id === DEFAULT_CATALOG)?.currency ?? "USD";
   const globalMin = Math.min(
-    ...products.map((p) => lowestPrice(p) ?? Infinity).filter((n) => Number.isFinite(n)),
+    ...defaultList.map((p) => lowestPrice(p) ?? Infinity).filter((n) => Number.isFinite(n)),
   );
   const heroImages = HERO_CODES.map((c) => products.find((p) => p.code === c)).filter(
     (p): p is NonNullable<typeof p> => Boolean(p?.image),
@@ -31,13 +34,14 @@ export default function Home() {
               <span className="text-accent">из культуры ткани</span>
             </h1>
             <p className="mt-6 max-w-lg text-[17px] text-muted leading-relaxed text-pretty">
-              {varieties(products.length)}, размноженных питомником {supplier.name} в Ханое.
-              Цена за штуку по количеству, в {supplier.currency}, {supplier.incoterm}.
+              {varieties(products.length)} в {catalogs.length} прайсах. Основной и вариегатный от
+              питомника {supplier.name} в Ханое, в {supplier.currency}, {supplier.incoterm}. Прайс
+              клонов в рублях. Цена за штуку зависит от количества.
             </p>
             <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-5">
               <Stat value={String(products.length)} label="Сортов" />
               <Stat value={String(generaCount)} label="Родов" />
-              <Stat value={formatUSD(globalMin)} label="От, за штуку" />
+              <Stat value={formatMoney(globalMin, defaultCurrency)} label="От, за штуку" />
             </dl>
           </Reveal>
 

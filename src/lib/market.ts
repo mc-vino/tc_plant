@@ -1,4 +1,4 @@
-import { Product, lowestPrice, highestPrice } from "@/lib/catalog";
+import { Product, lowestPrice, highestPrice, CLONES_USD_RATE } from "@/lib/catalog";
 
 /**
  * MODEL, NOT MARKET DATA.
@@ -43,8 +43,11 @@ export interface MarketEstimate {
 
 export function marketFor(p: Product): MarketEstimate {
   const c = MARKET_CONFIG;
-  const value = highestPrice(p) ?? 0; // scarcity proxy (small-qty USD price)
-  const clone = lowestPrice(p) ?? value; // bulk clone cost (USD)
+  // The thresholds below are in USD, so a rouble-quoted list is converted first
+  // using the rate its supplier quoted.
+  const toUsd = (n: number) => (p.currency === "RUB" ? n / CLONES_USD_RATE : n);
+  const value = toUsd(highestPrice(p) ?? 0); // scarcity proxy (small-qty USD price)
+  const clone = toUsd(lowestPrice(p) ?? 0) || value; // bulk clone cost (USD)
 
   const level = c.rarityThresholds.filter((t) => value >= t).length; // 0..4
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ClipboardCopy, Check } from "lucide-react";
-import { formatUSD } from "@/lib/catalog";
+import { formatMoney } from "@/lib/catalog";
 
 export interface ExportLine {
   name: string;
@@ -31,7 +31,7 @@ const DEFAULT: Record<FieldKey, boolean> = {
   sum: true,
 };
 
-function cell(line: ExportLine, key: FieldKey): string {
+function cell(line: ExportLine, key: FieldKey, currency: string): string {
   switch (key) {
     case "name":
       return line.name;
@@ -40,21 +40,21 @@ function cell(line: ExportLine, key: FieldKey): string {
     case "qty":
       return String(line.qty);
     case "unit":
-      return line.unit !== null ? formatUSD(line.unit) : "-";
+      return line.unit !== null ? formatMoney(line.unit, currency) : "-";
     case "sum":
-      return formatUSD(line.total);
+      return formatMoney(line.total, currency);
   }
 }
 
-function buildText(lines: ExportLine[], selected: Record<FieldKey, boolean>): string {
+function buildText(lines: ExportLine[], selected: Record<FieldKey, boolean>, currency: string): string {
   const cols = FIELDS.filter((f) => selected[f.key]);
   const rows = [cols.map((c) => c.label).join("\t")];
-  for (const l of lines) rows.push(cols.map((c) => cell(l, c.key)).join("\t"));
+  for (const l of lines) rows.push(cols.map((c) => cell(l, c.key, currency)).join("\t"));
   if (selected.sum) {
     const total = lines.reduce((s, l) => s + l.total, 0);
     rows.push(
       cols
-        .map((c, i) => (c.key === "sum" ? formatUSD(total) : i === 0 ? "Итого" : ""))
+        .map((c, i) => (c.key === "sum" ? formatMoney(total, currency) : i === 0 ? "Итого" : ""))
         .join("\t"),
     );
   }
@@ -86,7 +86,7 @@ async function copyText(text: string): Promise<boolean> {
   }
 }
 
-export default function CartExport({ lines }: { lines: ExportLine[] }) {
+export default function CartExport({ lines, currency }: { lines: ExportLine[]; currency: string }) {
   const [selected, setSelected] = useState<Record<FieldKey, boolean>>(() => {
     if (typeof window === "undefined") return DEFAULT;
     try {
@@ -118,7 +118,7 @@ export default function CartExport({ lines }: { lines: ExportLine[] }) {
 
   async function onCopy() {
     if (!anySelected || lines.length === 0) return;
-    const ok = await copyText(buildText(lines, selected));
+    const ok = await copyText(buildText(lines, selected, currency));
     if (ok) {
       setCopied(true);
       window.clearTimeout(timer.current);

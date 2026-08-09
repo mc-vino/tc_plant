@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ImageIcon } from "lucide-react";
-import { Product, lowestPrice, highestPrice, formatUSD } from "@/lib/catalog";
+import { Product, lowestPrice, highestPrice, formatMoney, CLONES_USD_RATE } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
 import { asset } from "@/lib/asset";
 import { plural } from "@/lib/i18n";
@@ -75,13 +75,13 @@ export default function PlantDetail({
           >
             {product.name}
           </h1>
-          <p className="mt-2 font-mono text-sm text-faint">{product.code}</p>
+          <p className="mt-2 font-mono text-sm text-faint">{product.article ?? product.code}</p>
 
           {low !== null && (
             <p className="mt-5 display text-2xl text-accent-strong">
               {high !== null && high !== low
-                ? `${formatUSD(low)} - ${formatUSD(high)}`
-                : formatUSD(low)}
+                ? `${formatMoney(low, product.currency)} - ${formatMoney(high, product.currency)}`
+                : formatMoney(low, product.currency)}
               <span className="font-sans text-sm text-faint"> / шт.</span>
             </p>
           )}
@@ -95,17 +95,25 @@ export default function PlantDetail({
             <ImageIcon size={13} /> Найти фото
           </a>
 
-          <p className="mt-5 text-sm text-muted leading-relaxed">
-            Цена за штуку по количеству; варианты (размер, форма) в таблице ниже. Валюта:{" "}
-            {supplier.currency}, {supplier.incoterm}. Депозиты, сроки и оплата указаны в{" "}
-            <Link
-              href="/about"
-              className="text-accent transition-colors hover:text-accent-strong underline underline-offset-2"
-            >
-              условиях поставщика
-            </Link>
-            .
-          </p>
+          {product.currency === "RUB" ? (
+            <p className="mt-5 text-sm text-muted leading-relaxed">
+              Цена за штуку в рублях, по ориентировочному курсу {CLONES_USD_RATE} ₽ за доллар.
+              Обозначения вариегатности в названии: A grade сильная, B слабее, C ещё слабее, Mixed
+              смешанная. Заказ оформляется у организатора закупки.
+            </p>
+          ) : (
+            <p className="mt-5 text-sm text-muted leading-relaxed">
+              Цена за штуку по количеству; варианты (размер, форма) в таблице ниже. Валюта:{" "}
+              {supplier.currency}, {supplier.incoterm}. Депозиты, сроки и оплата указаны в{" "}
+              <Link
+                href="/about"
+                className="text-accent transition-colors hover:text-accent-strong underline underline-offset-2"
+              >
+                условиях поставщика
+              </Link>
+              .
+            </p>
+          )}
         </div>
       </div>
 
