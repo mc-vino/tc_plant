@@ -104,6 +104,8 @@ interface RawCloneProduct {
   name: string;
   genus: string;
   image: string | null;
+  imageW?: number;
+  imageH?: number;
   variants: RawCloneVariant[];
 }
 interface RawCloneMeta {
@@ -184,6 +186,8 @@ function normalizeClone(p: RawCloneProduct): Product {
     name: p.name,
     genus: p.genus,
     image: p.image,
+    imageW: p.imageW,
+    imageH: p.imageH,
     variants: p.variants.map((v) => ({
       code: v.code,
       article: v.article,

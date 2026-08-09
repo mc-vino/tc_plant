@@ -2,7 +2,7 @@
   "meta": {
     "id": "clones",
     "label": "Клоны",
-    "description": "Закупка клонов, цены в рублях по ориентировочному курсу 95 ₽ за доллар. Обозначения вариегатности: A grade сильная, B слабее, C ещё слабее, Mixed смешанная. Фото в этом прайсе поставщик не предоставил.",
+    "description": "Закупка клонов, цены в рублях по ориентировочному курсу 95 ₽ за доллар. Обозначения вариегатности: A grade сильная, B слабее, C ещё слабее, Mixed смешанная. Фото поставщик приводит как пример из интернета, а не снимок материнского растения.",
     "currency": "RUB",
     "priceType": "wholesale",
     "quotationDate": "2026-08-15",
@@ -15,7 +15,7 @@
       "article": "368",
       "name": "Alocasia Longiloba Grandis/Longiloba Black Satun/Black Satun Pink Bone",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL368.jpeg",
       "variants": [
         {
           "code": "CL368",
@@ -24,14 +24,16 @@
           "note": null,
           "price": 1178.0
         }
-      ]
+      ],
+      "imageW": 336,
+      "imageH": 439
     },
     {
       "code": "CL772",
       "article": "772",
       "name": "Alocasia Bambino Lava Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL772.jpeg",
       "variants": [
         {
           "code": "CL772",
@@ -40,14 +42,16 @@
           "note": null,
           "price": 3333.55
         }
-      ]
+      ],
+      "imageW": 292,
+      "imageH": 384
     },
     {
       "code": "CL369",
       "article": "369",
       "name": "Alocasia Fornicata Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL369.jpeg",
       "variants": [
         {
           "code": "CL369",
@@ -56,14 +60,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 511,
+      "imageH": 511
     },
     {
       "code": "CL370",
       "article": "370",
       "name": "Alocasia Golden Bone Pink Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL370.jpeg",
       "variants": [
         {
           "code": "CL370",
@@ -72,14 +78,16 @@
           "note": null,
           "price": 40232.5
         }
-      ]
+      ],
+      "imageW": 336,
+      "imageH": 393
     },
     {
       "code": "CL371",
       "article": "371",
       "name": "Alocasia Heart Balloon Var (Candy)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL371.jpeg",
       "variants": [
         {
           "code": "CL371",
@@ -88,14 +96,16 @@
           "note": null,
           "price": 7270.35
         }
-      ]
+      ],
+      "imageW": 404,
+      "imageH": 555
     },
     {
       "code": "CL401",
       "article": "401",
       "name": "Alocasia Green Unicorn",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL401.jpeg",
       "variants": [
         {
           "code": "CL401",
@@ -104,14 +114,16 @@
           "note": null,
           "price": 313.5
         }
-      ]
+      ],
+      "imageW": 412,
+      "imageH": 561
     },
     {
       "code": "CL308",
       "article": "308",
       "name": "Alocasia Jacklyn Var Mint/Jacklyn Mystic Variegated",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL308.jpeg",
       "variants": [
         {
           "code": "CL308",
@@ -120,14 +132,16 @@
           "note": null,
           "price": 8304.9
         }
-      ]
+      ],
+      "imageW": 335,
+      "imageH": 515
     },
     {
       "code": "CL373",
       "article": "373",
       "name": "Alocasia Jacklyn (Orbicular)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL373.jpeg",
       "variants": [
         {
           "code": "CL373",
@@ -136,14 +150,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 210,
+      "imageH": 250
     },
     {
       "code": "CL403",
       "article": "403",
       "name": "Alocasia Maharani Moonlight",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL403.jpeg",
       "variants": [
         {
           "code": "CL403",
@@ -152,14 +168,16 @@
           "note": null,
           "price": 408.5
         }
-      ]
+      ],
+      "imageW": 262,
+      "imageH": 380
     },
     {
       "code": "CL374",
       "article": "374",
       "name": "Alocasia Morocco Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL374.jpeg",
       "variants": [
         {
           "code": "CL374",
@@ -168,14 +186,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 440,
+      "imageH": 576
     },
     {
       "code": "CL404",
       "article": "404",
       "name": "Alocasia Nebula Var Mint",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL404.jpeg",
       "variants": [
         {
           "code": "CL404",
@@ -184,14 +204,16 @@
           "note": null,
           "price": 8046.5
         }
-      ]
+      ],
+      "imageW": 335,
+      "imageH": 387
     },
     {
       "code": "CL375",
       "article": "375",
       "name": "Alocasia Ninja Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL375.jpeg",
       "variants": [
         {
           "code": "CL375",
@@ -200,14 +222,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 335,
+      "imageH": 389
     },
     {
       "code": "CL377",
       "article": "377",
       "name": "Alocasia Polly Var (Aurea) - A grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL377.jpeg",
       "variants": [
         {
           "code": "CL377",
@@ -216,14 +240,16 @@
           "note": null,
           "price": 1407.9
         }
-      ]
+      ],
+      "imageW": 415,
+      "imageH": 481
     },
     {
       "code": "CL378",
       "article": "378",
       "name": "Alocasia Regal Shield Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL378.jpeg",
       "variants": [
         {
           "code": "CL378",
@@ -232,14 +258,16 @@
           "note": null,
           "price": 2873.75
         }
-      ]
+      ],
+      "imageW": 387,
+      "imageH": 516
     },
     {
       "code": "CL379",
       "article": "379",
       "name": "Alocasia Reginae (Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL379.jpeg",
       "variants": [
         {
           "code": "CL379",
@@ -248,14 +276,16 @@
           "note": null,
           "price": 49115.0
         }
-      ]
+      ],
+      "imageW": 394,
+      "imageH": 507
     },
     {
       "code": "CL376",
       "article": "376",
       "name": "Alocasia Ninja Lava Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL376.jpeg",
       "variants": [
         {
           "code": "CL376",
@@ -264,14 +294,16 @@
           "note": null,
           "price": 4109.23
         }
-      ]
+      ],
+      "imageW": 538,
+      "imageH": 579
     },
     {
       "code": "CL405",
       "article": "405",
       "name": "Alocasia Sp.Berau",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL405.jpeg",
       "variants": [
         {
           "code": "CL405",
@@ -280,14 +312,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 406,
+      "imageH": 492
     },
     {
       "code": "CL381",
       "article": "381",
       "name": "Alocasia Watsoniana Var (Pink / Gloss)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL381.jpeg",
       "variants": [
         {
           "code": "CL381",
@@ -296,14 +330,16 @@
           "note": null,
           "price": 6465.7
         }
-      ]
+      ],
+      "imageW": 387,
+      "imageH": 516
     },
     {
       "code": "CL382",
       "article": "382",
       "name": "Anthrium Papii Peach Rawa Pink Salmon",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL382.jpeg",
       "variants": [
         {
           "code": "CL382",
@@ -312,14 +348,16 @@
           "note": null,
           "price": 1149.5
         }
-      ]
+      ],
+      "imageW": 210,
+      "imageH": 250
     },
     {
       "code": "CL380",
       "article": "380",
       "name": "Alocasia Venom Var Purple",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL380.jpeg",
       "variants": [
         {
           "code": "CL380",
@@ -328,14 +366,16 @@
           "note": null,
           "price": 96662.5
         }
-      ]
+      ],
+      "imageW": 420,
+      "imageH": 455
     },
     {
       "code": "CL385",
       "article": "385",
       "name": "Calathea Network Var",
       "genus": "Calathea",
-      "image": null,
+      "image": "/plants/clones/CL385.jpeg",
       "variants": [
         {
           "code": "CL385",
@@ -344,14 +384,16 @@
           "note": null,
           "price": 769.5
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 615
     },
     {
       "code": "CL384",
       "article": "384",
       "name": "Calathea Glaze",
       "genus": "Calathea",
-      "image": null,
+      "image": "/plants/clones/CL384.jpeg",
       "variants": [
         {
           "code": "CL384",
@@ -360,14 +402,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 210,
+      "imageH": 250
     },
     {
       "code": "CL383",
       "article": "383",
       "name": "Anthurium Pedatum Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL383.jpeg",
       "variants": [
         {
           "code": "CL383",
@@ -376,14 +420,16 @@
           "note": null,
           "price": 7471.75
         }
-      ]
+      ],
+      "imageW": 300,
+      "imageH": 300
     },
     {
       "code": "CL386",
       "article": "386",
       "name": "Calathea Stromanthe Charlie",
       "genus": "Calathea",
-      "image": null,
+      "image": "/plants/clones/CL386.jpeg",
       "variants": [
         {
           "code": "CL386",
@@ -392,14 +438,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 567,
+      "imageH": 544
     },
     {
       "code": "CL387",
       "article": "387",
       "name": "Basket Fern (Aglaomorpha rigidula)",
       "genus": "Basket",
-      "image": null,
+      "image": "/plants/clones/CL387.jpeg",
       "variants": [
         {
           "code": "CL387",
@@ -408,14 +456,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 300,
+      "imageH": 372
     },
     {
       "code": "CL406",
       "article": "406",
       "name": "Colocasia Black Coffee",
       "genus": "Colocasia",
-      "image": null,
+      "image": "/plants/clones/CL406.jpeg",
       "variants": [
         {
           "code": "CL406",
@@ -424,14 +474,16 @@
           "note": null,
           "price": 304.0
         }
-      ]
+      ],
+      "imageW": 458,
+      "imageH": 539
     },
     {
       "code": "CL388",
       "article": "388",
       "name": "Platycerium Wings of Angel",
       "genus": "Platycerium",
-      "image": null,
+      "image": "/plants/clones/CL388.jpeg",
       "variants": [
         {
           "code": "CL388",
@@ -440,14 +492,16 @@
           "note": null,
           "price": 1580.33
         }
-      ]
+      ],
+      "imageW": 404,
+      "imageH": 539
     },
     {
       "code": "CL407",
       "article": "407",
       "name": "Monstera American Masterpiece",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL407.jpeg",
       "variants": [
         {
           "code": "CL407",
@@ -456,14 +510,16 @@
           "note": null,
           "price": 18392.0
         }
-      ]
+      ],
+      "imageW": 404,
+      "imageH": 539
     },
     {
       "code": "CL389",
       "article": "389",
       "name": "Monstera Coral",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL389.jpeg",
       "variants": [
         {
           "code": "CL389",
@@ -472,14 +528,16 @@
           "note": null,
           "price": 10603.9
         }
-      ]
+      ],
+      "imageW": 421,
+      "imageH": 475
     },
     {
       "code": "CL391",
       "article": "391",
       "name": "Monstera Var (Green Elf)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL391.jpeg",
       "variants": [
         {
           "code": "CL391",
@@ -488,14 +546,16 @@
           "note": null,
           "price": 2758.8
         }
-      ]
+      ],
+      "imageW": 330,
+      "imageH": 445
     },
     {
       "code": "CL392",
       "article": "392",
       "name": "Monstera Lemon Var (Might tricolor)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL392.jpeg",
       "variants": [
         {
           "code": "CL392",
@@ -504,14 +564,16 @@
           "note": null,
           "price": 10948.75
         }
-      ]
+      ],
+      "imageW": 188,
+      "imageH": 249
     },
     {
       "code": "CL408",
       "article": "408",
       "name": "Monstera Burle Marx Flame Var",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL408.jpeg",
       "variants": [
         {
           "code": "CL408",
@@ -520,14 +582,16 @@
           "note": null,
           "price": 60087.5
         }
-      ]
+      ],
+      "imageW": 580,
+      "imageH": 620
     },
     {
       "code": "CL393",
       "article": "393",
       "name": "Monstera Rhaphidophora Tetrasperma Mint Var",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL393.jpeg",
       "variants": [
         {
           "code": "CL393",
@@ -536,14 +600,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 524,
+      "imageH": 615
     },
     {
       "code": "CL394",
       "article": "394",
       "name": "Monstera Star-Lord",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL394.jpeg",
       "variants": [
         {
           "code": "CL394",
@@ -552,14 +618,16 @@
           "note": null,
           "price": 6925.5
         }
-      ]
+      ],
+      "imageW": 394,
+      "imageH": 450
     },
     {
       "code": "CL395",
       "article": "395",
       "name": "Monstera Tatto",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL395.jpeg",
       "variants": [
         {
           "code": "CL395",
@@ -568,14 +636,16 @@
           "note": null,
           "price": 16933.75
         }
-      ]
+      ],
+      "imageW": 462,
+      "imageH": 615
     },
     {
       "code": "CL409",
       "article": "409",
       "name": "Monstera Platinum",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL409.jpeg",
       "variants": [
         {
           "code": "CL409",
@@ -584,14 +654,16 @@
           "note": null,
           "price": 4712.95
         }
-      ]
+      ],
+      "imageW": 399,
+      "imageH": 501
     },
     {
       "code": "CL411",
       "article": "411",
       "name": "Passiflora Trifasciata Duck Feet Plant",
       "genus": "Passiflora",
-      "image": null,
+      "image": "/plants/clones/CL411.jpeg",
       "variants": [
         {
           "code": "CL411",
@@ -600,14 +672,16 @@
           "note": null,
           "price": 598.5
         }
-      ]
+      ],
+      "imageW": 387,
+      "imageH": 436
     },
     {
       "code": "CL396",
       "article": "396",
       "name": "Radermachera Sinica Var",
       "genus": "Radermachera",
-      "image": null,
+      "image": "/plants/clones/CL396.jpeg",
       "variants": [
         {
           "code": "CL396",
@@ -616,14 +690,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 550,
+      "imageH": 606
     },
     {
       "code": "CL397",
       "article": "397",
       "name": "Philodendron Florida Beauty X Bob Cee Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL397.jpeg",
       "variants": [
         {
           "code": "CL397",
@@ -632,14 +708,16 @@
           "note": null,
           "price": 2988.7
         }
-      ]
+      ],
+      "imageW": 455,
+      "imageH": 606
     },
     {
       "code": "CL410",
       "article": "410",
       "name": "Oxalis Obtusa Pink Var",
       "genus": "Oxalis",
-      "image": null,
+      "image": "/plants/clones/CL410.jpeg",
       "variants": [
         {
           "code": "CL410",
@@ -648,14 +726,16 @@
           "note": null,
           "price": 1379.4
         }
-      ]
+      ],
+      "imageW": 547,
+      "imageH": 620
     },
     {
       "code": "CL50514",
       "article": "50514",
       "name": "Caladium Hula",
       "genus": "Caladium",
-      "image": null,
+      "image": "/plants/clones/CL50514.jpeg",
       "variants": [
         {
           "code": "CL50514",
@@ -664,14 +744,16 @@
           "note": null,
           "price": 313.5
         }
-      ]
+      ],
+      "imageW": 224,
+      "imageH": 270
     },
     {
       "code": "CL50522",
       "article": "50522",
       "name": "Caladium Mint Candy",
       "genus": "Caladium",
-      "image": null,
+      "image": "/plants/clones/CL50522.jpeg",
       "variants": [
         {
           "code": "CL50522",
@@ -680,14 +762,16 @@
           "note": null,
           "price": 247.0
         }
-      ]
+      ],
+      "imageW": 340,
+      "imageH": 406
     },
     {
       "code": "CL5054",
       "article": "5054",
       "name": "Caladium Dance skirt",
       "genus": "Caladium",
-      "image": null,
+      "image": "/plants/clones/CL5054.jpeg",
       "variants": [
         {
           "code": "CL5054",
@@ -696,14 +780,16 @@
           "note": null,
           "price": 171.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 260
     },
     {
       "code": "CL398",
       "article": "398",
       "name": "Philodendron Warscewiczii Var (Palmately Lobed)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL398.jpeg",
       "variants": [
         {
           "code": "CL398",
@@ -712,14 +798,16 @@
           "note": null,
           "price": 1867.7
         }
-      ]
+      ],
+      "imageW": 210,
+      "imageH": 250
     },
     {
       "code": "CL412",
       "article": "412",
       "name": "Anthurium Hybrid (Dearmweaver X Michelle)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL412.jpeg",
       "variants": [
         {
           "code": "CL412",
@@ -728,14 +816,16 @@
           "note": null,
           "price": 527.25
         }
-      ]
+      ],
+      "imageW": 376,
+      "imageH": 447
     },
     {
       "code": "CL413",
       "article": "413",
       "name": "Anthurium SKG Pink Lemonade",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL413.jpeg",
       "variants": [
         {
           "code": "CL413",
@@ -744,14 +834,16 @@
           "note": null,
           "price": 812.25
         }
-      ]
+      ],
+      "imageW": 399,
+      "imageH": 501
     },
     {
       "code": "CL50549",
       "article": "50549",
       "name": "Caladium Bloody Mary",
       "genus": "Caladium",
-      "image": null,
+      "image": "/plants/clones/CL50549.jpeg",
       "variants": [
         {
           "code": "CL50549",
@@ -760,14 +852,16 @@
           "note": null,
           "price": 218.5
         }
-      ]
+      ],
+      "imageW": 421,
+      "imageH": 453
     },
     {
       "code": "CL50532",
       "article": "50532",
       "name": "Caladium Orange",
       "genus": "Caladium",
-      "image": null,
+      "image": "/plants/clones/CL50532.jpeg",
       "variants": [
         {
           "code": "CL50532",
@@ -776,14 +870,16 @@
           "note": null,
           "price": 133.0
         }
-      ]
+      ],
+      "imageW": 462,
+      "imageH": 554
     },
     {
       "code": "CL416",
       "article": "416",
       "name": "Anthurium Queen of Hearts - Original",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL416.jpeg",
       "variants": [
         {
           "code": "CL416",
@@ -792,14 +888,16 @@
           "note": null,
           "price": 456.0
         }
-      ]
+      ],
+      "imageW": 479,
+      "imageH": 589
     },
     {
       "code": "CL415",
       "article": "415",
       "name": "Anthurium Polyschistum",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL415.jpeg",
       "variants": [
         {
           "code": "CL415",
@@ -808,14 +906,16 @@
           "note": null,
           "price": 242.25
         }
-      ]
+      ],
+      "imageW": 543,
+      "imageH": 620
     },
     {
       "code": "CL414",
       "article": "414",
       "name": "Anthurium Pinkleyi",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL414.jpeg",
       "variants": [
         {
           "code": "CL414",
@@ -824,14 +924,16 @@
           "note": null,
           "price": 242.25
         }
-      ]
+      ],
+      "imageW": 597,
+      "imageH": 597
     },
     {
       "code": "CL193",
       "article": "193",
       "name": "Alocasia Aegis Mint Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL193.jpeg",
       "variants": [
         {
           "code": "CL193",
@@ -840,14 +942,16 @@
           "note": null,
           "price": 8276.4
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL164",
       "article": "164",
       "name": "Alocasia Azlanii Var (Albo/Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL164.jpeg",
       "variants": [
         {
           "code": "CL164",
@@ -856,14 +960,16 @@
           "note": null,
           "price": 6092.35
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL165",
       "article": "165",
       "name": "Alocasia Azlanii Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL165.jpeg",
       "variants": [
         {
           "code": "CL165",
@@ -872,14 +978,16 @@
           "note": null,
           "price": 2873.75
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL301",
       "article": "301",
       "name": "Alocasia Baby Ray",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL301.jpeg",
       "variants": [
         {
           "code": "CL301",
@@ -888,14 +996,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 166,
+      "imageH": 165
     },
     {
       "code": "CL1053",
       "article": "1053",
       "name": "Alocasia Bambino Var (Tricolor)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1053.jpeg",
       "variants": [
         {
           "code": "CL1053",
@@ -904,14 +1014,16 @@
           "note": null,
           "price": 9196.0
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 184
     },
     {
       "code": "CL236",
       "article": "236",
       "name": "Alocasia Bambino Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL236.jpeg",
       "variants": [
         {
           "code": "CL236",
@@ -920,14 +1032,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 590,
+      "imageH": 599
     },
     {
       "code": "CL235",
       "article": "235",
       "name": "Alocasia Bambino Var (Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL235.jpeg",
       "variants": [
         {
           "code": "CL235",
@@ -936,14 +1050,16 @@
           "note": null,
           "price": 442.23
         }
-      ]
+      ],
+      "imageW": 480,
+      "imageH": 600
     },
     {
       "code": "CL771",
       "article": "771",
       "name": "Alocasia Black Velvet Snowflake Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL771.jpeg",
       "variants": [
         {
           "code": "CL771",
@@ -952,14 +1068,16 @@
           "note": null,
           "price": 11471.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 187
     },
     {
       "code": "CL186",
       "article": "186",
       "name": "Alocasia Black Satun Stardust Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL186.jpeg",
       "variants": [
         {
           "code": "CL186",
@@ -968,14 +1086,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL187",
       "article": "187",
       "name": "Alocasia Black Stem Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL187.jpeg",
       "variants": [
         {
           "code": "CL187",
@@ -984,14 +1104,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL124",
       "article": "124",
       "name": "Alocasia Black Velvet Var (Albo / Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL124.jpeg",
       "variants": [
         {
           "code": "CL124",
@@ -1000,14 +1122,16 @@
           "note": null,
           "price": 868.13
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL190",
       "article": "190",
       "name": "Alocasia Chantrieri Var Pink",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL190.jpeg",
       "variants": [
         {
           "code": "CL190",
@@ -1016,14 +1140,16 @@
           "note": null,
           "price": 9425.9
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL302",
       "article": "302",
       "name": "Alocasia Brancifolia Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL302.jpeg",
       "variants": [
         {
           "code": "CL302",
@@ -1032,14 +1158,16 @@
           "note": null,
           "price": 10920.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL125",
       "article": "125",
       "name": "Alocasia Black Velvet Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL125.jpeg",
       "variants": [
         {
           "code": "CL125",
@@ -1048,14 +1176,16 @@
           "note": null,
           "price": 1350.43
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL703",
       "article": "703",
       "name": "Alocasia Brancifolia Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL703.jpeg",
       "variants": [
         {
           "code": "CL703",
@@ -1064,14 +1194,16 @@
           "note": null,
           "price": 10920.25
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL130",
       "article": "130",
       "name": "Alocasia Cuprea Var (Pink / Blocky Variegata)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL130.jpeg",
       "variants": [
         {
           "code": "CL130",
@@ -1080,14 +1212,16 @@
           "note": null,
           "price": 5460.13
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 198
     },
     {
       "code": "CL142",
       "article": "142",
       "name": "Alocasia Cucullata Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL142.jpeg",
       "variants": [
         {
           "code": "CL142",
@@ -1096,14 +1230,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL132",
       "article": "132",
       "name": "Alocasia Cuprea Golden Latte",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL132.jpeg",
       "variants": [
         {
           "code": "CL132",
@@ -1112,14 +1248,16 @@
           "note": null,
           "price": 6437.2
         }
-      ]
+      ],
+      "imageW": 566,
+      "imageH": 580
     },
     {
       "code": "CL705",
       "article": "705",
       "name": "Alocasia Crystal",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL705.jpeg",
       "variants": [
         {
           "code": "CL705",
@@ -1128,14 +1266,16 @@
           "note": null,
           "price": 2959.73
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL303-128",
       "article": "303/128",
       "name": "Alocasia Dragon Scale Var (Albo)- A/B Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL303-128.jpeg",
       "variants": [
         {
           "code": "CL303",
@@ -1151,14 +1291,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 211
     },
     {
       "code": "CL129",
       "article": "129",
       "name": "Alocasia Dragon Scale Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL129.jpeg",
       "variants": [
         {
           "code": "CL129",
@@ -1167,14 +1309,16 @@
           "note": null,
           "price": 1140.0
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL350",
       "article": "350",
       "name": "Alocasia De Beers Blue Pink Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL350.jpeg",
       "variants": [
         {
           "code": "CL350",
@@ -1183,14 +1327,16 @@
           "note": null,
           "price": 32395.0
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 244
     },
     {
       "code": "CL225",
       "article": "225",
       "name": "Alocasia Dragon Scale Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL225.jpeg",
       "variants": [
         {
           "code": "CL225",
@@ -1199,14 +1345,16 @@
           "note": null,
           "price": 408.5
         }
-      ]
+      ],
+      "imageW": 402,
+      "imageH": 537
     },
     {
       "code": "CL22",
       "article": "22",
       "name": "Alocasia Frydek Tatto",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL22.jpeg",
       "variants": [
         {
           "code": "CL22",
@@ -1215,14 +1363,16 @@
           "note": null,
           "price": 707.75
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL224",
       "article": "224",
       "name": "Alocasia Frydek Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL224.jpeg",
       "variants": [
         {
           "code": "CL224",
@@ -1231,14 +1381,16 @@
           "note": null,
           "price": 285.0
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 620
     },
     {
       "code": "CL735",
       "article": "735",
       "name": "Alocasia Dragon Scale Var (Mixed)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL735.jpeg",
       "variants": [
         {
           "code": "CL735",
@@ -1247,14 +1399,16 @@
           "note": null,
           "price": 1235.48
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL351",
       "article": "351",
       "name": "Alocasia Dragon Wing",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL351.jpeg",
       "variants": [
         {
           "code": "CL351",
@@ -1263,14 +1417,16 @@
           "note": null,
           "price": 20211.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL304",
       "article": "304",
       "name": "Alocasia Gageana Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL304.jpeg",
       "variants": [
         {
           "code": "CL304",
@@ -1279,14 +1435,16 @@
           "note": null,
           "price": 831.25
         }
-      ]
+      ],
+      "imageW": 543,
+      "imageH": 598
     },
     {
       "code": "CL230",
       "article": "230",
       "name": "Alocasia Gageana Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL230.jpeg",
       "variants": [
         {
           "code": "CL230",
@@ -1295,14 +1453,16 @@
           "note": null,
           "price": 313.5
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL305",
       "article": "305",
       "name": "Alocasia Ghost Rider",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL305.jpeg",
       "variants": [
         {
           "code": "CL305",
@@ -1311,14 +1471,16 @@
           "note": null,
           "price": 479.28
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 591
     },
     {
       "code": "CL1033",
       "article": "1033",
       "name": "Alocasia Frydek Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1033.jpeg",
       "variants": [
         {
           "code": "CL1033",
@@ -1327,14 +1489,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 491,
+      "imageH": 600
     },
     {
       "code": "CL180",
       "article": "180",
       "name": "Alocasia Heterophylla Dragon's BreathVar (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL180.jpeg",
       "variants": [
         {
           "code": "CL180",
@@ -1343,14 +1507,16 @@
           "note": null,
           "price": 8103.98
         }
-      ]
+      ],
+      "imageW": 185,
+      "imageH": 220
     },
     {
       "code": "CL189",
       "article": "189",
       "name": "Alocasia Golden Bone Pink Mint",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL189.jpeg",
       "variants": [
         {
           "code": "CL189",
@@ -1359,14 +1525,16 @@
           "note": null,
           "price": 3793.35
         }
-      ]
+      ],
+      "imageW": 155,
+      "imageH": 169
     },
     {
       "code": "CL167",
       "article": "167",
       "name": "Alocasia Heart Balloon Var (Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL167.jpeg",
       "variants": [
         {
           "code": "CL167",
@@ -1375,14 +1543,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 468,
+      "imageH": 594
     },
     {
       "code": "CL349",
       "article": "349",
       "name": "Alocasia Heterophylla Dragon's BreathVar (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL349.jpeg",
       "variants": [
         {
           "code": "CL349",
@@ -1391,14 +1561,16 @@
           "note": null,
           "price": 56430.0
         }
-      ]
+      ],
+      "imageW": 166,
+      "imageH": 185
     },
     {
       "code": "CL182",
       "article": "182",
       "name": "Alocasia Heterophylla Metallic Blue Var Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL182.jpeg",
       "variants": [
         {
           "code": "CL182",
@@ -1407,14 +1579,16 @@
           "note": null,
           "price": 2241.53
         }
-      ]
+      ],
+      "imageW": 198,
+      "imageH": 225
     },
     {
       "code": "CL306",
       "article": "306",
       "name": "Alocasia Heterophylla Metallic Blue Var Albo",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL306.jpeg",
       "variants": [
         {
           "code": "CL306",
@@ -1423,14 +1597,16 @@
           "note": null,
           "price": 12782.25
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL307",
       "article": "307",
       "name": "Alocasia Ivory Coast Var Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL307.jpeg",
       "variants": [
         {
           "code": "CL307",
@@ -1439,14 +1615,16 @@
           "note": null,
           "price": 14777.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL143",
       "article": "143",
       "name": "Alocasia Jacklyn Var - A Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL143.jpeg",
       "variants": [
         {
           "code": "CL143",
@@ -1455,14 +1633,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 506,
+      "imageH": 620
     },
     {
       "code": "CL706",
       "article": "706",
       "name": "Alocasia Jacklyn Var (narrow-leaved)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL706.jpeg",
       "variants": [
         {
           "code": "CL706",
@@ -1471,14 +1651,16 @@
           "note": null,
           "price": 13656.25
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 260
     },
     {
       "code": "CL136",
       "article": "136",
       "name": "Alocasia Lauterbachiana Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL136.jpeg",
       "variants": [
         {
           "code": "CL136",
@@ -1487,14 +1669,16 @@
           "note": null,
           "price": 5747.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL238",
       "article": "238",
       "name": "Alocasia Lauterbachiana Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL238.jpeg",
       "variants": [
         {
           "code": "CL238",
@@ -1503,14 +1687,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 171,
+      "imageH": 229
     },
     {
       "code": "CL1050-309-310",
       "article": "1050/309/310",
       "name": "Alocasia Lauterbachiana Var (Aurea) - A/B/C grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1050-309-310.jpeg",
       "variants": [
         {
           "code": "CL1050",
@@ -1533,14 +1719,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 465,
+      "imageH": 620
     },
     {
       "code": "CL311",
       "article": "311",
       "name": "Alocasia Longiloba Grandis Var Pink",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL311.jpeg",
       "variants": [
         {
           "code": "CL311",
@@ -1549,14 +1737,16 @@
           "note": null,
           "price": 40755.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL184",
       "article": "184",
       "name": "Alocasia Longiloba Grandis Var Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL184.jpeg",
       "variants": [
         {
           "code": "CL184",
@@ -1565,14 +1755,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL312",
       "article": "312",
       "name": "Alocasia Longiloba Mint Thai Con",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL312.jpeg",
       "variants": [
         {
           "code": "CL312",
@@ -1581,14 +1773,16 @@
           "note": null,
           "price": 10920.25
         }
-      ]
+      ],
+      "imageW": 181,
+      "imageH": 231
     },
     {
       "code": "CL1046",
       "article": "1046",
       "name": "Alocasia Longiloba Purple",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1046.jpeg",
       "variants": [
         {
           "code": "CL1046",
@@ -1597,14 +1791,16 @@
           "note": null,
           "price": 954.75
         }
-      ]
+      ],
+      "imageW": 425,
+      "imageH": 620
     },
     {
       "code": "CL702",
       "article": "702",
       "name": "Alocasia Longiloba Var (Aurea )",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL702.jpeg",
       "variants": [
         {
           "code": "CL702",
@@ -1613,14 +1809,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL226",
       "article": "226",
       "name": "Alocasia Macrorrhiza Splash",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL226.jpeg",
       "variants": [
         {
           "code": "CL226",
@@ -1629,14 +1827,16 @@
           "note": null,
           "price": 361.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL227",
       "article": "227",
       "name": "Alocasia Macrorrhiza Splash (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL227.jpeg",
       "variants": [
         {
           "code": "CL227",
@@ -1645,14 +1845,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 432,
+      "imageH": 530
     },
     {
       "code": "CL733",
       "article": "733",
       "name": "Alocasia Luminous Cup (Alocasia Amazonica Mutations)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL733.jpeg",
       "variants": [
         {
           "code": "CL733",
@@ -1661,14 +1863,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 396,
+      "imageH": 528
     },
     {
       "code": "CL228",
       "article": "228",
       "name": "Alocasia Macrorrhiza Splash (Aurea )",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL228.jpeg",
       "variants": [
         {
           "code": "CL228",
@@ -1677,14 +1881,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL156",
       "article": "156",
       "name": "Alocasia Maharani Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL156.jpeg",
       "variants": [
         {
           "code": "CL156",
@@ -1693,14 +1899,16 @@
           "note": null,
           "price": 3678.4
         }
-      ]
+      ],
+      "imageW": 555,
+      "imageH": 593
     },
     {
       "code": "CL157",
       "article": "157",
       "name": "Alocasia Maharani Var (Aurea )",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL157.jpeg",
       "variants": [
         {
           "code": "CL157",
@@ -1709,14 +1917,16 @@
           "note": null,
           "price": 9196.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL158",
       "article": "158",
       "name": "Alocasia Maharani Golden Lime",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL158.jpeg",
       "variants": [
         {
           "code": "CL158",
@@ -1725,14 +1935,16 @@
           "note": null,
           "price": 10000.65
         }
-      ]
+      ],
+      "imageW": 447,
+      "imageH": 598
     },
     {
       "code": "CL159",
       "article": "159",
       "name": "Alocasia Melo Var (Albo )",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL159.jpeg",
       "variants": [
         {
           "code": "CL159",
@@ -1741,14 +1953,16 @@
           "note": null,
           "price": 1896.44
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 209
     },
     {
       "code": "CL160",
       "article": "160",
       "name": "Alocasia Melo Var (Golden)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL160.jpeg",
       "variants": [
         {
           "code": "CL160",
@@ -1757,14 +1971,16 @@
           "note": null,
           "price": 2959.73
         }
-      ]
+      ],
+      "imageW": 489,
+      "imageH": 558
     },
     {
       "code": "CL148-149",
       "article": "148/149",
       "name": "Alocasia Nairobi Night Var A/B Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL148-149.jpeg",
       "variants": [
         {
           "code": "CL148",
@@ -1780,14 +1996,16 @@
           "note": null,
           "price": 2787.3
         }
-      ]
+      ],
+      "imageW": 455,
+      "imageH": 556
     },
     {
       "code": "CL150",
       "article": "150",
       "name": "Alocasia Nairobi Night Var Tricolor",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL150.jpeg",
       "variants": [
         {
           "code": "CL150",
@@ -1796,14 +2014,16 @@
           "note": null,
           "price": 5460.13
         }
-      ]
+      ],
+      "imageW": 575,
+      "imageH": 556
     },
     {
       "code": "CL175-176",
       "article": "175/176",
       "name": "Alocasia Nebula Var (Aurea)- A/B Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL175-176.jpeg",
       "variants": [
         {
           "code": "CL175",
@@ -1819,14 +2039,16 @@
           "note": null,
           "price": 8621.25
         }
-      ]
+      ],
+      "imageW": 498,
+      "imageH": 620
     },
     {
       "code": "CL177",
       "article": "177",
       "name": "Alocasia Nebula Var Albo",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL177.jpeg",
       "variants": [
         {
           "code": "CL177",
@@ -1835,14 +2057,16 @@
           "note": null,
           "price": 24035.0
         }
-      ]
+      ],
+      "imageW": 473,
+      "imageH": 620
     },
     {
       "code": "CL231",
       "article": "231",
       "name": "Alocasia New Guinea Gold",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL231.jpeg",
       "variants": [
         {
           "code": "CL231",
@@ -1851,14 +2075,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 484,
+      "imageH": 620
     },
     {
       "code": "CL178",
       "article": "178",
       "name": "Alocasia Ninja Var Albo",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL178.jpeg",
       "variants": [
         {
           "code": "CL178",
@@ -1867,14 +2093,16 @@
           "note": null,
           "price": 1522.85
         }
-      ]
+      ],
+      "imageW": 190,
+      "imageH": 225
     },
     {
       "code": "CL229",
       "article": "229",
       "name": "Alocasia Odora Batik",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL229.jpeg",
       "variants": [
         {
           "code": "CL229",
@@ -1883,14 +2111,16 @@
           "note": null,
           "price": 218.5
         }
-      ]
+      ],
+      "imageW": 169,
+      "imageH": 196
     },
     {
       "code": "CL163",
       "article": "163",
       "name": "Alocasia Nobilis Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL163.jpeg",
       "variants": [
         {
           "code": "CL163",
@@ -1899,14 +2129,16 @@
           "note": null,
           "price": 5172.75
         }
-      ]
+      ],
+      "imageW": 398,
+      "imageH": 552
     },
     {
       "code": "CL162",
       "article": "162",
       "name": "Alocasia Nobilis Var (Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL162.jpeg",
       "variants": [
         {
           "code": "CL162",
@@ -1915,14 +2147,16 @@
           "note": null,
           "price": 1350.43
         }
-      ]
+      ],
+      "imageW": 182,
+      "imageH": 225
     },
     {
       "code": "CL766",
       "article": "766",
       "name": "Alocasia Ninja Var Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL766.jpeg",
       "variants": [
         {
           "code": "CL766",
@@ -1931,14 +2165,16 @@
           "note": null,
           "price": 1637.8
         }
-      ]
+      ],
+      "imageW": 414,
+      "imageH": 552
     },
     {
       "code": "CL1047",
       "article": "1047",
       "name": "Alocasia Parasol Var Pink",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1047.jpeg",
       "variants": [
         {
           "code": "CL1047",
@@ -1947,14 +2183,16 @@
           "note": null,
           "price": 24557.5
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 251
     },
     {
       "code": "CL119",
       "article": "119",
       "name": "Alocasia Odora Okinawa Silver",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL119.jpeg",
       "variants": [
         {
           "code": "CL119",
@@ -1963,14 +2201,16 @@
           "note": null,
           "price": 1140.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL243",
       "article": "243",
       "name": "Alocasia Odora Okinawa (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL243.jpeg",
       "variants": [
         {
           "code": "CL243",
@@ -1979,14 +2219,16 @@
           "note": null,
           "price": 603.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL151",
       "article": "151",
       "name": "Alocasia Pink Dragon Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL151.jpeg",
       "variants": [
         {
           "code": "CL151",
@@ -1995,14 +2237,16 @@
           "note": null,
           "price": 1982.65
         }
-      ]
+      ],
+      "imageW": 181,
+      "imageH": 236
     },
     {
       "code": "CL1035",
       "article": "1035",
       "name": "Alocasia Pink Dragon Var (Aurea)- Mutations",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1035.jpeg",
       "variants": [
         {
           "code": "CL1035",
@@ -2011,14 +2255,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1034",
       "article": "1034",
       "name": "Alocasia Pink Dragon Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1034.jpeg",
       "variants": [
         {
           "code": "CL1034",
@@ -2027,14 +2273,16 @@
           "note": null,
           "price": 5460.13
         }
-      ]
+      ],
+      "imageW": 619,
+      "imageH": 610
     },
     {
       "code": "CL153",
       "article": "153",
       "name": "Alocasia Pink Dragon Var (Blocky Variegata)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL153.jpeg",
       "variants": [
         {
           "code": "CL153",
@@ -2043,14 +2291,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL152",
       "article": "152",
       "name": "Alocasia Pink Dragon Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL152.jpeg",
       "variants": [
         {
           "code": "CL152",
@@ -2059,14 +2309,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 600,
+      "imageH": 600
     },
     {
       "code": "CL185",
       "article": "185",
       "name": "Alocasia Platinum Var (Albo) / Bisma Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL185.jpeg",
       "variants": [
         {
           "code": "CL185",
@@ -2075,14 +2327,16 @@
           "note": null,
           "price": 7644.18
         }
-      ]
+      ],
+      "imageW": 125,
+      "imageH": 174
     },
     {
       "code": "CL123",
       "article": "123",
       "name": "Alocasia Polly Pink Mutation",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL123.jpeg",
       "variants": [
         {
           "code": "CL123",
@@ -2091,14 +2345,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 200,
+      "imageH": 252
     },
     {
       "code": "CL232",
       "article": "232",
       "name": "Alocasia Polly Var - A Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL232.jpeg",
       "variants": [
         {
           "code": "CL232",
@@ -2107,14 +2363,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 567,
+      "imageH": 567
     },
     {
       "code": "CL122",
       "article": "122",
       "name": "Alocasia Polly Lava",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL122.jpeg",
       "variants": [
         {
           "code": "CL122",
@@ -2123,14 +2381,16 @@
           "note": null,
           "price": 8276.4
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 186
     },
     {
       "code": "CL120",
       "article": "120",
       "name": "Alocasia Polly Var (Pink )- A Grade Snowflake",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL120.jpeg",
       "variants": [
         {
           "code": "CL120",
@@ -2139,14 +2399,16 @@
           "note": null,
           "price": 738.63
         }
-      ]
+      ],
+      "imageW": 499,
+      "imageH": 620
     },
     {
       "code": "CL234",
       "article": "234",
       "name": "Alocasia Polly Var (Aurea) - C grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL234.jpeg",
       "variants": [
         {
           "code": "CL234",
@@ -2155,14 +2417,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 182,
+      "imageH": 225
     },
     {
       "code": "CL313",
       "article": "313",
       "name": "Alocasia Polly Var (Aurea) - B grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL313.jpeg",
       "variants": [
         {
           "code": "CL313",
@@ -2171,14 +2435,16 @@
           "note": null,
           "price": 1465.38
         }
-      ]
+      ],
+      "imageW": 488,
+      "imageH": 620
     },
     {
       "code": "CL734",
       "article": "734",
       "name": "Alocasia Polly Var (Tricolor)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL734.jpeg",
       "variants": [
         {
           "code": "CL734",
@@ -2187,14 +2453,16 @@
           "note": null,
           "price": 3678.4
         }
-      ]
+      ],
+      "imageW": 448,
+      "imageH": 620
     },
     {
       "code": "CL168",
       "article": "168",
       "name": "Alocasia Psuedo Sanderiana Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL168.jpeg",
       "variants": [
         {
           "code": "CL168",
@@ -2203,14 +2471,16 @@
           "note": null,
           "price": 6724.58
         }
-      ]
+      ],
+      "imageW": 444,
+      "imageH": 585
     },
     {
       "code": "CL170",
       "article": "170",
       "name": "Alocasia Regal Shield Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL170.jpeg",
       "variants": [
         {
           "code": "CL170",
@@ -2219,14 +2489,16 @@
           "note": null,
           "price": 5460.13
         }
-      ]
+      ],
+      "imageW": 507,
+      "imageH": 592
     },
     {
       "code": "CL169",
       "article": "169",
       "name": "Alocasia Psuedo Sanderiana Var (Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL169.jpeg",
       "variants": [
         {
           "code": "CL169",
@@ -2235,14 +2507,16 @@
           "note": null,
           "price": 3103.65
         }
-      ]
+      ],
+      "imageW": 453,
+      "imageH": 599
     },
     {
       "code": "CL252",
       "article": "252",
       "name": "Alocasia Portora Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL252.jpeg",
       "variants": [
         {
           "code": "CL252",
@@ -2251,14 +2525,16 @@
           "note": null,
           "price": 831.25
         }
-      ]
+      ],
+      "imageW": 450,
+      "imageH": 600
     },
     {
       "code": "CL192",
       "article": "192",
       "name": "Alocasia Reginae Var Mint",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL192.jpeg",
       "variants": [
         {
           "code": "CL192",
@@ -2267,14 +2543,16 @@
           "note": null,
           "price": 13656.25
         }
-      ]
+      ],
+      "imageW": 387,
+      "imageH": 516
     },
     {
       "code": "CL701",
       "article": "701",
       "name": "Alocasia Regal Shield Var (Blocky Variegata)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL701.jpeg",
       "variants": [
         {
           "code": "CL701",
@@ -2283,14 +2561,16 @@
           "note": null,
           "price": 9081.05
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 260
     },
     {
       "code": "CL171",
       "article": "171",
       "name": "Alocasia Regal Shield Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL171.jpeg",
       "variants": [
         {
           "code": "CL171",
@@ -2299,14 +2579,16 @@
           "note": null,
           "price": 3448.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL314",
       "article": "314",
       "name": "Alocasia Reginae Variegated 2",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL314.jpeg",
       "variants": [
         {
           "code": "CL314",
@@ -2315,14 +2597,16 @@
           "note": null,
           "price": 40232.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL707",
       "article": "707",
       "name": "Alocasia Sabrina Stardust Mint",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL707.jpeg",
       "variants": [
         {
           "code": "CL707",
@@ -2331,14 +2615,16 @@
           "note": null,
           "price": 6897.0
         }
-      ]
+      ],
+      "imageW": 512,
+      "imageH": 620
     },
     {
       "code": "CL133",
       "article": "133",
       "name": "Alocasia Sarian Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL133.jpeg",
       "variants": [
         {
           "code": "CL133",
@@ -2347,14 +2633,16 @@
           "note": null,
           "price": 1752.75
         }
-      ]
+      ],
+      "imageW": 457,
+      "imageH": 620
     },
     {
       "code": "CL134",
       "article": "134",
       "name": "Alocasia Sarian Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL134.jpeg",
       "variants": [
         {
           "code": "CL134",
@@ -2363,14 +2651,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL146",
       "article": "146",
       "name": "Alocasia Scalprum Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL146.jpeg",
       "variants": [
         {
           "code": "CL146",
@@ -2379,14 +2669,16 @@
           "note": null,
           "price": 9196.0
         }
-      ]
+      ],
+      "imageW": 173,
+      "imageH": 206
     },
     {
       "code": "CL145",
       "article": "145",
       "name": "Alocasia Scalprum Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL145.jpeg",
       "variants": [
         {
           "code": "CL145",
@@ -2395,14 +2687,16 @@
           "note": null,
           "price": 954.75
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 253
     },
     {
       "code": "CL147",
       "article": "147",
       "name": "Alocasia Scalprum Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL147.jpeg",
       "variants": [
         {
           "code": "CL147",
@@ -2411,14 +2705,16 @@
           "note": null,
           "price": 1407.9
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL725",
       "article": "725",
       "name": "Alocasia Sedenii Var (Albo / Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL725.jpeg",
       "variants": [
         {
           "code": "CL725",
@@ -2427,14 +2723,16 @@
           "note": null,
           "price": 48697.0
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL181",
       "article": "181",
       "name": "Alocasia Sedenii Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL181.jpeg",
       "variants": [
         {
           "code": "CL181",
@@ -2443,14 +2741,16 @@
           "note": null,
           "price": 3103.65
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 198
     },
     {
       "code": "CL764",
       "article": "764",
       "name": "Alocasia Shock Treatment Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL764.jpeg",
       "variants": [
         {
           "code": "CL764",
@@ -2459,14 +2759,16 @@
           "note": null,
           "price": 10948.75
         }
-      ]
+      ],
+      "imageW": 525,
+      "imageH": 620
     },
     {
       "code": "CL315",
       "article": "315",
       "name": "Alocasia Sedenii Var (Might Tricolor)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL315.jpeg",
       "variants": [
         {
           "code": "CL315",
@@ -2475,14 +2777,16 @@
           "note": null,
           "price": 61132.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1052",
       "article": "1052",
       "name": "Alocasia Serendipity Pink Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1052.jpeg",
       "variants": [
         {
           "code": "CL1052",
@@ -2491,14 +2795,16 @@
           "note": null,
           "price": 8621.25
         }
-      ]
+      ],
+      "imageW": 208,
+      "imageH": 242
     },
     {
       "code": "CL355",
       "article": "355",
       "name": "Alocasia Shattered Glass",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL355.jpeg",
       "variants": [
         {
           "code": "CL355",
@@ -2507,14 +2813,16 @@
           "note": null,
           "price": 831.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL179",
       "article": "179",
       "name": "Alocasia Simpo Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL179.jpeg",
       "variants": [
         {
           "code": "CL179",
@@ -2523,14 +2831,16 @@
           "note": null,
           "price": 1522.85
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1048",
       "article": "1048",
       "name": "Alocasia Silver Feathers Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1048.jpeg",
       "variants": [
         {
           "code": "CL1048",
@@ -2539,14 +2849,16 @@
           "note": null,
           "price": 20757.5
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL127",
       "article": "127",
       "name": "Alocasia Silver Dragon Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL127.jpeg",
       "variants": [
         {
           "code": "CL127",
@@ -2555,14 +2867,16 @@
           "note": null,
           "price": 2758.8
         }
-      ]
+      ],
+      "imageW": 484,
+      "imageH": 612
     },
     {
       "code": "CL126",
       "article": "126",
       "name": "Alocasia Silver Dragon Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL126.jpeg",
       "variants": [
         {
           "code": "CL126",
@@ -2571,14 +2885,16 @@
           "note": null,
           "price": 831.25
         }
-      ]
+      ],
+      "imageW": 187,
+      "imageH": 269
     },
     {
       "code": "CL316",
       "article": "316",
       "name": "Alocasia Stingray Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL316.jpeg",
       "variants": [
         {
           "code": "CL316",
@@ -2587,14 +2903,16 @@
           "note": null,
           "price": 32395.0
         }
-      ]
+      ],
+      "imageW": 193,
+      "imageH": 209
     },
     {
       "code": "CL736",
       "article": "736",
       "name": "Alocasia Simpo Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL736.jpeg",
       "variants": [
         {
           "code": "CL736",
@@ -2603,14 +2921,16 @@
           "note": null,
           "price": 2844.78
         }
-      ]
+      ],
+      "imageW": 198,
+      "imageH": 255
     },
     {
       "code": "CL173",
       "article": "173",
       "name": "Alocasia Sinuata Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL173.jpeg",
       "variants": [
         {
           "code": "CL173",
@@ -2619,14 +2939,16 @@
           "note": null,
           "price": 3735.88
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL174",
       "article": "174",
       "name": "Alocasia Sinuata Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL174.jpeg",
       "variants": [
         {
           "code": "CL174",
@@ -2635,14 +2957,16 @@
           "note": null,
           "price": 6350.75
         }
-      ]
+      ],
+      "imageW": 148,
+      "imageH": 225
     },
     {
       "code": "CL141",
       "article": "141",
       "name": "Alocasia Tigrina Superba Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL141.jpeg",
       "variants": [
         {
           "code": "CL141",
@@ -2651,14 +2975,16 @@
           "note": null,
           "price": 8391.35
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL708",
       "article": "708",
       "name": "Alocasia Suhirmaniana Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL708.jpeg",
       "variants": [
         {
           "code": "CL708",
@@ -2667,14 +2993,16 @@
           "note": null,
           "price": 13110.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL172",
       "article": "172",
       "name": "Alocasia Stingray Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL172.jpeg",
       "variants": [
         {
           "code": "CL172",
@@ -2683,14 +3011,16 @@
           "note": null,
           "price": 2816.28
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL144",
       "article": "144",
       "name": "Alocasia Triangularis Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL144.jpeg",
       "variants": [
         {
           "code": "CL144",
@@ -2699,14 +3029,16 @@
           "note": null,
           "price": 5172.75
         }
-      ]
+      ],
+      "imageW": 511,
+      "imageH": 572
     },
     {
       "code": "CL724",
       "article": "724",
       "name": "Alocasia Venom Var Pink",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL724.jpeg",
       "variants": [
         {
           "code": "CL724",
@@ -2715,14 +3047,16 @@
           "note": null,
           "price": 14202.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL318",
       "article": "318",
       "name": "Alocasia Venom Var Golden",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL318.jpeg",
       "variants": [
         {
           "code": "CL318",
@@ -2731,14 +3065,16 @@
           "note": null,
           "price": 20757.5
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 218
     },
     {
       "code": "CL761",
       "article": "761",
       "name": "Alocasia Venom Var Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL761.jpeg",
       "variants": [
         {
           "code": "CL761",
@@ -2747,14 +3083,16 @@
           "note": null,
           "price": 32395.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL21",
       "article": "21",
       "name": "Alocasia Venom",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL21.jpeg",
       "variants": [
         {
           "code": "CL21",
@@ -2763,14 +3101,16 @@
           "note": null,
           "price": 551.0
         }
-      ]
+      ],
+      "imageW": 202,
+      "imageH": 250
     },
     {
       "code": "CL319",
       "article": "319",
       "name": "Alocasia Venom Var Tricolor",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL319.jpeg",
       "variants": [
         {
           "code": "CL319",
@@ -2779,14 +3119,16 @@
           "note": null,
           "price": 129057.5
         }
-      ]
+      ],
+      "imageW": 556,
+      "imageH": 620
     },
     {
       "code": "CL1065",
       "article": "1065",
       "name": "Alocasia Venom Var Pink - blocky",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL1065.jpeg",
       "variants": [
         {
           "code": "CL1065",
@@ -2795,14 +3137,16 @@
           "note": null,
           "price": 64790.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL763",
       "article": "763",
       "name": "Alocasia Venom Var Pink - Candy",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL763.jpeg",
       "variants": [
         {
           "code": "CL763",
@@ -2811,14 +3155,16 @@
           "note": null,
           "price": 64790.0
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 258
     },
     {
       "code": "CL762",
       "article": "762",
       "name": "Alocasia Venom Var Pink-Mint",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL762.jpeg",
       "variants": [
         {
           "code": "CL762",
@@ -2827,14 +3173,16 @@
           "note": null,
           "price": 14202.5
         }
-      ]
+      ],
+      "imageW": 209,
+      "imageH": 241
     },
     {
       "code": "CL155",
       "article": "155",
       "name": "Alocasia Watsoniana Var (Pink / Doff)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL155.jpeg",
       "variants": [
         {
           "code": "CL155",
@@ -2843,14 +3191,16 @@
           "note": null,
           "price": 2873.75
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL317",
       "article": "317",
       "name": "Alocasia Venusta Aurea",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL317.jpeg",
       "variants": [
         {
           "code": "CL317",
@@ -2859,14 +3209,16 @@
           "note": null,
           "price": 10920.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL154",
       "article": "154",
       "name": "Alocasia Watsoniana Var (Glossy)- A Mixed B Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL154.jpeg",
       "variants": [
         {
           "code": "CL154",
@@ -2875,14 +3227,16 @@
           "note": null,
           "price": 2270.03
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 247
     },
     {
       "code": "CL320",
       "article": "320",
       "name": "Alocasia Watsoniana Glossy Var Aurea- A Grade",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL320.jpeg",
       "variants": [
         {
           "code": "CL320",
@@ -2891,14 +3245,16 @@
           "note": null,
           "price": 8132.48
         }
-      ]
+      ],
+      "imageW": 135,
+      "imageH": 140
     },
     {
       "code": "CL166",
       "article": "166",
       "name": "Alocasia Wentii Var (Albo / Pink)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL166.jpeg",
       "variants": [
         {
           "code": "CL166",
@@ -2907,14 +3263,16 @@
           "note": null,
           "price": 1954.15
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL135",
       "article": "135",
       "name": "Alocasia Yucatan Princess Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL135.jpeg",
       "variants": [
         {
           "code": "CL135",
@@ -2923,14 +3281,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 195,
+      "imageH": 259
     },
     {
       "code": "CL321",
       "article": "321",
       "name": "Alocasia Zebrina Reticulata",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL321.jpeg",
       "variants": [
         {
           "code": "CL321",
@@ -2939,14 +3299,16 @@
           "note": null,
           "price": 4626.5
         }
-      ]
+      ],
+      "imageW": 494,
+      "imageH": 610
     },
     {
       "code": "CL161",
       "article": "161",
       "name": "Alocasia Zebrina Thomas Var",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL161.jpeg",
       "variants": [
         {
           "code": "CL161",
@@ -2955,14 +3317,16 @@
           "note": null,
           "price": 8621.25
         }
-      ]
+      ],
+      "imageW": 443,
+      "imageH": 609
     },
     {
       "code": "CL140",
       "article": "140",
       "name": "Alocasia Zebrina Var (Aurea)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL140.jpeg",
       "variants": [
         {
           "code": "CL140",
@@ -2971,14 +3335,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL138",
       "article": "138",
       "name": "Alocasia Zebrina Var (Albo)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL138.jpeg",
       "variants": [
         {
           "code": "CL138",
@@ -2987,14 +3353,16 @@
           "note": null,
           "price": 6322.25
         }
-      ]
+      ],
+      "imageW": 457,
+      "imageH": 609
     },
     {
       "code": "CL30372",
       "article": "30372",
       "name": "Alocasia Teletubbies",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL30372.jpeg",
       "variants": [
         {
           "code": "CL30372",
@@ -3003,14 +3371,16 @@
           "note": null,
           "price": 513.0
         }
-      ]
+      ],
+      "imageW": 446,
+      "imageH": 554
     },
     {
       "code": "CL139",
       "article": "139",
       "name": "Alocasia Zebrina Var (Mint)",
       "genus": "Alocasia",
-      "image": null,
+      "image": "/plants/clones/CL139.jpeg",
       "variants": [
         {
           "code": "CL139",
@@ -3019,14 +3389,16 @@
           "note": null,
           "price": 1580.33
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 220
     },
     {
       "code": "CL1133",
       "article": "1133",
       "name": "Anthurium Ace of Spades",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1133.jpeg",
       "variants": [
         {
           "code": "CL1133",
@@ -3035,14 +3407,16 @@
           "note": null,
           "price": 1407.9
         }
-      ]
+      ],
+      "imageW": 467,
+      "imageH": 620
     },
     {
       "code": "CL737",
       "article": "737",
       "name": "Anthurium Ace of Spades Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL737.jpeg",
       "variants": [
         {
           "code": "CL737",
@@ -3051,14 +3425,16 @@
           "note": null,
           "price": 10920.25
         }
-      ]
+      ],
+      "imageW": 480,
+      "imageH": 600
     },
     {
       "code": "CL1132",
       "article": "1132",
       "name": "Anthurium Black Magic",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1132.jpeg",
       "variants": [
         {
           "code": "CL1132",
@@ -3067,14 +3443,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 193,
+      "imageH": 225
     },
     {
       "code": "CL1124",
       "article": "1124",
       "name": "Anthurium Clarinervium Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1124.jpeg",
       "variants": [
         {
           "code": "CL1124",
@@ -3083,14 +3461,16 @@
           "note": null,
           "price": 6322.25
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 241
     },
     {
       "code": "CL1128",
       "article": "1128",
       "name": "Anthurium Crystallinum Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1128.jpeg",
       "variants": [
         {
           "code": "CL1128",
@@ -3099,14 +3479,16 @@
           "note": null,
           "price": 6437.2
         }
-      ]
+      ],
+      "imageW": 195,
+      "imageH": 259
     },
     {
       "code": "CL1040",
       "article": "1040",
       "name": "Anthurium Dark Phoenix Var A Grade (Different Mother Plant)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1040.jpeg",
       "variants": [
         {
           "code": "CL1040",
@@ -3115,14 +3497,16 @@
           "note": null,
           "price": 1078.25
         }
-      ]
+      ],
+      "imageW": 484,
+      "imageH": 620
     },
     {
       "code": "CL1123",
       "article": "1123",
       "name": "Anthurium Dark Phoenix Var (30-50% will with variegata)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1123.jpeg",
       "variants": [
         {
           "code": "CL1123",
@@ -3131,14 +3515,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 487,
+      "imageH": 620
     },
     {
       "code": "CL323",
       "article": "323",
       "name": "Anthurium Delta Force",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL323.jpeg",
       "variants": [
         {
           "code": "CL323",
@@ -3147,14 +3533,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 173,
+      "imageH": 259
     },
     {
       "code": "CL1126",
       "article": "1126",
       "name": "Anthurium Forgetii Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1126.jpeg",
       "variants": [
         {
           "code": "CL1126",
@@ -3163,14 +3551,16 @@
           "note": null,
           "price": 12017.5
         }
-      ]
+      ],
+      "imageW": 203,
+      "imageH": 300
     },
     {
       "code": "CL283",
       "article": "283",
       "name": "Anthurium Hookeri Var (Pink)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL283.jpeg",
       "variants": [
         {
           "code": "CL283",
@@ -3179,14 +3569,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 493,
+      "imageH": 620
     },
     {
       "code": "CL324",
       "article": "324",
       "name": "Anthurium Hookeri Var (Albo)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL324.jpeg",
       "variants": [
         {
           "code": "CL324",
@@ -3195,14 +3587,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 167,
+      "imageH": 234
     },
     {
       "code": "CL282",
       "article": "282",
       "name": "Anthurium Hookeri Var (Aurea)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL282.jpeg",
       "variants": [
         {
           "code": "CL282",
@@ -3211,14 +3605,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 183,
+      "imageH": 221
     },
     {
       "code": "CL1129",
       "article": "1129",
       "name": "Anthurium Hybrid (Red Crystallinum x SKG x Silver Tiger Anthurium)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1129.jpeg",
       "variants": [
         {
           "code": "CL1129",
@@ -3227,14 +3623,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 609
     },
     {
       "code": "CL325",
       "article": "325",
       "name": "Anthurium Luxurians",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL325.jpeg",
       "variants": [
         {
           "code": "CL325",
@@ -3243,14 +3641,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 531,
+      "imageH": 620
     },
     {
       "code": "CL26",
       "article": "26",
       "name": "Anthurium Luxurians (Original species)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL26.jpeg",
       "variants": [
         {
           "code": "CL26",
@@ -3259,14 +3659,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL25",
       "article": "25",
       "name": "Anthurium King Of Spades",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL25.jpeg",
       "variants": [
         {
           "code": "CL25",
@@ -3275,14 +3677,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 496,
+      "imageH": 479
     },
     {
       "code": "CL744",
       "article": "744",
       "name": "Anthurium Pallidiflorum",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL744.jpeg",
       "variants": [
         {
           "code": "CL744",
@@ -3291,14 +3695,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1125",
       "article": "1125",
       "name": "Anthurium Pterodactyl Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1125.jpeg",
       "variants": [
         {
           "code": "CL1125",
@@ -3307,14 +3713,16 @@
           "note": null,
           "price": 10925.0
         }
-      ]
+      ],
+      "imageW": 484,
+      "imageH": 620
     },
     {
       "code": "CL1130",
       "article": "1130",
       "name": "Anthurium Purple Crystallinum",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1130.jpeg",
       "variants": [
         {
           "code": "CL1130",
@@ -3323,14 +3731,16 @@
           "note": null,
           "price": 2902.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1127",
       "article": "1127",
       "name": "Anthurium Magnificum Hybrid Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1127.jpeg",
       "variants": [
         {
           "code": "CL1127",
@@ -3339,14 +3749,16 @@
           "note": null,
           "price": 6322.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 260
     },
     {
       "code": "CL1131",
       "article": "1131",
       "name": "Anthurium Red Crystallinum",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1131.jpeg",
       "variants": [
         {
           "code": "CL1131",
@@ -3355,14 +3767,16 @@
           "note": null,
           "price": 2155.08
         }
-      ]
+      ],
+      "imageW": 202,
+      "imageH": 249
     },
     {
       "code": "CL352",
       "article": "352",
       "name": "Anthurium Silver Blush Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL352.jpeg",
       "variants": [
         {
           "code": "CL352",
@@ -3371,14 +3785,16 @@
           "note": null,
           "price": 14202.5
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 620
     },
     {
       "code": "CL730",
       "article": "730",
       "name": "Anthurium Silver Blush X Red Crystallinum",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL730.jpeg",
       "variants": [
         {
           "code": "CL730",
@@ -3387,14 +3803,16 @@
           "note": null,
           "price": 7184.38
         }
-      ]
+      ],
+      "imageW": 464,
+      "imageH": 620
     },
     {
       "code": "CL743",
       "article": "743",
       "name": "Anthurium Reflexinervium",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL743.jpeg",
       "variants": [
         {
           "code": "CL743",
@@ -3403,14 +3821,16 @@
           "note": null,
           "price": 429.88
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL326",
       "article": "326",
       "name": "Anthurium Warocqueanum Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL326.jpeg",
       "variants": [
         {
           "code": "CL326",
@@ -3419,14 +3839,16 @@
           "note": null,
           "price": 12046.0
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 231
     },
     {
       "code": "CL1049",
       "article": "1049",
       "name": "Anthurium Wonder Boy (Wonderboy X Michelle)",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL1049.jpeg",
       "variants": [
         {
           "code": "CL1049",
@@ -3435,14 +3857,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL284",
       "article": "284",
       "name": "Anthurium Vittariifolium Var",
       "genus": "Anthurium",
-      "image": null,
+      "image": "/plants/clones/CL284.jpeg",
       "variants": [
         {
           "code": "CL284",
@@ -3451,14 +3875,16 @@
           "note": null,
           "price": 707.75
         }
-      ]
+      ],
+      "imageW": 202,
+      "imageH": 250
     },
     {
       "code": "CL242",
       "article": "242",
       "name": "Colocasia White Tiger",
       "genus": "Colocasia",
-      "image": null,
+      "image": "/plants/clones/CL242.jpeg",
       "variants": [
         {
           "code": "CL242",
@@ -3467,14 +3893,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL188",
       "article": "188",
       "name": "Colocasia Siam Ruby",
       "genus": "Colocasia",
-      "image": null,
+      "image": "/plants/clones/CL188.jpeg",
       "variants": [
         {
           "code": "CL188",
@@ -3483,14 +3911,16 @@
           "note": null,
           "price": 1522.85
         }
-      ]
+      ],
+      "imageW": 191,
+      "imageH": 263
     },
     {
       "code": "CL215",
       "article": "215",
       "name": "Epipremnum Pinnatum Yellow Flame",
       "genus": "Epipremnum",
-      "image": null,
+      "image": "/plants/clones/CL215.jpeg",
       "variants": [
         {
           "code": "CL215",
@@ -3499,14 +3929,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL118",
       "article": "118",
       "name": "Epipremnum Teruno Lovesong",
       "genus": "Epipremnum",
-      "image": null,
+      "image": "/plants/clones/CL118.jpeg",
       "variants": [
         {
           "code": "CL118",
@@ -3515,14 +3947,16 @@
           "note": null,
           "price": 522.5
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 562
     },
     {
       "code": "CL222",
       "article": "222",
       "name": "Epipremnum Pinnatum Marble",
       "genus": "Epipremnum",
-      "image": null,
+      "image": "/plants/clones/CL222.jpeg",
       "variants": [
         {
           "code": "CL222",
@@ -3531,14 +3965,16 @@
           "note": null,
           "price": 408.5
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 562
     },
     {
       "code": "CL7079",
       "article": "7079",
       "name": "Davallia Bullata",
       "genus": "Davallia",
-      "image": null,
+      "image": "/plants/clones/CL7079.jpeg",
       "variants": [
         {
           "code": "CL7079",
@@ -3547,14 +3983,16 @@
           "note": null,
           "price": 123.5
         }
-      ]
+      ],
+      "imageW": 409,
+      "imageH": 447
     },
     {
       "code": "CL329",
       "article": "329",
       "name": "Ficus Lyrata Lime Var",
       "genus": "Ficus",
-      "image": null,
+      "image": "/plants/clones/CL329.jpeg",
       "variants": [
         {
           "code": "CL329",
@@ -3563,14 +4001,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 387,
+      "imageH": 424
     },
     {
       "code": "CL60632",
       "article": "60632",
       "name": "Ficus Petiolaris",
       "genus": "Ficus",
-      "image": null,
+      "image": "/plants/clones/CL60632.jpeg",
       "variants": [
         {
           "code": "CL60632",
@@ -3579,14 +4019,16 @@
           "note": null,
           "price": 323.0
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 620
     },
     {
       "code": "CL70713",
       "article": "70713",
       "name": "Tiger Spot Fern (curly)",
       "genus": "Tiger",
-      "image": null,
+      "image": "/plants/clones/CL70713.jpeg",
       "variants": [
         {
           "code": "CL70713",
@@ -3595,14 +4037,16 @@
           "note": null,
           "price": 171.0
         }
-      ]
+      ],
+      "imageW": 499,
+      "imageH": 554
     },
     {
       "code": "CL3035",
       "article": "3035",
       "name": "Monstera Burle Marx Flame",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL3035.jpeg",
       "variants": [
         {
           "code": "CL3035",
@@ -3611,14 +4055,16 @@
           "note": null,
           "price": 218.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1036",
       "article": "1036",
       "name": "Monstera Adansonii Var",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL1036.jpeg",
       "variants": [
         {
           "code": "CL1036",
@@ -3627,14 +4073,16 @@
           "note": null,
           "price": 1522.85
         }
-      ]
+      ],
+      "imageW": 195,
+      "imageH": 258
     },
     {
       "code": "CL115",
       "article": "115",
       "name": "Monstera Bulbasaur",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL115.jpeg",
       "variants": [
         {
           "code": "CL115",
@@ -3643,14 +4091,16 @@
           "note": null,
           "price": 522.5
         }
-      ]
+      ],
+      "imageW": 404,
+      "imageH": 539
     },
     {
       "code": "CL16",
       "article": "16",
       "name": "Monstera Cream Cheese",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL16.jpeg",
       "variants": [
         {
           "code": "CL16",
@@ -3659,14 +4109,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 404,
+      "imageH": 539
     },
     {
       "code": "CL211",
       "article": "211",
       "name": "Monstera Creme Brulee",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL211.jpeg",
       "variants": [
         {
           "code": "CL211",
@@ -3675,14 +4127,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 195,
+      "imageH": 259
     },
     {
       "code": "CL17",
       "article": "17",
       "name": "Monstera Deliciosa Star Shadow",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL17.jpeg",
       "variants": [
         {
           "code": "CL17",
@@ -3691,14 +4145,16 @@
           "note": null,
           "price": 1925.18
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL116",
       "article": "116",
       "name": "Monstera Devil Var",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL116.jpeg",
       "variants": [
         {
           "code": "CL116",
@@ -3707,14 +4163,16 @@
           "note": null,
           "price": 2184.05
         }
-      ]
+      ],
+      "imageW": 480,
+      "imageH": 480
     },
     {
       "code": "CL18",
       "article": "18",
       "name": "Monstera King Electrolight",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL18.jpeg",
       "variants": [
         {
           "code": "CL18",
@@ -3723,14 +4181,16 @@
           "note": null,
           "price": 4023.25
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL112",
       "article": "112",
       "name": "Monstera Green Lava",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL112.jpeg",
       "variants": [
         {
           "code": "CL112",
@@ -3739,14 +4199,16 @@
           "note": null,
           "price": 6322.25
         }
-      ]
+      ],
+      "imageW": 496,
+      "imageH": 620
     },
     {
       "code": "CL15",
       "article": "15",
       "name": "Monstera Green Snow",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL15.jpeg",
       "variants": [
         {
           "code": "CL15",
@@ -3755,14 +4217,16 @@
           "note": null,
           "price": 2499.93
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 573
     },
     {
       "code": "CL335",
       "article": "335",
       "name": "Monstera Lava 2",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL335.jpeg",
       "variants": [
         {
           "code": "CL335",
@@ -3771,14 +4235,16 @@
           "note": null,
           "price": 24557.5
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1044",
       "article": "1044",
       "name": "Monstera Electrolight Tricolor",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL1044.jpeg",
       "variants": [
         {
           "code": "CL1044",
@@ -3787,14 +4253,16 @@
           "note": null,
           "price": 14748.75
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL114",
       "article": "114",
       "name": "Monstera Legacy",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL114.jpeg",
       "variants": [
         {
           "code": "CL114",
@@ -3803,14 +4271,16 @@
           "note": null,
           "price": 1140.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL111",
       "article": "111",
       "name": "Monstera Lemon Lime",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL111.jpeg",
       "variants": [
         {
           "code": "CL111",
@@ -3819,14 +4289,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 553,
+      "imageH": 612
     },
     {
       "code": "CL117",
       "article": "117",
       "name": "Monstera Lemon Pom Pom",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL117.jpeg",
       "variants": [
         {
           "code": "CL117",
@@ -3835,14 +4307,16 @@
           "note": null,
           "price": 5172.75
         }
-      ]
+      ],
+      "imageW": 221,
+      "imageH": 228
     },
     {
       "code": "CL1045",
       "article": "1045",
       "name": "Monstera Lemon Lime - Halfmoon",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL1045.jpeg",
       "variants": [
         {
           "code": "CL1045",
@@ -3851,14 +4325,16 @@
           "note": null,
           "price": 9196.0
         }
-      ]
+      ],
+      "imageW": 465,
+      "imageH": 620
     },
     {
       "code": "CL3039",
       "article": "3039",
       "name": "Monstera Obliqua Peruvian",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL3039.jpeg",
       "variants": [
         {
           "code": "CL3039",
@@ -3867,14 +4343,16 @@
           "note": null,
           "price": 627.48
         }
-      ]
+      ],
+      "imageW": 224,
+      "imageH": 224
     },
     {
       "code": "CL11",
       "article": "11",
       "name": "Monstera Rhaphidophora Tetrasperma Var",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL11.jpeg",
       "variants": [
         {
           "code": "CL11",
@@ -3883,14 +4361,16 @@
           "note": null,
           "price": 2557.4
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL732",
       "article": "732",
       "name": "Monstera Melancholy",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL732.jpeg",
       "variants": [
         {
           "code": "CL732",
@@ -3899,14 +4379,16 @@
           "note": null,
           "price": 13656.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1039",
       "article": "1039",
       "name": "Monstera Obliqua Napo",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL1039.jpeg",
       "variants": [
         {
           "code": "CL1039",
@@ -3915,14 +4397,16 @@
           "note": null,
           "price": 408.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL336",
       "article": "336",
       "name": "Monstera Sierrana",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL336.jpeg",
       "variants": [
         {
           "code": "CL336",
@@ -3931,14 +4415,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL12",
       "article": "12",
       "name": "Monstera Var (Albo)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL12.jpeg",
       "variants": [
         {
           "code": "CL12",
@@ -3947,14 +4433,16 @@
           "note": null,
           "price": 769.5
         }
-      ]
+      ],
+      "imageW": 554,
+      "imageH": 554
     },
     {
       "code": "CL214",
       "article": "214",
       "name": "Monstera Standleyana Var (Aurea)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL214.jpeg",
       "variants": [
         {
           "code": "CL214",
@@ -3963,14 +4451,16 @@
           "note": null,
           "price": 849.78
         }
-      ]
+      ],
+      "imageW": 526,
+      "imageH": 620
     },
     {
       "code": "CL213",
       "article": "213",
       "name": "Monstera Var (Aurea)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL213.jpeg",
       "variants": [
         {
           "code": "CL213",
@@ -3979,14 +4469,16 @@
           "note": null,
           "price": 769.5
         }
-      ]
+      ],
+      "imageW": 422,
+      "imageH": 562
     },
     {
       "code": "CL212",
       "article": "212",
       "name": "Monstera White Mint",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL212.jpeg",
       "variants": [
         {
           "code": "CL212",
@@ -3995,14 +4487,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 620
     },
     {
       "code": "CL755",
       "article": "755",
       "name": "Montera Ocean",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL755.jpeg",
       "variants": [
         {
           "code": "CL755",
@@ -4011,14 +4505,16 @@
           "note": null,
           "price": 24557.5
         }
-      ]
+      ],
+      "imageW": 455,
+      "imageH": 547
     },
     {
       "code": "CL14",
       "article": "14",
       "name": "Monstera Var (Full Mint)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL14.jpeg",
       "variants": [
         {
           "code": "CL14",
@@ -4027,14 +4523,16 @@
           "note": null,
           "price": 2787.3
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL13",
       "article": "13",
       "name": "Monstera Var (Mint)",
       "genus": "Monstera",
-      "image": null,
+      "image": "/plants/clones/CL13.jpeg",
       "variants": [
         {
           "code": "CL13",
@@ -4043,14 +4541,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 575,
+      "imageH": 620
     },
     {
       "code": "CL918",
       "article": "918",
       "name": "Anoectochilus Black Swan Var (Albo)",
       "genus": "Anoectochilus",
-      "image": null,
+      "image": "/plants/clones/CL918.jpeg",
       "variants": [
         {
           "code": "CL918",
@@ -4059,14 +4559,16 @@
           "note": null,
           "price": 1637.8
         }
-      ]
+      ],
+      "imageW": 615,
+      "imageH": 620
     },
     {
       "code": "CL917",
       "article": "917",
       "name": "Anoectochilus Black Swan Var (Aurea)",
       "genus": "Anoectochilus",
-      "image": null,
+      "image": "/plants/clones/CL917.jpeg",
       "variants": [
         {
           "code": "CL917",
@@ -4075,14 +4577,16 @@
           "note": null,
           "price": 1637.8
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 562
     },
     {
       "code": "CL298",
       "article": "298",
       "name": "Anoectochilus Roxburghii Var",
       "genus": "Anoectochilus",
-      "image": null,
+      "image": "/plants/clones/CL298.jpeg",
       "variants": [
         {
           "code": "CL298",
@@ -4091,14 +4595,16 @@
           "note": null,
           "price": 408.5
         }
-      ]
+      ],
+      "imageW": 222,
+      "imageH": 227
     },
     {
       "code": "CL908",
       "article": "908",
       "name": "Anoectochilus Silver Silk",
       "genus": "Anoectochilus",
-      "image": null,
+      "image": "/plants/clones/CL908.jpeg",
       "variants": [
         {
           "code": "CL908",
@@ -4107,14 +4613,16 @@
           "note": null,
           "price": 1637.8
         }
-      ]
+      ],
+      "imageW": 165,
+      "imageH": 187
     },
     {
       "code": "CL328",
       "article": "328",
       "name": "Ardisia Blue Ecuador",
       "genus": "Ardisia",
-      "image": null,
+      "image": "/plants/clones/CL328.jpeg",
       "variants": [
         {
           "code": "CL328",
@@ -4123,14 +4631,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 466,
+      "imageH": 620
     },
     {
       "code": "CL28",
       "article": "28",
       "name": "Ardisia sp. Vietnam / Ardisia Cool Fire",
       "genus": "Ardisia",
-      "image": null,
+      "image": "/plants/clones/CL28.jpeg",
       "variants": [
         {
           "code": "CL28",
@@ -4139,14 +4649,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL726",
       "article": "726",
       "name": "Ardisia SP Turtle Back",
       "genus": "Ardisia",
-      "image": null,
+      "image": "/plants/clones/CL726.jpeg",
       "variants": [
         {
           "code": "CL726",
@@ -4155,14 +4667,16 @@
           "note": null,
           "price": 1140.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL753",
       "article": "753",
       "name": "Ardisia Black Blood",
       "genus": "Ardisia",
-      "image": null,
+      "image": "/plants/clones/CL753.jpeg",
       "variants": [
         {
           "code": "CL753",
@@ -4171,14 +4685,16 @@
           "note": null,
           "price": 707.75
         }
-      ]
+      ],
+      "imageW": 484,
+      "imageH": 620
     },
     {
       "code": "CL750",
       "article": "750",
       "name": "Cercestis mirabilis",
       "genus": "Cercestis",
-      "image": null,
+      "image": "/plants/clones/CL750.jpeg",
       "variants": [
         {
           "code": "CL750",
@@ -4187,14 +4703,16 @@
           "note": null,
           "price": 1178.0
         }
-      ]
+      ],
+      "imageW": 224,
+      "imageH": 224
     },
     {
       "code": "CL327",
       "article": "327",
       "name": "Ardisia Sunrise",
       "genus": "Ardisia",
-      "image": null,
+      "image": "/plants/clones/CL327.jpeg",
       "variants": [
         {
           "code": "CL327",
@@ -4203,14 +4721,16 @@
           "note": null,
           "price": 707.75
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL297",
       "article": "297",
       "name": "Fallopia Multiflora Var",
       "genus": "Fallopia",
-      "image": null,
+      "image": "/plants/clones/CL297.jpeg",
       "variants": [
         {
           "code": "CL297",
@@ -4219,14 +4739,16 @@
           "note": null,
           "price": 738.63
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL723",
       "article": "723",
       "name": "Homalomena Camouflage Var (Albo)",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL723.jpeg",
       "variants": [
         {
           "code": "CL723",
@@ -4235,14 +4757,16 @@
           "note": null,
           "price": 12618.38
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL292",
       "article": "292",
       "name": "Homalomena Rubescens Cheese Var",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL292.jpeg",
       "variants": [
         {
           "code": "CL292",
@@ -4251,14 +4775,16 @@
           "note": null,
           "price": 522.5
         }
-      ]
+      ],
+      "imageW": 556,
+      "imageH": 578
     },
     {
       "code": "CL289",
       "article": "289",
       "name": "Homalomena Rubescens Var (Aurea)",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL289.jpeg",
       "variants": [
         {
           "code": "CL289",
@@ -4267,14 +4793,16 @@
           "note": null,
           "price": 1201.75
         }
-      ]
+      ],
+      "imageW": 618,
+      "imageH": 620
     },
     {
       "code": "CL290",
       "article": "290",
       "name": "Homalomena Rubescens Var (Mint)",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL290.jpeg",
       "variants": [
         {
           "code": "CL290",
@@ -4283,14 +4811,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1042",
       "article": "1042",
       "name": "Homalomena Sunshine Gem Var",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL1042.jpeg",
       "variants": [
         {
           "code": "CL1042",
@@ -4299,14 +4829,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 562
     },
     {
       "code": "CL1122",
       "article": "1122",
       "name": "Homalomena Var (Albo)",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL1122.jpeg",
       "variants": [
         {
           "code": "CL1122",
@@ -4315,14 +4847,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1136",
       "article": "1136",
       "name": "Homalomena Wallisii Var",
       "genus": "Homalomena",
-      "image": null,
+      "image": "/plants/clones/CL1136.jpeg",
       "variants": [
         {
           "code": "CL1136",
@@ -4331,14 +4865,16 @@
           "note": null,
           "price": 1465.38
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL330",
       "article": "330",
       "name": "Japanese Cherry",
       "genus": "Japanese",
-      "image": null,
+      "image": "/plants/clones/CL330.jpeg",
       "variants": [
         {
           "code": "CL330",
@@ -4347,14 +4883,16 @@
           "note": null,
           "price": 1078.25
         }
-      ]
+      ],
+      "imageW": 542,
+      "imageH": 580
     },
     {
       "code": "CL295",
       "article": "295",
       "name": "Kaempferia Var",
       "genus": "Kaempferia",
-      "image": null,
+      "image": "/plants/clones/CL295.jpeg",
       "variants": [
         {
           "code": "CL295",
@@ -4363,14 +4901,16 @@
           "note": null,
           "price": 1084.43
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL354",
       "article": "354",
       "name": "Labisia pumila Fluorescence",
       "genus": "Labisia",
-      "image": null,
+      "image": "/plants/clones/CL354.jpeg",
       "variants": [
         {
           "code": "CL354",
@@ -4379,14 +4919,16 @@
           "note": null,
           "price": 769.5
         }
-      ]
+      ],
+      "imageW": 326,
+      "imageH": 360
     },
     {
       "code": "CL332",
       "article": "332",
       "name": "Kaempferia Var 2",
       "genus": "Kaempferia",
-      "image": null,
+      "image": "/plants/clones/CL332.jpeg",
       "variants": [
         {
           "code": "CL332",
@@ -4395,14 +4937,16 @@
           "note": null,
           "price": 584.25
         }
-      ]
+      ],
+      "imageW": 196,
+      "imageH": 225
     },
     {
       "code": "CL333",
       "article": "333",
       "name": "Labisia pumila Silver Pink",
       "genus": "Labisia",
-      "image": null,
+      "image": "/plants/clones/CL333.jpeg",
       "variants": [
         {
           "code": "CL333",
@@ -4411,14 +4955,16 @@
           "note": null,
           "price": 1078.25
         }
-      ]
+      ],
+      "imageW": 509,
+      "imageH": 620
     },
     {
       "code": "CL27",
       "article": "27",
       "name": "Labisia pumila Electric Pink",
       "genus": "Labisia",
-      "image": null,
+      "image": "/plants/clones/CL27.jpeg",
       "variants": [
         {
           "code": "CL27",
@@ -4427,14 +4973,16 @@
           "note": null,
           "price": 707.75
         }
-      ]
+      ],
+      "imageW": 196,
+      "imageH": 225
     },
     {
       "code": "CL334",
       "article": "334",
       "name": "Macodes Petola var",
       "genus": "Macodes",
-      "image": null,
+      "image": "/plants/clones/CL334.jpeg",
       "variants": [
         {
           "code": "CL334",
@@ -4443,14 +4991,16 @@
           "note": null,
           "price": 2442.45
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 214
     },
     {
       "code": "CL347",
       "article": "347",
       "name": "Syngonium Var",
       "genus": "Syngonium",
-      "image": null,
+      "image": "/plants/clones/CL347.jpeg",
       "variants": [
         {
           "code": "CL347",
@@ -4459,14 +5009,16 @@
           "note": null,
           "price": 522.5
         }
-      ]
+      ],
+      "imageW": 165,
+      "imageH": 236
     },
     {
       "code": "CL749",
       "article": "749",
       "name": "Labisia SP Riau Fishbone",
       "genus": "Labisia",
-      "image": null,
+      "image": "/plants/clones/CL749.jpeg",
       "variants": [
         {
           "code": "CL749",
@@ -4475,14 +5027,16 @@
           "note": null,
           "price": 503.5
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL751",
       "article": "751",
       "name": "Scindapsus Exotica Variegated",
       "genus": "Scindapsus",
-      "image": null,
+      "image": "/plants/clones/CL751.jpeg",
       "variants": [
         {
           "code": "CL751",
@@ -4491,14 +5045,16 @@
           "note": null,
           "price": 590.43
         }
-      ]
+      ],
+      "imageW": 191,
+      "imageH": 210
     },
     {
       "code": "CL1110",
       "article": "1110",
       "name": "Philodendron Bipinnatifidum Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1110.jpeg",
       "variants": [
         {
           "code": "CL1110",
@@ -4507,14 +5063,16 @@
           "note": null,
           "price": 899.18
         }
-      ]
+      ],
+      "imageW": 440,
+      "imageH": 532
     },
     {
       "code": "CL717",
       "article": "717",
       "name": "Philodendron Angela Aurea",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL717.jpeg",
       "variants": [
         {
           "code": "CL717",
@@ -4523,14 +5081,16 @@
           "note": null,
           "price": 6897.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL197",
       "article": "197",
       "name": "Philodendron Billietiae Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL197.jpeg",
       "variants": [
         {
           "code": "CL197",
@@ -4539,14 +5099,16 @@
           "note": null,
           "price": 1350.43
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1037",
       "article": "1037",
       "name": "Philodendron Atabapoense Pink Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1037.jpeg",
       "variants": [
         {
           "code": "CL1037",
@@ -4555,14 +5117,16 @@
           "note": null,
           "price": 5172.75
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 204
     },
     {
       "code": "CL1120",
       "article": "1120",
       "name": "Philodendron Brandtianum Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1120.jpeg",
       "variants": [
         {
           "code": "CL1120",
@@ -4571,14 +5135,16 @@
           "note": null,
           "price": 1350.43
         }
-      ]
+      ],
+      "imageW": 402,
+      "imageH": 535
     },
     {
       "code": "CL273",
       "article": "273",
       "name": "Philodendron Caramel Marble Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL273.jpeg",
       "variants": [
         {
           "code": "CL273",
@@ -4587,14 +5153,16 @@
           "note": null,
           "price": 775.68
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL198",
       "article": "198",
       "name": "Philodendron Birkin Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL198.jpeg",
       "variants": [
         {
           "code": "CL198",
@@ -4603,14 +5171,16 @@
           "note": null,
           "price": 2327.5
         }
-      ]
+      ],
+      "imageW": 229,
+      "imageH": 220
     },
     {
       "code": "CL1108",
       "article": "1108",
       "name": "Philodendron Black Cardinal Var - B Grade",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1108.jpeg",
       "variants": [
         {
           "code": "CL1108",
@@ -4619,14 +5189,16 @@
           "note": null,
           "price": 5747.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL303106",
       "article": "303106",
       "name": "Philodendron El Choco Red",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL303106.jpeg",
       "variants": [
         {
           "code": "CL303106",
@@ -4635,14 +5207,16 @@
           "note": null,
           "price": 266.0
         }
-      ]
+      ],
+      "imageW": 183,
+      "imageH": 192
     },
     {
       "code": "CL277",
       "article": "277",
       "name": "Philodendron Florida Beauty",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL277.jpeg",
       "variants": [
         {
           "code": "CL277",
@@ -4651,14 +5225,16 @@
           "note": null,
           "price": 532.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1115",
       "article": "1115",
       "name": "Philodendron Florida Beauty X Tortum Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1115.jpeg",
       "variants": [
         {
           "code": "CL1115",
@@ -4667,14 +5243,16 @@
           "note": null,
           "price": 4023.25
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1119",
       "article": "1119",
       "name": "Philodendron El Choco Red Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1119.jpeg",
       "variants": [
         {
           "code": "CL1119",
@@ -4683,14 +5261,16 @@
           "note": null,
           "price": 9196.0
         }
-      ]
+      ],
+      "imageW": 396,
+      "imageH": 528
     },
     {
       "code": "CL337",
       "article": "337",
       "name": "Philodendron Green Lemon Var Aurea",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL337.jpeg",
       "variants": [
         {
           "code": "CL337",
@@ -4699,14 +5279,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL727",
       "article": "727",
       "name": "Philodendron Golden Melinonii Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL727.jpeg",
       "variants": [
         {
           "code": "CL727",
@@ -4715,14 +5297,16 @@
           "note": null,
           "price": 1925.18
         }
-      ]
+      ],
+      "imageW": 465,
+      "imageH": 620
     },
     {
       "code": "CL263",
       "article": "263",
       "name": "Philodendron Green Congo Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL263.jpeg",
       "variants": [
         {
           "code": "CL263",
@@ -4731,14 +5315,16 @@
           "note": null,
           "price": 313.5
         }
-      ]
+      ],
+      "imageW": 555,
+      "imageH": 620
     },
     {
       "code": "CL1101-1102",
       "article": "1101/1102",
       "name": "Philodendron Gloriosum Var - A/B Grade",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1101-1102.jpeg",
       "variants": [
         {
           "code": "CL1101",
@@ -4754,14 +5340,16 @@
           "note": null,
           "price": 1522.85
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 224
     },
     {
       "code": "CL196",
       "article": "196",
       "name": "Philodendron Imperial Green Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL196.jpeg",
       "variants": [
         {
           "code": "CL196",
@@ -4770,14 +5358,16 @@
           "note": null,
           "price": 5747.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL281",
       "article": "281",
       "name": "Philodendron Hope Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL281.jpeg",
       "variants": [
         {
           "code": "CL281",
@@ -4786,14 +5376,16 @@
           "note": null,
           "price": 923.88
         }
-      ]
+      ],
+      "imageW": 204,
+      "imageH": 225
     },
     {
       "code": "CL339",
       "article": "339",
       "name": "Philodendron Imperial Red Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL339.jpeg",
       "variants": [
         {
           "code": "CL339",
@@ -4802,14 +5394,16 @@
           "note": null,
           "price": 3448.5
         }
-      ]
+      ],
+      "imageW": 171,
+      "imageH": 228
     },
     {
       "code": "CL338",
       "article": "338",
       "name": "Philodendron Hederaceum Cream Splash",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL338.jpeg",
       "variants": [
         {
           "code": "CL338",
@@ -4818,14 +5412,16 @@
           "note": null,
           "price": 532.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL1112",
       "article": "1112",
       "name": "Philodendron Jungle Feve Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1112.jpeg",
       "variants": [
         {
           "code": "CL1112",
@@ -4834,14 +5430,16 @@
           "note": null,
           "price": 1637.8
         }
-      ]
+      ],
+      "imageW": 208,
+      "imageH": 225
     },
     {
       "code": "CL255",
       "article": "255",
       "name": "Philodendron Little Apple Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL255.jpeg",
       "variants": [
         {
           "code": "CL255",
@@ -4850,14 +5448,16 @@
           "note": null,
           "price": 285.0
         }
-      ]
+      ],
+      "imageW": 586,
+      "imageH": 620
     },
     {
       "code": "CL194",
       "article": "194",
       "name": "Philodendron Mango Shake Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL194.jpeg",
       "variants": [
         {
           "code": "CL194",
@@ -4866,14 +5466,16 @@
           "note": null,
           "price": 1580.33
         }
-      ]
+      ],
+      "imageW": 183,
+      "imageH": 225
     },
     {
       "code": "CL710",
       "article": "710",
       "name": "Philodendron Mayoi Aurea",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL710.jpeg",
       "variants": [
         {
           "code": "CL710",
@@ -4882,14 +5484,16 @@
           "note": null,
           "price": 14421.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1104-1105",
       "article": "1104/1105",
       "name": "Philodendron Melanochrysum Var - A/B Grade",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1104-1105.jpeg",
       "variants": [
         {
           "code": "CL1104",
@@ -4905,14 +5509,16 @@
           "note": null,
           "price": 1292.95
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL742",
       "article": "742",
       "name": "Philodendron Micans Mint - B grade",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL742.jpeg",
       "variants": [
         {
           "code": "CL742",
@@ -4921,14 +5527,16 @@
           "note": null,
           "price": 646.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1121",
       "article": "1121",
       "name": "Philodendron Micans Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1121.jpeg",
       "variants": [
         {
           "code": "CL1121",
@@ -4937,14 +5545,16 @@
           "note": null,
           "price": 2241.53
         }
-      ]
+      ],
+      "imageW": 175,
+      "imageH": 220
     },
     {
       "code": "CL721",
       "article": "721",
       "name": "Philodendron Narrow Variegata",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL721.jpeg",
       "variants": [
         {
           "code": "CL721",
@@ -4953,14 +5563,16 @@
           "note": null,
           "price": 1178.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL341",
       "article": "341",
       "name": "Philodendron Pastazanum x Plowmanii Var Aurea",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL341.jpeg",
       "variants": [
         {
           "code": "CL341",
@@ -4969,14 +5581,16 @@
           "note": null,
           "price": 4626.5
         }
-      ]
+      ],
+      "imageW": 483,
+      "imageH": 614
     },
     {
       "code": "CL342",
       "article": "342",
       "name": "Philodendron Pastazanum x Plowmanii Var Ghost",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL342.jpeg",
       "variants": [
         {
           "code": "CL342",
@@ -4985,14 +5599,16 @@
           "note": null,
           "price": 4971.35
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 581
     },
     {
       "code": "CL262",
       "article": "262",
       "name": "Philodendron Orange Princess Marble",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL262.jpeg",
       "variants": [
         {
           "code": "CL262",
@@ -5001,14 +5617,16 @@
           "note": null,
           "price": 1201.75
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL340",
       "article": "340",
       "name": "Philodendron Olympiad Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL340.jpeg",
       "variants": [
         {
           "code": "CL340",
@@ -5017,14 +5635,16 @@
           "note": null,
           "price": 7155.4
         }
-      ]
+      ],
+      "imageW": 201,
+      "imageH": 251
     },
     {
       "code": "CL303131",
       "article": "303131",
       "name": "Philodendron Patriciae",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL303131.jpeg",
       "variants": [
         {
           "code": "CL303131",
@@ -5033,14 +5653,16 @@
           "note": null,
           "price": 399.0
         }
-      ]
+      ],
+      "imageW": 178,
+      "imageH": 282
     },
     {
       "code": "CL716",
       "article": "716",
       "name": "Philodendron Prince Of Orange Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL716.jpeg",
       "variants": [
         {
           "code": "CL716",
@@ -5049,14 +5671,16 @@
           "note": null,
           "price": 3850.83
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL718",
       "article": "718",
       "name": "Philodendron Persimmon Princess",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL718.jpeg",
       "variants": [
         {
           "code": "CL718",
@@ -5065,14 +5689,16 @@
           "note": null,
           "price": 1078.25
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL259",
       "article": "259",
       "name": "Philodendron Pink Princess Galaxy (Marble)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL259.jpeg",
       "variants": [
         {
           "code": "CL259",
@@ -5081,14 +5707,16 @@
           "note": null,
           "price": 152.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1111",
       "article": "1111",
       "name": "Philodendron Radiatum Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1111.jpeg",
       "variants": [
         {
           "code": "CL1111",
@@ -5097,14 +5725,16 @@
           "note": null,
           "price": 1839.2
         }
-      ]
+      ],
+      "imageW": 620,
+      "imageH": 601
     },
     {
       "code": "CL1106",
       "article": "1106",
       "name": "Philodendron Red Congo Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1106.jpeg",
       "variants": [
         {
           "code": "CL1106",
@@ -5113,14 +5743,16 @@
           "note": null,
           "price": 1078.25
         }
-      ]
+      ],
+      "imageW": 562,
+      "imageH": 606
     },
     {
       "code": "CL719",
       "article": "719",
       "name": "Philodendron Red Heart Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL719.jpeg",
       "variants": [
         {
           "code": "CL719",
@@ -5129,14 +5761,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 610,
+      "imageH": 620
     },
     {
       "code": "CL343",
       "article": "343",
       "name": "Philodendron Red Imperial Full Orange",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL343.jpeg",
       "variants": [
         {
           "code": "CL343",
@@ -5145,14 +5779,16 @@
           "note": null,
           "price": 3821.85
         }
-      ]
+      ],
+      "imageW": 168,
+      "imageH": 225
     },
     {
       "code": "CL344",
       "article": "344",
       "name": "Philodendron Selloum Super Atom Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL344.jpeg",
       "variants": [
         {
           "code": "CL344",
@@ -5161,14 +5797,16 @@
           "note": null,
           "price": 1925.18
         }
-      ]
+      ],
+      "imageW": 200,
+      "imageH": 252
     },
     {
       "code": "CL1114",
       "article": "1114",
       "name": "Philodendron Silver Sword Variegated",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1114.jpeg",
       "variants": [
         {
           "code": "CL1114",
@@ -5177,14 +5815,16 @@
           "note": null,
           "price": 2184.05
         }
-      ]
+      ],
+      "imageW": 424,
+      "imageH": 565
     },
     {
       "code": "CL199",
       "article": "199",
       "name": "Philodendron Strawberry Caramel Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL199.jpeg",
       "variants": [
         {
           "code": "CL199",
@@ -5193,14 +5833,16 @@
           "note": null,
           "price": 1925.18
         }
-      ]
+      ],
+      "imageW": 204,
+      "imageH": 238
     },
     {
       "code": "CL348",
       "article": "348",
       "name": "Philodendron Sodiroi Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL348.jpeg",
       "variants": [
         {
           "code": "CL348",
@@ -5209,14 +5851,16 @@
           "note": null,
           "price": 769.5
         }
-      ]
+      ],
+      "imageW": 340,
+      "imageH": 270
     },
     {
       "code": "CL1113",
       "article": "1113",
       "name": "Philodendron Tortum Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1113.jpeg",
       "variants": [
         {
           "code": "CL1113",
@@ -5225,14 +5869,16 @@
           "note": null,
           "price": 2126.58
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL1109",
       "article": "1109",
       "name": "Philodendron Verrucosum Var (Mint)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL1109.jpeg",
       "variants": [
         {
           "code": "CL1109",
@@ -5241,14 +5887,16 @@
           "note": null,
           "price": 2040.13
         }
-      ]
+      ],
+      "imageW": 206,
+      "imageH": 245
     },
     {
       "code": "CL280",
       "article": "280",
       "name": "Philodendron Warscewiczii Var",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL280.jpeg",
       "variants": [
         {
           "code": "CL280",
@@ -5257,14 +5905,16 @@
           "note": null,
           "price": 442.23
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 328
     },
     {
       "code": "CL279",
       "article": "279",
       "name": "Philodendron Warscewiczii Var (Green)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL279.jpeg",
       "variants": [
         {
           "code": "CL279",
@@ -5273,14 +5923,16 @@
           "note": null,
           "price": 1016.5
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL345",
       "article": "345",
       "name": "Philodendron White Knight Var Aurea",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL345.jpeg",
       "variants": [
         {
           "code": "CL345",
@@ -5289,14 +5941,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL714",
       "article": "714",
       "name": "Philodendron White Princess Var (Aurea)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL714.jpeg",
       "variants": [
         {
           "code": "CL714",
@@ -5305,14 +5959,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL711",
       "article": "711",
       "name": "Philodendron Whipple way",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL711.jpeg",
       "variants": [
         {
           "code": "CL711",
@@ -5321,14 +5977,16 @@
           "note": null,
           "price": 522.5
         }
-      ]
+      ],
+      "imageW": 194,
+      "imageH": 259
     },
     {
       "code": "CL722",
       "article": "722",
       "name": "Philodendron White Knight Mint",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL722.jpeg",
       "variants": [
         {
           "code": "CL722",
@@ -5337,14 +5995,16 @@
           "note": null,
           "price": 6897.0
         }
-      ]
+      ],
+      "imageW": 364,
+      "imageH": 536
     },
     {
       "code": "CL713",
       "article": "713",
       "name": "Philodendron White Wizard Var (Aurea)",
       "genus": "Philodendron",
-      "image": null,
+      "image": "/plants/clones/CL713.jpeg",
       "variants": [
         {
           "code": "CL713",
@@ -5353,14 +6013,16 @@
           "note": null,
           "price": 4598.0
         }
-      ]
+      ],
+      "imageW": 225,
+      "imageH": 225
     },
     {
       "code": "CL010801",
       "article": "010801",
       "name": "Spathiphyllum Sensation",
       "genus": "Spathiphyllum",
-      "image": null,
+      "image": "/plants/clones/CL010801.jpeg",
       "variants": [
         {
           "code": "CL010801",
@@ -5369,14 +6031,16 @@
           "note": null,
           "price": 133.0
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 330
     },
     {
       "code": "CL731",
       "article": "731",
       "name": "Spathiphyllum Albo Var",
       "genus": "Spathiphyllum",
-      "image": null,
+      "image": "/plants/clones/CL731.jpeg",
       "variants": [
         {
           "code": "CL731",
@@ -5385,14 +6049,16 @@
           "note": null,
           "price": 713.93
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 328
     },
     {
       "code": "CL010704",
       "article": "010704",
       "name": "Spathiphyllum Domino",
       "genus": "Spathiphyllum",
-      "image": null,
+      "image": "/plants/clones/CL010704.jpeg",
       "variants": [
         {
           "code": "CL010704",
@@ -5401,14 +6067,16 @@
           "note": null,
           "price": 133.0
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 330
     },
     {
       "code": "CL1041",
       "article": "1041",
       "name": "Spathiphyllum Aurea Var",
       "genus": "Spathiphyllum",
-      "image": null,
+      "image": "/plants/clones/CL1041.jpeg",
       "variants": [
         {
           "code": "CL1041",
@@ -5417,14 +6085,16 @@
           "note": null,
           "price": 460.75
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 332
     },
     {
       "code": "CL010703",
       "article": "010703",
       "name": "Spathiphyllum Silver Streak",
       "genus": "Spathiphyllum",
-      "image": null,
+      "image": "/plants/clones/CL010703.jpeg",
       "variants": [
         {
           "code": "CL010703",
@@ -5433,7 +6103,9 @@
           "note": null,
           "price": 123.5
         }
-      ]
+      ],
+      "imageW": 279,
+      "imageH": 329
     }
   ]
 }
