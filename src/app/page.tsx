@@ -1,12 +1,10 @@
-import Image from "next/image";
+import Link from "next/link";
 import { products, catalogs, lowestPrice, formatMoney, DEFAULT_CATALOG } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
-import { asset } from "@/lib/asset";
 import { supplier } from "@/data/supplier";
+import BotanicalBackdrop from "@/components/BotanicalBackdrop";
 import CatalogBrowser from "@/components/CatalogBrowser";
 import Reveal from "@/components/Reveal";
-
-const HERO_CODES = ["AL050", "AL062", "AL061", "AL070"];
 
 export default function Home() {
   const generaCount = new Set(products.map((p) => p.genus)).size;
@@ -16,76 +14,46 @@ export default function Home() {
   const globalMin = Math.min(
     ...defaultList.map((p) => lowestPrice(p) ?? Infinity).filter((n) => Number.isFinite(n)),
   );
-  const heroImages = HERO_CODES.map((c) => products.find((p) => p.code === c)).filter(
-    (p): p is NonNullable<typeof p> => Boolean(p?.image),
-  );
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-16 pb-16 sm:pt-24 sm:pb-24 grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-          <Reveal>
-            <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
-              {supplier.location}
-            </p>
-            <h1 className="display-hero mt-4 text-[clamp(2.75rem,6vw,6rem)]">
-              Живой каталог растений из культуры ткани
-            </h1>
-            <p className="mt-6 max-w-lg text-[16px] leading-[1.5] text-muted text-pretty">
-              {varieties(products.length)} в {catalogs.length} прайсах. Основной и вариегатный от
-              питомника {supplier.name} в Ханое, в {supplier.currency}, {supplier.incoterm}. Прайс
-              клонов в рублях. Цена за штуку зависит от количества.
-            </p>
-            <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-5">
-              <Stat value={String(products.length)} label="Сортов" />
-              <Stat value={String(generaCount)} label="Родов" />
-              <Stat value={formatMoney(globalMin, defaultCurrency)} label="От, за штуку" />
-            </dl>
-          </Reveal>
+      {/* Hero: content centred over a blurred botanical layer. */}
+      <section className="relative isolate flex min-h-[84vh] items-center justify-center overflow-hidden px-5 py-24 sm:px-8">
+        <BotanicalBackdrop />
+        <Reveal className="mx-auto w-full max-w-3xl text-center">
+          <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
+            {supplier.location}
+          </p>
+          <h1 className="display-hero mt-5 text-[clamp(2.75rem,7vw,6rem)]">
+            Живой каталог растений из культуры ткани
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-[16px] leading-[1.5] text-muted text-pretty">
+            {varieties(products.length)} в {catalogs.length} прайсах. Основной и вариегатный от
+            питомника {supplier.name} в Ханое, в {supplier.currency}, {supplier.incoterm}. Прайс
+            клонов в рублях. Цена за штуку зависит от количества.
+          </p>
 
-          {/* Bento image cluster */}
-          <Reveal delay={0.08}>
-            <div className="grid grid-cols-2 grid-rows-[auto_auto] gap-3 sm:gap-4">
-              {heroImages[0] && (
-                <BentoImage product={heroImages[0]} className="row-span-2 aspect-[3/4]" priority />
-              )}
-              {heroImages[1] && <BentoImage product={heroImages[1]} className="aspect-square" />}
-              {heroImages[2] && <BentoImage product={heroImages[2]} className="aspect-square" />}
-            </div>
-          </Reveal>
-        </div>
+          <div className="mt-9 flex justify-center">
+            <Link
+              href="#catalogue"
+              className="press inline-flex h-11 items-center rounded-full border border-headline bg-line/70 px-6 text-sm text-headline backdrop-blur transition-colors hover:bg-line"
+            >
+              Смотреть каталог
+            </Link>
+          </div>
+
+          <dl className="mt-14 flex flex-wrap justify-center gap-x-14 gap-y-6">
+            <Stat value={String(products.length)} label="Сортов" />
+            <Stat value={String(generaCount)} label="Родов" />
+            <Stat value={formatMoney(globalMin, defaultCurrency)} label="От, за штуку" />
+          </dl>
+        </Reveal>
       </section>
 
       {/* Catalogue */}
       <section className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-4 pb-8 scroll-mt-20" id="catalogue">
         <CatalogBrowser products={products} catalogs={catalogs} />
       </section>
-    </div>
-  );
-}
-
-function BentoImage({
-  product,
-  className,
-  priority,
-}: {
-  product: { image: string | null; name: string };
-  className?: string;
-  priority?: boolean;
-}) {
-  return (
-    <div
-      className={`relative overflow-hidden rounded-[12px] bg-accent-soft ${className ?? ""}`}
-    >
-      <Image
-        src={asset(product.image!)}
-        alt={product.name}
-        fill
-        sizes="(max-width: 1024px) 50vw, 320px"
-        priority={priority}
-        className="object-cover"
-      />
     </div>
   );
 }
