@@ -46,17 +46,15 @@ function cell(line: ExportLine, key: FieldKey, currency: string): string {
   }
 }
 
+/** Columns are joined by " - " and no header row is emitted. */
+const SEP = " - ";
+
 function buildText(lines: ExportLine[], selected: Record<FieldKey, boolean>, currency: string): string {
   const cols = FIELDS.filter((f) => selected[f.key]);
-  const rows = [cols.map((c) => c.label).join("\t")];
-  for (const l of lines) rows.push(cols.map((c) => cell(l, c.key, currency)).join("\t"));
+  const rows = lines.map((l) => cols.map((c) => cell(l, c.key, currency)).join(SEP));
   if (selected.sum) {
     const total = lines.reduce((s, l) => s + l.total, 0);
-    rows.push(
-      cols
-        .map((c, i) => (c.key === "sum" ? formatMoney(total, currency) : i === 0 ? "Итого" : ""))
-        .join("\t"),
-    );
+    rows.push(`Итого${SEP}${formatMoney(total, currency)}`);
   }
   return rows.join("\n");
 }

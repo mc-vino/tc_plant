@@ -13,6 +13,8 @@ import CartExport from "./CartExport";
 
 interface Line {
   code: string;
+  /** Supplier article as printed in the price list. */
+  article: string;
   qty: number;
   name: string;
   description: string;
@@ -46,6 +48,7 @@ export default function CartDrawer() {
         const unit = unitPriceForQty(ref.variant.breaks, l.qty);
         return {
           code: l.code,
+          article: ref.variant.article ?? ref.product.article ?? ref.variant.code,
           qty: l.qty,
           name: ref.product.name,
           description: ref.variant.description,
@@ -69,7 +72,7 @@ export default function CartDrawer() {
       lines
         .map(
           (l) =>
-            `${l.name} (${l.description}): ${l.qty} шт. x ${l.unit !== null ? fmt(l.unit) : "-"} = ${fmt(l.total)} [${l.code}]`,
+            `${l.name} (${l.description}): ${l.qty} шт. x ${l.unit !== null ? fmt(l.unit) : "-"} = ${fmt(l.total)} [${l.article}]`,
         )
         .join("\n") + `\n\nИтого: ${fmt(grandTotal)}`;
     const subject = catalogLabel ? `Заявка TC Plant · ${catalogLabel}` : "Заявка TC Plant";
@@ -203,7 +206,7 @@ export default function CartDrawer() {
                 currency={currency}
                 lines={lines.map((l) => ({
                   name: l.name,
-                  code: l.code,
+                  code: l.article,
                   qty: l.qty,
                   unit: l.unit,
                   total: l.total,
