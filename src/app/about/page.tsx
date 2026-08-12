@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { supplier, terms } from "@/data/supplier";
-import { products } from "@/lib/catalog";
+import { supplier, terms, cloneTerms } from "@/data/supplier";
+import { products, catalogs } from "@/lib/catalog";
 import { asset } from "@/lib/asset";
 import BotanicalBackdrop from "@/components/BotanicalBackdrop";
 import Reveal from "@/components/Reveal";
@@ -15,6 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  // The nursery quotes in dollars, EXW. While its lists are not published the
+  // page must describe the list that is, otherwise it states terms that do not
+  // apply to anything on sale.
+  const list = catalogs[0];
+  const nurseryListed = catalogs.some((c) => c.currency === "USD");
+  const shownTerms = nurseryListed ? terms : cloneTerms;
+
   // Two portraits from the published list, so the page follows the catalogue.
   const withPhoto = products.filter((p) => p.image);
   const gallery = [withPhoto[0], withPhoto[Math.floor(withPhoto.length / 2)]].filter(
@@ -37,7 +44,7 @@ export default function AboutPage() {
             <p className="mt-5 max-w-xl text-muted leading-relaxed">
               Питомник растений из культуры ткани в {supplier.location}. Размножает Alocasia,
               Philodendron, Monstera, Anthurium и другие роды на оптовый экспорт. Каждое растение
-              выращено из культуры, упаковано пакетами по десять штук, цена зависит от объёма.
+              выращено из культуры и упаковано пакетами по десять штук.
             </p>
           </Reveal>
 
@@ -65,14 +72,18 @@ export default function AboutPage() {
 
       {/* Terms */}
       <section className="mx-auto max-w-[1400px] px-5 sm:px-8 py-14">
-        <h2 className="serif text-3xl">Условия оптовых поставок</h2>
+        <h2 className="serif text-3xl">
+          {nurseryListed ? "Условия оптовых поставок" : "Условия действующего прайса"}
+        </h2>
         <p className="mt-2 text-muted max-w-2xl">
-          Из действующего прайса от {supplier.quotationDate}. Перед заказом уточните наличие у
-          питомника.
+          Прайс &laquo;{list.label}&raquo; от {list.quotationDate ?? supplier.quotationDate}.
+          {nurseryListed
+            ? " Перед заказом уточните наличие у питомника."
+            : " Перед заказом уточните наличие у организатора закупки."}
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {terms.map((group, gi) => (
+          {shownTerms.map((group, gi) => (
             <Reveal key={group.title} delay={gi * 0.08}>
               <div className="h-full rounded-card border border-line bg-card p-8 md:p-10">
                 <h3 className="serif text-2xl">{group.title}</h3>
@@ -97,9 +108,13 @@ export default function AboutPage() {
         <div className="relative isolate overflow-hidden rounded-card border border-line bg-paper p-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
           <BotanicalBackdrop variant="soft" />
           <div>
-            <h2 className="serif text-3xl">Оформить заказ</h2>
+            <h2 className="serif text-3xl">
+              {nurseryListed ? "Оформить заказ" : "Связаться с питомником"}
+            </h2>
             <p className="mt-2 text-muted max-w-lg">
-              Свяжитесь с питомником напрямую по наличию, срокам и для получения проформы-инвойса.
+              {nurseryListed
+                ? "Свяжитесь с питомником напрямую по наличию, срокам и для получения проформы-инвойса."
+                : "Контакты питомника для вопросов по сортам и поставкам. Заказ по действующему прайсу оформляется у организатора закупки."}
             </p>
           </div>
           <div className="grid gap-3 text-sm">

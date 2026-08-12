@@ -41,7 +41,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
 
         {/* Absolute Black terminal anchor at the foot of the page. */}
-        <footer className="mt-24 bg-[#000000] text-[#faf8f5]">
+        <footer className="mt-24 bg-[#000000] text-[#faf8f5] [--focus:#faf8f5]">
           <div className="mx-auto grid max-w-[1440px] gap-6 px-5 py-12 text-sm sm:grid-cols-3 sm:px-8">
             <div>
               <p className="serif text-2xl text-[#faf8f5]">{supplier.name}</p>

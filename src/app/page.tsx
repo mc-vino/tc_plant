@@ -21,8 +21,10 @@ export default function Home() {
       <section className="relative isolate flex min-h-[84vh] items-center justify-center overflow-hidden px-5 py-24 sm:px-8">
         <BotanicalBackdrop />
         <Reveal className="mx-auto w-full max-w-3xl text-center">
+          {/* The eyebrow names the origin only while the nursery's own list is
+              published; otherwise it names the list that actually is. */}
           <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
-            {supplier.location}
+            {catalogs.some((c) => c.currency === "USD") ? supplier.location : catalogs[0].label}
           </p>
           <h1 className="display-hero mt-5 text-[clamp(2.75rem,7vw,6rem)]">
             Живой каталог растений из культуры ткани

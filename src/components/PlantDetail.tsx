@@ -129,7 +129,7 @@ export default function PlantDetail({
       </div>
 
       {/* Full width so every quantity tier fits without sideways scrolling. */}
-      <div className="mt-6 rounded-card border border-line bg-card p-4 sm:p-5">
+      <div className="mt-6 rounded-card border border-line bg-card p-5 sm:p-10">
         <VariantTable product={product} />
       </div>
 

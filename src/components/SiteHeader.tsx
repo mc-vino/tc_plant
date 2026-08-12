@@ -28,7 +28,7 @@ export default function SiteHeader() {
       data-scrolled={scrolled || undefined}
       className={`sticky top-0 z-30 border-b transition-colors duration-300 ${
         scrolled
-          ? "border-transparent bg-deep-forest text-parchment"
+          ? "border-transparent bg-deep-forest text-parchment [--focus:#faf8f5]"
           : "glass border-line/60"
       }`}
     >

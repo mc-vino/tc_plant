@@ -45,3 +45,38 @@ export const terms: TermGroup[] = [
     ],
   },
 ];
+
+/**
+ * Conditions of the clones purchase list. Everything here is taken from the
+ * list itself, so it stays true while that list is the published one.
+ */
+export const cloneTerms: TermGroup[] = [
+  {
+    title: "Товар и цены",
+    items: [
+      { label: "Единица", value: "Одно растение из культуры ткани (TC)" },
+      { label: "Валюта", value: "Российские рубли, по ориентировочному курсу 95 ₽ за доллар" },
+      { label: "Цена", value: "Одна цена за штуку, без объёмных тиров" },
+    ],
+  },
+  {
+    title: "Обозначения в названии",
+    items: [
+      { label: "A grade", value: "Сильная вариегатность" },
+      { label: "B grade", value: "Вариегатность слабее" },
+      { label: "C grade", value: "Вариегатность ещё слабее" },
+      { label: "Mixed", value: "Смешанная вариегатность" },
+    ],
+  },
+  {
+    title: "Заказ",
+    items: [
+      { label: "Оформление", value: "Заказ оформляется у организатора закупки" },
+      {
+        label: "Фото",
+        value: "Поставщик приводит фото как пример сорта, а не снимок конкретного растения",
+      },
+      { label: "Наличие", value: "Уточняйте перед заказом: позиции в закупке меняются" },
+    ],
+  },
+];
