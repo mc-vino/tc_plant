@@ -1,5 +1,5 @@
 import { Product } from "@/lib/catalog";
-import { marketFor, formatRub, rarityChipClass } from "@/lib/market";
+import { marketFor, formatRub, rarityChipClass, MARKET_CONFIG } from "@/lib/market";
 
 function Cell({
   label,
@@ -27,7 +27,7 @@ export default function MarketPanel({ product }: { product: Product }) {
       <div className="flex items-baseline justify-between flex-wrap gap-2">
         <h2 className="serif text-2xl">Оценка для рынка РФ / РБ</h2>
         <span
-          className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${rarityChipClass(m.rarityLevel)}`}
+          className={`rounded-[4px] px-2.5 py-0.5 text-xs font-medium ${rarityChipClass(m.rarityLevel)}`}
         >
           {m.rarity}
         </span>
@@ -53,8 +53,8 @@ export default function MarketPanel({ product }: { product: Product }) {
 
       <p className="mt-4 text-xs text-faint leading-relaxed max-w-3xl">
         Оценка по модели, не биржевые данные. Редкость, срок роста и обесценивание рассчитаны от
-        оптовых цен прайса и допущений (курс {77} ₽/$, скорость роста и обесценивания по родам и
-        редкости). Параметры настраиваются в <code className="font-mono">src/lib/market.ts</code>.
+        оптовых цен прайса и допущений: курс {MARKET_CONFIG.usdToRub} ₽ за доллар, скорость роста
+        и обесценивания по родам и редкости.
       </p>
     </section>
   );

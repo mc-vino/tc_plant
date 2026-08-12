@@ -35,7 +35,7 @@ export default function Home() {
           <div className="mt-9 flex justify-center">
             <Link
               href="#catalogue"
-              className="press inline-flex h-11 items-center rounded-full border border-headline bg-line/70 px-6 text-sm text-headline backdrop-blur transition-colors hover:bg-line"
+              className="press inline-flex h-11 items-center rounded-full bg-deep-forest px-7 text-sm text-parchment transition-colors hover:bg-headline"
             >
               Смотреть каталог
             </Link>
@@ -52,7 +52,13 @@ export default function Home() {
       {/* Catalogue */}
       <section className="relative isolate overflow-hidden scroll-mt-20" id="catalogue">
         <BotanicalBackdrop variant="soft" />
-        <div className="mx-auto max-w-[1440px] px-5 pt-4 pb-8 sm:px-8">
+        <div className="mx-auto max-w-[1440px] px-5 pt-10 pb-8 sm:px-8">
+          <div className="mb-7 flex flex-wrap items-end justify-between gap-3 border-b border-line pb-5">
+            <h2 className="serif text-[2rem] leading-none">Каталог</h2>
+            <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
+              {catalogs[0].label} · прайс от {catalogs[0].quotationDate}
+            </p>
+          </div>
           <CatalogBrowser products={products} catalogs={catalogs} />
         </div>
       </section>

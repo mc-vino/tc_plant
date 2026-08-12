@@ -145,7 +145,10 @@ export default function CartDrawer() {
                     </Link>
                     <div className="min-w-0 flex-1">
                       <p className="display text-sm leading-tight">{l.name}</p>
-                      <p className="text-[11px] text-faint leading-snug">{l.description}</p>
+                      {/* Single-variant lists repeat the name here, so skip it. */}
+                      {l.description !== l.name && (
+                        <p className="text-[11px] text-faint leading-snug">{l.description}</p>
+                      )}
                       <div className="mt-2 flex items-center justify-between gap-2">
                         <div className="flex items-center rounded-full border border-line">
                           <button
@@ -169,7 +172,11 @@ export default function CartDrawer() {
                             {money(l.total)}
                           </span>
                           <span className="block text-[10px] text-faint">
-                            {l.unit !== null ? `${money(l.unit)}/шт · тир ${tierLabelForQty(l.breaks, l.qty)}` : "нет цены"}
+                            {l.unit === null
+                              ? "нет цены"
+                              : l.breaks.length > 1
+                                ? `${money(l.unit)}/шт · тир ${tierLabelForQty(l.breaks, l.qty)}`
+                                : `${money(l.unit)}/шт`}
                           </span>
                         </div>
                       </div>
@@ -198,7 +205,7 @@ export default function CartDrawer() {
               </div>
               <a
                 href={mailto}
-                className="press flex h-11 items-center justify-center rounded-full border border-headline bg-line text-sm text-headline transition-colors hover:bg-paper"
+                className="press flex h-11 items-center justify-center rounded-full bg-deep-forest text-sm text-parchment transition-colors hover:bg-headline"
               >
                 Оформить заявку
               </a>
@@ -219,8 +226,9 @@ export default function CartDrawer() {
                 Очистить корзину
               </button>
               <p className="text-[10px] text-faint leading-snug">
-                Цена за штуку зависит от количества и пересчитывается автоматически. Итог
-                отправляется поставщику письмом.
+                {lines.some((l) => l.breaks.length > 1)
+                  ? "Цена за штуку зависит от количества и пересчитывается автоматически. Итог отправляется поставщику письмом."
+                  : "Итог отправляется поставщику письмом."}
               </p>
             </footer>
           </>

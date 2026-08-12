@@ -71,10 +71,15 @@ export default function ProductTable({ products }: { products: Product[] }) {
 
   const arrow = (key: SortKey) => (sortKey === key ? (dir === "asc" ? " ↑" : " ↓") : "");
 
+  // A price list can be flat (one price, one variant per sort). Columns that
+  // would repeat the same value in every row are not worth their width.
+  const showHigh = rows.some((r) => r.high !== null && r.high !== r.low);
+  const showVariants = rows.some((r) => r.p.variants.length > 1);
+
   const MOBILE_SORTS: { key: SortKey; label: string }[] = [
     { key: "name", label: "Сорт" },
-    { key: "low", label: "Цена от" },
-    { key: "high", label: "До" },
+    { key: "low", label: showHigh ? "Цена от" : "Цена" },
+    ...(showHigh ? [{ key: "high" as SortKey, label: "До" }] : []),
     { key: "rarity", label: "Редкость" },
   ];
 
@@ -155,9 +160,15 @@ export default function ProductTable({ products }: { products: Product[] }) {
           <tr className="text-left text-faint bg-paper">
             <th className="w-px py-3 pl-4 pr-2" />
             <Th onClick={() => toggle("name")} label={`Сорт${arrow("name")}`} className="pr-3" />
-            <Th onClick={() => toggle("low")} label={`Цена от${arrow("low")}`} align="right" />
-            <Th onClick={() => toggle("high")} label={`До${arrow("high")}`} align="right" />
-            <Th onClick={() => toggle("variants")} label={`Вариантов${arrow("variants")}`} align="right" />
+            <Th
+              onClick={() => toggle("low")}
+              label={`${showHigh ? "Цена от" : "Цена"}${arrow("low")}`}
+              align="right"
+            />
+            {showHigh && <Th onClick={() => toggle("high")} label={`До${arrow("high")}`} align="right" />}
+            {showVariants && (
+              <Th onClick={() => toggle("variants")} label={`Вариантов${arrow("variants")}`} align="right" />
+            )}
             <Th onClick={() => toggle("rarity")} label={`Редкость${arrow("rarity")}`} className="pr-4" />
           </tr>
         </thead>
@@ -200,13 +211,21 @@ export default function ProductTable({ products }: { products: Product[] }) {
               <td className="py-2.5 px-3 text-right font-mono text-sm text-headline whitespace-nowrap">
                 {low !== null ? formatMoney(low, p.currency) : "-"}
               </td>
-              <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
-                {high !== null ? formatMoney(high, p.currency) : "-"}
-              </td>
-              <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">{p.variants.length}</td>
+              {/* Only the sorts that actually span a range or carry several
+                  variants fill these cells, so the exceptions stand out. */}
+              {showHigh && (
+                <td className="py-2.5 px-3 text-right font-mono text-xs text-muted whitespace-nowrap">
+                  {high !== null && high !== low ? formatMoney(high, p.currency) : ""}
+                </td>
+              )}
+              {showVariants && (
+                <td className="py-2.5 px-3 text-right font-mono text-xs text-muted">
+                  {p.variants.length > 1 ? p.variants.length : ""}
+                </td>
+              )}
               <td className="py-2.5 px-3 pr-4">
                 <span
-                  className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
+                  className={`inline-block rounded-[4px] px-2 py-0.5 text-[10px] font-medium whitespace-nowrap ${rarityChipClass(m.rarityLevel)}`}
                 >
                   {m.rarity}
                 </span>

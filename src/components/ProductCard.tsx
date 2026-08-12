@@ -52,7 +52,7 @@ export default function ProductCard({ product }: { product: Product }) {
             </div>
           )}
           <span
-            className={`absolute top-2.5 right-2.5 rounded-full px-2 py-0.5 text-[10px] font-medium ${rarityChipClass(market.rarityLevel)}`}
+            className={`absolute top-2.5 right-2.5 rounded-[4px] px-2 py-0.5 text-[10px] font-medium ${rarityChipClass(market.rarityLevel)}`}
           >
             {market.rarity}
           </span>

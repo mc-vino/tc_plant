@@ -12,6 +12,9 @@ import ProductTable from "./ProductTable";
 type SortKey = "name" | "price-asc" | "price-desc";
 type View = "grid" | "table";
 
+/** Genera shown before the row folds; the rest sit behind "Ещё". */
+const GENERA_SHOWN = 8;
+
 const SORTS: { key: SortKey; label: string }[] = [
   { key: "name", label: "По названию (A-Z)" },
   { key: "price-asc", label: "Цена: по возрастанию" },
@@ -42,6 +45,7 @@ export default function CatalogBrowser({
   const [genus, setGenus] = useState<string | null>(null);
   const [sort, setSort] = useState<SortKey>("name");
   const [view, setView] = useState<View>("grid");
+  const [allGenera, setAllGenera] = useState(false);
 
   const readyRef = useRef(false);
   // Scroll+view to restore when returning from a product page.
@@ -110,6 +114,17 @@ export default function CatalogBrowser({
 
   const active = catalogs.find((c) => c.id === catalog) ?? catalogs[0];
   const genera = useMemo(() => generaWithCounts(catalog), [catalog]);
+
+  // Genera are sorted by size, so the first few cover most of the list.
+  const shownGenera = useMemo(() => {
+    if (allGenera) return genera;
+    const head = genera.slice(0, GENERA_SHOWN);
+    if (genus && !head.some((g) => g.genus === genus)) {
+      const picked = genera.find((g) => g.genus === genus);
+      if (picked) head.push(picked);
+    }
+    return head;
+  }, [genera, allGenera, genus]);
   const inCatalog = useMemo(() => products.filter((p) => p.catalog === catalog), [products, catalog]);
 
   const filtered = useMemo(() => {
@@ -254,16 +269,24 @@ export default function CatalogBrowser({
         </div>
       </div>
 
-      {/* Genus filters */}
+      {/* Genus filters: the long tail stays folded so the row keeps its calm */}
       <div className="mt-4 flex flex-wrap gap-2">
         <Chip active={genus === null} onClick={() => setGenus(null)}>
           Все <span className="opacity-55">{inCatalog.length}</span>
         </Chip>
-        {genera.map(({ genus: g, count }) => (
+        {shownGenera.map(({ genus: g, count }) => (
           <Chip key={g} active={genus === g} onClick={() => setGenus(g)}>
             {g} <span className="opacity-55">{count}</span>
           </Chip>
         ))}
+        {genera.length > GENERA_SHOWN && (
+          <button
+            onClick={() => setAllGenera((v) => !v)}
+            className="press rounded-[4px] px-3 py-1 text-xs text-accent transition-colors hover:text-accent-strong"
+          >
+            {allGenera ? "Свернуть" : `Ещё ${genera.length - GENERA_SHOWN}`}
+          </button>
+        )}
       </div>
 
       <p className="mt-5 mb-4 font-mono text-xs text-faint">

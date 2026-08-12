@@ -15,7 +15,7 @@ function VariantCart({ code, catalog }: { code: string; catalog: string }) {
     return (
       <button
         onClick={() => add(code)}
-        className="press inline-flex h-8 items-center gap-1 rounded-full border border-headline bg-line px-3 text-xs text-headline transition-colors hover:bg-paper"
+        className="press inline-flex h-8 items-center gap-1 rounded-full bg-deep-forest px-3.5 text-xs text-parchment transition-colors hover:bg-headline"
       >
         <Plus size={14} /> В корзину
       </button>

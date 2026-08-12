@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { supplier, terms } from "@/data/supplier";
 import { products } from "@/lib/catalog";
-import { varieties } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
 import BotanicalBackdrop from "@/components/BotanicalBackdrop";
 import Reveal from "@/components/Reveal";
@@ -36,10 +35,9 @@ export default function AboutPage() {
               {supplier.name}
             </h1>
             <p className="mt-5 max-w-xl text-muted leading-relaxed">
-              Питомник растений из культуры ткани в {supplier.location}. Размножает{" "}
-              {varieties(products.length)} Alocasia, Philodendron, Monstera, Anthurium и других
-              родов на оптовый экспорт. Каждое растение выращено из культуры, упаковано пакетами
-              по десять штук, цена зависит от объёма.
+              Питомник растений из культуры ткани в {supplier.location}. Размножает Alocasia,
+              Philodendron, Monstera, Anthurium и другие роды на оптовый экспорт. Каждое растение
+              выращено из культуры, упаковано пакетами по десять штук, цена зависит от объёма.
             </p>
           </Reveal>
 
@@ -76,8 +74,8 @@ export default function AboutPage() {
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {terms.map((group, gi) => (
             <Reveal key={group.title} delay={gi * 0.08}>
-              <div className="h-full rounded-card border border-line bg-card p-6">
-                <h3 className="serif text-xl">{group.title}</h3>
+              <div className="h-full rounded-card border border-line bg-card p-8 md:p-10">
+                <h3 className="serif text-2xl">{group.title}</h3>
                 <dl className="mt-4 space-y-4">
                   {group.items.map((item) => (
                     <div key={item.label}>
@@ -96,7 +94,8 @@ export default function AboutPage() {
 
       {/* Contact */}
       <section className="mx-auto max-w-[1400px] px-5 sm:px-8 pb-16">
-        <div className="rounded-card border border-line bg-paper p-8 md:p-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+        <div className="relative isolate overflow-hidden rounded-card border border-line bg-paper p-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+          <BotanicalBackdrop variant="soft" />
           <div>
             <h2 className="serif text-3xl">Оформить заказ</h2>
             <p className="mt-2 text-muted max-w-lg">

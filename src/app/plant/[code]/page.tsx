@@ -52,7 +52,7 @@ export default async function PlantPage({
       {related.length > 0 && (
         <section className="mt-16 border-t border-line pt-10">
           <div className="flex items-baseline justify-between">
-            <h2 className="display text-2xl">Ещё {product.genus}</h2>
+            <h2 className="serif text-2xl">Ещё {product.genus}</h2>
             <Link href="/" className="text-sm text-accent transition-colors hover:text-accent-strong">
               Все сорта
             </Link>
