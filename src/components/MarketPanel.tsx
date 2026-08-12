@@ -13,7 +13,7 @@ function Cell({
   return (
     <div className="p-4">
       <dt className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">{label}</dt>
-      <dd className="mt-1.5 serif text-xl">{value}</dd>
+      <dd className="mt-1.5 font-mono text-xl text-headline">{value}</dd>
       {hint && <dd className="mt-0.5 text-[11px] text-faint leading-snug">{hint}</dd>}
     </div>
   );

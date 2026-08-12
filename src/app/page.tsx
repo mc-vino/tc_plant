@@ -28,9 +28,8 @@ export default function Home() {
             Живой каталог растений из культуры ткани
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-[16px] leading-[1.5] text-muted text-pretty">
-            {varieties(products.length)} в {catalogs.length} прайсах. Основной и вариегатный от
-            питомника {supplier.name} в Ханое, в {supplier.currency}, {supplier.incoterm}. Прайс
-            клонов в рублях. Цена за штуку зависит от количества.
+            {varieties(products.length)} в действующем прайсе &laquo;{catalogs[0].label}&raquo;.
+            Цена за штуку в рублях; обозначения вариегатности A, B, C и Mixed указаны в названии.
           </p>
 
           <div className="mt-9 flex justify-center">
@@ -51,8 +50,11 @@ export default function Home() {
       </section>
 
       {/* Catalogue */}
-      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 pt-4 pb-8 scroll-mt-20" id="catalogue">
-        <CatalogBrowser products={products} catalogs={catalogs} />
+      <section className="relative isolate overflow-hidden scroll-mt-20" id="catalogue">
+        <BotanicalBackdrop variant="soft" />
+        <div className="mx-auto max-w-[1440px] px-5 pt-4 pb-8 sm:px-8">
+          <CatalogBrowser products={products} catalogs={catalogs} />
+        </div>
       </section>
     </div>
   );

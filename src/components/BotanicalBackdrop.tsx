@@ -1,32 +1,27 @@
 import Image from "next/image";
 import { asset } from "@/lib/asset";
-import { getProduct } from "@/lib/catalog";
+import { products } from "@/lib/catalog";
 
-/** Foliage photos from the catalogue itself, used only as atmosphere. */
-const BACKDROP_CODES = [
-  "AL050",
-  "AL062",
-  "AL018",
-  "AL070",
-  "AL061",
-  "AL042",
-  "AL019",
-  "AL033",
-  "MT041",
-  "PD066",
-  "AL056",
-  "AL040",
-];
+/** Twelve foliage photos spread across the published catalogue, as atmosphere. */
+function backdropShots() {
+  const withPhoto = products.filter((p) => p.image);
+  if (withPhoto.length <= 12) return withPhoto;
+  const step = Math.floor(withPhoto.length / 12);
+  return Array.from({ length: 12 }, (_, i) => withPhoto[i * step]);
+}
 
 /**
  * Full-bleed botanical layer: real foliage, blurred hard so it reads as
  * atmosphere rather than content, then faded into the parchment canvas at
  * every edge so the section has no visible image boundary.
  */
-export default function BotanicalBackdrop() {
-  const shots = BACKDROP_CODES.map((c) => getProduct(c)).filter(
-    (p): p is NonNullable<typeof p> => Boolean(p?.image),
-  );
+export default function BotanicalBackdrop({
+  variant = "hero",
+}: {
+  /** "hero" lets the flora read; "soft" pushes it back under dense content. */
+  variant?: "hero" | "soft";
+}) {
+  const shots = backdropShots();
 
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -46,7 +41,11 @@ export default function BotanicalBackdrop() {
       </div>
 
       {/* Wash the imagery back so sepia text keeps its contrast. */}
-      <div className="absolute inset-0 bg-background/58" />
+      <div
+        className={
+          variant === "hero" ? "absolute inset-0 bg-background/58" : "absolute inset-0 bg-background/82"
+        }
+      />
 
       {/* Vignette into the canvas: no hard image boundary anywhere. */}
       <div
@@ -57,6 +56,7 @@ export default function BotanicalBackdrop() {
         }}
       />
       <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-background" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-t from-transparent to-background" />
     </div>
   );
 }

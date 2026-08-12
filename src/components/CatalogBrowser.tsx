@@ -138,8 +138,9 @@ export default function CatalogBrowser({
 
   return (
     <div>
-      {/* Price-list switcher */}
+      {/* Price-list switcher: only worth showing when there is a choice. */}
       <div className="mb-6">
+        {catalogs.length > 1 && (
         <div className="flex w-fit max-w-full flex-wrap gap-1 rounded-[20px] border border-line bg-card p-1 sm:rounded-full">
           {catalogs.map((c) => {
             const on = c.id === catalog;
@@ -178,6 +179,7 @@ export default function CatalogBrowser({
             );
           })}
         </div>
+        )}
         {active?.description && (
           <p className="mt-3 max-w-2xl text-sm text-muted leading-relaxed">{active.description}</p>
         )}

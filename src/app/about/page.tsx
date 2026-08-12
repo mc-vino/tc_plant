@@ -6,6 +6,7 @@ import { supplier, terms } from "@/data/supplier";
 import { products } from "@/lib/catalog";
 import { varieties } from "@/lib/i18n";
 import { asset } from "@/lib/asset";
+import BotanicalBackdrop from "@/components/BotanicalBackdrop";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -14,17 +15,18 @@ export const metadata: Metadata = {
     "О питомнике растений из культуры ткани Xanh Xanh Urban Forest (Ханой, Вьетнам) и оптовых условиях каталога.",
 };
 
-const ABOUT_CODES = ["AL062", "AL070"];
-
 export default function AboutPage() {
-  const gallery = ABOUT_CODES.map((c) => products.find((p) => p.code === c)).filter(
+  // Two portraits from the published list, so the page follows the catalogue.
+  const withPhoto = products.filter((p) => p.image);
+  const gallery = [withPhoto[0], withPhoto[Math.floor(withPhoto.length / 2)]].filter(
     (p): p is NonNullable<typeof p> => Boolean(p?.image),
   );
 
   return (
     <div>
       {/* Intro */}
-      <section className="border-b border-line bg-paper">
+      <section className="relative isolate overflow-hidden border-b border-line">
+        <BotanicalBackdrop />
         <div className="mx-auto max-w-[1400px] px-5 sm:px-8 pt-14 pb-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">

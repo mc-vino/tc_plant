@@ -16,6 +16,9 @@
   --accent: #0f3639; /* Teal: the only cool colour, used sparingly */
   --accent-strong: #0a2628;
   --accent-soft: #eceae3; /* warm neutral tint for chips and placeholders */
+  --deep-forest: #23291b; /* elevated dark surface: nav once the page scrolls */
+  --parchment: #faf8f5;
+  --fog: #d1cfc7;
 
   --radius: 12px; /* cards */
   --radius-sm: 4px; /* inputs, badges */
@@ -43,6 +46,9 @@
   --color-accent: var(--accent);
   --color-accent-strong: var(--accent-strong);
   --color-accent-soft: var(--accent-soft);
+  --color-deep-forest: var(--deep-forest);
+  --color-parchment: var(--parchment);
+  --color-fog: var(--fog);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: Georgia, "Times New Roman", Times, serif;

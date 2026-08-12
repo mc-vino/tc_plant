@@ -203,9 +203,17 @@ const retailProducts = retailRaw.products.map(normalizeRetail);
 const variegatedProducts = varRaw.products.map(normalizeVariegated);
 const cloneProducts = cloneRaw.products.map(normalizeClone);
 
-export const products: Product[] = [...retailProducts, ...variegatedProducts, ...cloneProducts];
+/**
+ * Price lists published on the site. Older lists stay in the data untouched:
+ * add their id back here to show them again.
+ */
+const VISIBLE = new Set([cloneRaw.meta.id]);
 
-export const catalogs: CatalogInfo[] = [
+const allProducts: Product[] = [...retailProducts, ...variegatedProducts, ...cloneProducts];
+
+export const products: Product[] = allProducts.filter((p) => VISIBLE.has(p.catalog));
+
+const allCatalogs: CatalogInfo[] = [
   {
     id: RETAIL_ID,
     label: "Основной прайс",
@@ -237,10 +245,12 @@ export const catalogs: CatalogInfo[] = [
   },
 ];
 
+export const catalogs: CatalogInfo[] = allCatalogs.filter((c) => VISIBLE.has(c.id));
+
 /** Roubles per dollar quoted by the clones supplier, for USD-based estimates. */
 export const CLONES_USD_RATE = cloneRaw.meta.usdRate;
 
-export const DEFAULT_CATALOG = RETAIL_ID;
+export const DEFAULT_CATALOG = catalogs[0].id;
 
 export function getCatalog(id: string): CatalogInfo | undefined {
   return catalogs.find((c) => c.id === id);
