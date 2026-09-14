@@ -126,9 +126,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   {p.image ? (
                     <Image src={asset(p.image)} alt="" fill sizes="32px" className="object-cover" />
                   ) : (
-                    <span className="flex h-full items-center justify-center display italic text-accent/30">
-                      {p.genus.charAt(0)}
-                    </span>
+                    <span className="block h-full bg-paper" />
                   )}
                 </span>
                 <span className="min-w-0 flex-1">
@@ -195,9 +193,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                     {p.image ? (
                       <Image src={asset(p.image)} alt="" fill sizes="36px" className="object-cover" />
                     ) : (
-                      <span className="flex h-full items-center justify-center display italic text-accent/30">
-                        {p.genus.charAt(0)}
-                      </span>
+                      <span className="block h-full bg-paper" />
                     )}
                   </span>
                   <span>
@@ -205,6 +201,9 @@ export default function ProductTable({ products }: { products: Product[] }) {
                       {p.name}
                     </span>
                     <span className="text-[10px] uppercase tracking-[0.12em] text-faint">{p.genus}</span>
+                    {p.note && (
+                      <span className="ml-2 text-[10px] text-muted">{p.note}</span>
+                    )}
                   </span>
                 </Link>
               </td>

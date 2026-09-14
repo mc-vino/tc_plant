@@ -47,14 +47,18 @@ export default function MarketPanel({ product }: { product: Product }) {
         <Cell
           label="Опт. цена клона"
           value={formatRub(m.cloneCostRub)}
-          hint="Себестоимость клона из прайса (в пересчёте на ₽)"
+          hint={
+            product.currency === "RUB"
+              ? "Оптовая цена позиции из прайса"
+              : "Себестоимость клона из прайса (в пересчёте на ₽)"
+          }
         />
       </dl>
 
       <p className="mt-4 text-xs text-faint leading-relaxed max-w-3xl">
         Оценка по модели, не биржевые данные. Редкость, срок роста и обесценивание рассчитаны от
-        оптовых цен прайса и допущений: курс {MARKET_CONFIG.usdToRub} ₽ за доллар, скорость роста
-        и обесценивания по родам и редкости.
+        оптовых цен прайса и допущений: курс {product.usdRate ?? MARKET_CONFIG.usdToRub} ₽ за
+        доллар, скорость роста и обесценивания по родам и редкости.
       </p>
     </section>
   );

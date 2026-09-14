@@ -1,6 +1,7 @@
 import retailData from "@/data/catalog.json";
 import variegatedData from "@/data/variegated.json";
 import clonesData from "@/data/clones.json";
+import purchaseData from "@/data/purchase.json";
 
 /** A quantity break: unit price that applies once the ordered quantity reaches minQty. */
 export interface PriceBreak {
@@ -25,12 +26,20 @@ export interface Product {
   /** Supplier article exactly as printed, when it differs from the internal code. */
   article?: string;
   currency: string;
+  /** Roubles per dollar the list was quoted at, for estimates that work in USD. */
+  usdRate?: number;
   name: string;
   genus: string;
   image: string | null;
   /** Intrinsic photo size, so it can be laid out at its own aspect ratio. */
   imageW?: number;
   imageH?: number;
+  /** Pieces in one sealed pack, when the list sells by the pack. */
+  pack?: number;
+  /** Packs the supplier asks for in a combined order, as printed. */
+  minPacks?: number;
+  /** Supplier's own remark about the position ("НОВИНКА", "Ждем наличие"). */
+  note?: string | null;
   variants: Variant[];
 }
 
@@ -120,6 +129,35 @@ interface RawCloneMeta {
   count: number;
 }
 
+interface RawPurchaseProduct {
+  code: string;
+  article: string;
+  name: string;
+  genus: string;
+  category: string | null;
+  image: string | null;
+  imageW: number | null;
+  imageH: number | null;
+  /** Pieces per sealed pack: the price of a multi-piece pack covers them all. */
+  pack: number;
+  /** Packs the supplier wants in one combined order, as printed. */
+  minPacks: number | null;
+  note: string | null;
+  /** Null while the supplier has not quoted the position yet. */
+  price: number | null;
+  priceUsd: number | null;
+}
+interface RawPurchaseMeta {
+  id: string;
+  label: string;
+  description: string;
+  currency: string;
+  priceType: string;
+  quotationDate: string;
+  usdRate: number;
+  count: number;
+}
+
 // ---- Normalisation ---------------------------------------------------------
 
 const RETAIL_TIER_MIN: Record<string, number> = { "1-4": 1, "5-9": 5, "10-19": 10 };
@@ -127,6 +165,10 @@ const RETAIL_TIER_MIN: Record<string, number> = { "1-4": 1, "5-9": 5, "10-19": 1
 const retailRaw = retailData as unknown as { meta: RawRetailMeta; products: RawRetailProduct[] };
 const varRaw = variegatedData as unknown as { meta: RawVarMeta; products: RawVarProduct[] };
 const cloneRaw = clonesData as unknown as { meta: RawCloneMeta; products: RawCloneProduct[] };
+const purchaseRaw = purchaseData as unknown as {
+  meta: RawPurchaseMeta;
+  products: RawPurchaseProduct[];
+};
 
 const RETAIL_ID = "retail";
 
@@ -183,6 +225,7 @@ function normalizeClone(p: RawCloneProduct): Product {
     catalog: cloneRaw.meta.id,
     article: p.article,
     currency: cloneRaw.meta.currency,
+    usdRate: cloneRaw.meta.usdRate,
     name: p.name,
     genus: p.genus,
     image: p.image,
@@ -199,17 +242,54 @@ function normalizeClone(p: RawCloneProduct): Product {
   };
 }
 
+/** One price per position, quoted per piece or per pack of `pack` pieces. */
+function normalizePurchase(p: RawPurchaseProduct): Product {
+  return {
+    code: p.code,
+    catalog: purchaseRaw.meta.id,
+    article: p.article,
+    currency: purchaseRaw.meta.currency,
+    usdRate: purchaseRaw.meta.usdRate,
+    name: p.name,
+    genus: p.genus,
+    image: p.image,
+    imageW: p.imageW ?? undefined,
+    imageH: p.imageH ?? undefined,
+    pack: p.pack,
+    minPacks: p.minPacks ?? undefined,
+    note: p.note,
+    variants: [
+      {
+        code: p.code,
+        article: p.article,
+        description: p.name,
+        note: p.note,
+        moq: null,
+        // A position the supplier has not priced yet carries no break at all,
+        // so it shows as "цена уточняется" instead of a made-up number.
+        breaks: p.price === null ? [] : [{ minQty: 1, price: p.price, label: "1+" }],
+      },
+    ],
+  };
+}
+
 const retailProducts = retailRaw.products.map(normalizeRetail);
 const variegatedProducts = varRaw.products.map(normalizeVariegated);
 const cloneProducts = cloneRaw.products.map(normalizeClone);
+const purchaseProducts = purchaseRaw.products.map(normalizePurchase);
 
 /**
  * Price lists published on the site. Older lists stay in the data untouched:
  * add their id back here to show them again.
  */
-const VISIBLE = new Set([cloneRaw.meta.id]);
+const VISIBLE = new Set([purchaseRaw.meta.id]);
 
-const allProducts: Product[] = [...retailProducts, ...variegatedProducts, ...cloneProducts];
+const allProducts: Product[] = [
+  ...retailProducts,
+  ...variegatedProducts,
+  ...cloneProducts,
+  ...purchaseProducts,
+];
 
 export const products: Product[] = allProducts.filter((p) => VISIBLE.has(p.catalog));
 
@@ -243,12 +323,19 @@ const allCatalogs: CatalogInfo[] = [
     count: cloneProducts.length,
     quotationDate: cloneRaw.meta.quotationDate,
   },
+  {
+    id: purchaseRaw.meta.id,
+    label: purchaseRaw.meta.label,
+    description: purchaseRaw.meta.description,
+    priceType: purchaseRaw.meta.priceType,
+    currency: purchaseRaw.meta.currency,
+    incoterm: "",
+    count: purchaseProducts.length,
+    quotationDate: purchaseRaw.meta.quotationDate,
+  },
 ];
 
 export const catalogs: CatalogInfo[] = allCatalogs.filter((c) => VISIBLE.has(c.id));
-
-/** Roubles per dollar quoted by the clones supplier, for USD-based estimates. */
-export const CLONES_USD_RATE = cloneRaw.meta.usdRate;
 
 export const DEFAULT_CATALOG = catalogs[0].id;
 

@@ -80,14 +80,19 @@ export default function VariantTable({ product }: { product: Product }) {
                   key={b.label}
                   className="inline-flex items-baseline gap-1 rounded-[4px] border border-line bg-paper px-2 py-1"
                 >
-                  <span className="text-[10px] text-faint">{b.label} шт.</span>
+                  {v.breaks.length > 1 && <span className="text-[10px] text-faint">{b.label} шт.</span>}
                   <span className="font-mono text-xs text-foreground">{formatMoney(b.price, product.currency)}</span>
                 </span>
               ))}
+              {v.breaks.length === 0 && (
+                <span className="text-xs text-faint">Цена уточняется</span>
+              )}
             </div>
-            <div className="mt-2.5">
-              <VariantCart code={v.code} catalog={product.catalog} />
-            </div>
+            {v.breaks.length > 0 && (
+              <div className="mt-2.5">
+                <VariantCart code={v.code} catalog={product.catalog} />
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -102,7 +107,8 @@ export default function VariantTable({ product }: { product: Product }) {
                 key={c.label}
                 className="pb-2 px-2 font-medium text-xs uppercase tracking-[0.08em] text-right font-mono whitespace-nowrap"
               >
-                {c.label} шт.
+                {/* A single break is just "the price": the "1+" reads as noise. */}
+                {columns.length > 1 ? `${c.label} шт.` : "Цена"}
               </th>
             ))}
             <th className="pb-2 pl-2" />
@@ -119,6 +125,11 @@ export default function VariantTable({ product }: { product: Product }) {
                   </span>
                   <VariantMeta v={v} />
                 </td>
+                {columns.length === 0 && (
+                  <td className="py-3 px-2 text-right text-xs text-faint whitespace-nowrap">
+                    Цена уточняется
+                  </td>
+                )}
                 {columns.map((c) => (
                   <td
                     key={c.label}
@@ -132,7 +143,9 @@ export default function VariantTable({ product }: { product: Product }) {
                   </td>
                 ))}
                 <td className="py-3 pl-2 text-right">
-                  <VariantCart code={v.code} catalog={product.catalog} />
+                  {v.breaks.length > 0 && (
+                    <VariantCart code={v.code} catalog={product.catalog} />
+                  )}
                 </td>
               </tr>
             );

@@ -47,9 +47,18 @@ export default function ProductCard({ product }: { product: Product }) {
               className="card-media object-cover"
             />
           ) : (
-            <div className="flex h-full items-center justify-center display italic text-5xl text-accent/25">
-              {product.genus.charAt(0)}
+            // No photo in the list: a quiet label beats an oversized monogram.
+            <div className="flex h-full items-center justify-center bg-paper">
+              <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-faint">
+                Без фото
+              </span>
             </div>
+          )}
+          {/* The supplier's own remark matters more than rarity, so it leads. */}
+          {product.note && (
+            <span className="absolute top-2.5 left-2.5 max-w-[70%] truncate rounded-[4px] bg-background/90 px-2 py-0.5 text-[10px] font-medium text-foreground">
+              {product.note}
+            </span>
           )}
           <span
             className={`absolute top-2.5 right-2.5 rounded-[4px] px-2 py-0.5 text-[10px] font-medium ${rarityChipClass(market.rarityLevel)}`}
@@ -60,12 +69,19 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="flex flex-1 flex-col px-3.5 pt-3.5">
           <p className="text-[10px] uppercase tracking-[0.14em] text-faint">{product.genus}</p>
           <h3 className="mt-1 display text-[17px] leading-tight text-headline">{product.name}</h3>
-          {from !== null && (
+          {from !== null ? (
             <span className="mt-auto flex items-baseline gap-1 pt-3 leading-none">
               <span className="text-[10px] text-faint">от</span>
               <span className="font-mono text-base text-headline">
                 {formatMoney(from, product.currency)}
               </span>
+              {product.pack && product.pack > 1 && (
+                <span className="text-[10px] text-faint">/ {product.pack} шт.</span>
+              )}
+            </span>
+          ) : (
+            <span className="mt-auto pt-3 font-mono text-sm leading-none text-faint">
+              Цена уточняется
             </span>
           )}
         </div>

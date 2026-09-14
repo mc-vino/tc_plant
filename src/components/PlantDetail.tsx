@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ImageIcon } from "lucide-react";
-import { Product, lowestPrice, highestPrice, formatMoney, CLONES_USD_RATE } from "@/lib/catalog";
+import { Product, lowestPrice, highestPrice, formatMoney } from "@/lib/catalog";
 import { supplier } from "@/data/supplier";
 import { asset } from "@/lib/asset";
 import { plural } from "@/lib/i18n";
@@ -88,12 +88,33 @@ export default function PlantDetail({
           </h1>
           <p className="mt-2 font-mono text-sm text-faint">{product.article ?? product.code}</p>
 
-          {low !== null && (
+          {low !== null ? (
             <p className="mt-5 font-mono text-2xl text-headline">
               {high !== null && high !== low
                 ? `${formatMoney(low, product.currency)} - ${formatMoney(high, product.currency)}`
                 : formatMoney(low, product.currency)}
-              <span className="font-sans text-sm text-faint"> / шт.</span>
+              <span className="font-sans text-sm text-faint">
+                {" "}
+                / {product.pack && product.pack > 1 ? `упаковка ${product.pack} шт.` : "шт."}
+              </span>
+            </p>
+          ) : (
+            <p className="mt-5 font-mono text-2xl text-faint">Цена уточняется</p>
+          )}
+
+          {(product.note || (product.minPacks && product.minPacks > 1)) && (
+            <p className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+              {product.note && (
+                <span className="rounded-[4px] bg-accent-soft px-2 py-1 text-foreground">
+                  {product.note}
+                </span>
+              )}
+              {product.minPacks && product.minPacks > 1 && (
+                <span className="text-muted">
+                  Минимум в общем заказе: {product.minPacks}{" "}
+                  {product.pack && product.pack > 1 ? "упаковок" : "шт."}
+                </span>
+              )}
             </p>
           )}
 
@@ -108,9 +129,9 @@ export default function PlantDetail({
 
           {product.currency === "RUB" ? (
             <p className="mt-5 text-sm text-muted leading-relaxed">
-              Цена за штуку в рублях, по ориентировочному курсу {CLONES_USD_RATE} ₽ за доллар.
-              Обозначения вариегатности в названии: A grade сильная, B слабее, C ещё слабее, Mixed
-              смешанная. Заказ оформляется у организатора закупки.
+              Цена в рублях по ориентировочному курсу {product.usdRate} ₽ за доллар. Обозначения
+              вариегатности в названии: A grade сильная, B слабее, C ещё слабее, Mixed смешанная.
+              Заказ оформляется у организатора закупки.
             </p>
           ) : (
             <p className="mt-5 text-sm text-muted leading-relaxed">
